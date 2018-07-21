@@ -7,16 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B84F5CA4210322160043DCEC /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84F5CA3210322160043DCEC /* Setting.storyboard */; };
+		B84F5CAA210322EE0043DCEC /* FinishedDraw.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84F5CA9210322EE0043DCEC /* FinishedDraw.storyboard */; };
+		B84F5CAD2103231C0043DCEC /* Draw.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84F5CAC2103231C0043DCEC /* Draw.storyboard */; };
+		B84F5CAF210323670043DCEC /* PrepareDraw.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84F5CAE210323670043DCEC /* PrepareDraw.storyboard */; };
+		B84F5CB22103241E0043DCEC /* FinishedImgQuestion.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84F5CB12103241E0043DCEC /* FinishedImgQuestion.storyboard */; };
+		B84F5CB8210324C10043DCEC /* ImgQuestion.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84F5CB7210324C10043DCEC /* ImgQuestion.storyboard */; };
+		B84F5CBA210324E10043DCEC /* PrepareImgQuestion.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84F5CB9210324E10043DCEC /* PrepareImgQuestion.storyboard */; };
+		B84F5CC12103256B0043DCEC /* FinishedSoundQuestion.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84F5CC02103256B0043DCEC /* FinishedSoundQuestion.storyboard */; };
+		B84F5CC32103258C0043DCEC /* SoundQuestion.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84F5CC22103258C0043DCEC /* SoundQuestion.storyboard */; };
+		B84F5CC5210325B00043DCEC /* PrepareSoundQuestion.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84F5CC4210325B00043DCEC /* PrepareSoundQuestion.storyboard */; };
+		B84F5CC8210325D40043DCEC /* MainMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84F5CC7210325D40043DCEC /* MainMenu.storyboard */; };
+		B84F5CCA210327C10043DCEC /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84F5CC9210327C10043DCEC /* MainMenuViewController.swift */; };
 		B8AEBD3B21030FC500468680 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AEBD3A21030FC500468680 /* AppDelegate.swift */; };
-		B8AEBD4021030FC500468680 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8AEBD3E21030FC500468680 /* Main.storyboard */; };
 		B8AEBD4221030FC700468680 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8AEBD4121030FC700468680 /* Assets.xcassets */; };
 		B8AEBD4521030FC700468680 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8AEBD4321030FC700468680 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B84F5CA3210322160043DCEC /* Setting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
+		B84F5CA9210322EE0043DCEC /* FinishedDraw.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FinishedDraw.storyboard; sourceTree = "<group>"; };
+		B84F5CAC2103231C0043DCEC /* Draw.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Draw.storyboard; sourceTree = "<group>"; };
+		B84F5CAE210323670043DCEC /* PrepareDraw.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PrepareDraw.storyboard; sourceTree = "<group>"; };
+		B84F5CB12103241E0043DCEC /* FinishedImgQuestion.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FinishedImgQuestion.storyboard; sourceTree = "<group>"; };
+		B84F5CB7210324C10043DCEC /* ImgQuestion.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ImgQuestion.storyboard; sourceTree = "<group>"; };
+		B84F5CB9210324E10043DCEC /* PrepareImgQuestion.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PrepareImgQuestion.storyboard; sourceTree = "<group>"; };
+		B84F5CC02103256B0043DCEC /* FinishedSoundQuestion.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FinishedSoundQuestion.storyboard; sourceTree = "<group>"; };
+		B84F5CC22103258C0043DCEC /* SoundQuestion.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SoundQuestion.storyboard; sourceTree = "<group>"; };
+		B84F5CC4210325B00043DCEC /* PrepareSoundQuestion.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PrepareSoundQuestion.storyboard; sourceTree = "<group>"; };
+		B84F5CC7210325D40043DCEC /* MainMenu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainMenu.storyboard; sourceTree = "<group>"; };
+		B84F5CC9210327C10043DCEC /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
 		B8AEBD3721030FC400468680 /* RizzoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RizzoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8AEBD3A21030FC500468680 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B8AEBD3F21030FC500468680 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B8AEBD4121030FC700468680 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8AEBD4421030FC700468680 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B8AEBD4621030FC700468680 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -36,6 +58,17 @@
 		B84F5C9F210321800043DCEC /* View_Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B84F5CC6210325C30043DCEC /* MainMenu */,
+				B84F5CBD210325170043DCEC /* PrepareSoundQuestion */,
+				B84F5CBC210325100043DCEC /* SoundQuestion */,
+				B84F5CBB210325080043DCEC /* FinishedSoundQuestion */,
+				B84F5CB4210324440043DCEC /* PrepareImgQuestion */,
+				B84F5CB3210324350043DCEC /* ImgQuestion */,
+				B84F5CB0210323EB0043DCEC /* FinishedImgQuestion */,
+				B84F5CAB2103230D0043DCEC /* Draw */,
+				B84F5CA8210322D90043DCEC /* FinishedDraw */,
+				B84F5CA5210322430043DCEC /* PrepareDraw */,
+				B84F5CA2210321EC0043DCEC /* Setting */,
 			);
 			path = View_Controllers;
 			sourceTree = "<group>";
@@ -54,6 +87,95 @@
 				B8AEBD4121030FC700468680 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		B84F5CA2210321EC0043DCEC /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				B84F5CA3210322160043DCEC /* Setting.storyboard */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		B84F5CA5210322430043DCEC /* PrepareDraw */ = {
+			isa = PBXGroup;
+			children = (
+				B84F5CAE210323670043DCEC /* PrepareDraw.storyboard */,
+			);
+			path = PrepareDraw;
+			sourceTree = "<group>";
+		};
+		B84F5CA8210322D90043DCEC /* FinishedDraw */ = {
+			isa = PBXGroup;
+			children = (
+				B84F5CA9210322EE0043DCEC /* FinishedDraw.storyboard */,
+			);
+			path = FinishedDraw;
+			sourceTree = "<group>";
+		};
+		B84F5CAB2103230D0043DCEC /* Draw */ = {
+			isa = PBXGroup;
+			children = (
+				B84F5CAC2103231C0043DCEC /* Draw.storyboard */,
+			);
+			path = Draw;
+			sourceTree = "<group>";
+		};
+		B84F5CB0210323EB0043DCEC /* FinishedImgQuestion */ = {
+			isa = PBXGroup;
+			children = (
+				B84F5CB12103241E0043DCEC /* FinishedImgQuestion.storyboard */,
+			);
+			path = FinishedImgQuestion;
+			sourceTree = "<group>";
+		};
+		B84F5CB3210324350043DCEC /* ImgQuestion */ = {
+			isa = PBXGroup;
+			children = (
+				B84F5CB7210324C10043DCEC /* ImgQuestion.storyboard */,
+			);
+			path = ImgQuestion;
+			sourceTree = "<group>";
+		};
+		B84F5CB4210324440043DCEC /* PrepareImgQuestion */ = {
+			isa = PBXGroup;
+			children = (
+				B84F5CB9210324E10043DCEC /* PrepareImgQuestion.storyboard */,
+			);
+			path = PrepareImgQuestion;
+			sourceTree = "<group>";
+		};
+		B84F5CBB210325080043DCEC /* FinishedSoundQuestion */ = {
+			isa = PBXGroup;
+			children = (
+				B84F5CC02103256B0043DCEC /* FinishedSoundQuestion.storyboard */,
+			);
+			path = FinishedSoundQuestion;
+			sourceTree = "<group>";
+		};
+		B84F5CBC210325100043DCEC /* SoundQuestion */ = {
+			isa = PBXGroup;
+			children = (
+				B84F5CC22103258C0043DCEC /* SoundQuestion.storyboard */,
+			);
+			path = SoundQuestion;
+			sourceTree = "<group>";
+		};
+		B84F5CBD210325170043DCEC /* PrepareSoundQuestion */ = {
+			isa = PBXGroup;
+			children = (
+				B84F5CC4210325B00043DCEC /* PrepareSoundQuestion.storyboard */,
+			);
+			path = PrepareSoundQuestion;
+			sourceTree = "<group>";
+		};
+		B84F5CC6210325C30043DCEC /* MainMenu */ = {
+			isa = PBXGroup;
+			children = (
+				B84F5CC7210325D40043DCEC /* MainMenu.storyboard */,
+				B84F5CC9210327C10043DCEC /* MainMenuViewController.swift */,
+			);
+			path = MainMenu;
 			sourceTree = "<group>";
 		};
 		B8AEBD2E21030FC400468680 = {
@@ -78,7 +200,6 @@
 				B84F5CA1210321910043DCEC /* Resources */,
 				B84F5CA02103218B0043DCEC /* Models */,
 				B84F5C9F210321800043DCEC /* View_Controllers */,
-				B8AEBD3E21030FC500468680 /* Main.storyboard */,
 				B8AEBD4321030FC700468680 /* LaunchScreen.storyboard */,
 				B8AEBD4621030FC700468680 /* Info.plist */,
 			);
@@ -143,9 +264,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B84F5CBA210324E10043DCEC /* PrepareImgQuestion.storyboard in Resources */,
+				B84F5CAA210322EE0043DCEC /* FinishedDraw.storyboard in Resources */,
 				B8AEBD4521030FC700468680 /* LaunchScreen.storyboard in Resources */,
+				B84F5CAD2103231C0043DCEC /* Draw.storyboard in Resources */,
+				B84F5CC32103258C0043DCEC /* SoundQuestion.storyboard in Resources */,
+				B84F5CC12103256B0043DCEC /* FinishedSoundQuestion.storyboard in Resources */,
+				B84F5CB8210324C10043DCEC /* ImgQuestion.storyboard in Resources */,
 				B8AEBD4221030FC700468680 /* Assets.xcassets in Resources */,
-				B8AEBD4021030FC500468680 /* Main.storyboard in Resources */,
+				B84F5CC8210325D40043DCEC /* MainMenu.storyboard in Resources */,
+				B84F5CC5210325B00043DCEC /* PrepareSoundQuestion.storyboard in Resources */,
+				B84F5CB22103241E0043DCEC /* FinishedImgQuestion.storyboard in Resources */,
+				B84F5CAF210323670043DCEC /* PrepareDraw.storyboard in Resources */,
+				B84F5CA4210322160043DCEC /* Setting.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B84F5CCA210327C10043DCEC /* MainMenuViewController.swift in Sources */,
 				B8AEBD3B21030FC500468680 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -163,14 +295,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B8AEBD3E21030FC500468680 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B8AEBD3F21030FC500468680 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B8AEBD4321030FC700468680 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

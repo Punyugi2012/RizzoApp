@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WkY-0A-bwD">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--PrepareDraw-->
+        <scene sceneID="pCU-L7-IL6">
+            <objects>
+                <viewController id="WkY-0A-bwD" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XQe-u9-5wk">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="bON-lw-YbX"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="PrepareDraw" id="3NZ-2U-bXv"/>
+                    <connections>
+                        <segue destination="b2w-pj-jP1" kind="show" identifier="ToDraw" id="r5p-y0-ta6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="weT-Og-pxc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1213" y="-41"/>
+        </scene>
+        <!--Draw-->
+        <scene sceneID="s6v-yr-Igt">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Draw" id="b2w-pj-jP1" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="swP-GR-8f5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2125" y="-41"/>
+        </scene>
+    </scenes>
+</document>

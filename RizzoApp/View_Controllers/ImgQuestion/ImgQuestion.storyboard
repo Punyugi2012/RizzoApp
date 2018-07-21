@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jzG-ip-g9r">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ImgQuestion-->
+        <scene sceneID="b2e-UT-PNl">
+            <objects>
+                <viewController id="jzG-ip-g9r" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kkw-y7-gwZ">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="j2H-hv-bhc"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="ImgQuestion" id="itj-MT-Bti"/>
+                    <connections>
+                        <segue destination="oKm-hP-u5o" kind="presentation" identifier="ToFinishedImgQuestion" id="DmB-F6-ytq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ic1-56-zB1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1781" y="-705"/>
+        </scene>
+        <!--FinishedImgQuestion-->
+        <scene sceneID="gf7-bn-ZjD">
+            <objects>
+                <viewControllerPlaceholder storyboardName="FinishedImgQuestion" id="oKm-hP-u5o" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="edR-g9-599" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2468" y="-705"/>
+        </scene>
+    </scenes>
+</document>

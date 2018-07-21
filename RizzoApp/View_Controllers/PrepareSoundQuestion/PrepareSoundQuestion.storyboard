@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nWS-On-KUJ">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--PrepareSoundQuestion-->
+        <scene sceneID="qjo-q9-K6y">
+            <objects>
+                <viewController id="nWS-On-KUJ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i7z-ZF-J5g">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="QsI-2P-l7N"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="PrepareSoundQuestion" id="1w4-AG-65d"/>
+                    <connections>
+                        <segue destination="nAG-Pt-EJx" kind="show" identifier="ToSoundQuestion" id="chg-4F-n2U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ura-h1-cX8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="940" y="-1390"/>
+        </scene>
+        <!--SoundQuestion-->
+        <scene sceneID="CHh-Hj-hGz">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SoundQuestion" id="nAG-Pt-EJx" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hAh-sk-1rG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1725" y="-1389"/>
+        </scene>
+    </scenes>
+</document>
