@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B8AEBD3B21030FC500468680 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AEBD3A21030FC500468680 /* AppDelegate.swift */; };
-		B8AEBD3D21030FC500468680 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AEBD3C21030FC500468680 /* ViewController.swift */; };
 		B8AEBD4021030FC500468680 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8AEBD3E21030FC500468680 /* Main.storyboard */; };
 		B8AEBD4221030FC700468680 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8AEBD4121030FC700468680 /* Assets.xcassets */; };
 		B8AEBD4521030FC700468680 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8AEBD4321030FC700468680 /* LaunchScreen.storyboard */; };
@@ -17,7 +16,6 @@
 /* Begin PBXFileReference section */
 		B8AEBD3721030FC400468680 /* RizzoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RizzoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8AEBD3A21030FC500468680 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B8AEBD3C21030FC500468680 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B8AEBD3F21030FC500468680 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B8AEBD4121030FC700468680 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8AEBD4421030FC700468680 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,6 +33,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B84F5C9F210321800043DCEC /* View_Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View_Controllers;
+			sourceTree = "<group>";
+		};
+		B84F5CA02103218B0043DCEC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B84F5CA1210321910043DCEC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B8AEBD3A21030FC500468680 /* AppDelegate.swift */,
+				B8AEBD4121030FC700468680 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		B8AEBD2E21030FC400468680 = {
 			isa = PBXGroup;
 			children = (
@@ -54,10 +75,10 @@
 		B8AEBD3921030FC400468680 /* RizzoApp */ = {
 			isa = PBXGroup;
 			children = (
-				B8AEBD3A21030FC500468680 /* AppDelegate.swift */,
-				B8AEBD3C21030FC500468680 /* ViewController.swift */,
+				B84F5CA1210321910043DCEC /* Resources */,
+				B84F5CA02103218B0043DCEC /* Models */,
+				B84F5C9F210321800043DCEC /* View_Controllers */,
 				B8AEBD3E21030FC500468680 /* Main.storyboard */,
-				B8AEBD4121030FC700468680 /* Assets.xcassets */,
 				B8AEBD4321030FC700468680 /* LaunchScreen.storyboard */,
 				B8AEBD4621030FC700468680 /* Info.plist */,
 			);
@@ -135,7 +156,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8AEBD3D21030FC500468680 /* ViewController.swift in Sources */,
 				B8AEBD3B21030FC500468680 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
