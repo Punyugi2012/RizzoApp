@@ -19,6 +19,11 @@
 		B84F5CC5210325B00043DCEC /* PrepareSoundQuestion.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84F5CC4210325B00043DCEC /* PrepareSoundQuestion.storyboard */; };
 		B84F5CC8210325D40043DCEC /* MainMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84F5CC7210325D40043DCEC /* MainMenu.storyboard */; };
 		B84F5CCA210327C10043DCEC /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84F5CC9210327C10043DCEC /* MainMenuViewController.swift */; };
+		B84F5CCC21032E2C0043DCEC /* QuestionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84F5CCB21032E2C0043DCEC /* QuestionProtocol.swift */; };
+		B84F5CCE21032EFD0043DCEC /* ImageQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84F5CCD21032EFD0043DCEC /* ImageQuestion.swift */; };
+		B84F5CD021032F310043DCEC /* SoundQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84F5CCF21032F310043DCEC /* SoundQuestion.swift */; };
+		B84F5CD221032F670043DCEC /* DrawQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84F5CD121032F670043DCEC /* DrawQuestion.swift */; };
+		B84F5CD4210331310043DCEC /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84F5CD3210331310043DCEC /* QuestionModel.swift */; };
 		B8AEBD3B21030FC500468680 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AEBD3A21030FC500468680 /* AppDelegate.swift */; };
 		B8AEBD4221030FC700468680 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8AEBD4121030FC700468680 /* Assets.xcassets */; };
 		B8AEBD4521030FC700468680 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8AEBD4321030FC700468680 /* LaunchScreen.storyboard */; };
@@ -37,6 +42,11 @@
 		B84F5CC4210325B00043DCEC /* PrepareSoundQuestion.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PrepareSoundQuestion.storyboard; sourceTree = "<group>"; };
 		B84F5CC7210325D40043DCEC /* MainMenu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainMenu.storyboard; sourceTree = "<group>"; };
 		B84F5CC9210327C10043DCEC /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
+		B84F5CCB21032E2C0043DCEC /* QuestionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionProtocol.swift; sourceTree = "<group>"; };
+		B84F5CCD21032EFD0043DCEC /* ImageQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageQuestion.swift; sourceTree = "<group>"; };
+		B84F5CCF21032F310043DCEC /* SoundQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundQuestion.swift; sourceTree = "<group>"; };
+		B84F5CD121032F670043DCEC /* DrawQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawQuestion.swift; sourceTree = "<group>"; };
+		B84F5CD3210331310043DCEC /* QuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
 		B8AEBD3721030FC400468680 /* RizzoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RizzoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8AEBD3A21030FC500468680 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8AEBD4121030FC700468680 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -76,6 +86,11 @@
 		B84F5CA02103218B0043DCEC /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B84F5CCB21032E2C0043DCEC /* QuestionProtocol.swift */,
+				B84F5CCD21032EFD0043DCEC /* ImageQuestion.swift */,
+				B84F5CCF21032F310043DCEC /* SoundQuestion.swift */,
+				B84F5CD121032F670043DCEC /* DrawQuestion.swift */,
+				B84F5CD3210331310043DCEC /* QuestionModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -287,7 +302,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B84F5CD4210331310043DCEC /* QuestionModel.swift in Sources */,
+				B84F5CD021032F310043DCEC /* SoundQuestion.swift in Sources */,
 				B84F5CCA210327C10043DCEC /* MainMenuViewController.swift in Sources */,
+				B84F5CCE21032EFD0043DCEC /* ImageQuestion.swift in Sources */,
+				B84F5CD221032F670043DCEC /* DrawQuestion.swift in Sources */,
+				B84F5CCC21032E2C0043DCEC /* QuestionProtocol.swift in Sources */,
 				B8AEBD3B21030FC500468680 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
