@@ -51,7 +51,7 @@ class AppManager {
     }
     
     func playButtonSound() {
-        if UserDefaults.standard.bool(forKey: buttonSoundKey) {
+        if AppManager.shared.get(key: buttonSoundKey) {
             AppManager.shared.buttonPlayer?.stop()
             AppManager.shared.buttonPlayer?.currentTime = 0
             AppManager.shared.buttonPlayer?.play()
