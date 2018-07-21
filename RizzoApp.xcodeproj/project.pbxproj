@@ -24,6 +24,9 @@
 		B84F5CD021032F310043DCEC /* SoundQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84F5CCF21032F310043DCEC /* SoundQuestion.swift */; };
 		B84F5CD221032F670043DCEC /* DrawQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84F5CD121032F670043DCEC /* DrawQuestion.swift */; };
 		B84F5CD4210331310043DCEC /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84F5CD3210331310043DCEC /* QuestionModel.swift */; };
+		B84F5CDC210335000043DCEC /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84F5CDB210335000043DCEC /* AppManager.swift */; };
+		B84F5CDE210335DB0043DCEC /* bgSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B84F5CDD210335DB0043DCEC /* bgSound.mp3 */; };
+		B84F5CE0210336270043DCEC /* btnSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B84F5CDF210336270043DCEC /* btnSound.mp3 */; };
 		B8AEBD3B21030FC500468680 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AEBD3A21030FC500468680 /* AppDelegate.swift */; };
 		B8AEBD4221030FC700468680 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8AEBD4121030FC700468680 /* Assets.xcassets */; };
 		B8AEBD4521030FC700468680 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8AEBD4321030FC700468680 /* LaunchScreen.storyboard */; };
@@ -47,6 +50,9 @@
 		B84F5CCF21032F310043DCEC /* SoundQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundQuestion.swift; sourceTree = "<group>"; };
 		B84F5CD121032F670043DCEC /* DrawQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawQuestion.swift; sourceTree = "<group>"; };
 		B84F5CD3210331310043DCEC /* QuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
+		B84F5CDB210335000043DCEC /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
+		B84F5CDD210335DB0043DCEC /* bgSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgSound.mp3; sourceTree = "<group>"; };
+		B84F5CDF210336270043DCEC /* btnSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = btnSound.mp3; sourceTree = "<group>"; };
 		B8AEBD3721030FC400468680 /* RizzoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RizzoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8AEBD3A21030FC500468680 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8AEBD4121030FC700468680 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -98,6 +104,8 @@
 		B84F5CA1210321910043DCEC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B84F5CD6210334170043DCEC /* Sounds */,
+				B84F5CD52103340D0043DCEC /* Images */,
 				B8AEBD3A21030FC500468680 /* AppDelegate.swift */,
 				B8AEBD4121030FC700468680 /* Assets.xcassets */,
 			);
@@ -193,6 +201,22 @@
 			path = MainMenu;
 			sourceTree = "<group>";
 		};
+		B84F5CD52103340D0043DCEC /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		B84F5CD6210334170043DCEC /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				B84F5CDD210335DB0043DCEC /* bgSound.mp3 */,
+				B84F5CDF210336270043DCEC /* btnSound.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 		B8AEBD2E21030FC400468680 = {
 			isa = PBXGroup;
 			children = (
@@ -217,6 +241,7 @@
 				B84F5C9F210321800043DCEC /* View_Controllers */,
 				B8AEBD4321030FC700468680 /* LaunchScreen.storyboard */,
 				B8AEBD4621030FC700468680 /* Info.plist */,
+				B84F5CDB210335000043DCEC /* AppManager.swift */,
 			);
 			path = RizzoApp;
 			sourceTree = "<group>";
@@ -280,12 +305,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B84F5CBA210324E10043DCEC /* PrepareImgQuestion.storyboard in Resources */,
+				B84F5CDE210335DB0043DCEC /* bgSound.mp3 in Resources */,
 				B84F5CAA210322EE0043DCEC /* FinishedDraw.storyboard in Resources */,
 				B8AEBD4521030FC700468680 /* LaunchScreen.storyboard in Resources */,
 				B84F5CAD2103231C0043DCEC /* Draw.storyboard in Resources */,
 				B84F5CC32103258C0043DCEC /* SoundQuestion.storyboard in Resources */,
 				B84F5CC12103256B0043DCEC /* FinishedSoundQuestion.storyboard in Resources */,
 				B84F5CB8210324C10043DCEC /* ImgQuestion.storyboard in Resources */,
+				B84F5CE0210336270043DCEC /* btnSound.mp3 in Resources */,
 				B8AEBD4221030FC700468680 /* Assets.xcassets in Resources */,
 				B84F5CC8210325D40043DCEC /* MainMenu.storyboard in Resources */,
 				B84F5CC5210325B00043DCEC /* PrepareSoundQuestion.storyboard in Resources */,
@@ -309,6 +336,7 @@
 				B84F5CD221032F670043DCEC /* DrawQuestion.swift in Sources */,
 				B84F5CCC21032E2C0043DCEC /* QuestionProtocol.swift in Sources */,
 				B8AEBD3B21030FC500468680 /* AppDelegate.swift in Sources */,
+				B84F5CDC210335000043DCEC /* AppManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
