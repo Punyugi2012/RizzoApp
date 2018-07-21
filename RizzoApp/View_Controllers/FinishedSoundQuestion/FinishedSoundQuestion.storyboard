@@ -13,7 +13,7 @@
         <!--FinishedSoundQuestion-->
         <scene sceneID="RQ7-bg-z4e">
             <objects>
-                <viewController id="tao-pp-9ir" sceneMemberID="viewController">
+                <viewController id="tao-pp-9ir" customClass="FinishedSoundQViewController" customModule="RizzoApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BpQ-ci-jOZ">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

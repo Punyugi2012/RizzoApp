@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		B82F8CCB21034462001A9338 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82F8CCA21034462001A9338 /* Extensions.swift */; };
+		B82F8CCD21034833001A9338 /* PreSoundQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82F8CCC21034833001A9338 /* PreSoundQuestionViewController.swift */; };
+		B82F8CCF21034864001A9338 /* SoundQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82F8CCE21034864001A9338 /* SoundQuestionViewController.swift */; };
+		B82F8CD1210348B7001A9338 /* FinishedSoundQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82F8CD0210348B7001A9338 /* FinishedSoundQViewController.swift */; };
+		B82F8CD3210348D4001A9338 /* PreImgQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82F8CD2210348D4001A9338 /* PreImgQuestionViewController.swift */; };
+		B82F8CD52103491D001A9338 /* ImgQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82F8CD42103491D001A9338 /* ImgQuestionViewController.swift */; };
+		B82F8CD72103493C001A9338 /* FinishedImgQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82F8CD62103493C001A9338 /* FinishedImgQViewController.swift */; };
+		B82F8CD92103499C001A9338 /* DrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82F8CD82103499C001A9338 /* DrawViewController.swift */; };
+		B82F8CDB210349B6001A9338 /* FinishedDrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82F8CDA210349B6001A9338 /* FinishedDrawViewController.swift */; };
+		B82F8CDD21034A10001A9338 /* PrepareDrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82F8CDC21034A10001A9338 /* PrepareDrawViewController.swift */; };
+		B82F8CDF21034A45001A9338 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82F8CDE21034A45001A9338 /* SettingViewController.swift */; };
 		B84F5CA4210322160043DCEC /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84F5CA3210322160043DCEC /* Setting.storyboard */; };
 		B84F5CAA210322EE0043DCEC /* FinishedDraw.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84F5CA9210322EE0043DCEC /* FinishedDraw.storyboard */; };
 		B84F5CAD2103231C0043DCEC /* Draw.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84F5CAC2103231C0043DCEC /* Draw.storyboard */; };
@@ -35,6 +45,16 @@
 
 /* Begin PBXFileReference section */
 		B82F8CCA21034462001A9338 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		B82F8CCC21034833001A9338 /* PreSoundQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreSoundQuestionViewController.swift; sourceTree = "<group>"; };
+		B82F8CCE21034864001A9338 /* SoundQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundQuestionViewController.swift; sourceTree = "<group>"; };
+		B82F8CD0210348B7001A9338 /* FinishedSoundQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishedSoundQViewController.swift; sourceTree = "<group>"; };
+		B82F8CD2210348D4001A9338 /* PreImgQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreImgQuestionViewController.swift; sourceTree = "<group>"; };
+		B82F8CD42103491D001A9338 /* ImgQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgQuestionViewController.swift; sourceTree = "<group>"; };
+		B82F8CD62103493C001A9338 /* FinishedImgQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishedImgQViewController.swift; sourceTree = "<group>"; };
+		B82F8CD82103499C001A9338 /* DrawViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawViewController.swift; sourceTree = "<group>"; };
+		B82F8CDA210349B6001A9338 /* FinishedDrawViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishedDrawViewController.swift; sourceTree = "<group>"; };
+		B82F8CDC21034A10001A9338 /* PrepareDrawViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrepareDrawViewController.swift; sourceTree = "<group>"; };
+		B82F8CDE21034A45001A9338 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		B84F5CA3210322160043DCEC /* Setting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
 		B84F5CA9210322EE0043DCEC /* FinishedDraw.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FinishedDraw.storyboard; sourceTree = "<group>"; };
 		B84F5CAC2103231C0043DCEC /* Draw.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Draw.storyboard; sourceTree = "<group>"; };
@@ -125,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				B84F5CA3210322160043DCEC /* Setting.storyboard */,
+				B82F8CDE21034A45001A9338 /* SettingViewController.swift */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -133,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				B84F5CAE210323670043DCEC /* PrepareDraw.storyboard */,
+				B82F8CDC21034A10001A9338 /* PrepareDrawViewController.swift */,
 			);
 			path = PrepareDraw;
 			sourceTree = "<group>";
@@ -141,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				B84F5CA9210322EE0043DCEC /* FinishedDraw.storyboard */,
+				B82F8CDA210349B6001A9338 /* FinishedDrawViewController.swift */,
 			);
 			path = FinishedDraw;
 			sourceTree = "<group>";
@@ -149,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				B84F5CAC2103231C0043DCEC /* Draw.storyboard */,
+				B82F8CD82103499C001A9338 /* DrawViewController.swift */,
 			);
 			path = Draw;
 			sourceTree = "<group>";
@@ -157,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				B84F5CB12103241E0043DCEC /* FinishedImgQuestion.storyboard */,
+				B82F8CD62103493C001A9338 /* FinishedImgQViewController.swift */,
 			);
 			path = FinishedImgQuestion;
 			sourceTree = "<group>";
@@ -165,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				B84F5CB7210324C10043DCEC /* ImgQuestion.storyboard */,
+				B82F8CD42103491D001A9338 /* ImgQuestionViewController.swift */,
 			);
 			path = ImgQuestion;
 			sourceTree = "<group>";
@@ -173,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				B84F5CB9210324E10043DCEC /* PrepareImgQuestion.storyboard */,
+				B82F8CD2210348D4001A9338 /* PreImgQuestionViewController.swift */,
 			);
 			path = PrepareImgQuestion;
 			sourceTree = "<group>";
@@ -181,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				B84F5CC02103256B0043DCEC /* FinishedSoundQuestion.storyboard */,
+				B82F8CD0210348B7001A9338 /* FinishedSoundQViewController.swift */,
 			);
 			path = FinishedSoundQuestion;
 			sourceTree = "<group>";
@@ -189,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				B84F5CC22103258C0043DCEC /* SoundQuestion.storyboard */,
+				B82F8CCE21034864001A9338 /* SoundQuestionViewController.swift */,
 			);
 			path = SoundQuestion;
 			sourceTree = "<group>";
@@ -197,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				B84F5CC4210325B00043DCEC /* PrepareSoundQuestion.storyboard */,
+				B82F8CCC21034833001A9338 /* PreSoundQuestionViewController.swift */,
 			);
 			path = PrepareSoundQuestion;
 			sourceTree = "<group>";
@@ -340,15 +370,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B82F8CDD21034A10001A9338 /* PrepareDrawViewController.swift in Sources */,
+				B82F8CD92103499C001A9338 /* DrawViewController.swift in Sources */,
 				B84F5CD4210331310043DCEC /* QuestionModel.swift in Sources */,
 				B82F8CCB21034462001A9338 /* Extensions.swift in Sources */,
+				B82F8CCD21034833001A9338 /* PreSoundQuestionViewController.swift in Sources */,
+				B82F8CCF21034864001A9338 /* SoundQuestionViewController.swift in Sources */,
+				B82F8CD52103491D001A9338 /* ImgQuestionViewController.swift in Sources */,
+				B82F8CD1210348B7001A9338 /* FinishedSoundQViewController.swift in Sources */,
+				B82F8CD3210348D4001A9338 /* PreImgQuestionViewController.swift in Sources */,
 				B84F5CD021032F310043DCEC /* SoundQuestion.swift in Sources */,
 				B84F5CCA210327C10043DCEC /* MainMenuViewController.swift in Sources */,
 				B84F5CCE21032EFD0043DCEC /* ImageQuestion.swift in Sources */,
+				B82F8CD72103493C001A9338 /* FinishedImgQViewController.swift in Sources */,
 				B84F5CD221032F670043DCEC /* DrawQuestion.swift in Sources */,
 				B84F5CCC21032E2C0043DCEC /* QuestionProtocol.swift in Sources */,
 				B8AEBD3B21030FC500468680 /* AppDelegate.swift in Sources */,
+				B82F8CDF21034A45001A9338 /* SettingViewController.swift in Sources */,
 				B84F5CDC210335000043DCEC /* AppManager.swift in Sources */,
+				B82F8CDB210349B6001A9338 /* FinishedDrawViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

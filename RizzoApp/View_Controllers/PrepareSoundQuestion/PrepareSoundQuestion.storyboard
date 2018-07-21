@@ -13,7 +13,7 @@
         <!--PrepareSoundQuestion-->
         <scene sceneID="qjo-q9-K6y">
             <objects>
-                <viewController id="nWS-On-KUJ" sceneMemberID="viewController">
+                <viewController id="nWS-On-KUJ" customClass="PreSoundQuestionViewController" customModule="RizzoApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="i7z-ZF-J5g">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

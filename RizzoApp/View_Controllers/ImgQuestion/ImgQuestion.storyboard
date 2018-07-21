@@ -13,7 +13,7 @@
         <!--ImgQuestion-->
         <scene sceneID="b2e-UT-PNl">
             <objects>
-                <viewController id="jzG-ip-g9r" sceneMemberID="viewController">
+                <viewController id="jzG-ip-g9r" customClass="ImgQuestionViewController" customModule="RizzoApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kkw-y7-gwZ">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

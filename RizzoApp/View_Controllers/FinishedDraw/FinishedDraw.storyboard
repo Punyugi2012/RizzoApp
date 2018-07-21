@@ -13,7 +13,7 @@
         <!--FinishedDraw-->
         <scene sceneID="U1R-Gz-rt1">
             <objects>
-                <viewController id="yB1-jV-vH3" sceneMemberID="viewController">
+                <viewController id="yB1-jV-vH3" customClass="FinishedDrawViewController" customModule="RizzoApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hDY-bG-NzR">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

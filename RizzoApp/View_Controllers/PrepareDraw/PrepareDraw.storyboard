@@ -13,7 +13,7 @@
         <!--PrepareDraw-->
         <scene sceneID="pCU-L7-IL6">
             <objects>
-                <viewController id="WkY-0A-bwD" sceneMemberID="viewController">
+                <viewController id="WkY-0A-bwD" customClass="PrepareDrawViewController" customModule="RizzoApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XQe-u9-5wk">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
