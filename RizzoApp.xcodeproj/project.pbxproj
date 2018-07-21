@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B82F8CCB21034462001A9338 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82F8CCA21034462001A9338 /* Extensions.swift */; };
 		B84F5CA4210322160043DCEC /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84F5CA3210322160043DCEC /* Setting.storyboard */; };
 		B84F5CAA210322EE0043DCEC /* FinishedDraw.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84F5CA9210322EE0043DCEC /* FinishedDraw.storyboard */; };
 		B84F5CAD2103231C0043DCEC /* Draw.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84F5CAC2103231C0043DCEC /* Draw.storyboard */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B82F8CCA21034462001A9338 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		B84F5CA3210322160043DCEC /* Setting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
 		B84F5CA9210322EE0043DCEC /* FinishedDraw.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FinishedDraw.storyboard; sourceTree = "<group>"; };
 		B84F5CAC2103231C0043DCEC /* Draw.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Draw.storyboard; sourceTree = "<group>"; };
@@ -71,6 +73,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B82F8CC921034451001A9338 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B82F8CCA21034462001A9338 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		B84F5C9F210321800043DCEC /* View_Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -106,7 +116,6 @@
 			children = (
 				B84F5CD6210334170043DCEC /* Sounds */,
 				B84F5CD52103340D0043DCEC /* Images */,
-				B8AEBD3A21030FC500468680 /* AppDelegate.swift */,
 				B8AEBD4121030FC700468680 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -236,12 +245,14 @@
 		B8AEBD3921030FC400468680 /* RizzoApp */ = {
 			isa = PBXGroup;
 			children = (
+				B82F8CC921034451001A9338 /* Extensions */,
 				B84F5CA1210321910043DCEC /* Resources */,
 				B84F5CA02103218B0043DCEC /* Models */,
 				B84F5C9F210321800043DCEC /* View_Controllers */,
 				B8AEBD4321030FC700468680 /* LaunchScreen.storyboard */,
 				B8AEBD4621030FC700468680 /* Info.plist */,
 				B84F5CDB210335000043DCEC /* AppManager.swift */,
+				B8AEBD3A21030FC500468680 /* AppDelegate.swift */,
 			);
 			path = RizzoApp;
 			sourceTree = "<group>";
@@ -330,6 +341,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B84F5CD4210331310043DCEC /* QuestionModel.swift in Sources */,
+				B82F8CCB21034462001A9338 /* Extensions.swift in Sources */,
 				B84F5CD021032F310043DCEC /* SoundQuestion.swift in Sources */,
 				B84F5CCA210327C10043DCEC /* MainMenuViewController.swift in Sources */,
 				B84F5CCE21032EFD0043DCEC /* ImageQuestion.swift in Sources */,
