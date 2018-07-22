@@ -10,7 +10,8 @@ import UIKit
 
 class PreSoundQuestionViewController: UIViewController {
 
-    var questions = [SoundQuestion]()
+    var questions: [SoundQuestion]?
+    var questionType: TypeQuestion?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +22,7 @@ class PreSoundQuestionViewController: UIViewController {
         sender.playButtonSound()
         QuestionModel.getAllSoundQuestion { (datas) in
             self.questions = datas[sender.tag]
+            self.questionType = sender.tag == 0 ? .animal : .musical
             self.performSegue(withIdentifier: "ToSoundQuestion", sender: self)
         }
     }
@@ -28,6 +30,7 @@ class PreSoundQuestionViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? SoundQuestionViewController {
             destination.question = self.questions
+            destination.questionType = self.questionType
         }
     }
 

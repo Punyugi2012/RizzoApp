@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="f3soundQ/headerSoundsQuestion" translatesAutoresizingMaskIntoConstraints="NO" id="9Ke-nm-Ski">
-                                <rect key="frame" x="50" y="120" width="924" height="130"/>
+                                <rect key="frame" x="50" y="164" width="924" height="130"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="130" id="q6D-Vh-qot"/>
                                 </constraints>
@@ -63,6 +63,7 @@
                         <viewLayoutGuide key="safeArea" id="QsI-2P-l7N"/>
                     </view>
                     <navigationItem key="navigationItem" title="PrepareSoundQuestion" id="1w4-AG-65d"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <segue destination="nAG-Pt-EJx" kind="show" identifier="ToSoundQuestion" id="chg-4F-n2U"/>
                     </connections>

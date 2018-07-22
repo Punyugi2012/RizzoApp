@@ -53,6 +53,7 @@
 		B87D93C9210470CE00788F2D /* สุนัข.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B87D93C6210470CD00788F2D /* สุนัข.mp3 */; };
 		B87D93CA210470CE00788F2D /* หมู.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B87D93C7210470CD00788F2D /* หมู.mp3 */; };
 		B87D93CC21047F9F00788F2D /* lightTheme.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B87D93CB21047F9F00788F2D /* lightTheme.xcassets */; };
+		B87D93CF2104972B00788F2D /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87D93CE2104972B00788F2D /* Enums.swift */; };
 		B8AEBD3B21030FC500468680 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AEBD3A21030FC500468680 /* AppDelegate.swift */; };
 		B8AEBD4221030FC700468680 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8AEBD4121030FC700468680 /* Assets.xcassets */; };
 		B8AEBD4521030FC700468680 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8AEBD4321030FC700468680 /* LaunchScreen.storyboard */; };
@@ -105,6 +106,7 @@
 		B87D93C6210470CD00788F2D /* สุนัข.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "สุนัข.mp3"; sourceTree = "<group>"; };
 		B87D93C7210470CD00788F2D /* หมู.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "หมู.mp3"; sourceTree = "<group>"; };
 		B87D93CB21047F9F00788F2D /* lightTheme.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = lightTheme.xcassets; sourceTree = "<group>"; };
+		B87D93CE2104972B00788F2D /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		B8AEBD3721030FC400468680 /* RizzoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RizzoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8AEBD3A21030FC500468680 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8AEBD4121030FC700468680 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -335,6 +337,14 @@
 			path = Question;
 			sourceTree = "<group>";
 		};
+		B87D93CD2104970400788F2D /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				B87D93CE2104972B00788F2D /* Enums.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
 		B8AEBD2E21030FC400468680 = {
 			isa = PBXGroup;
 			children = (
@@ -356,6 +366,7 @@
 		B8AEBD3921030FC400468680 /* RizzoApp */ = {
 			isa = PBXGroup;
 			children = (
+				B87D93CD2104970400788F2D /* Enums */,
 				B87D939221045BD800788F2D /* Theme */,
 				B82F8CC921034451001A9338 /* Extensions */,
 				B84F5CA1210321910043DCEC /* Resources */,
@@ -521,6 +532,7 @@
 				B82F8CCD21034833001A9338 /* PreSoundQuestionViewController.swift in Sources */,
 				B82F8CCF21034864001A9338 /* SoundQuestionViewController.swift in Sources */,
 				B82F8CD52103491D001A9338 /* ImgQuestionViewController.swift in Sources */,
+				B87D93CF2104972B00788F2D /* Enums.swift in Sources */,
 				B82F8CD1210348B7001A9338 /* FinishedSoundQViewController.swift in Sources */,
 				B87D939821045D9C00788F2D /* DarkTheme.swift in Sources */,
 				B82F8CD3210348D4001A9338 /* PreImgQuestionViewController.swift in Sources */,

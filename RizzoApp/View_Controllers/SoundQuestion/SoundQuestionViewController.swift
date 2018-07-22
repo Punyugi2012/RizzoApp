@@ -11,11 +11,13 @@ import UIKit
 class SoundQuestionViewController: UIViewController {
 
     var question: [SoundQuestion]?
+    var questionType: TypeQuestion?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true
-        print(question!)
+        view.backgroundColor = #colorLiteral(red: 0.898, green: 0.7098, blue: 0.8314, alpha: 1)
+        setNavigationBar()
     }
 
 //    @IBAction func finishedSoundQuestion(_ sender: UIButton) {
