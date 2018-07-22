@@ -52,6 +52,7 @@
 		B87D93C3210470C100788F2D /* แมว.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B87D93AF210470C000788F2D /* แมว.mp3 */; };
 		B87D93C9210470CE00788F2D /* สุนัข.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B87D93C6210470CD00788F2D /* สุนัข.mp3 */; };
 		B87D93CA210470CE00788F2D /* หมู.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B87D93C7210470CD00788F2D /* หมู.mp3 */; };
+		B87D93CC21047F9F00788F2D /* lightTheme.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B87D93CB21047F9F00788F2D /* lightTheme.xcassets */; };
 		B8AEBD3B21030FC500468680 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AEBD3A21030FC500468680 /* AppDelegate.swift */; };
 		B8AEBD4221030FC700468680 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8AEBD4121030FC700468680 /* Assets.xcassets */; };
 		B8AEBD4521030FC700468680 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8AEBD4321030FC700468680 /* LaunchScreen.storyboard */; };
@@ -103,6 +104,7 @@
 		B87D93AF210470C000788F2D /* แมว.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "แมว.mp3"; sourceTree = "<group>"; };
 		B87D93C6210470CD00788F2D /* สุนัข.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "สุนัข.mp3"; sourceTree = "<group>"; };
 		B87D93C7210470CD00788F2D /* หมู.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "หมู.mp3"; sourceTree = "<group>"; };
+		B87D93CB21047F9F00788F2D /* lightTheme.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = lightTheme.xcassets; sourceTree = "<group>"; };
 		B8AEBD3721030FC400468680 /* RizzoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RizzoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8AEBD3A21030FC500468680 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8AEBD4121030FC700468680 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				B84F5CD6210334170043DCEC /* Sounds */,
 				B84F5CD52103340D0043DCEC /* Images */,
 				B8AEBD4121030FC700468680 /* Assets.xcassets */,
+				B87D93CB21047F9F00788F2D /* lightTheme.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -442,6 +445,7 @@
 				B84F5CAD2103231C0043DCEC /* Draw.storyboard in Resources */,
 				B87D93C3210470C100788F2D /* แมว.mp3 in Resources */,
 				B84F5CC32103258C0043DCEC /* SoundQuestion.storyboard in Resources */,
+				B87D93CC21047F9F00788F2D /* lightTheme.xcassets in Resources */,
 				B87D93B3210470C100788F2D /* วัว.mp3 in Resources */,
 				B84F5CC12103256B0043DCEC /* FinishedSoundQuestion.storyboard in Resources */,
 				B84F5CB8210324C10043DCEC /* ImgQuestion.storyboard in Resources */,

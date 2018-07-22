@@ -13,7 +13,6 @@ class PreSoundQuestionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "เลือกหมวด"
-
     }
 
     @IBAction func playSoundQuestion(_ sender: UIButton) {

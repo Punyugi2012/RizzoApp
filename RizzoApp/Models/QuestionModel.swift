@@ -18,7 +18,7 @@ class QuestionModel {
     
     static func getAllSoundQuestion(completeHandle: @escaping (_ datas: [[SoundQuestion]]) -> Void) {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            // index 0 สัตว์ 1 กีฬา 2 เครื่องดนตรี
+            // index 0 สัตว์, 1 เครื่องดนตรี
             let soundQuestions = [
                 [
                     SoundQuestion(answer: "แมว", answers: ["ค้างคาว", "อีเห็น", "แมว", "นกฮูก"]),
@@ -31,9 +31,6 @@ class QuestionModel {
                     SoundQuestion(answer: "ลิง", answers: ["นก", "เด็กร้อง", "ลิง", "ไก่"]),
                     SoundQuestion(answer: "นกฮูก", answers: ["นกฮูก", "นกขุนทอง", "นกเป็ดน้ำ", "ตุ่นปากเป็ด"]),
                     SoundQuestion(answer: "หมู", answers: ["สิงโตทะเล", "หมู", "เสือดาว", "หมีดำ"])
-                ],
-                [
-                    // กีฬา
                 ],
                 [
                     // เครื่องดนตรี
