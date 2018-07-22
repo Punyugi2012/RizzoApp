@@ -38,6 +38,10 @@
 		B84F5CDC210335000043DCEC /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84F5CDB210335000043DCEC /* AppManager.swift */; };
 		B84F5CDE210335DB0043DCEC /* bgSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B84F5CDD210335DB0043DCEC /* bgSound.mp3 */; };
 		B84F5CE0210336270043DCEC /* btnSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B84F5CDF210336270043DCEC /* btnSound.mp3 */; };
+		B87D939421045D6A00788F2D /* ThemePotocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87D939321045D6A00788F2D /* ThemePotocol.swift */; };
+		B87D939621045D9100788F2D /* LightTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87D939521045D9100788F2D /* LightTheme.swift */; };
+		B87D939821045D9C00788F2D /* DarkTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87D939721045D9C00788F2D /* DarkTheme.swift */; };
+		B87D939A21045DD700788F2D /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87D939921045DD700788F2D /* Theme.swift */; };
 		B8AEBD3B21030FC500468680 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AEBD3A21030FC500468680 /* AppDelegate.swift */; };
 		B8AEBD4221030FC700468680 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8AEBD4121030FC700468680 /* Assets.xcassets */; };
 		B8AEBD4521030FC700468680 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8AEBD4321030FC700468680 /* LaunchScreen.storyboard */; };
@@ -75,6 +79,10 @@
 		B84F5CDB210335000043DCEC /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
 		B84F5CDD210335DB0043DCEC /* bgSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgSound.mp3; sourceTree = "<group>"; };
 		B84F5CDF210336270043DCEC /* btnSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = btnSound.mp3; sourceTree = "<group>"; };
+		B87D939321045D6A00788F2D /* ThemePotocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePotocol.swift; sourceTree = "<group>"; };
+		B87D939521045D9100788F2D /* LightTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightTheme.swift; sourceTree = "<group>"; };
+		B87D939721045D9C00788F2D /* DarkTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkTheme.swift; sourceTree = "<group>"; };
+		B87D939921045DD700788F2D /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		B8AEBD3721030FC400468680 /* RizzoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RizzoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8AEBD3A21030FC500468680 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8AEBD4121030FC700468680 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -256,6 +264,17 @@
 			path = Sounds;
 			sourceTree = "<group>";
 		};
+		B87D939221045BD800788F2D /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				B87D939321045D6A00788F2D /* ThemePotocol.swift */,
+				B87D939521045D9100788F2D /* LightTheme.swift */,
+				B87D939721045D9C00788F2D /* DarkTheme.swift */,
+				B87D939921045DD700788F2D /* Theme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
 		B8AEBD2E21030FC400468680 = {
 			isa = PBXGroup;
 			children = (
@@ -275,6 +294,7 @@
 		B8AEBD3921030FC400468680 /* RizzoApp */ = {
 			isa = PBXGroup;
 			children = (
+				B87D939221045BD800788F2D /* Theme */,
 				B82F8CC921034451001A9338 /* Extensions */,
 				B84F5CA1210321910043DCEC /* Resources */,
 				B84F5CA02103218B0043DCEC /* Models */,
@@ -373,11 +393,14 @@
 				B82F8CDD21034A10001A9338 /* PrepareDrawViewController.swift in Sources */,
 				B82F8CD92103499C001A9338 /* DrawViewController.swift in Sources */,
 				B84F5CD4210331310043DCEC /* QuestionModel.swift in Sources */,
+				B87D939A21045DD700788F2D /* Theme.swift in Sources */,
 				B82F8CCB21034462001A9338 /* Extensions.swift in Sources */,
+				B87D939421045D6A00788F2D /* ThemePotocol.swift in Sources */,
 				B82F8CCD21034833001A9338 /* PreSoundQuestionViewController.swift in Sources */,
 				B82F8CCF21034864001A9338 /* SoundQuestionViewController.swift in Sources */,
 				B82F8CD52103491D001A9338 /* ImgQuestionViewController.swift in Sources */,
 				B82F8CD1210348B7001A9338 /* FinishedSoundQViewController.swift in Sources */,
+				B87D939821045D9C00788F2D /* DarkTheme.swift in Sources */,
 				B82F8CD3210348D4001A9338 /* PreImgQuestionViewController.swift in Sources */,
 				B84F5CD021032F310043DCEC /* SoundQuestion.swift in Sources */,
 				B84F5CCA210327C10043DCEC /* MainMenuViewController.swift in Sources */,
@@ -388,6 +411,7 @@
 				B8AEBD3B21030FC500468680 /* AppDelegate.swift in Sources */,
 				B82F8CDF21034A45001A9338 /* SettingViewController.swift in Sources */,
 				B84F5CDC210335000043DCEC /* AppManager.swift in Sources */,
+				B87D939621045D9100788F2D /* LightTheme.swift in Sources */,
 				B82F8CDB210349B6001A9338 /* FinishedDrawViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

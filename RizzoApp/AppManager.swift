@@ -12,6 +12,7 @@ import AVFoundation
 
 let backgroundSoundKey = "BackgroundSoundKey"
 let buttonSoundKey = "ButtonSoundKey"
+let isLightThemeKey = "IsLightThemeKey"
 
 class AppManager {
     static let shared = AppManager()
@@ -70,19 +71,30 @@ class AppManager {
     }
     
     func activate() {
-        if UserDefaults.standard.object(forKey: backgroundSoundKey) != nil && UserDefaults.standard.object(forKey: buttonSoundKey) != nil {
-            let background = AppManager.shared.get(key: backgroundSoundKey)
-            if background {
+        if UserDefaults.standard.object(forKey: backgroundSoundKey) != nil &&
+            UserDefaults.standard.object(forKey: buttonSoundKey) != nil &&
+            UserDefaults.standard.object(forKey: isLightThemeKey) != nil {
+            print("Not First Launch App")
+            let backgroundSound = AppManager.shared.get(key: backgroundSoundKey)
+            let lightTheme = AppManager.shared.get(key: isLightThemeKey)
+            if backgroundSound {
                 AppManager.shared.playBackgroundSound()
             }
             else {
                 AppManager.shared.stopBackgroundSound()
+            }
+            if lightTheme {
+                // LightTheme
+            }
+            else {
+                // DarkTheme
             }
         }
         else {
             print("First Launch App")
             AppManager.shared.set(key: backgroundSoundKey, value: true)
             AppManager.shared.set(key: buttonSoundKey, value: true)
+            AppManager.shared.set(key: isLightThemeKey, value: true)
             AppManager.shared.playBackgroundSound()
         }
     }
