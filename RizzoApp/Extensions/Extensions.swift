@@ -14,3 +14,12 @@ extension UIButton {
         AppManager.shared.playButtonSound()
     }
 }
+
+extension UIViewController {
+    func setNavigationBar() {
+        navigationItem.title = ""
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.isTranslucent = true
+    }
+}

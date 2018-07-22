@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nWS-On-KUJ">
-    <device id="ipad9_7" orientation="portrait">
+    <device id="ipad12_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,11 +15,36 @@
             <objects>
                 <viewController id="nWS-On-KUJ" customClass="PreSoundQuestionViewController" customModule="RizzoApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="i7z-ZF-J5g">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="f3soundQ/headerSoundsQuestion" translatesAutoresizingMaskIntoConstraints="NO" id="9Ke-nm-Ski">
+                                <rect key="frame" x="50" y="120" width="924" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="q6D-Vh-qot"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="qY9-gh-2lg">
+                                <rect key="frame" x="20" y="483" width="984" height="400"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kln-xX-xZs">
+                                        <rect key="frame" x="0.0" y="0.0" width="984" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="kNG-ep-xO0"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="f3soundQ/soQuesAnimals"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJS-XH-EVP">
+                                        <rect key="frame" x="0.0" y="250" width="984" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="K3c-Fh-CHC"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="f3soundQ/soQuesMusicInstruments"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jP8-2X-Elr">
-                                <rect key="frame" x="345" y="734" width="79" height="30"/>
+                                <rect key="frame" x="868" y="1277" width="79" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="เล่นทายเสียง"/>
                                 <connections>
@@ -28,6 +53,15 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9Ke-nm-Ski" firstAttribute="leading" secondItem="QsI-2P-l7N" secondAttribute="leading" constant="50" id="2Ry-9S-pbL"/>
+                            <constraint firstItem="QsI-2P-l7N" firstAttribute="trailing" secondItem="9Ke-nm-Ski" secondAttribute="trailing" constant="50" id="2Zw-E0-Hfi"/>
+                            <constraint firstItem="qY9-gh-2lg" firstAttribute="centerY" secondItem="i7z-ZF-J5g" secondAttribute="centerY" id="967-KX-5aO"/>
+                            <constraint firstAttribute="trailing" secondItem="qY9-gh-2lg" secondAttribute="trailing" constant="20" id="V2S-WU-1JT"/>
+                            <constraint firstItem="qY9-gh-2lg" firstAttribute="centerX" secondItem="i7z-ZF-J5g" secondAttribute="centerX" id="bZp-39-I3K"/>
+                            <constraint firstItem="qY9-gh-2lg" firstAttribute="leading" secondItem="i7z-ZF-J5g" secondAttribute="leading" constant="20" id="sH2-Uv-pJT"/>
+                            <constraint firstItem="9Ke-nm-Ski" firstAttribute="top" secondItem="QsI-2P-l7N" secondAttribute="top" constant="100" id="urZ-qW-6Ii"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="QsI-2P-l7N"/>
                     </view>
                     <navigationItem key="navigationItem" title="PrepareSoundQuestion" id="1w4-AG-65d"/>
@@ -37,7 +71,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ura-h1-cX8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="940" y="-1390"/>
+            <point key="canvasLocation" x="939.84375" y="-1390.4296875"/>
         </scene>
         <!--SoundQuestion-->
         <scene sceneID="CHh-Hj-hGz">
@@ -48,4 +82,9 @@
             <point key="canvasLocation" x="1725" y="-1389"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="f3soundQ/headerSoundsQuestion" width="801" height="153"/>
+        <image name="f3soundQ/soQuesAnimals" width="829" height="186"/>
+        <image name="f3soundQ/soQuesMusicInstruments" width="829" height="186"/>
+    </resources>
 </document>
