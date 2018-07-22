@@ -21,7 +21,9 @@ class MainMenuViewController: UIViewController {
     
     
     @IBAction func backToMainMenu(segue: UIStoryboardSegue) {
-        
+        if segue.source is FinishedSoundQViewController {
+            AppManager.shared.playBackgroundSound()
+        }
     }
     
     @IBAction func playImgQuestion(_ sender: UIButton) {

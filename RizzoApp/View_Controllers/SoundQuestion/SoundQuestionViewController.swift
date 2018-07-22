@@ -32,7 +32,7 @@ class SoundQuestionViewController: UIViewController {
         view.backgroundColor = #colorLiteral(red: 0.898, green: 0.7098, blue: 0.8314, alpha: 1)
         switch questionType {
         case .animal:
-            titleQuestionImageView.image = #imageLiteral(resourceName: "f3soundQ/headerSndAnimals")
+            titleQuestionImageView.image = #imageLiteral(resourceName: "f3soundQ/headerSndAnimal")
             
         case .musical:
             titleQuestionImageView.image = #imageLiteral(resourceName: "f3soundQ/headerSndMusicInstruments")
@@ -45,14 +45,14 @@ class SoundQuestionViewController: UIViewController {
         super.viewWillAppear(animated)
         questions = getQuestions
         score = 0
+        currentQuestion = 1
         setView()
     }
-
-//    @IBAction func finishedSoundQuestion(_ sender: UIButton) {
-//        performSegue(withIdentifier: "ToFinishedSoundQuestion", sender: self)
-//    }
     
     func setView() {
+        for button in self.answersButton {
+            button.isUserInteractionEnabled = true
+        }
         currentQuestionLbl.text = "ข้อที่: \(currentQuestion) / 10"
         setQuestionDataToView()
     }
@@ -107,6 +107,7 @@ class SoundQuestionViewController: UIViewController {
         for button in answersButton {
             button.isUserInteractionEnabled = false
         }
+        modalView.isAnswerLabel.text = "คำตอบคือ \(soundQuestion.answer)"
         modalView.transform = CGAffineTransform(scaleX: 0.8, y: 1.2)
         UIView.animate(withDuration: 0.45, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0, options: [], animations: {
             modalView.alpha = 1
@@ -124,9 +125,6 @@ class SoundQuestionViewController: UIViewController {
                         self.containerView.alpha = 0
                     }, completion: { (true) in
                         self.setView()
-                        for button in self.answersButton {
-                            button.isUserInteractionEnabled = true
-                        }
                         UIView.animate(withDuration: 0.5, animations: {
                             self.containerView.alpha = 1
                         })
@@ -135,6 +133,7 @@ class SoundQuestionViewController: UIViewController {
                 else {
                     print("จบ")
                     print(self.score)
+                    self.performSegue(withIdentifier: "ToFinishedSoundQuestion", sender: self)
                 }
             })
         }
