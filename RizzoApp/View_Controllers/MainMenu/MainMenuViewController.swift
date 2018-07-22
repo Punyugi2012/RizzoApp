@@ -13,9 +13,9 @@ class MainMenuViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = #colorLiteral(red: 0.898, green: 0.7098, blue: 0.8314, alpha: 1)
-//        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
-//        navigationController?.navigationBar.shadowImage = UIImage()
-//        navigationController?.navigationBar.isTranslucent = true
+        let backItem = UIBarButtonItem()
+        backItem.title = "ย้อนกลับ"
+        navigationItem.backBarButtonItem = backItem
         setNavigationBar()
     }
     
@@ -46,12 +46,8 @@ class MainMenuViewController: UIViewController {
         performSegue(withIdentifier: "ToSetting", sender: self)
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let backItem = UIBarButtonItem()
-        backItem.title = "ย้อนกลับ"
-        navigationItem.backBarButtonItem = backItem
-        
-       
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//       
+//    }
  
 }
