@@ -25,18 +25,22 @@ class MainMenuViewController: UIViewController {
     }
     
     @IBAction func playImgQuestion(_ sender: UIButton) {
+        sender.playButtonSound()
         performSegue(withIdentifier: "ToPrepareImgQuestion", sender: self)
     }
     
     @IBAction func playSoundQuestion(_ sender: UIButton) {
+        sender.playButtonSound()
         performSegue(withIdentifier: "ToPrepareSoundQuestion", sender: self)
     }
     
     @IBAction func playDraw(_ sender: UIButton) {
+        sender.playButtonSound()
         performSegue(withIdentifier: "ToPrepareDraw", sender: self)
     }
     
     @IBAction func setting(_ sender: UIButton) {
+        sender.playButtonSound()
         performSegue(withIdentifier: "ToSetting", sender: self)
     }
     

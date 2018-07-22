@@ -10,14 +10,17 @@ import UIKit
 
 class SoundQuestionViewController: UIViewController {
 
+    var question: [SoundQuestion]?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true
+        print(question!)
     }
 
-    @IBAction func finishedSoundQuestion(_ sender: UIButton) {
-        performSegue(withIdentifier: "ToFinishedSoundQuestion", sender: self)
-    }
+//    @IBAction func finishedSoundQuestion(_ sender: UIButton) {
+//        performSegue(withIdentifier: "ToFinishedSoundQuestion", sender: self)
+//    }
     
     @IBAction func backtoSoundQuestion(segue: UIStoryboardSegue) {
         

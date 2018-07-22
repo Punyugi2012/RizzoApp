@@ -33,24 +33,22 @@
                                             <constraint firstAttribute="height" constant="150" id="kNG-ep-xO0"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="f3soundQ/soQuesAnimals"/>
+                                        <connections>
+                                            <action selector="tappedCategory:" destination="nWS-On-KUJ" eventType="touchUpInside" id="MWH-4q-AJC"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJS-XH-EVP">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJS-XH-EVP">
                                         <rect key="frame" x="0.0" y="250" width="984" height="150"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="150" id="K3c-Fh-CHC"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="f3soundQ/soQuesMusicInstruments"/>
+                                        <connections>
+                                            <action selector="tappedCategory:" destination="nWS-On-KUJ" eventType="touchUpInside" id="2K8-Yh-19C"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jP8-2X-Elr">
-                                <rect key="frame" x="868" y="1277" width="79" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="เล่นทายเสียง"/>
-                                <connections>
-                                    <action selector="playSoundQuestion:" destination="nWS-On-KUJ" eventType="touchUpInside" id="JgX-h4-E1Q"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
