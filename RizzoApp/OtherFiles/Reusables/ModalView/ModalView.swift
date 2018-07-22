@@ -10,4 +10,12 @@ import UIKit
 
 class ModalView: UIView {
 
+    @IBOutlet weak var backgroundImage: UIImageView!
+    @IBOutlet weak var isAnswerLabel: UILabel!
+    @IBOutlet weak var nextButton: UIButton!
+    var callBack: (() -> Void)? = nil
+    @IBAction func tappedNextButton(_ sender: UIButton) {
+        callBack?()
+    }
+    
 }

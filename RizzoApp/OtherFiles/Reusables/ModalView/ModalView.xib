@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="ipad10_5" orientation="portrait">
+    <device id="ipad12_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -13,28 +13,26 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ModalView" customModule="RizzoApp" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="goI-x0-skf">
-                    <rect key="frame" x="0.0" y="20" width="834" height="1092"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="modal/modalCorrect" translatesAutoresizingMaskIntoConstraints="NO" id="goI-x0-skf">
+                    <rect key="frame" x="0.0" y="20" width="1024" height="1346"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RRU-pT-x8z">
-                    <rect key="frame" x="172" y="829" width="491" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Button"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RRU-pT-x8z">
+                    <rect key="frame" x="262" y="1016" width="500" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="Bxg-5g-6W5"/>
+                        <constraint firstAttribute="width" constant="500" id="Y0O-uj-AUp"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="modal/nextBtn"/>
+                    <connections>
+                        <action selector="tappedNextButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="xpT-xo-vit"/>
+                    </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="39R-Vg-2z0">
-                    <rect key="frame" x="91" y="216" width="649" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEb-8S-tIb">
-                    <rect key="frame" x="91" y="440" width="649" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="คำตอบคือ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="39R-Vg-2z0">
+                    <rect key="frame" x="406" y="653" width="212" height="60"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="50"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -42,11 +40,24 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="goI-x0-skf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Hjc-zz-czY"/>
+                <constraint firstItem="39R-Vg-2z0" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="OAe-08-bvL"/>
+                <constraint firstItem="RRU-pT-x8z" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="TNT-UH-eab"/>
+                <constraint firstItem="39R-Vg-2z0" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="beD-4c-VmA"/>
                 <constraint firstItem="goI-x0-skf" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="eyu-7q-K7b"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="goI-x0-skf" secondAttribute="trailing" id="jTV-Da-CW6"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="RRU-pT-x8z" secondAttribute="bottom" constant="200" id="rjY-XW-TZO"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="goI-x0-skf" secondAttribute="bottom" id="txI-lT-aRm"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="backgroundImage" destination="goI-x0-skf" id="IiW-Rd-5hg"/>
+                <outlet property="isAnswerLabel" destination="39R-Vg-2z0" id="mh3-H7-8GN"/>
+                <outlet property="nextButton" destination="RRU-pT-x8z" id="nxm-dn-eaR"/>
+            </connections>
         </view>
     </objects>
+    <resources>
+        <image name="modal/modalCorrect" width="921" height="946"/>
+        <image name="modal/nextBtn" width="588" height="148"/>
+    </resources>
 </document>
