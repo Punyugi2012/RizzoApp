@@ -8,8 +8,7 @@
 
 import Foundation
 
-struct ImageQustion: QuestionProtocol {
-    var questionName: String
+struct ImageQustion {
     var answer: String
     var answers: [String]
 }

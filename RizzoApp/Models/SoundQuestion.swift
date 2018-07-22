@@ -8,8 +8,7 @@
 
 import Foundation
 
-struct SoundQuestion: QuestionProtocol {
-    var questionName: String
+struct SoundQuestion {
     var answer: String
     var answers: [String]
 }

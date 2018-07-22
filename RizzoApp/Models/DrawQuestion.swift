@@ -8,8 +8,7 @@
 
 import Foundation
 
-struct DrawQuestion: QuestionProtocol {
+struct DrawQuestion {
     var questionName: String
     var answer: String
-    var answers: [String]
 }

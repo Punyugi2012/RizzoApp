@@ -12,6 +12,7 @@ class PreSoundQuestionViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = "เลือกหมวด"
 
     }
 

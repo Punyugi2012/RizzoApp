@@ -12,10 +12,11 @@ class MainMenuViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = "เมนู"
     }
 
     @IBAction func backToMainMenu(segue: UIStoryboardSegue) {
-    
+        
     }
     
     @IBAction func playImgQuestion(_ sender: UIButton) {
