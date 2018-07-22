@@ -21,7 +21,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MhH-27-KVH">
                                 <rect key="frame" x="0.0" y="64" width="1024" height="1302"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="f3soundQ/headerSndAnimals" translatesAutoresizingMaskIntoConstraints="NO" id="XQq-A4-o4d">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="f3soundQ/headerSndAnimal" translatesAutoresizingMaskIntoConstraints="NO" id="XQq-A4-o4d">
                                         <rect key="frame" x="20" y="30" width="984" height="130"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="130" id="kXs-y6-3cr"/>
@@ -121,8 +121,9 @@
                     <navigationItem key="navigationItem" title="SoundQuestion" id="4Wn-aO-GDr">
                         <barButtonItem key="rightBarButtonItem" id="66m-35-Fag">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2QZ-Si-aOe">
-                                <rect key="frame" x="834" y="7" width="170" height="30"/>
+                                <rect key="frame" x="834" y="4" width="170" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="ออก"/>
                                 <connections>
                                     <segue destination="4lj-Uf-btU" kind="unwind" unwindAction="backToMainMenuWithSegue:" id="0u9-0f-Jh3"/>
@@ -158,7 +159,7 @@
     </scenes>
     <resources>
         <image name="f3soundQ/choicePanel" width="592" height="200"/>
-        <image name="f3soundQ/headerSndAnimals" width="642" height="143"/>
+        <image name="f3soundQ/headerSndAnimal" width="648" height="153"/>
         <image name="f3soundQ/playSoundBtn" width="461" height="461"/>
     </resources>
 </document>

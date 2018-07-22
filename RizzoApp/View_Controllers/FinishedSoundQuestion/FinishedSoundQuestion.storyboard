@@ -23,8 +23,9 @@
                     <navigationItem key="navigationItem" title="FinishedSoundQuestion" id="UZ4-qc-Duf">
                         <barButtonItem key="leftBarButtonItem" id="Wbb-Ix-zJ7">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5Gj-tp-kJG">
-                                <rect key="frame" x="20" y="7" width="170" height="30"/>
+                                <rect key="frame" x="20" y="4" width="170" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="เล่นใหม่"/>
                                 <connections>
                                     <segue destination="ckx-ug-JaX" kind="unwind" unwindAction="backtoSoundQuestionWithSegue:" id="ICG-IG-hxu"/>
@@ -33,8 +34,9 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" id="wlr-J0-vhM">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1Rr-9f-IZm">
-                                <rect key="frame" x="578" y="7" width="170" height="30"/>
+                                <rect key="frame" x="578" y="4" width="170" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="ออก"/>
                                 <connections>
                                     <segue destination="ckx-ug-JaX" kind="unwind" unwindAction="backToMainMenuWithSegue:" id="djg-bR-Ojo"/>
