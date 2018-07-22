@@ -17,6 +17,40 @@
                     <view key="view" contentMode="scaleToFill" id="2j1-XY-RWX">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gb-Kc-KLg">
+                                <rect key="frame" x="548" y="258" width="44" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="ทายรูป"/>
+                                <connections>
+                                    <action selector="playImgQuestion:" destination="GrQ-vX-gpU" eventType="touchUpInside" id="u6W-KQ-Ocf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYA-TM-sij">
+                                <rect key="frame" x="130" y="258" width="57" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="ทายเสียง"/>
+                                <connections>
+                                    <action selector="playSoundQuestion:" destination="GrQ-vX-gpU" eventType="touchUpInside" id="QLA-FW-ndo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yrp-E7-68D">
+                                <rect key="frame" x="132" y="596" width="53" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="วาดภาพ"/>
+                                <connections>
+                                    <action selector="playDraw:" destination="GrQ-vX-gpU" eventType="touchUpInside" id="mCP-WS-XI4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vIZ-2S-9KY">
+                                <rect key="frame" x="558" y="596" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="ตั้งค่า"/>
+                                <connections>
+                                    <action selector="setting:" destination="GrQ-vX-gpU" eventType="touchUpInside" id="vfk-KM-Scx"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="eVF-t6-4Xc"/>
                     </view>

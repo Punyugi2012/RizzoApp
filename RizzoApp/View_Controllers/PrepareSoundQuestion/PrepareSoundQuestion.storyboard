@@ -17,6 +17,16 @@
                     <view key="view" contentMode="scaleToFill" id="i7z-ZF-J5g">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jP8-2X-Elr">
+                                <rect key="frame" x="345" y="734" width="79" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="เล่นทายเสียง"/>
+                                <connections>
+                                    <action selector="playSoundQuestion:" destination="nWS-On-KUJ" eventType="touchUpInside" id="JgX-h4-E1Q"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="QsI-2P-l7N"/>
                     </view>

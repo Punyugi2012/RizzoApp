@@ -20,9 +20,21 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Mk2-8S-eB0"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Setting" id="Grb-hE-OeG"/>
+                    <navigationItem key="navigationItem" title="Setting" id="Grb-hE-OeG">
+                        <barButtonItem key="rightBarButtonItem" id="rSx-kB-o9S">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0EK-6r-V5N">
+                                <rect key="frame" x="578" y="7" width="170" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="ออก"/>
+                                <connections>
+                                    <segue destination="T7d-FT-axM" kind="unwind" unwindAction="backToMainMenuWithSegue:" id="b64-MU-qLp"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TJj-xq-lCC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="T7d-FT-axM" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1311" y="758"/>
         </scene>

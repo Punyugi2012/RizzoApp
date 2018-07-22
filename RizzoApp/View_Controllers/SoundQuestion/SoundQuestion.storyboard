@@ -17,6 +17,16 @@
                     <view key="view" contentMode="scaleToFill" id="bL0-pa-vGi">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y5b-h1-jRp">
+                                <rect key="frame" x="360" y="497" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="เสร็จสิ้น"/>
+                                <connections>
+                                    <action selector="finishedSoundQuestion:" destination="pgP-PF-l2u" eventType="touchUpInside" id="mpI-Im-D47"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="ikg-9e-w6l"/>
                     </view>

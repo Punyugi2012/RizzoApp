@@ -20,9 +20,31 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="jpu-o6-QsS"/>
                     </view>
-                    <navigationItem key="navigationItem" title="FinishedSoundQuestion" id="UZ4-qc-Duf"/>
+                    <navigationItem key="navigationItem" title="FinishedSoundQuestion" id="UZ4-qc-Duf">
+                        <barButtonItem key="leftBarButtonItem" id="Wbb-Ix-zJ7">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5Gj-tp-kJG">
+                                <rect key="frame" x="20" y="7" width="170" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="เล่นใหม่"/>
+                                <connections>
+                                    <segue destination="ckx-ug-JaX" kind="unwind" unwindAction="backtoSoundQuestionWithSegue:" id="ICG-IG-hxu"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" id="wlr-J0-vhM">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1Rr-9f-IZm">
+                                <rect key="frame" x="578" y="7" width="170" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="ออก"/>
+                                <connections>
+                                    <segue destination="ckx-ug-JaX" kind="unwind" unwindAction="backToMainMenuWithSegue:" id="djg-bR-Ojo"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XbP-sG-G81" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="ckx-ug-JaX" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3317.96875" y="-1387.5"/>
         </scene>
