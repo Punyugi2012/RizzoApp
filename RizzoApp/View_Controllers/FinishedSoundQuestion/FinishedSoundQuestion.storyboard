@@ -17,36 +17,80 @@
                     <view key="view" contentMode="scaleToFill" id="BpQ-ci-jOZ">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="totalScore/totalScore" translatesAutoresizingMaskIntoConstraints="NO" id="Roc-ky-BxH">
+                                <rect key="frame" x="20" y="114" width="728" height="218"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="g0z-iZ-XLy">
+                                <rect key="frame" x="20" y="390" width="728" height="244"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ทั้งหมด 10 ข้อ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gvz-5L-rWm">
+                                        <rect key="frame" x="251" y="0.0" width="226" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ถูก 5 ข้อ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="APC-0b-bll">
+                                        <rect key="frame" x="296.5" y="98" width="135" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ผิด 10 ข้อ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9wK-GV-Pgw">
+                                        <rect key="frame" x="286.5" y="196" width="155" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="iWs-Vx-5Vi">
+                                <rect key="frame" x="84.5" y="689" width="600" height="318"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kYc-Rd-2eE">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="149"/>
+                                        <state key="normal" backgroundImage="totalScore/replay"/>
+                                        <connections>
+                                            <action selector="replayGame:" destination="tao-pp-9ir" eventType="touchUpInside" id="icb-2n-GM9"/>
+                                            <segue destination="I3N-ad-mZk" kind="unwind" unwindAction="backtoSoundQuestionWithSegue:" id="Xaj-bL-yDU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xDF-j2-zyq">
+                                        <rect key="frame" x="0.0" y="169" width="600" height="149"/>
+                                        <state key="normal" backgroundImage="totalScore/homeBtn"/>
+                                        <connections>
+                                            <action selector="backToMainMenu:" destination="tao-pp-9ir" eventType="touchUpInside" id="WAA-mv-II7"/>
+                                            <segue destination="I3N-ad-mZk" kind="unwind" unwindAction="backToMainMenuWithSegue:" id="e5R-hx-xFO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="600" id="A6t-cL-1xg"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Roc-ky-BxH" secondAttribute="trailing" constant="20" id="4mC-q5-cFg"/>
+                            <constraint firstItem="Roc-ky-BxH" firstAttribute="centerX" secondItem="BpQ-ci-jOZ" secondAttribute="centerX" id="CMC-gL-RuN"/>
+                            <constraint firstItem="iWs-Vx-5Vi" firstAttribute="top" secondItem="g0z-iZ-XLy" secondAttribute="bottom" constant="55" id="MZa-E3-BCn"/>
+                            <constraint firstItem="Roc-ky-BxH" firstAttribute="leading" secondItem="BpQ-ci-jOZ" secondAttribute="leading" constant="20" id="PVV-Xe-xJz"/>
+                            <constraint firstItem="g0z-iZ-XLy" firstAttribute="leading" secondItem="jpu-o6-QsS" secondAttribute="leading" constant="20" id="dyE-Ch-j7e"/>
+                            <constraint firstItem="Roc-ky-BxH" firstAttribute="top" secondItem="jpu-o6-QsS" secondAttribute="top" constant="50" id="fU6-vH-rc9"/>
+                            <constraint firstItem="iWs-Vx-5Vi" firstAttribute="centerX" secondItem="g0z-iZ-XLy" secondAttribute="centerX" id="gM1-0g-FCF"/>
+                            <constraint firstItem="jpu-o6-QsS" firstAttribute="trailing" secondItem="g0z-iZ-XLy" secondAttribute="trailing" constant="20" id="ukt-XS-jcK"/>
+                            <constraint firstItem="g0z-iZ-XLy" firstAttribute="top" secondItem="Roc-ky-BxH" secondAttribute="bottom" constant="58" id="uum-JC-fvw"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="jpu-o6-QsS"/>
                     </view>
-                    <navigationItem key="navigationItem" title="FinishedSoundQuestion" id="UZ4-qc-Duf">
-                        <barButtonItem key="leftBarButtonItem" id="Wbb-Ix-zJ7">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5Gj-tp-kJG">
-                                <rect key="frame" x="20" y="4" width="170" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="เล่นใหม่"/>
-                                <connections>
-                                    <segue destination="ckx-ug-JaX" kind="unwind" unwindAction="backtoSoundQuestionWithSegue:" id="ICG-IG-hxu"/>
-                                </connections>
-                            </button>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" id="wlr-J0-vhM">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1Rr-9f-IZm">
-                                <rect key="frame" x="578" y="4" width="170" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="ออก"/>
-                                <connections>
-                                    <segue destination="ckx-ug-JaX" kind="unwind" unwindAction="backToMainMenuWithSegue:" id="djg-bR-Ojo"/>
-                                </connections>
-                            </button>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="FinishedSoundQuestion" id="UZ4-qc-Duf"/>
+                    <connections>
+                        <outlet property="correctLabel" destination="APC-0b-bll" id="gTr-Xc-d6O"/>
+                        <outlet property="incorrectLabel" destination="9wK-GV-Pgw" id="LLc-Pd-V3E"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XbP-sG-G81" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="ckx-ug-JaX" userLabel="Exit" sceneMemberID="exit"/>
+                <exit id="I3N-ad-mZk" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3317.96875" y="-1387.5"/>
         </scene>
@@ -69,4 +113,9 @@
             <point key="canvasLocation" x="2552.34375" y="-1387.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="totalScore/homeBtn" width="589" height="149"/>
+        <image name="totalScore/replay" width="589" height="149"/>
+        <image name="totalScore/totalScore" width="803" height="218"/>
+    </resources>
 </document>

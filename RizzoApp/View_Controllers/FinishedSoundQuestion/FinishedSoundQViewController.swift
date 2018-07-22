@@ -10,11 +10,25 @@ import UIKit
 
 class FinishedSoundQViewController: UIViewController {
 
+    @IBOutlet weak var correctLabel: UILabel!
+    @IBOutlet weak var incorrectLabel: UILabel!
+    
+    var getScore: Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setNavigationBar()
+        print(getScore)
+        correctLabel.text = "ตอบถูก \(getScore) ข้อ"
+        incorrectLabel.text = "ตอบผิด \(10 - getScore) ข้อ"
     }
 
-  
-
+    @IBAction func replayGame(_ sender: UIButton) {
+        sender.playButtonSound()
+    }
+    
+    @IBAction func backToMainMenu(_ sender: UIButton) {
+        sender.playButtonSound()
+    }
+    
 }

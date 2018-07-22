@@ -148,5 +148,13 @@ class SoundQuestionViewController: UIViewController {
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let navDestination = segue.destination as? UINavigationController,
+            let destination = navDestination.viewControllers.first as? FinishedSoundQViewController {
+                destination.getScore = score
+            
+        }
+    }
+    
     
 }
