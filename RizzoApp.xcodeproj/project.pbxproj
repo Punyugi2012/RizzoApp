@@ -54,6 +54,8 @@
 		B87D93CA210470CE00788F2D /* หมู.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B87D93C7210470CD00788F2D /* หมู.mp3 */; };
 		B87D93CC21047F9F00788F2D /* lightTheme.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B87D93CB21047F9F00788F2D /* lightTheme.xcassets */; };
 		B87D93CF2104972B00788F2D /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87D93CE2104972B00788F2D /* Enums.swift */; };
+		B87D93D421049E3000788F2D /* ModalView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B87D93D321049E3000788F2D /* ModalView.xib */; };
+		B87D93D621049E3D00788F2D /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87D93D521049E3D00788F2D /* ModalView.swift */; };
 		B8AEBD3B21030FC500468680 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AEBD3A21030FC500468680 /* AppDelegate.swift */; };
 		B8AEBD4221030FC700468680 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8AEBD4121030FC700468680 /* Assets.xcassets */; };
 		B8AEBD4521030FC700468680 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8AEBD4321030FC700468680 /* LaunchScreen.storyboard */; };
@@ -107,6 +109,8 @@
 		B87D93C7210470CD00788F2D /* หมู.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "หมู.mp3"; sourceTree = "<group>"; };
 		B87D93CB21047F9F00788F2D /* lightTheme.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = lightTheme.xcassets; sourceTree = "<group>"; };
 		B87D93CE2104972B00788F2D /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		B87D93D321049E3000788F2D /* ModalView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModalView.xib; sourceTree = "<group>"; };
+		B87D93D521049E3D00788F2D /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
 		B8AEBD3721030FC400468680 /* RizzoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RizzoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8AEBD3A21030FC500468680 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8AEBD4121030FC700468680 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -137,12 +141,12 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		B82F8CC921034451001A9338 /* Extensions */ = {
+		B82F8CC921034451001A9338 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
 				B82F8CCA21034462001A9338 /* Extensions.swift */,
 			);
-			path = Extensions;
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		B84F5C9F210321800043DCEC /* View_Controllers */ = {
@@ -337,12 +341,40 @@
 			path = Question;
 			sourceTree = "<group>";
 		};
-		B87D93CD2104970400788F2D /* Enums */ = {
+		B87D93CD2104970400788F2D /* Enum */ = {
 			isa = PBXGroup;
 			children = (
 				B87D93CE2104972B00788F2D /* Enums.swift */,
 			);
-			path = Enums;
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		B87D93D021049D3A00788F2D /* OtherFiles */ = {
+			isa = PBXGroup;
+			children = (
+				B87D93D121049D6400788F2D /* Reusables */,
+				B87D93CD2104970400788F2D /* Enum */,
+				B87D939221045BD800788F2D /* Theme */,
+				B82F8CC921034451001A9338 /* Extension */,
+			);
+			path = OtherFiles;
+			sourceTree = "<group>";
+		};
+		B87D93D121049D6400788F2D /* Reusables */ = {
+			isa = PBXGroup;
+			children = (
+				B87D93D221049DFD00788F2D /* ModalView */,
+			);
+			path = Reusables;
+			sourceTree = "<group>";
+		};
+		B87D93D221049DFD00788F2D /* ModalView */ = {
+			isa = PBXGroup;
+			children = (
+				B87D93D321049E3000788F2D /* ModalView.xib */,
+				B87D93D521049E3D00788F2D /* ModalView.swift */,
+			);
+			path = ModalView;
 			sourceTree = "<group>";
 		};
 		B8AEBD2E21030FC400468680 = {
@@ -366,9 +398,7 @@
 		B8AEBD3921030FC400468680 /* RizzoApp */ = {
 			isa = PBXGroup;
 			children = (
-				B87D93CD2104970400788F2D /* Enums */,
-				B87D939221045BD800788F2D /* Theme */,
-				B82F8CC921034451001A9338 /* Extensions */,
+				B87D93D021049D3A00788F2D /* OtherFiles */,
 				B84F5CA1210321910043DCEC /* Resources */,
 				B84F5CA02103218B0043DCEC /* Models */,
 				B84F5C9F210321800043DCEC /* View_Controllers */,
@@ -470,6 +500,7 @@
 				B84F5CC8210325D40043DCEC /* MainMenu.storyboard in Resources */,
 				B84F5CC5210325B00043DCEC /* PrepareSoundQuestion.storyboard in Resources */,
 				B84F5CB22103241E0043DCEC /* FinishedImgQuestion.storyboard in Resources */,
+				B87D93D421049E3000788F2D /* ModalView.xib in Resources */,
 				B87D93CA210470CE00788F2D /* หมู.mp3 in Resources */,
 				B84F5CAF210323670043DCEC /* PrepareDraw.storyboard in Resources */,
 				B84F5CA4210322160043DCEC /* Setting.storyboard in Resources */,
@@ -541,6 +572,7 @@
 				B84F5CCE21032EFD0043DCEC /* ImageQuestion.swift in Sources */,
 				B82F8CD72103493C001A9338 /* FinishedImgQViewController.swift in Sources */,
 				B84F5CD221032F670043DCEC /* DrawQuestion.swift in Sources */,
+				B87D93D621049E3D00788F2D /* ModalView.swift in Sources */,
 				B8AEBD3B21030FC500468680 /* AppDelegate.swift in Sources */,
 				B82F8CDF21034A45001A9338 /* SettingViewController.swift in Sources */,
 				B84F5CDC210335000043DCEC /* AppManager.swift in Sources */,
