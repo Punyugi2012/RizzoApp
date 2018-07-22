@@ -13,6 +13,18 @@ extension UIButton {
     func playButtonSound() {
         AppManager.shared.playButtonSound()
     }
+    
+    func pulsate(_ duration: TimeInterval) {
+        let pulse = CASpringAnimation(keyPath: "transform.scale")
+        pulse.duration = duration
+        pulse.fromValue = 0.77
+        pulse.toValue = 1.0
+        pulse.autoreverses = false
+        pulse.repeatCount = 0
+        pulse.initialVelocity = 0.5
+        pulse.damping = 2.0
+        layer.add(pulse, forKey: "pulse")
+    }
 }
 
 extension UIViewController {

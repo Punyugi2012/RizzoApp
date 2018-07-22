@@ -18,80 +18,103 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="f3soundQ/headerSndAnimals" translatesAutoresizingMaskIntoConstraints="NO" id="XQq-A4-o4d">
-                                <rect key="frame" x="50" y="114" width="924" height="130"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="130" id="Rh1-IQ-pMk"/>
-                                </constraints>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Jf-Lx-R1Y">
-                                <rect key="frame" x="387" y="249" width="250" height="250"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="J2a-rO-BcD"/>
-                                    <constraint firstAttribute="height" constant="250" id="rPF-HX-Z7r"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="f3soundQ/playSoundBtn"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ข้อที่ 1 / 10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pGa-P0-dhi">
-                                <rect key="frame" x="448" y="536" width="129" height="75"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="yWf-vv-jaQ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="N9d-Px-Ip5">
-                                <rect key="frame" x="50" y="649" width="924" height="300"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MhH-27-KVH">
+                                <rect key="frame" x="0.0" y="64" width="1024" height="1302"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eN6-h8-RbG">
-                                        <rect key="frame" x="0.0" y="0.0" width="924" height="125"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="f3soundQ/headerSndAnimals" translatesAutoresizingMaskIntoConstraints="NO" id="XQq-A4-o4d">
+                                        <rect key="frame" x="20" y="30" width="984" height="130"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="130" id="kXs-y6-3cr"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ข้อที่ 1 / 10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pGa-P0-dhi">
+                                        <rect key="frame" x="426.5" y="460" width="171.5" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="N9d-Px-Ip5">
+                                        <rect key="frame" x="20" y="528" width="984" height="400"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ceo-sf-gms">
-                                                <rect key="frame" x="0.0" y="0.0" width="457" height="125"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                                <state key="normal" title="Button" backgroundImage="f3soundQ/choicePanel"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YjQ-CZ-9Ca">
-                                                <rect key="frame" x="467" y="0.0" width="457" height="125"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                                <state key="normal" title="Button" backgroundImage="f3soundQ/choicePanel"/>
-                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eN6-h8-RbG">
+                                                <rect key="frame" x="0.0" y="0.0" width="984" height="175"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ceo-sf-gms">
+                                                        <rect key="frame" x="0.0" y="0.0" width="487" height="175"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                        <state key="normal" title="Button" backgroundImage="f3soundQ/choicePanel"/>
+                                                        <connections>
+                                                            <action selector="tappedAnswerButton:" destination="pgP-PF-l2u" eventType="touchUpInside" id="0nU-Lk-0lp"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YjQ-CZ-9Ca">
+                                                        <rect key="frame" x="497" y="0.0" width="487" height="175"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                        <state key="normal" title="Button" backgroundImage="f3soundQ/choicePanel"/>
+                                                        <connections>
+                                                            <action selector="tappedAnswerButton:" destination="pgP-PF-l2u" eventType="touchUpInside" id="ohM-2J-vVi"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="CqP-wo-W0c">
+                                                <rect key="frame" x="0.0" y="225" width="984" height="175"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4b3-AR-S4e">
+                                                        <rect key="frame" x="0.0" y="0.0" width="487" height="175"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                        <state key="normal" title="Button" backgroundImage="f3soundQ/choicePanel"/>
+                                                        <connections>
+                                                            <action selector="tappedAnswerButton:" destination="pgP-PF-l2u" eventType="touchUpInside" id="Wx0-n6-dX6"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ci-29-Zjv">
+                                                        <rect key="frame" x="497" y="0.0" width="487" height="175"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                        <state key="normal" title="Button" backgroundImage="f3soundQ/choicePanel"/>
+                                                        <connections>
+                                                            <action selector="tappedAnswerButton:" destination="pgP-PF-l2u" eventType="touchUpInside" id="jFY-i4-gM8"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="400" id="29n-JV-iyM"/>
+                                        </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="CqP-wo-W0c">
-                                        <rect key="frame" x="0.0" y="175" width="924" height="125"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4b3-AR-S4e">
-                                                <rect key="frame" x="0.0" y="0.0" width="457" height="125"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                                <state key="normal" title="Button" backgroundImage="f3soundQ/choicePanel"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ci-29-Zjv">
-                                                <rect key="frame" x="467" y="0.0" width="457" height="125"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                                <state key="normal" title="Button" backgroundImage="f3soundQ/choicePanel"/>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Jf-Lx-R1Y">
+                                        <rect key="frame" x="387" y="180" width="250" height="250"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="250" id="92w-N8-sbU"/>
+                                            <constraint firstAttribute="width" constant="250" id="xwk-E4-vIN"/>
+                                        </constraints>
+                                        <state key="normal" image="f3soundQ/playSoundBtn"/>
+                                        <connections>
+                                            <action selector="tappedSoundBtn:" destination="pgP-PF-l2u" eventType="touchUpInside" id="kW1-cr-dFp"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="bPR-8M-JIl"/>
+                                    <constraint firstItem="pGa-P0-dhi" firstAttribute="top" secondItem="5Jf-Lx-R1Y" secondAttribute="bottom" constant="30" id="4Gn-cX-XS1"/>
+                                    <constraint firstItem="N9d-Px-Ip5" firstAttribute="leading" secondItem="MhH-27-KVH" secondAttribute="leading" constant="20" id="9kN-Pq-cWZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="N9d-Px-Ip5" secondAttribute="trailing" constant="20" id="I7b-1A-ZHB"/>
+                                    <constraint firstItem="5Jf-Lx-R1Y" firstAttribute="top" secondItem="XQq-A4-o4d" secondAttribute="bottom" constant="20" id="IMc-di-p37"/>
+                                    <constraint firstItem="XQq-A4-o4d" firstAttribute="top" secondItem="MhH-27-KVH" secondAttribute="top" constant="30" id="XHS-f6-xg3"/>
+                                    <constraint firstAttribute="trailing" secondItem="XQq-A4-o4d" secondAttribute="trailing" constant="20" id="Ztx-cQ-MpH"/>
+                                    <constraint firstItem="XQq-A4-o4d" firstAttribute="leading" secondItem="MhH-27-KVH" secondAttribute="leading" constant="20" id="aRO-CD-DZi"/>
+                                    <constraint firstItem="N9d-Px-Ip5" firstAttribute="top" secondItem="pGa-P0-dhi" secondAttribute="bottom" constant="20" id="b2F-Vh-m8c"/>
+                                    <constraint firstItem="pGa-P0-dhi" firstAttribute="centerX" secondItem="MhH-27-KVH" secondAttribute="centerX" id="tcW-Mn-d4n"/>
+                                    <constraint firstItem="5Jf-Lx-R1Y" firstAttribute="centerX" secondItem="MhH-27-KVH" secondAttribute="centerX" id="yaT-XL-aNH"/>
                                 </constraints>
-                            </stackView>
+                            </view>
                         </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="5Jf-Lx-R1Y" firstAttribute="top" secondItem="XQq-A4-o4d" secondAttribute="bottom" constant="5" id="1b0-Ly-7gv"/>
-                            <constraint firstItem="ikg-9e-w6l" firstAttribute="trailing" secondItem="XQq-A4-o4d" secondAttribute="trailing" constant="50" id="454-Jr-dhV"/>
-                            <constraint firstItem="XQq-A4-o4d" firstAttribute="top" secondItem="ikg-9e-w6l" secondAttribute="top" constant="50" id="6HD-PK-qWd"/>
-                            <constraint firstItem="N9d-Px-Ip5" firstAttribute="centerX" secondItem="bL0-pa-vGi" secondAttribute="centerX" id="HXp-0p-SO3"/>
-                            <constraint firstItem="N9d-Px-Ip5" firstAttribute="leading" secondItem="bL0-pa-vGi" secondAttribute="leading" constant="50" id="Vum-X8-geq"/>
-                            <constraint firstItem="N9d-Px-Ip5" firstAttribute="top" secondItem="pGa-P0-dhi" secondAttribute="bottom" constant="38" id="jld-bN-ghR"/>
-                            <constraint firstItem="5Jf-Lx-R1Y" firstAttribute="centerX" secondItem="bL0-pa-vGi" secondAttribute="centerX" id="jxz-61-AKs"/>
-                            <constraint firstItem="XQq-A4-o4d" firstAttribute="leading" secondItem="ikg-9e-w6l" secondAttribute="leading" constant="50" id="kJv-Ye-Gc0"/>
-                            <constraint firstAttribute="trailing" secondItem="N9d-Px-Ip5" secondAttribute="trailing" constant="50" id="m77-5y-RrD"/>
-                            <constraint firstItem="pGa-P0-dhi" firstAttribute="top" secondItem="5Jf-Lx-R1Y" secondAttribute="bottom" constant="37" id="sX4-Y2-81X"/>
-                            <constraint firstItem="pGa-P0-dhi" firstAttribute="centerX" secondItem="bL0-pa-vGi" secondAttribute="centerX" id="yia-lQ-Ri7"/>
+                            <constraint firstItem="ikg-9e-w6l" firstAttribute="trailing" secondItem="MhH-27-KVH" secondAttribute="trailing" id="6LV-c6-lRV"/>
+                            <constraint firstItem="ikg-9e-w6l" firstAttribute="bottom" secondItem="MhH-27-KVH" secondAttribute="bottom" id="eIM-eC-m53"/>
+                            <constraint firstItem="MhH-27-KVH" firstAttribute="leading" secondItem="ikg-9e-w6l" secondAttribute="leading" id="tTz-D8-Tix"/>
+                            <constraint firstItem="MhH-27-KVH" firstAttribute="top" secondItem="ikg-9e-w6l" secondAttribute="top" id="xpR-eI-4yS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ikg-9e-w6l"/>
                     </view>
@@ -109,6 +132,13 @@
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
+                        <outlet property="containerView" destination="MhH-27-KVH" id="K5L-cQ-qL7"/>
+                        <outlet property="currentQuestionLbl" destination="pGa-P0-dhi" id="eYc-th-ZTx"/>
+                        <outlet property="titleQuestionImageView" destination="XQq-A4-o4d" id="O02-JQ-iaZ"/>
+                        <outletCollection property="answersButton" destination="9Ci-29-Zjv" collectionClass="NSMutableArray" id="eI0-Qq-063"/>
+                        <outletCollection property="answersButton" destination="YjQ-CZ-9Ca" collectionClass="NSMutableArray" id="HeA-fv-ljM"/>
+                        <outletCollection property="answersButton" destination="4b3-AR-S4e" collectionClass="NSMutableArray" id="B4O-kD-J3Z"/>
+                        <outletCollection property="answersButton" destination="ceo-sf-gms" collectionClass="NSMutableArray" id="DjH-km-lQw"/>
                         <segue destination="iak-8o-VRQ" kind="presentation" identifier="ToFinishedSoundQuestion" id="lxL-HA-X2p"/>
                     </connections>
                 </viewController>

@@ -10,18 +10,30 @@ import UIKit
 
 class PreSoundQuestionViewController: UIViewController {
 
-    var questions: [SoundQuestion]?
-    var questionType: TypeQuestion?
+    var questions = [SoundQuestion]()
+    var questionType: TypeQuestion!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setNavigationBar()
     }
+    
+    func chooseQuestion(_ questions: [SoundQuestion]) -> [SoundQuestion] {
+        var questionsForChoose = questions
+        var tmpArray = [SoundQuestion]()
+        if questions.count >= 10 {
+            for _ in 1...10 {
+                let random = Int(arc4random_uniform(UInt32(questionsForChoose.count)))
+                tmpArray.append(questionsForChoose.remove(at: random))
+            }
+        }
+        return tmpArray
+    }
 
     @IBAction func tappedCategory(_ sender: UIButton) {
         sender.playButtonSound()
         QuestionModel.getAllSoundQuestion { (datas) in
-            self.questions = datas[sender.tag]
+            self.questions = self.chooseQuestion(datas[sender.tag])
             self.questionType = sender.tag == 0 ? .animal : .musical
             self.performSegue(withIdentifier: "ToSoundQuestion", sender: self)
         }
@@ -29,7 +41,7 @@ class PreSoundQuestionViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? SoundQuestionViewController {
-            destination.question = self.questions
+            destination.getQuestions = self.questions
             destination.questionType = self.questionType
         }
     }

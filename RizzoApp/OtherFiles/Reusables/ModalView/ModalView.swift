@@ -15,6 +15,7 @@ class ModalView: UIView {
     @IBOutlet weak var nextButton: UIButton!
     var callBack: (() -> Void)? = nil
     @IBAction func tappedNextButton(_ sender: UIButton) {
+        sender.playButtonSound()
         callBack?()
     }
     

@@ -24,25 +24,25 @@
                                     <constraint firstAttribute="height" constant="130" id="q6D-Vh-qot"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="qY9-gh-2lg">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="qY9-gh-2lg">
                                 <rect key="frame" x="20" y="483" width="984" height="400"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kln-xX-xZs">
-                                        <rect key="frame" x="0.0" y="0.0" width="984" height="150"/>
+                                        <rect key="frame" x="77.5" y="0.0" width="829" height="150"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="150" id="kNG-ep-xO0"/>
                                         </constraints>
-                                        <state key="normal" title="Button" image="f3soundQ/soQuesAnimals"/>
+                                        <state key="normal" backgroundImage="f3soundQ/soQuesAnimals"/>
                                         <connections>
                                             <action selector="tappedCategory:" destination="nWS-On-KUJ" eventType="touchUpInside" id="MWH-4q-AJC"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJS-XH-EVP">
-                                        <rect key="frame" x="0.0" y="250" width="984" height="150"/>
+                                        <rect key="frame" x="77.5" y="250" width="829" height="150"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="150" id="K3c-Fh-CHC"/>
                                         </constraints>
-                                        <state key="normal" title="Button" image="f3soundQ/soQuesMusicInstruments"/>
+                                        <state key="normal" backgroundImage="f3soundQ/soQuesMusicInstruments"/>
                                         <connections>
                                             <action selector="tappedCategory:" destination="nWS-On-KUJ" eventType="touchUpInside" id="2K8-Yh-19C"/>
                                         </connections>
