@@ -10,7 +10,7 @@ import Foundation
 
 class QuestionModel {
     
-    static func getAllImageQuestion(completeHandle: @escaping (_ datas: [ImageQustion]) -> Void) {
+    static func getAllImageQuestion(completeHandle: @escaping (_ datas: [[ImageQustion]]) -> Void) {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             completeHandle([])
         }
@@ -40,8 +40,13 @@ class QuestionModel {
         }
     }
     
-    static func getAllDrawQuestion(completeHandle: @escaping (_ datas: [DrawQuestion]) -> Void) {
+    static func getAllDrawQuestion(completeHandle: @escaping (_ datas: [[DrawQuestion]]) -> Void) {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            let drawQuestions = [
+                [
+                
+                ]
+            ]
             completeHandle([])
         }
     }

@@ -17,6 +17,7 @@ class PrepareDrawViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setNavigationBar()
+        myLoader.transform = CGAffineTransform(scaleX: 2, y: 2)
         myLoader.stopAnimating()
     }
     
