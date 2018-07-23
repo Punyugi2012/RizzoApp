@@ -12,3 +12,7 @@ import Foundation
 enum TypeSoundQuestion {
     case animal, musical
 }
+
+enum TypeImageQuestion {
+    case animal, object, fruit, place
+}
