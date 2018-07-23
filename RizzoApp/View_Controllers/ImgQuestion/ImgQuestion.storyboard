@@ -17,17 +17,48 @@
                     <view key="view" contentMode="scaleToFill" id="Kkw-y7-gwZ">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l8N-3y-ZtO">
+                                <rect key="frame" x="84" y="280" width="600" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dbq-WC-2fn">
+                                <rect key="frame" x="86" y="641" width="275" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="1. Apple" image="f1drawing/drawingFriutsBtn"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcF-Fo-wSK">
+                                <rect key="frame" x="403" y="773" width="275" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="1. Apple" image="f1drawing/drawingFriutsBtn"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRT-Rf-bdI">
+                                <rect key="frame" x="86" y="773" width="275" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="1. Apple" image="f1drawing/drawingFriutsBtn"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZEd-xi-DEJ">
+                                <rect key="frame" x="403" y="641" width="275" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="1. Apple" image="f1drawing/drawingFriutsBtn"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="f1drawing/headerDrawing" translatesAutoresizingMaskIntoConstraints="NO" id="Qsm-pQ-EvR">
+                                <rect key="frame" x="191" y="109" width="386" height="125"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="j2H-hv-bhc"/>
                     </view>
                     <navigationItem key="navigationItem" title="ImgQuestion" id="itj-MT-Bti"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <segue destination="oKm-hP-u5o" kind="presentation" identifier="ToFinishedImgQuestion" id="DmB-F6-ytq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ic1-56-zB1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1781" y="-705"/>
+            <point key="canvasLocation" x="1780.46875" y="-705.46875"/>
         </scene>
         <!--FinishedImgQuestion-->
         <scene sceneID="gf7-bn-ZjD">
@@ -38,4 +69,8 @@
             <point key="canvasLocation" x="2468" y="-705"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="f1drawing/drawingFriutsBtn" width="834" height="192"/>
+        <image name="f1drawing/headerDrawing" width="801" height="153"/>
+    </resources>
 </document>
