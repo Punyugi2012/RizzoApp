@@ -17,8 +17,8 @@ class DrawViewController: UIViewController {
         super.viewDidLoad()
         setNavigationBar()
         navigationItem.hidesBackButton = true
-        print(questionType)
-        print(getQuestion)
+//        print(questionType)
+//        print(getQuestion)
     }
 
   
