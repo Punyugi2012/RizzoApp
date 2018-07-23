@@ -10,7 +10,7 @@ import UIKit
 
 class PreSoundQuestionViewController: UIViewController {
 
-    @IBOutlet weak var myLoadView: UIActivityIndicatorView!
+    @IBOutlet weak var myLoader: UIActivityIndicatorView!
     
     var questions = [SoundQuestion]()
     var questionType: TypeSoundQuestion!
@@ -18,8 +18,8 @@ class PreSoundQuestionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setNavigationBar()
-        myLoadView.transform = CGAffineTransform(scaleX: 2, y: 2)
-        myLoadView.stopAnimating()
+        myLoader.transform = CGAffineTransform(scaleX: 2, y: 2)
+        myLoader.stopAnimating()
     }
     
     func chooseQuestion(_ questions: [SoundQuestion]) -> [SoundQuestion] {
@@ -36,9 +36,9 @@ class PreSoundQuestionViewController: UIViewController {
 
     @IBAction func tappedCategory(_ sender: UIButton) {
         sender.playButtonSound()
-        myLoadView.startAnimating()
+        myLoader.startAnimating()
         QuestionModel.getAllSoundQuestion { (datas) in
-            self.myLoadView.stopAnimating()
+            self.myLoader.stopAnimating()
             self.questions = self.chooseQuestion(datas[sender.tag])
             self.questionType = sender.tag == 0 ? .animal : .musical
             self.performSegue(withIdentifier: "ToSoundQuestion", sender: self)
