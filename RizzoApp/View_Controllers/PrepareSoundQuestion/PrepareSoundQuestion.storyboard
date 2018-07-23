@@ -49,12 +49,18 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="OQK-uf-iGo">
+                                <rect key="frame" x="494" y="665" width="37" height="37"/>
+                                <color key="color" cocoaTouchSystemColor="darkTextColor"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="9Ke-nm-Ski" firstAttribute="leading" secondItem="QsI-2P-l7N" secondAttribute="leading" constant="50" id="2Ry-9S-pbL"/>
                             <constraint firstItem="QsI-2P-l7N" firstAttribute="trailing" secondItem="9Ke-nm-Ski" secondAttribute="trailing" constant="50" id="2Zw-E0-Hfi"/>
                             <constraint firstItem="qY9-gh-2lg" firstAttribute="centerY" secondItem="i7z-ZF-J5g" secondAttribute="centerY" id="967-KX-5aO"/>
+                            <constraint firstItem="OQK-uf-iGo" firstAttribute="centerX" secondItem="i7z-ZF-J5g" secondAttribute="centerX" id="BgK-Nx-vek"/>
+                            <constraint firstItem="OQK-uf-iGo" firstAttribute="centerY" secondItem="i7z-ZF-J5g" secondAttribute="centerY" id="SEc-ps-LN7"/>
                             <constraint firstAttribute="trailing" secondItem="qY9-gh-2lg" secondAttribute="trailing" constant="20" id="V2S-WU-1JT"/>
                             <constraint firstItem="qY9-gh-2lg" firstAttribute="centerX" secondItem="i7z-ZF-J5g" secondAttribute="centerX" id="bZp-39-I3K"/>
                             <constraint firstItem="qY9-gh-2lg" firstAttribute="leading" secondItem="i7z-ZF-J5g" secondAttribute="leading" constant="20" id="sH2-Uv-pJT"/>
@@ -65,6 +71,7 @@
                     <navigationItem key="navigationItem" title="PrepareSoundQuestion" id="1w4-AG-65d"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
+                        <outlet property="myLoadView" destination="OQK-uf-iGo" id="Pw9-rg-MZZ"/>
                         <segue destination="nAG-Pt-EJx" kind="show" identifier="ToSoundQuestion" id="chg-4F-n2U"/>
                     </connections>
                 </viewController>
