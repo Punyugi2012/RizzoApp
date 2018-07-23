@@ -29,6 +29,8 @@ class DrawViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(questionType)
+        print(getQuestion)
         setNavigationBar()
         blackColorBtn.alpha = 0
         penBtn.alpha = 0
@@ -65,7 +67,7 @@ class DrawViewController: UIViewController {
         resetColorButtons()
         sender.setBackgroundImage(UIImage(named: "blacked"), for: .normal)
         var delay = 0.1
-        [redColorBtn, yellowColorBtn, greenColorBtn, blueColorBtn].forEach { (colorBtn) in
+        [yellowColorBtn, greenColorBtn, blueColorBtn, redColorBtn].forEach { (colorBtn) in
             UIView.animate(withDuration: 0.5, delay: delay, options: [], animations: {
                 colorBtn?.transform = CGAffineTransform.identity
                 colorBtn?.alpha = 1
