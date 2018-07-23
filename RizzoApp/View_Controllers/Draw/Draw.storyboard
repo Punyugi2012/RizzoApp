@@ -21,7 +21,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JNa-6i-gds">
                                 <rect key="frame" x="20" y="84" width="728" height="130"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="f1ChoiceDrawing/title_drawing" translatesAutoresizingMaskIntoConstraints="NO" id="IRc-5z-jvt">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="f1ChoiceDrawing/title_drawing" translatesAutoresizingMaskIntoConstraints="NO" id="IRc-5z-jvt">
                                         <rect key="frame" x="0.0" y="0.0" width="728" height="130"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="จงวาดกระต่าย" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z50-mI-s1Q">
