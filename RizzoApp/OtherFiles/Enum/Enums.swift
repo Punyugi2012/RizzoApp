@@ -9,6 +9,6 @@
 import Foundation
 
 
-enum TypeQuestion {
+enum TypeSoundQuestion {
     case animal, musical
 }

@@ -13,7 +13,7 @@ class PreSoundQuestionViewController: UIViewController {
     @IBOutlet weak var myLoadView: UIActivityIndicatorView!
     
     var questions = [SoundQuestion]()
-    var questionType: TypeQuestion!
+    var questionType: TypeSoundQuestion!
     
     override func viewDidLoad() {
         super.viewDidLoad()

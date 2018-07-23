@@ -17,7 +17,7 @@ class SoundQuestionViewController: UIViewController {
     @IBOutlet var answersButton: [UIButton]!
     var getQuestions = [SoundQuestion]()
     var questions = [SoundQuestion]()
-    var questionType: TypeQuestion!
+    var questionType: TypeSoundQuestion!
     var currentQuestion = 1
     var soundQuestion: SoundQuestion!
     var soundPlayer: AVAudioPlayer?
