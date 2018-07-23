@@ -31,7 +31,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="Z50-mI-s1Q" firstAttribute="centerX" secondItem="JNa-6i-gds" secondAttribute="centerX" id="284-7G-FjW"/>
                                     <constraint firstItem="IRc-5z-jvt" firstAttribute="leading" secondItem="JNa-6i-gds" secondAttribute="leading" id="Cu0-tW-cmX"/>
@@ -60,6 +60,9 @@
                                             <constraint firstAttribute="height" constant="70" id="mD7-C9-Nxp"/>
                                         </constraints>
                                         <state key="normal" backgroundImage="blue"/>
+                                        <connections>
+                                            <action selector="tappedBlueColor:" destination="bVk-lS-iyG" eventType="touchUpInside" id="gMY-qb-To6"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gET-lg-jp8">
                                         <rect key="frame" x="160" y="650" width="70" height="70"/>
@@ -68,6 +71,9 @@
                                             <constraint firstAttribute="width" constant="70" id="z3E-kx-hng"/>
                                         </constraints>
                                         <state key="normal" backgroundImage="green"/>
+                                        <connections>
+                                            <action selector="tappedGreenColor:" destination="bVk-lS-iyG" eventType="touchUpInside" id="30h-WD-ruB"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJR-9I-tCF">
                                         <rect key="frame" x="240" y="650" width="70" height="70"/>
@@ -76,6 +82,9 @@
                                             <constraint firstAttribute="width" constant="70" id="v6f-Ey-Lft"/>
                                         </constraints>
                                         <state key="normal" backgroundImage="yellow"/>
+                                        <connections>
+                                            <action selector="tappedYellowColor:" destination="bVk-lS-iyG" eventType="touchUpInside" id="t0s-Rw-jjH"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D1x-H6-iqV">
                                         <rect key="frame" x="320" y="650" width="70" height="70"/>
@@ -84,30 +93,42 @@
                                             <constraint firstAttribute="width" constant="70" id="v3M-jf-g3F"/>
                                         </constraints>
                                         <state key="normal" backgroundImage="red"/>
+                                        <connections>
+                                            <action selector="tappedRedColor:" destination="bVk-lS-iyG" eventType="touchUpInside" id="NK8-5m-MAm"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wcs-Vq-71e">
-                                        <rect key="frame" x="542" y="580" width="4" height="140"/>
+                                        <rect key="frame" x="522" y="580" width="4" height="140"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="4" id="dtu-fB-Lmq"/>
                                             <constraint firstAttribute="height" constant="140" id="pyr-J5-CrE"/>
                                         </constraints>
-                                        <state key="normal" backgroundImage="l_preLine_50*150"/>
+                                        <state key="normal" backgroundImage="line"/>
+                                        <connections>
+                                            <action selector="tappedMediumLineBtn:" destination="bVk-lS-iyG" eventType="touchUpInside" id="GZX-gP-YVP"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SDJ-g8-o1c">
-                                        <rect key="frame" x="566" y="580" width="6" height="140"/>
+                                        <rect key="frame" x="556" y="580" width="6" height="140"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="140" id="MlV-BC-EOf"/>
                                             <constraint firstAttribute="width" constant="6" id="nEe-sH-ccN"/>
                                         </constraints>
-                                        <state key="normal" backgroundImage="l_preLine_50*150"/>
+                                        <state key="normal" backgroundImage="line"/>
+                                        <connections>
+                                            <action selector="tappedHighLineBtn:" destination="bVk-lS-iyG" eventType="touchUpInside" id="uoM-ex-uwQ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="glp-wO-Blr">
-                                        <rect key="frame" x="592" y="560" width="46" height="160"/>
+                                        <rect key="frame" x="592" y="550" width="46" height="170"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="160" id="cdg-Dt-OlT"/>
+                                            <constraint firstAttribute="height" constant="170" id="cdg-Dt-OlT"/>
                                             <constraint firstAttribute="width" constant="46" id="rsg-eo-hVT"/>
                                         </constraints>
-                                        <state key="normal" backgroundImage="p_preblackPencil_50*150"/>
+                                        <state key="normal" backgroundImage="blackpen"/>
+                                        <connections>
+                                            <action selector="tappedPenBtn:" destination="bVk-lS-iyG" eventType="touchUpInside" id="yfw-e6-5Jq"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2AC-nj-yQf">
                                         <rect key="frame" x="400" y="650" width="70" height="70"/>
@@ -121,12 +142,15 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BBj-nx-Cfn">
-                                        <rect key="frame" x="520" y="580" width="2" height="140"/>
+                                        <rect key="frame" x="490" y="580" width="2" height="140"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="140" id="I5z-DG-Xd5"/>
                                             <constraint firstAttribute="width" constant="2" id="vjE-bP-XJB"/>
                                         </constraints>
-                                        <state key="normal" backgroundImage="l_preLine_50*150"/>
+                                        <state key="normal" backgroundImage="line"/>
+                                        <connections>
+                                            <action selector="tappedSmallLineBtn:" destination="bVk-lS-iyG" eventType="touchUpInside" id="rk5-Wl-pas"/>
+                                        </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZGy-Cd-3rl">
                                         <rect key="frame" x="658" y="575" width="70" height="150"/>
@@ -146,11 +170,14 @@
                                                     <constraint firstAttribute="width" constant="70" id="mkn-H9-iwB"/>
                                                 </constraints>
                                                 <state key="normal" backgroundImage="btnTools_toolsBtn_70*70"/>
+                                                <connections>
+                                                    <action selector="tappedOpenTools:" destination="bVk-lS-iyG" eventType="touchUpInside" id="nj5-0n-4bE"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="wcs-Vq-71e" secondAttribute="bottom" constant="5" id="24X-zE-8Xk"/>
                                     <constraint firstItem="D1x-H6-iqV" firstAttribute="leading" secondItem="SJR-9I-tCF" secondAttribute="trailing" constant="10" id="66J-7V-w2F"/>
@@ -161,14 +188,14 @@
                                     <constraint firstItem="SJR-9I-tCF" firstAttribute="leading" secondItem="gET-lg-jp8" secondAttribute="trailing" constant="10" id="MgH-35-rZz"/>
                                     <constraint firstAttribute="bottom" secondItem="BBj-nx-Cfn" secondAttribute="bottom" constant="5" id="Q4t-pJ-iDA"/>
                                     <constraint firstAttribute="bottom" secondItem="OgU-Q7-jju" secondAttribute="bottom" constant="5" id="SSA-FZ-7bL"/>
-                                    <constraint firstItem="SDJ-g8-o1c" firstAttribute="leading" secondItem="wcs-Vq-71e" secondAttribute="trailing" constant="20" id="XOq-Pv-etF"/>
+                                    <constraint firstItem="SDJ-g8-o1c" firstAttribute="leading" secondItem="wcs-Vq-71e" secondAttribute="trailing" constant="30" id="XOq-Pv-etF"/>
                                     <constraint firstAttribute="bottom" secondItem="D1x-H6-iqV" secondAttribute="bottom" constant="5" id="aVx-YT-6iI"/>
                                     <constraint firstAttribute="bottom" secondItem="gET-lg-jp8" secondAttribute="bottom" constant="5" id="ddA-0n-9Fi"/>
                                     <constraint firstAttribute="bottom" secondItem="SDJ-g8-o1c" secondAttribute="bottom" constant="5" id="eNx-em-B96"/>
                                     <constraint firstAttribute="bottom" secondItem="glp-wO-Blr" secondAttribute="bottom" constant="5" id="j2v-sF-Dub"/>
                                     <constraint firstItem="OgU-Q7-jju" firstAttribute="leading" secondItem="GGQ-uu-ryL" secondAttribute="leading" id="ljk-p3-1FM"/>
-                                    <constraint firstItem="glp-wO-Blr" firstAttribute="leading" secondItem="SDJ-g8-o1c" secondAttribute="trailing" constant="20" id="ngV-0J-1zk"/>
-                                    <constraint firstItem="wcs-Vq-71e" firstAttribute="leading" secondItem="BBj-nx-Cfn" secondAttribute="trailing" constant="20" id="oNO-GE-5ZC"/>
+                                    <constraint firstItem="glp-wO-Blr" firstAttribute="leading" secondItem="SDJ-g8-o1c" secondAttribute="trailing" constant="30" id="ngV-0J-1zk"/>
+                                    <constraint firstItem="wcs-Vq-71e" firstAttribute="leading" secondItem="BBj-nx-Cfn" secondAttribute="trailing" constant="30" id="oNO-GE-5ZC"/>
                                     <constraint firstAttribute="bottom" secondItem="NjC-J2-x64" secondAttribute="bottom" constant="5" id="pjJ-Tr-a0R"/>
                                     <constraint firstAttribute="bottom" secondItem="SJR-9I-tCF" secondAttribute="bottom" constant="5" id="rSq-1G-gtu"/>
                                     <constraint firstAttribute="bottom" secondItem="ZGy-Cd-3rl" secondAttribute="bottom" id="tF7-Ml-eGG"/>
@@ -176,11 +203,6 @@
                                     <constraint firstItem="gET-lg-jp8" firstAttribute="leading" secondItem="NjC-J2-x64" secondAttribute="trailing" constant="10" id="zg3-DP-c5Z"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4y-VJ-Umx">
-                                <rect key="frame" x="812" y="222" width="192" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1cz-ch-ivM">
                                 <rect key="frame" x="573" y="222" width="175" height="52"/>
                                 <constraints>
@@ -222,7 +244,14 @@
                         <outlet property="blackColorBtn" destination="2AC-nj-yQf" id="6Pk-WP-k7R"/>
                         <outlet property="blueColorBtn" destination="NjC-J2-x64" id="Gr6-VE-cSw"/>
                         <outlet property="greenColorBtn" destination="gET-lg-jp8" id="m4G-Cr-Jcl"/>
+                        <outlet property="highLineBtn" destination="SDJ-g8-o1c" id="7Q3-f7-KdA"/>
+                        <outlet property="highLineHeight" destination="MlV-BC-EOf" id="TyL-s9-7MX"/>
+                        <outlet property="mediumLineBtn" destination="wcs-Vq-71e" id="pDQ-M7-gvr"/>
+                        <outlet property="mediumLineHight" destination="pyr-J5-CrE" id="qC1-qj-b0x"/>
+                        <outlet property="penBtn" destination="glp-wO-Blr" id="stI-Ek-WdI"/>
                         <outlet property="redColorBtn" destination="D1x-H6-iqV" id="Eu4-mQ-dcC"/>
+                        <outlet property="smallLineBtn" destination="BBj-nx-Cfn" id="chU-m3-iMo"/>
+                        <outlet property="smallLineHeight" destination="I5z-DG-Xd5" id="2LP-Ie-LkP"/>
                         <outlet property="yellowColorBtn" destination="SJR-9I-tCF" id="KbS-f7-roS"/>
                         <segue destination="sVw-NX-8SK" kind="presentation" identifier="ToFinishedDraw" id="Zpu-dt-me7"/>
                     </connections>
@@ -243,6 +272,7 @@
     </scenes>
     <resources>
         <image name="black" width="113" height="114"/>
+        <image name="blackpen" width="94" height="455"/>
         <image name="blue" width="113" height="114"/>
         <image name="btnTools_cannotUndo_70*70" width="124" height="115"/>
         <image name="btnTools_submitBtn_70*70" width="127" height="116"/>
@@ -250,8 +280,7 @@
         <image name="f1ChoiceDrawing/night_BtnHints" width="191" height="64"/>
         <image name="f1ChoiceDrawing/title_drawing" width="648" height="153"/>
         <image name="green" width="113" height="114"/>
-        <image name="l_preLine_50*150" width="21" height="269"/>
-        <image name="p_preblackPencil_50*150" width="94" height="455"/>
+        <image name="line" width="21" height="269"/>
         <image name="red" width="113" height="114"/>
         <image name="yellow" width="114" height="114"/>
     </resources>
