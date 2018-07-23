@@ -41,13 +41,22 @@ class QuestionModel {
     }
     
     static func getAllDrawQuestion(completeHandle: @escaping (_ datas: [[DrawQuestion]]) -> Void) {
+        // 0 สัตว์ 1 สิ่งของ 3 ผลไม้
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             let drawQuestions = [
                 [
-                
+                    DrawQuestion(questionName: "แมว", answer: "cat"),
+                    DrawQuestion(questionName: "ปลา", answer: "fish"),
+                    DrawQuestion(questionName: "กระต่าย", answer: "rabbit")
+                ],
+                [
+                    // สิ่งของ
+                ],
+                [
+                    // ผลไม้
                 ]
             ]
-            completeHandle([])
+            completeHandle(drawQuestions)
         }
     }
     
