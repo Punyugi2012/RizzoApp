@@ -17,14 +17,91 @@
                     <view key="view" contentMode="scaleToFill" id="3MD-4k-Cbh">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="f4setting/headerSetting" translatesAutoresizingMaskIntoConstraints="NO" id="Mn0-1l-7hU">
+                                <rect key="frame" x="50" y="84" width="668" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="22f-lF-2kM"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="EkR-H5-hla">
+                                <rect key="frame" x="20" y="274" width="728" height="600"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="mCA-fg-lUb">
+                                        <rect key="frame" x="255" y="0.0" width="218" height="166.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="เสียงดนตรี" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pSq-OF-iX5">
+                                                <rect key="frame" x="0.0" y="0.0" width="218" height="58.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eAx-oy-FWI">
+                                                <rect key="frame" x="84.5" y="108.5" width="51" height="58"/>
+                                                <connections>
+                                                    <action selector="changedBgSoundSwitch:" destination="gwN-to-Xt7" eventType="valueChanged" id="u6x-Cm-jFs"/>
+                                                </connections>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="e6I-et-A2M">
+                                        <rect key="frame" x="282" y="216.5" width="164.5" height="167"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="เสียงปุ่ม" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sn0-tZ-bjR">
+                                                <rect key="frame" x="0.0" y="0.0" width="164.5" height="58.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iph-u4-uDa">
+                                                <rect key="frame" x="57.5" y="108.5" width="51" height="58.5"/>
+                                                <connections>
+                                                    <action selector="changedBtnSoundSwitch:" destination="gwN-to-Xt7" eventType="valueChanged" id="Yvi-kX-zDe"/>
+                                                </connections>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="zVH-4H-yai">
+                                        <rect key="frame" x="127.5" y="433.5" width="473" height="166.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="โหมดกลางคืน/กลางวัน" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cDb-5o-yyd">
+                                                <rect key="frame" x="0.0" y="0.0" width="473" height="58"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a90-53-EVf">
+                                                <rect key="frame" x="212" y="108" width="51" height="58.5"/>
+                                                <connections>
+                                                    <action selector="changedThemeSwitch:" destination="gwN-to-Xt7" eventType="valueChanged" id="VAm-hS-P1W"/>
+                                                </connections>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="600" id="d26-dW-8Lg"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Mk2-8S-eB0" firstAttribute="trailing" secondItem="Mn0-1l-7hU" secondAttribute="trailing" constant="50" id="1vd-nw-Q2b"/>
+                            <constraint firstItem="EkR-H5-hla" firstAttribute="centerX" secondItem="3MD-4k-Cbh" secondAttribute="centerX" id="5eO-4a-4F0"/>
+                            <constraint firstItem="EkR-H5-hla" firstAttribute="top" secondItem="Mn0-1l-7hU" secondAttribute="bottom" constant="60" id="C4Z-5B-vGw"/>
+                            <constraint firstItem="Mn0-1l-7hU" firstAttribute="top" secondItem="Mk2-8S-eB0" secondAttribute="top" constant="20" id="KKX-pf-jsV"/>
+                            <constraint firstItem="Mn0-1l-7hU" firstAttribute="leading" secondItem="Mk2-8S-eB0" secondAttribute="leading" constant="50" id="fyt-ol-Map"/>
+                            <constraint firstItem="Mk2-8S-eB0" firstAttribute="trailing" secondItem="EkR-H5-hla" secondAttribute="trailing" constant="20" id="j4a-1m-8sk"/>
+                            <constraint firstItem="EkR-H5-hla" firstAttribute="leading" secondItem="Mk2-8S-eB0" secondAttribute="leading" constant="20" id="v0c-Jk-pCP"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Mk2-8S-eB0"/>
                     </view>
                     <navigationItem key="navigationItem" title="Setting" id="Grb-hE-OeG">
                         <barButtonItem key="rightBarButtonItem" id="rSx-kB-o9S">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0EK-6r-V5N">
-                                <rect key="frame" x="578" y="7" width="170" height="30"/>
+                                <rect key="frame" x="578" y="4" width="170" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="ออก"/>
                                 <connections>
                                     <segue destination="T7d-FT-axM" kind="unwind" unwindAction="backToMainMenuWithSegue:" id="b64-MU-qLp"/>
@@ -32,11 +109,16 @@
                             </button>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="backgroundSoundSwitch" destination="eAx-oy-FWI" id="hJE-dV-2dM"/>
+                        <outlet property="buttonSoundSwitch" destination="Iph-u4-uDa" id="sAC-jE-wKa"/>
+                        <outlet property="themeSwitch" destination="a90-53-EVf" id="yZU-AL-BFT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TJj-xq-lCC" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="T7d-FT-axM" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1311" y="758"/>
+            <point key="canvasLocation" x="1310.9375" y="757.6171875"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wJa-L5-eg8">
@@ -57,4 +139,7 @@
             <point key="canvasLocation" x="348" y="758"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="f4setting/headerSetting" width="801" height="153"/>
+    </resources>
 </document>

@@ -10,26 +10,51 @@ import UIKit
 
 class SettingViewController: UIViewController {
 
+    @IBOutlet weak var themeSwitch: UISwitch!
+    @IBOutlet weak var buttonSoundSwitch: UISwitch!
+    @IBOutlet weak var backgroundSoundSwitch: UISwitch!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setNavigationBar()
+        themeSwitch.transform = CGAffineTransform(scaleX: 2, y: 2)
+        buttonSoundSwitch.transform = CGAffineTransform(scaleX: 2, y: 2)
+        backgroundSoundSwitch.transform = CGAffineTransform(scaleX: 2, y: 2)
+        if AppManager.shared.get(key: backgroundSoundKey) {
+            backgroundSoundSwitch.isOn = true
+        }
+        else {
+            backgroundSoundSwitch.isOn = false
+        }
+        if AppManager.shared.get(key: buttonSoundKey) {
+            buttonSoundSwitch.isOn = true
+        }
+        else {
+            buttonSoundSwitch.isOn = false
+        }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func changedBgSoundSwitch(_ sender: UISwitch) {
+        if sender.isOn {
+            AppManager.shared.set(key: backgroundSoundKey, value: true)
+            AppManager.shared.playBackgroundSound()
+        }
+        else {
+            AppManager.shared.set(key: backgroundSoundKey, value: false)
+            AppManager.shared.stopBackgroundSound()
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func changedBtnSoundSwitch(_ sender: UISwitch) {
+        if sender.isOn {
+            AppManager.shared.set(key: buttonSoundKey, value: true)
+        }
+        else {
+            AppManager.shared.set(key: buttonSoundKey, value: false)
+        }
     }
-    */
-
+    
+    @IBAction func changedThemeSwitch(_ sender: UISwitch) {
+    }
+    
 }

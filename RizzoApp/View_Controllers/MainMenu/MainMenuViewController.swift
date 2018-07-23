@@ -22,7 +22,9 @@ class MainMenuViewController: UIViewController {
     
     @IBAction func backToMainMenu(segue: UIStoryboardSegue) {
         if segue.source is FinishedSoundQViewController {
-            AppManager.shared.playBackgroundSound()
+            if AppManager.shared.get(key: backgroundSoundKey) {
+                AppManager.shared.playBackgroundSound()
+            }
         }
     }
     
