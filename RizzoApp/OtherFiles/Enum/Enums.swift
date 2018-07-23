@@ -16,3 +16,7 @@ enum TypeSoundQuestion {
 enum TypeImageQuestion {
     case animal, object, fruit, place
 }
+
+enum TypeDrawQuestion {
+    case animal, fruit, object
+}
