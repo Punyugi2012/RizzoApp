@@ -21,37 +21,38 @@ class PrepareDrawViewController: UIViewController {
         myLoader.stopAnimating()
     }
     
-    func chooseQuestion(_ questions: [SoundQuestion]) -> [SoundQuestion] {
-        var questionsForChoose = questions
-        var tmpArray = [SoundQuestion]()
-        if questions.count >= 10 {
-            for _ in 1...10 {
-                let random = Int(arc4random_uniform(UInt32(questionsForChoose.count)))
-                tmpArray.append(questionsForChoose.remove(at: random))
-            }
+    func chooseQuestion(_ questions: [DrawQuestion]) -> DrawQuestion  {
+        if questions.count >= 1 {
+            let random = Int(arc4random_uniform(UInt32(questions.count)))
+            return questions[random]
         }
-        return tmpArray
+        return DrawQuestion(questionName: "", answer: "")
     }
     
     @IBAction func tappedCategory(_ sender: UIButton) {
         myLoader.startAnimating()
-//        QuestionModel.getAllSoundQuestion { (datas) in
-//            self.myLoadView.stopAnimating()
-//            self.questions = self.chooseQuestion(datas[sender.tag])
-//            self.questionType = sender.tag == 0 ? .animal : .musical
-//            self.performSegue(withIdentifier: "ToSoundQuestion", sender: self)
-//        }
+        QuestionModel.getAllDrawQuestion { (datas) in
+            self.myLoader.stopAnimating()
+            self.question = self.chooseQuestion(datas[sender.tag])
+            if sender.tag == 0 {
+                self.questionType = .animal
+            }
+            else if sender.tag == 1 {
+                self.questionType = .object
+            }
+            else if sender.tag == 2 {
+                self.questionType = .fruit
+            }
+            self.performSegue(withIdentifier: "ToDraw", sender: self)
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if let destination = segue.destination as? SoundQuestionViewController {
-//            destination.getQuestions = self.questions
-//            destination.questionType = self.questionType
-//        }
+        if let destination = segue.destination as? DrawViewController {
+            destination.getQuestion = self.question
+            destination.questionType = self.questionType
+        }
     }
     
-    
-    //ToDraw
-
   
 }
