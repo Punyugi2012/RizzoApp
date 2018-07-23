@@ -22,9 +22,9 @@
 		B83CF6132105B14400A483A5 /* darkTheme.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B83CF6122105B14400A483A5 /* darkTheme.xcassets */; };
 		B83CF6152105B18100A483A5 /* BackgroundColor.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B83CF6142105B18100A483A5 /* BackgroundColor.xcassets */; };
 		B83CF6172105B1A600A483A5 /* animationLunchScreen.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B83CF6162105B1A600A483A5 /* animationLunchScreen.xcassets */; };
-		B83CF61B2105CEFA00A483A5 /* cat_draw.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B83CF6182105CEFA00A483A5 /* cat_draw.jpg */; };
-		B83CF61C2105CEFA00A483A5 /* fish_draw.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B83CF6192105CEFA00A483A5 /* fish_draw.jpg */; };
-		B83CF61D2105CEFA00A483A5 /* rabbit_draw.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B83CF61A2105CEFA00A483A5 /* rabbit_draw.jpg */; };
+		B83CF61B2105CEFA00A483A5 /* cat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B83CF6182105CEFA00A483A5 /* cat.jpg */; };
+		B83CF61C2105CEFA00A483A5 /* fish.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B83CF6192105CEFA00A483A5 /* fish.jpg */; };
+		B83CF61D2105CEFA00A483A5 /* rabbit.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B83CF61A2105CEFA00A483A5 /* rabbit.jpg */; };
 		B84F5CA4210322160043DCEC /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84F5CA3210322160043DCEC /* Setting.storyboard */; };
 		B84F5CAA210322EE0043DCEC /* FinishedDraw.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84F5CA9210322EE0043DCEC /* FinishedDraw.storyboard */; };
 		B84F5CAD2103231C0043DCEC /* Draw.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84F5CAC2103231C0043DCEC /* Draw.storyboard */; };
@@ -83,9 +83,9 @@
 		B83CF6122105B14400A483A5 /* darkTheme.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = darkTheme.xcassets; sourceTree = "<group>"; };
 		B83CF6142105B18100A483A5 /* BackgroundColor.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = BackgroundColor.xcassets; sourceTree = "<group>"; };
 		B83CF6162105B1A600A483A5 /* animationLunchScreen.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = animationLunchScreen.xcassets; sourceTree = "<group>"; };
-		B83CF6182105CEFA00A483A5 /* cat_draw.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat_draw.jpg; sourceTree = "<group>"; };
-		B83CF6192105CEFA00A483A5 /* fish_draw.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fish_draw.jpg; sourceTree = "<group>"; };
-		B83CF61A2105CEFA00A483A5 /* rabbit_draw.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rabbit_draw.jpg; sourceTree = "<group>"; };
+		B83CF6182105CEFA00A483A5 /* cat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat.jpg; sourceTree = "<group>"; };
+		B83CF6192105CEFA00A483A5 /* fish.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fish.jpg; sourceTree = "<group>"; };
+		B83CF61A2105CEFA00A483A5 /* rabbit.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rabbit.jpg; sourceTree = "<group>"; };
 		B84F5CA3210322160043DCEC /* Setting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
 		B84F5CA9210322EE0043DCEC /* FinishedDraw.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FinishedDraw.storyboard; sourceTree = "<group>"; };
 		B84F5CAC2103231C0043DCEC /* Draw.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Draw.storyboard; sourceTree = "<group>"; };
@@ -164,9 +164,9 @@
 		B83CF61E2105CF0900A483A5 /* DrawQuestion */ = {
 			isa = PBXGroup;
 			children = (
-				B83CF6182105CEFA00A483A5 /* cat_draw.jpg */,
-				B83CF6192105CEFA00A483A5 /* fish_draw.jpg */,
-				B83CF61A2105CEFA00A483A5 /* rabbit_draw.jpg */,
+				B83CF6182105CEFA00A483A5 /* cat.jpg */,
+				B83CF6192105CEFA00A483A5 /* fish.jpg */,
+				B83CF61A2105CEFA00A483A5 /* rabbit.jpg */,
 			);
 			path = DrawQuestion;
 			sourceTree = "<group>";
@@ -513,7 +513,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B84F5CBA210324E10043DCEC /* PrepareImgQuestion.storyboard in Resources */,
-				B83CF61C2105CEFA00A483A5 /* fish_draw.jpg in Resources */,
+				B83CF61C2105CEFA00A483A5 /* fish.jpg in Resources */,
 				B87D93B9210470C100788F2D /* นกฮูก.mp3 in Resources */,
 				B84F5CDE210335DB0043DCEC /* bgSound.mp3 in Resources */,
 				B84F5CAA210322EE0043DCEC /* FinishedDraw.storyboard in Resources */,
@@ -528,7 +528,7 @@
 				B84F5CC12103256B0043DCEC /* FinishedSoundQuestion.storyboard in Resources */,
 				B84F5CB8210324C10043DCEC /* ImgQuestion.storyboard in Resources */,
 				B83CF6132105B14400A483A5 /* darkTheme.xcassets in Resources */,
-				B83CF61D2105CEFA00A483A5 /* rabbit_draw.jpg in Resources */,
+				B83CF61D2105CEFA00A483A5 /* rabbit.jpg in Resources */,
 				B84F5CE0210336270043DCEC /* btnSound.mp3 in Resources */,
 				B87D93C0210470C100788F2D /* ลิง.mp3 in Resources */,
 				B87D93B4210470C100788F2D /* ม้า.mp3 in Resources */,
@@ -540,7 +540,7 @@
 				B84F5CC5210325B00043DCEC /* PrepareSoundQuestion.storyboard in Resources */,
 				B84F5CB22103241E0043DCEC /* FinishedImgQuestion.storyboard in Resources */,
 				B87D93D421049E3000788F2D /* ModalView.xib in Resources */,
-				B83CF61B2105CEFA00A483A5 /* cat_draw.jpg in Resources */,
+				B83CF61B2105CEFA00A483A5 /* cat.jpg in Resources */,
 				B87D93CA210470CE00788F2D /* หมู.mp3 in Resources */,
 				B84F5CAF210323670043DCEC /* PrepareDraw.storyboard in Resources */,
 				B84F5CA4210322160043DCEC /* Setting.storyboard in Resources */,
