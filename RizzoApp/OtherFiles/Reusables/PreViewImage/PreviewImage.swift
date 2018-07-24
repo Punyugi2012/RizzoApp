@@ -18,6 +18,7 @@ class PreviewImage: UIView {
     @IBOutlet weak var closeButton: UIButton!
     var callback: (()->Void)? = nil
     @IBAction func tappedCloseBtn(_ sender: UIButton) {
+        sender.playButtonSound()
         callback?()
     }
 }

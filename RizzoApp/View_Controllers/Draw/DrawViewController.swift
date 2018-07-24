@@ -84,11 +84,12 @@ class DrawViewController: UIViewController {
     }
 
     @IBAction func tappedBlackColor(_ sender: UIButton) {
-        print("BackColor")
         drawView.currentStrockColor = UIColor.black.cgColor
+        print("BackColor")
         sender.playButtonSound()
         resetColorButtons()
         sender.setBackgroundImage(UIImage(named: "blacked"), for: .normal)
+        penBtn.setBackgroundImage(UIImage(named: "blackpen"), for: .normal)
         var delay = 0.1
         [yellowColorBtn, greenColorBtn, blueColorBtn, redColorBtn].forEach { (colorBtn) in
             UIView.animate(withDuration: 0.5, delay: delay, options: [], animations: {
@@ -168,10 +169,12 @@ class DrawViewController: UIViewController {
         
     }
     @IBAction func tappedPenBtn(_ sender: UIButton) {
+        sender.playButtonSound()
         print("PenButton")
         
     }
     @IBAction func tappedOpenTools(_ sender: UIButton) {
+        sender.playButtonSound()
         drawView.isUserInteractionEnabled = true
         UIView.animate(withDuration: 0.5) {
             self.penBtn.alpha = 1
@@ -180,6 +183,7 @@ class DrawViewController: UIViewController {
         }
     }
     @IBAction func tappedSentBtn(_ sender: UIButton) {
+        sender.playButtonSound()
         print("SentButton")
         var datas = [[CGFloat]]()
         datas.append([])
@@ -218,10 +222,12 @@ class DrawViewController: UIViewController {
         
     }
     @IBAction func tappedUndoBtn(_ sender: UIButton) {
+        sender.playButtonSound()
         drawView.undo()
         print("UndoButton")
     }
     @IBAction func tappedClearBtn(_ sender: UIButton) {
+        sender.playButtonSound()
         print("ClearButton")
         drawView.clearDraw()
     }

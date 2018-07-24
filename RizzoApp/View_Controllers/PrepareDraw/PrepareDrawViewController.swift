@@ -30,6 +30,7 @@ class PrepareDrawViewController: UIViewController {
     }
     
     @IBAction func tappedCategory(_ sender: UIButton) {
+        sender.playButtonSound()
         myLoader.startAnimating()
         QuestionModel.getAllDrawQuestion { (datas) in
             self.myLoader.stopAnimating()
