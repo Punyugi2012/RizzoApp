@@ -13,6 +13,7 @@ class DrawViewController: UIViewController {
     
     var getQuestion: DrawQuestion!
     var questionType: TypeDrawQuestion!
+    var isCorrect = false
     
     @IBOutlet weak var myLoader: UIActivityIndicatorView!
     @IBOutlet weak var drawView: DrawView!
@@ -201,20 +202,36 @@ class DrawViewController: UIViewController {
             ]
         ]
         myLoader.startAnimating()
-        DrawAPI.checkDrawed(params: parameters) { (result) in
+        DrawAPI.checkDrawed(params: parameters) { (results) in
             self.myLoader.stopAnimating()
-            print(result)
+            for result in results {
+                if result.contains(self.getQuestion.answer) {
+                    self.isCorrect = true
+                    break
+                }
+            }
+            self.performSegue(withIdentifier: "ToFinishedDraw", sender: self)
+            print(results)
         }
         
     }
     @IBAction func tappedUndoBtn(_ sender: UIButton) {
         drawView.undo()
         print("UndoButton")
-        
-        
     }
     @IBAction func tappedClearBtn(_ sender: UIButton) {
         print("ClearButton")
         drawView.clearDraw()
+    }
+    @IBAction func backToDraw(segue: UIStoryboardSegue) {
+        
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let navDestination = segue.destination as? UINavigationController, let destination = navDestination.viewControllers.first as? FinishedDrawViewController {
+            destination.isCorrect = self.isCorrect
+            destination.getQuestionName = self.getQuestion.questionName
+            destination.getDrawedImage = UIImage.getImage(view: drawView)
+            self.isCorrect = false
+        }
     }
 }

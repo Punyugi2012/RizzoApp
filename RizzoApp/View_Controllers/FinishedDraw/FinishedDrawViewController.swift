@@ -10,26 +10,34 @@ import UIKit
 
 class FinishedDrawViewController: UIViewController {
 
+    var isCorrect = false
+    var getQuestionName = ""
+    var getDrawedImage: UIImage!
+    
+    @IBOutlet weak var drawedImageView: UIImageView!
+    @IBOutlet weak var resultLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setNavigationBar()
+        print(isCorrect)
+        print(getQuestionName)
+        if isCorrect {
+            resultLabel.text = "ถูกต้อง!! มันคือ\(getQuestionName)"
+        }
+        else {
+            resultLabel.text = "ไม่ถูกต้อง!! มันยังไม่ใช่\(getQuestionName)"
+        }
+        drawedImageView.image = getDrawedImage
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func replay(_ sender: UIButton) {
+        sender.playButtonSound()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func backToMainMenu(_ sender: UIButton) {
+        sender.playButtonSound()
     }
-    */
+   
 
 }

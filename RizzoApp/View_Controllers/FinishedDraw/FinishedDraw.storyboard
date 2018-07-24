@@ -17,12 +17,76 @@
                     <view key="view" contentMode="scaleToFill" id="hDY-bG-NzR">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="totalScore/totalScore" translatesAutoresizingMaskIntoConstraints="NO" id="DXJ-ra-njz">
+                                <rect key="frame" x="20" y="114" width="728" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Vk9-YB-xHe"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9th-FR-87y">
+                                <rect key="frame" x="56" y="319" width="656" height="380"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="380" id="wZJ-iU-Fm6"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ถูกต้อง!! มันคือกระต่าย" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbm-bb-8xX">
+                                <rect key="frame" x="56" y="719" width="656" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="75v-gb-dnh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="q45-o0-3sy">
+                                <rect key="frame" x="20" y="849" width="728" height="149"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXW-uP-IBM">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="149"/>
+                                        <state key="normal" backgroundImage="totalScore/replay"/>
+                                        <connections>
+                                            <action selector="replay:" destination="yB1-jV-vH3" eventType="touchUpInside" id="CX6-KP-CPn"/>
+                                            <segue destination="VoJ-3E-mKb" kind="unwind" unwindAction="backToDrawWithSegue:" id="XJX-Vb-5Ws"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CAq-6z-k6Q">
+                                        <rect key="frame" x="374" y="0.0" width="354" height="149"/>
+                                        <state key="normal" backgroundImage="totalScore/homeBtn"/>
+                                        <connections>
+                                            <action selector="backToMainMenu:" destination="yB1-jV-vH3" eventType="touchUpInside" id="u04-VT-OBU"/>
+                                            <segue destination="VoJ-3E-mKb" kind="unwind" unwindAction="backToMainMenuWithSegue:" id="wpC-ek-bvX"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="q45-o0-3sy" firstAttribute="leading" secondItem="hDY-bG-NzR" secondAttribute="leading" constant="20" id="5DG-ly-eee"/>
+                            <constraint firstItem="DXJ-ra-njz" firstAttribute="top" secondItem="D1k-Sc-QDp" secondAttribute="top" constant="50" id="F6l-3H-Lo3"/>
+                            <constraint firstItem="D1k-Sc-QDp" firstAttribute="trailing" secondItem="DXJ-ra-njz" secondAttribute="trailing" constant="20" id="KGb-8w-meI"/>
+                            <constraint firstItem="nbm-bb-8xX" firstAttribute="leading" secondItem="D1k-Sc-QDp" secondAttribute="leading" constant="56" id="TLk-kS-Siu"/>
+                            <constraint firstItem="D1k-Sc-QDp" firstAttribute="trailing" secondItem="9th-FR-87y" secondAttribute="trailing" constant="56" id="UTk-LM-dAI"/>
+                            <constraint firstItem="q45-o0-3sy" firstAttribute="top" secondItem="nbm-bb-8xX" secondAttribute="bottom" constant="50" id="bx5-4U-7Vi"/>
+                            <constraint firstItem="nbm-bb-8xX" firstAttribute="top" secondItem="9th-FR-87y" secondAttribute="bottom" constant="20" id="gxQ-iz-wyi"/>
+                            <constraint firstItem="D1k-Sc-QDp" firstAttribute="trailing" secondItem="nbm-bb-8xX" secondAttribute="trailing" constant="56" id="hKR-zS-Ayx"/>
+                            <constraint firstItem="9th-FR-87y" firstAttribute="top" secondItem="DXJ-ra-njz" secondAttribute="bottom" constant="5" id="hw0-xG-qTi"/>
+                            <constraint firstItem="q45-o0-3sy" firstAttribute="centerX" secondItem="hDY-bG-NzR" secondAttribute="centerX" id="jWw-Pg-Z4f"/>
+                            <constraint firstItem="DXJ-ra-njz" firstAttribute="leading" secondItem="D1k-Sc-QDp" secondAttribute="leading" constant="20" id="mca-R9-hFJ"/>
+                            <constraint firstItem="9th-FR-87y" firstAttribute="leading" secondItem="D1k-Sc-QDp" secondAttribute="leading" constant="56" id="r0i-DJ-agV"/>
+                            <constraint firstAttribute="trailing" secondItem="q45-o0-3sy" secondAttribute="trailing" constant="20" id="yQR-Qn-qD7"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="D1k-Sc-QDp"/>
                     </view>
                     <navigationItem key="navigationItem" title="FinishedDraw" id="4fU-0w-zln"/>
+                    <connections>
+                        <outlet property="drawedImageView" destination="9th-FR-87y" id="ge1-b3-h9b"/>
+                        <outlet property="resultLabel" destination="nbm-bb-8xX" id="tw6-QX-9t8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uNY-er-cCN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="VoJ-3E-mKb" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3984.375" y="-41.015625"/>
         </scene>
@@ -45,4 +109,9 @@
             <point key="canvasLocation" x="3218.75" y="-41.015625"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="totalScore/homeBtn" width="589" height="149"/>
+        <image name="totalScore/replay" width="589" height="149"/>
+        <image name="totalScore/totalScore" width="803" height="218"/>
+    </resources>
 </document>

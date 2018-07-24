@@ -35,3 +35,13 @@ extension UIViewController {
         navigationController?.navigationBar.isTranslucent = true
     }
 }
+
+extension UIImage {
+    static func getImage(view: UIView) -> UIImage? {
+        UIGraphicsBeginImageContext(view.frame.size)
+        view.layer.render(in:UIGraphicsGetCurrentContext()!)
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return image
+    }
+}
