@@ -80,6 +80,14 @@
                                         <rect key="frame" x="108" y="47" width="526" height="125"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XWX-Os-bab">
+                                        <rect key="frame" x="657" y="23" width="89" height="59"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="ขยายรูปภาพ"/>
+                                        <connections>
+                                            <action selector="previewQuestionImage:" destination="jzG-ip-g9r" eventType="touchUpInside" id="RJr-Uk-snD"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </view>
                         </subviews>
