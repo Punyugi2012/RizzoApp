@@ -13,6 +13,7 @@ class DrawViewController: UIViewController {
     var getQuestion: DrawQuestion!
     var questionType: TypeDrawQuestion!
     
+    @IBOutlet weak var titleQuestionLbl: UILabel!
     @IBOutlet weak var smallLineHeight: NSLayoutConstraint!
     @IBOutlet weak var mediumLineHight: NSLayoutConstraint!
     @IBOutlet weak var highLineHeight: NSLayoutConstraint!
@@ -45,6 +46,11 @@ class DrawViewController: UIViewController {
         }
         navigationItem.hidesBackButton = true
         view.backgroundColor = UIColor(named: "DayColor")
+        setQuestionDataToView()
+    }
+    
+    func setQuestionDataToView() {
+        titleQuestionLbl.text = "จงวาด\(getQuestion.questionName)"
     }
     
     func resetColorButtons() {
@@ -63,6 +69,7 @@ class DrawViewController: UIViewController {
     }
 
     @IBAction func tappedBlackColor(_ sender: UIButton) {
+        print("BackColor")
         sender.playButtonSound()
         resetColorButtons()
         sender.setBackgroundImage(UIImage(named: "blacked"), for: .normal)
@@ -77,6 +84,7 @@ class DrawViewController: UIViewController {
     }
     
     @IBAction func tappedRedColor(_ sender: UIButton) {
+        print("RedColor")
         sender.playButtonSound()
         resetColorButtons()
         penBtn.setBackgroundImage(UIImage(named: "redpen"), for: .normal)
@@ -84,6 +92,7 @@ class DrawViewController: UIViewController {
     }
     
     @IBAction func tappedYellowColor(_ sender: UIButton) {
+        print("YellowColor")
         sender.playButtonSound()
         resetColorButtons()
         penBtn.setBackgroundImage(UIImage(named: "yellowpen"), for: .normal)
@@ -91,6 +100,7 @@ class DrawViewController: UIViewController {
     }
     
     @IBAction func tappedGreenColor(_ sender: UIButton) {
+        print("GreenColor")
         sender.playButtonSound()
         resetColorButtons()
         penBtn.setBackgroundImage(UIImage(named: "greenpen"), for: .normal)
@@ -98,6 +108,7 @@ class DrawViewController: UIViewController {
     }
     
     @IBAction func tappedBlueColor(_ sender: UIButton) {
+        print("BlueColor")
         sender.playButtonSound()
         resetColorButtons()
         penBtn.setBackgroundImage(UIImage(named: "bluepen"), for: .normal)
@@ -105,6 +116,7 @@ class DrawViewController: UIViewController {
     }
 
     @IBAction func tappedHighLineBtn(_ sender: UIButton) {
+        print("HeighLine")
         sender.playButtonSound()
         resetLineButtons()
         highLineHeight.constant = 170
@@ -116,23 +128,24 @@ class DrawViewController: UIViewController {
             })
             delay += 0.1
         }
-        
     }
     
     @IBAction func tappedMediumLineBtn(_ sender: UIButton) {
+        print("MediumLine")
         sender.playButtonSound()
         resetLineButtons()
         mediumLineHight.constant = 170
         
     }
     @IBAction func tappedSmallLineBtn(_ sender: UIButton) {
+        print("SmallLine")
         sender.playButtonSound()
         resetLineButtons()
         smallLineHeight.constant = 170
         
     }
     @IBAction func tappedPenBtn(_ sender: UIButton) {
-        
+        print("PenButton")
         
     }
     @IBAction func tappedOpenTools(_ sender: UIButton) {
@@ -141,5 +154,14 @@ class DrawViewController: UIViewController {
             self.highLineBtn.alpha = 1
             self.blackColorBtn.alpha = 1
         }
+    }
+    @IBAction func tappedSentBtn(_ sender: UIButton) {
+        print("SentButton")
+        
+    }
+    @IBAction func tappedUndoBtn(_ sender: UIButton) {
+        print("UndoButton")
+        
+        
     }
 }
