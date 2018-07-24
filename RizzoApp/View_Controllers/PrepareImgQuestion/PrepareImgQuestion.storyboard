@@ -19,36 +19,57 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rYm-6g-Zbo">
-                                <rect key="frame" x="134" y="308" width="500" height="100"/>
+                                <rect key="frame" x="134" y="314" width="500" height="125"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="f2imageQ/imgsQuesFruits"/>
+                                <connections>
+                                    <action selector="tappedCategory:" destination="k6H-ui-tNQ" eventType="touchUpInside" id="eIr-YO-V5E"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xNv-HZ-iwB">
-                                <rect key="frame" x="134" y="462" width="500" height="100"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xNv-HZ-iwB">
+                                <rect key="frame" x="134" y="488" width="500" height="125"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="f2imageQ/imgsQuesAnaimals"/>
+                                <connections>
+                                    <action selector="tappedCategory:" destination="k6H-ui-tNQ" eventType="touchUpInside" id="4QB-MP-Aaz"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aWc-gl-KjQ">
-                                <rect key="frame" x="134" y="796" width="500" height="100"/>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aWc-gl-KjQ">
+                                <rect key="frame" x="134" y="834" width="500" height="125"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="f2imageQ/imgsQuesFruits"/>
+                                <state key="normal" title="Button" image="f2imageQ/imgsQuesObjects"/>
+                                <connections>
+                                    <action selector="tappedCategory:" destination="k6H-ui-tNQ" eventType="touchUpInside" id="96I-WQ-6zT"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FiF-N5-sUg">
-                                <rect key="frame" x="134" y="631" width="500" height="100"/>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FiF-N5-sUg">
+                                <rect key="frame" x="134" y="655" width="500" height="125"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="f2imageQ/imgsQuesLocations"/>
+                                <connections>
+                                    <action selector="tappedCategory:" destination="k6H-ui-tNQ" eventType="touchUpInside" id="kYf-bf-qNH"/>
+                                </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="iMs-JF-8AQ">
+                                <rect key="frame" x="365" y="493" width="37" height="37"/>
+                                <color key="color" cocoaTouchSystemColor="darkTextColor"/>
+                            </activityIndicatorView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="f2imageQ/headerImagsQuestion" translatesAutoresizingMaskIntoConstraints="NO" id="43t-eC-D6M">
-                                <rect key="frame" x="134" y="125" width="500" height="130"/>
+                                <rect key="frame" x="84" y="115" width="600" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iMs-JF-8AQ" firstAttribute="centerY" secondItem="uLf-b8-CCt" secondAttribute="centerY" id="K5k-r5-FQq"/>
+                            <constraint firstItem="iMs-JF-8AQ" firstAttribute="centerX" secondItem="uLf-b8-CCt" secondAttribute="centerX" id="YPf-pl-jSq"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="614-EP-iyD"/>
                     </view>
                     <navigationItem key="navigationItem" title="PrepareImgQuestion" id="RnW-4w-GOm"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
+                        <outlet property="myLoader" destination="iMs-JF-8AQ" id="ZQd-aW-D0F"/>
                         <segue destination="mlA-DT-Lnq" kind="show" identifier="ToImgQuestion" id="2ke-GZ-VGY"/>
                     </connections>
                 </viewController>
@@ -70,5 +91,6 @@
         <image name="f2imageQ/imgsQuesAnaimals" width="829" height="189"/>
         <image name="f2imageQ/imgsQuesFruits" width="829" height="189"/>
         <image name="f2imageQ/imgsQuesLocations" width="829" height="189"/>
+        <image name="f2imageQ/imgsQuesObjects" width="829" height="189"/>
     </resources>
 </document>
