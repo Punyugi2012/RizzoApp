@@ -25,8 +25,6 @@ class ImgQuestionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        AppManager.shared.stopBackgroundSound()
         setNavigationBar()
         containerView.backgroundColor = #colorLiteral(red: 0.898, green: 0.7098, blue: 0.8314, alpha: 1)
         view.backgroundColor = #colorLiteral(red: 0.898, green: 0.7098, blue: 0.8314, alpha: 1)
@@ -42,6 +40,7 @@ class ImgQuestionViewController: UIViewController {
             default:
                 break
         }
+        navigationItem.hidesBackButton = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -165,5 +164,9 @@ class ImgQuestionViewController: UIViewController {
             destination.getScore = score
             
         }
+    }
+    
+    @IBAction func backToImageQuestion(segue: UIStoryboardSegue) {
+        
     }
 }

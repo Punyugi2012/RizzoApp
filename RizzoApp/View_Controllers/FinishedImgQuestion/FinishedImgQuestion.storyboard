@@ -52,6 +52,7 @@
                                         <state key="normal" backgroundImage="totalScore/replay"/>
                                         <connections>
                                             <action selector="replayGame:" destination="QDq-gj-LgV" eventType="touchUpInside" id="Hex-Qi-hdS"/>
+                                            <segue destination="q2I-aR-0xH" kind="unwind" unwindAction="backToImageQuestionWithSegue:" id="a9i-a0-qCf"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nrF-eb-mQe">
@@ -59,12 +60,10 @@
                                         <state key="normal" backgroundImage="totalScore/homeBtn"/>
                                         <connections>
                                             <action selector="backToMainMenu:" destination="QDq-gj-LgV" eventType="touchUpInside" id="ELI-3s-YTy"/>
+                                            <segue destination="q2I-aR-0xH" kind="unwind" unwindAction="backToMainMenuWithSegue:" id="1E1-gN-mao"/>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="600" id="VLP-pM-0Ci"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -88,6 +87,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jvi-yF-9Eg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="q2I-aR-0xH" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3173.4375" y="-705.46875"/>
         </scene>
