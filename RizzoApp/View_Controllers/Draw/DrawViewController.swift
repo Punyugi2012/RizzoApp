@@ -14,6 +14,7 @@ class DrawViewController: UIViewController {
     var getQuestion: DrawQuestion!
     var questionType: TypeDrawQuestion!
     
+    @IBOutlet weak var myLoader: UIActivityIndicatorView!
     @IBOutlet weak var drawView: DrawView!
     @IBOutlet weak var titleQuestionLbl: UILabel!
     @IBOutlet weak var smallLineHeight: NSLayoutConstraint!
@@ -48,6 +49,8 @@ class DrawViewController: UIViewController {
         }
         navigationItem.hidesBackButton = true
         view.backgroundColor = UIColor(named: "DayColor")
+        myLoader.transform = CGAffineTransform(scaleX: 2, y: 2)
+        myLoader.stopAnimating()
         setDrawViewDefault()
         setQuestionDataToView()
     }
@@ -197,7 +200,9 @@ class DrawViewController: UIViewController {
                 ]
             ]
         ]
+        myLoader.startAnimating()
         DrawAPI.checkDrawed(params: parameters) { (result) in
+            self.myLoader.stopAnimating()
             print(result)
         }
         
@@ -207,5 +212,9 @@ class DrawViewController: UIViewController {
         print("UndoButton")
         
         
+    }
+    @IBAction func tappedClearBtn(_ sender: UIButton) {
+        print("ClearButton")
+        drawView.clearDraw()
     }
 }
