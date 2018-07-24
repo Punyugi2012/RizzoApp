@@ -62,6 +62,7 @@
 		B87D93CF2104972B00788F2D /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87D93CE2104972B00788F2D /* Enums.swift */; };
 		B87D93D421049E3000788F2D /* ModalView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B87D93D321049E3000788F2D /* ModalView.xib */; };
 		B87D93D621049E3D00788F2D /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87D93D521049E3D00788F2D /* ModalView.swift */; };
+		B8A1F60D210709D500D4FF0C /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A1F60C210709D500D4FF0C /* DrawView.swift */; };
 		B8AEBD3B21030FC500468680 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AEBD3A21030FC500468680 /* AppDelegate.swift */; };
 		B8AEBD4221030FC700468680 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8AEBD4121030FC700468680 /* Assets.xcassets */; };
 		B8AEBD4521030FC700468680 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8AEBD4321030FC700468680 /* LaunchScreen.storyboard */; };
@@ -123,6 +124,7 @@
 		B87D93CE2104972B00788F2D /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		B87D93D321049E3000788F2D /* ModalView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModalView.xib; sourceTree = "<group>"; };
 		B87D93D521049E3D00788F2D /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
+		B8A1F60C210709D500D4FF0C /* DrawView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
 		B8AEBD3721030FC400468680 /* RizzoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RizzoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8AEBD3A21030FC500468680 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8AEBD4121030FC700468680 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -253,6 +255,7 @@
 			children = (
 				B84F5CAC2103231C0043DCEC /* Draw.storyboard */,
 				B82F8CD82103499C001A9338 /* DrawViewController.swift */,
+				B8A1F60C210709D500D4FF0C /* DrawView.swift */,
 			);
 			path = Draw;
 			sourceTree = "<group>";
@@ -595,6 +598,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B82F8CDD21034A10001A9338 /* PrepareDrawViewController.swift in Sources */,
+				B8A1F60D210709D500D4FF0C /* DrawView.swift in Sources */,
 				B82F8CD92103499C001A9338 /* DrawViewController.swift in Sources */,
 				B84F5CD4210331310043DCEC /* QuestionModel.swift in Sources */,
 				B87D939A21045DD700788F2D /* Theme.swift in Sources */,

@@ -42,7 +42,7 @@
                                     <constraint firstAttribute="trailing" secondItem="IRc-5z-jvt" secondAttribute="trailing" id="z61-Y7-s92"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GGQ-uu-ryL">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GGQ-uu-ryL" customClass="DrawView" customModule="RizzoApp" customModuleProvider="target">
                                 <rect key="frame" x="10" y="279" width="748" height="740"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
@@ -245,6 +245,7 @@
                     <connections>
                         <outlet property="blackColorBtn" destination="2AC-nj-yQf" id="6Pk-WP-k7R"/>
                         <outlet property="blueColorBtn" destination="NjC-J2-x64" id="Gr6-VE-cSw"/>
+                        <outlet property="drawView" destination="GGQ-uu-ryL" id="3BA-yz-aQU"/>
                         <outlet property="greenColorBtn" destination="gET-lg-jp8" id="m4G-Cr-Jcl"/>
                         <outlet property="highLineBtn" destination="SDJ-g8-o1c" id="7Q3-f7-KdA"/>
                         <outlet property="highLineHeight" destination="MlV-BC-EOf" id="TyL-s9-7MX"/>

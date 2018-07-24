@@ -13,6 +13,7 @@ class DrawViewController: UIViewController {
     var getQuestion: DrawQuestion!
     var questionType: TypeDrawQuestion!
     
+    @IBOutlet weak var drawView: DrawView!
     @IBOutlet weak var titleQuestionLbl: UILabel!
     @IBOutlet weak var smallLineHeight: NSLayoutConstraint!
     @IBOutlet weak var mediumLineHight: NSLayoutConstraint!
@@ -46,6 +47,8 @@ class DrawViewController: UIViewController {
         }
         navigationItem.hidesBackButton = true
         view.backgroundColor = UIColor(named: "DayColor")
+        drawView.currentWidth = 6
+        drawView.currentStrockColor = UIColor.black.cgColor
         setQuestionDataToView()
     }
     
@@ -70,6 +73,7 @@ class DrawViewController: UIViewController {
 
     @IBAction func tappedBlackColor(_ sender: UIButton) {
         print("BackColor")
+        drawView.currentStrockColor = UIColor.black.cgColor
         sender.playButtonSound()
         resetColorButtons()
         sender.setBackgroundImage(UIImage(named: "blacked"), for: .normal)
@@ -84,6 +88,7 @@ class DrawViewController: UIViewController {
     }
     
     @IBAction func tappedRedColor(_ sender: UIButton) {
+        drawView.currentStrockColor = UIColor.red.cgColor
         print("RedColor")
         sender.playButtonSound()
         resetColorButtons()
@@ -92,6 +97,7 @@ class DrawViewController: UIViewController {
     }
     
     @IBAction func tappedYellowColor(_ sender: UIButton) {
+        drawView.currentStrockColor = UIColor.yellow.cgColor
         print("YellowColor")
         sender.playButtonSound()
         resetColorButtons()
@@ -100,6 +106,7 @@ class DrawViewController: UIViewController {
     }
     
     @IBAction func tappedGreenColor(_ sender: UIButton) {
+        drawView.currentStrockColor = UIColor.green.cgColor
         print("GreenColor")
         sender.playButtonSound()
         resetColorButtons()
@@ -108,6 +115,7 @@ class DrawViewController: UIViewController {
     }
     
     @IBAction func tappedBlueColor(_ sender: UIButton) {
+        drawView.currentStrockColor = UIColor.blue.cgColor
         print("BlueColor")
         sender.playButtonSound()
         resetColorButtons()
@@ -116,6 +124,7 @@ class DrawViewController: UIViewController {
     }
 
     @IBAction func tappedHighLineBtn(_ sender: UIButton) {
+        drawView.currentWidth = 6
         print("HeighLine")
         sender.playButtonSound()
         resetLineButtons()
@@ -131,6 +140,7 @@ class DrawViewController: UIViewController {
     }
     
     @IBAction func tappedMediumLineBtn(_ sender: UIButton) {
+        drawView.currentWidth = 4
         print("MediumLine")
         sender.playButtonSound()
         resetLineButtons()
@@ -138,6 +148,7 @@ class DrawViewController: UIViewController {
         
     }
     @IBAction func tappedSmallLineBtn(_ sender: UIButton) {
+        drawView.currentWidth = 2
         print("SmallLine")
         sender.playButtonSound()
         resetLineButtons()
@@ -160,6 +171,7 @@ class DrawViewController: UIViewController {
         
     }
     @IBAction func tappedUndoBtn(_ sender: UIButton) {
+        drawView.undo()
         print("UndoButton")
         
         
