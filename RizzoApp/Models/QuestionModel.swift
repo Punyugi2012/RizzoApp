@@ -10,9 +10,60 @@ import Foundation
 
 class QuestionModel {
     
-    static func getAllImageQuestion(completeHandle: @escaping (_ datas: [[ImageQustion]]) -> Void) {
+    static func getAllImageQuestion(completeHandle: @escaping (_ datas: [[ImageQuestion]]) -> Void) {
+        
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            completeHandle([])
+        let imageQuestions = [
+                [//ผลไม้
+                    ImageQuestion(answer: "แตงโม", answers: ["แตงโม", "ส้มโอ", "ลิ้นจี้", "แอปเปิ้ล"]),
+                    ImageQuestion(answer: "แอปเปิ้ล", answers: ["แอปเปิ้ล", "ส้ม", "สตอรเบอรรี่", "มะม่วง"]),
+                    ImageQuestion(answer: "กล้วย", answers: ["มะม่วง", "กล้วย", "มะละกอ", "ข้าวโพด"]),
+                    ImageQuestion(answer: "ข้าวโพด", answers: ["กล้วย", "มะละกอ", "มะเฟือง", "ข้าวโพด"]),
+                    ImageQuestion(answer: "ทุเรียน", answers: ["มะม่วง", "ทุเรียน", "สละ", "มังคุด"]),
+                    ImageQuestion(answer: "มะพร้าว", answers: ["มะขาม", "ส้มโอ", "มะพร้าว", "แอปเปิ้ล"]),
+                    ImageQuestion(answer: "มะละกอ", answers: ["มะขาม", "มะละกอ", "กล้วย", "มะม่วง"]),
+                    ImageQuestion(answer: "สตอเบอรี่", answers: ["สตอเบอรี่", "บลูเบอรรี่", "แบล็คเบอรรี่", "สละ"]),
+                    ImageQuestion(answer: "ส้ม", answers: ["ส้มโอ", "แอปเปิ้ล", "ส้ม", "กีวี่"]),
+                    ImageQuestion(answer: "สับปะรด", answers: ["สตอเบอรรี่", "สับปะรด", "ทุเรียน", "ข้าวโพด"])
+                ],
+                [//สัตว์
+                    ImageQuestion(answer: "เป็ด", answers: ["เป็ด", "ห่าน", "ไก่", "หมู"]),
+                    ImageQuestion(answer: "แมว", answers: ["หมา", "แมว", "เสือ", "ลิง"]),
+                    ImageQuestion(answer: "ไก่", answers: ["ไก่", "เป็ด", "ห่าน", "หงส์"]),
+                    ImageQuestion(answer: "กระต่าย", answers: ["กระทิง", "กระรอก", "กระแต", "กระต่าย"]),
+                    ImageQuestion(answer: "ช้าง", answers: ["ฮิปโป", "ช้าง", "ชมด", "ยีราฟ"]),
+                    ImageQuestion(answer: "ลิง", answers: ["ลิง", "หมา", "แมว", "หมู"]),
+                    ImageQuestion(answer: "สิงโต", answers: ["เสือ", "สิงโต", "กระทิง", "แรด"]),
+                    ImageQuestion(answer: "หมา", answers: ["หมา", "แมว", "หมี", "หมู"]),
+                    ImageQuestion(answer: "หมี", answers: ["แมว", "หมู", "หมา", "หมี"]),
+                    ImageQuestion(answer: "หมู", answers: ["แมว", "หมู", "หมี", "หมา"]),
+                ],
+                [//สถานที่
+                    ImageQuestion(answer: "ถ้ำ", answers: ["ถ้ำ", "ป่า", "สนามเด็กเล่น", "น้ำตก"]),
+                    ImageQuestion(answer: "ทะเล", answers: ["แม่น้ำ", "ทะเล", "ทะเลทราย", "ทะเลสาบ"]),
+                    ImageQuestion(answer: "ทุ่งนา", answers: ["สวนผัก", "แม่น้ำ", "ทุ่งนา", "ป่า"]),
+                    ImageQuestion(answer: "น้ำตก", answers: ["น้ำตก", "ถ้ำ", "ทะเล", "แม่น้ำ"]),
+                    ImageQuestion(answer: "ภูเขา", answers: ["ป่า", "ถ้ำ", "ภูเขา", "น้ำตก"]),
+                    ImageQuestion(answer: "วัด", answers: ["สวนสาธารณะ", "สนามเด็กเล่น", "ห้างสรรพสินค้า", "วัด"]),
+                    ImageQuestion(answer: "สนามกอล์ฟ", answers: ["สนามกอล์ฟ", "สนามฟุตบอล", "ป่า", "สนามเด็กเล่น"]),
+                    ImageQuestion(answer: "สนามบิน", answers: ["บริการขนส่งทางบก", "สนามเด็กเล่น", "สนามกอล์ฟ", "สนามบิน"]),
+                    ImageQuestion(answer: "สนามฟุตอล", answers: ["สนามฟุตซอล", "สนามฟุตบอล", "สนามเด็กเล่น", "สนามกอล์ฟ"]),
+                    ImageQuestion(answer: "ห้างสรรพสินค้า", answers: ["ห้างสรรพสินค้า", "ห้างทอง", "สวนสาธารณะ", "ตลาด"]),
+                ],
+                [//สิ่งของ
+                    ImageQuestion(answer: "เครื่องมือช่าง", answers: ["อุปกรณ์อาบน้ำ", "เครื่องมือช่าง", "เครื่องมือซักผ้า", "เครื่องครัว"]),
+                    ImageQuestion(answer: "แปรงสีฟัน", answers: ["แปรงสีฟัน", "แปรงขัดส้วม", "ฝอยขัดหม้อ", "แปรงขัดรองเท้า"]),
+                    ImageQuestion(answer: "แว่นตา", answers: ["บิ๊กอาย", "แว่นตา", "แว่นขยาย", "กล้องส่องพระ"]),
+                    ImageQuestion(answer: "กรรไกร", answers: ["กรรไกร", "กรรไกรตัดเล็บ", "กรรไกรตัดหญ้า", "มีด"]),
+                    ImageQuestion(answer: "ไม้กวาด", answers: ["ที่ตักผง", "ไม้ถูพื้น", "ไม้กวาด", "เครื่องดูดฝุ่น"]),
+                    ImageQuestion(answer: "กะทะ", answers: ["กะทะ", "หม้อ", "กะละมัง", "ฉาม"]),
+                    ImageQuestion(answer: "ดินสอ", answers: ["ดินสอ", "ปากกา", "ยางลบ", "คัตเตอร์"]),
+                    ImageQuestion(answer: "มีดครัว", answers: ["มีดดาบ", "มีดพก", "มีดครัว", "มีดไฟฟ้า"]),
+                    ImageQuestion(answer: "มีดช้อนส้อม", answers: ["มีดช้อนส้อม", "มีด", "ช้อน", "ส้อม"]),
+                    ImageQuestion(answer: "ร่ม", answers: ["ผ้าใบ", "ร่ม", "ลูกโป่ง", "กิ่งไม้"]),
+                ]
+            ]
+            completeHandle(imageQuestions)
         }
     }
     
@@ -59,5 +110,7 @@ class QuestionModel {
             completeHandle(drawQuestions)
         }
     }
+    
+    
     
 }

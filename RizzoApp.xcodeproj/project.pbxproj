@@ -8,6 +8,46 @@
 
 /* Begin PBXBuildFile section */
 		8F077A3D0CEAFB13181CF6B9 /* Pods_RizzoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF24A277F42D7989141FC708 /* Pods_RizzoApp.framework */; };
+		B422AB09210722C60018CE9F /* ทุเรียน.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B422AAFF210722C40018CE9F /* ทุเรียน.jpg */; };
+		B422AB0A210722C60018CE9F /* กล้วย.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B422AB00210722C40018CE9F /* กล้วย.jpg */; };
+		B422AB0B210722C60018CE9F /* ข้าวโพด.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B422AB01210722C40018CE9F /* ข้าวโพด.jpg */; };
+		B422AB0C210722C60018CE9F /* สับปะรด.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B422AB02210722C50018CE9F /* สับปะรด.jpg */; };
+		B422AB0D210722C60018CE9F /* สตอเบอรี่.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B422AB03210722C50018CE9F /* สตอเบอรี่.jpg */; };
+		B422AB0E210722C60018CE9F /* มะพร้าว.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B422AB04210722C50018CE9F /* มะพร้าว.jpg */; };
+		B422AB0F210722C60018CE9F /* แอปเปิ้ล.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B422AB05210722C50018CE9F /* แอปเปิ้ล.jpg */; };
+		B422AB10210722C60018CE9F /* มะละกอ.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B422AB06210722C60018CE9F /* มะละกอ.jpg */; };
+		B422AB11210722C60018CE9F /* ส้ม.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B422AB07210722C60018CE9F /* ส้ม.jpg */; };
+		B422AB12210722C60018CE9F /* แตงโม.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B422AB08210722C60018CE9F /* แตงโม.jpg */; };
+		B422AB1D210723030018CE9F /* หมู.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B422AB13210722FF0018CE9F /* หมู.jpg */; };
+		B422AB1E210723030018CE9F /* แมว.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B422AB14210723000018CE9F /* แมว.jpg */; };
+		B422AB1F210723030018CE9F /* หมี.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B422AB15210723000018CE9F /* หมี.jpg */; };
+		B422AB20210723030018CE9F /* ช้าง.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B422AB16210723000018CE9F /* ช้าง.jpg */; };
+		B422AB21210723030018CE9F /* สิงโต.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B422AB17210723000018CE9F /* สิงโต.jpg */; };
+		B422AB22210723030018CE9F /* กระต่าย.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B422AB18210723010018CE9F /* กระต่าย.jpg */; };
+		B422AB23210723030018CE9F /* ไก่.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B422AB19210723020018CE9F /* ไก่.jpg */; };
+		B422AB24210723030018CE9F /* เป็ด.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B422AB1A210723020018CE9F /* เป็ด.jpg */; };
+		B422AB25210723030018CE9F /* ลิง.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B422AB1B210723020018CE9F /* ลิง.jpg */; };
+		B422AB26210723030018CE9F /* หมา.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B422AB1C210723020018CE9F /* หมา.jpg */; };
+		B422AB31210723110018CE9F /* ถ้ำ.JPG in Resources */ = {isa = PBXBuildFile; fileRef = B422AB272107230E0018CE9F /* ถ้ำ.JPG */; };
+		B422AB32210723110018CE9F /* วัด.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B422AB282107230E0018CE9F /* วัด.jpg */; };
+		B422AB33210723110018CE9F /* ห้างสรรพสินค้า.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B422AB292107230F0018CE9F /* ห้างสรรพสินค้า.jpg */; };
+		B422AB34210723110018CE9F /* ทุ่งนา.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B422AB2A210723100018CE9F /* ทุ่งนา.jpg */; };
+		B422AB35210723110018CE9F /* ทะเล.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B422AB2B210723100018CE9F /* ทะเล.jpg */; };
+		B422AB36210723110018CE9F /* ภูเขา.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B422AB2C210723100018CE9F /* ภูเขา.jpg */; };
+		B422AB37210723110018CE9F /* สนามบิน.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B422AB2D210723110018CE9F /* สนามบิน.jpg */; };
+		B422AB38210723110018CE9F /* น้ำตก.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B422AB2E210723110018CE9F /* น้ำตก.jpg */; };
+		B422AB39210723110018CE9F /* สนามฟุตบอล.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B422AB2F210723110018CE9F /* สนามฟุตบอล.jpg */; };
+		B422AB3A210723110018CE9F /* สนามกอล์ฟ.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B422AB30210723110018CE9F /* สนามกอล์ฟ.jpg */; };
+		B422AB452107232E0018CE9F /* ร่ม.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B422AB3B210723220018CE9F /* ร่ม.jpg */; };
+		B422AB462107232E0018CE9F /* มีดครัว.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B422AB3C210723220018CE9F /* มีดครัว.jpg */; };
+		B422AB472107232E0018CE9F /* เครื่องมือช่าง.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B422AB3D210723240018CE9F /* เครื่องมือช่าง.jpg */; };
+		B422AB482107232E0018CE9F /* กรรไกร.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B422AB3E210723240018CE9F /* กรรไกร.jpg */; };
+		B422AB492107232E0018CE9F /* กะทะ.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B422AB3F210723240018CE9F /* กะทะ.jpg */; };
+		B422AB4A2107232E0018CE9F /* แปรงสีฟัน.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B422AB40210723250018CE9F /* แปรงสีฟัน.jpg */; };
+		B422AB4B2107232E0018CE9F /* ไม้กวาด.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B422AB41210723260018CE9F /* ไม้กวาด.jpg */; };
+		B422AB4C2107232E0018CE9F /* แว่นตา.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B422AB42210723270018CE9F /* แว่นตา.jpg */; };
+		B422AB4D2107232E0018CE9F /* ดินสอ.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B422AB43210723280018CE9F /* ดินสอ.jpg */; };
+		B422AB4E2107232E0018CE9F /* มีดช้อนส้อม.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B422AB44210723290018CE9F /* มีดช้อนส้อม.jpg */; };
 		B82F8CCB21034462001A9338 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82F8CCA21034462001A9338 /* Extensions.swift */; };
 		B82F8CCD21034833001A9338 /* PreSoundQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82F8CCC21034833001A9338 /* PreSoundQuestionViewController.swift */; };
 		B82F8CCF21034864001A9338 /* SoundQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82F8CCE21034864001A9338 /* SoundQuestionViewController.swift */; };
@@ -73,6 +113,46 @@
 
 /* Begin PBXFileReference section */
 		1F15F6958F7D80D42EDA9545 /* Pods-RizzoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RizzoApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-RizzoApp/Pods-RizzoApp.release.xcconfig"; sourceTree = "<group>"; };
+		B422AAFF210722C40018CE9F /* ทุเรียน.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ทุเรียน.jpg"; sourceTree = "<group>"; };
+		B422AB00210722C40018CE9F /* กล้วย.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "กล้วย.jpg"; sourceTree = "<group>"; };
+		B422AB01210722C40018CE9F /* ข้าวโพด.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ข้าวโพด.jpg"; sourceTree = "<group>"; };
+		B422AB02210722C50018CE9F /* สับปะรด.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "สับปะรด.jpg"; sourceTree = "<group>"; };
+		B422AB03210722C50018CE9F /* สตอเบอรี่.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "สตอเบอรี่.jpg"; sourceTree = "<group>"; };
+		B422AB04210722C50018CE9F /* มะพร้าว.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "มะพร้าว.jpg"; sourceTree = "<group>"; };
+		B422AB05210722C50018CE9F /* แอปเปิ้ล.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "แอปเปิ้ล.jpg"; sourceTree = "<group>"; };
+		B422AB06210722C60018CE9F /* มะละกอ.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "มะละกอ.jpg"; sourceTree = "<group>"; };
+		B422AB07210722C60018CE9F /* ส้ม.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ส้ม.jpg"; sourceTree = "<group>"; };
+		B422AB08210722C60018CE9F /* แตงโม.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "แตงโม.jpg"; sourceTree = "<group>"; };
+		B422AB13210722FF0018CE9F /* หมู.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "หมู.jpg"; sourceTree = "<group>"; };
+		B422AB14210723000018CE9F /* แมว.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "แมว.jpg"; sourceTree = "<group>"; };
+		B422AB15210723000018CE9F /* หมี.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "หมี.jpg"; sourceTree = "<group>"; };
+		B422AB16210723000018CE9F /* ช้าง.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ช้าง.jpg"; sourceTree = "<group>"; };
+		B422AB17210723000018CE9F /* สิงโต.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "สิงโต.jpg"; sourceTree = "<group>"; };
+		B422AB18210723010018CE9F /* กระต่าย.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "กระต่าย.jpg"; sourceTree = "<group>"; };
+		B422AB19210723020018CE9F /* ไก่.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ไก่.jpg"; sourceTree = "<group>"; };
+		B422AB1A210723020018CE9F /* เป็ด.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "เป็ด.jpg"; sourceTree = "<group>"; };
+		B422AB1B210723020018CE9F /* ลิง.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ลิง.jpg"; sourceTree = "<group>"; };
+		B422AB1C210723020018CE9F /* หมา.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "หมา.jpg"; sourceTree = "<group>"; };
+		B422AB272107230E0018CE9F /* ถ้ำ.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ถ้ำ.JPG"; sourceTree = "<group>"; };
+		B422AB282107230E0018CE9F /* วัด.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "วัด.jpg"; sourceTree = "<group>"; };
+		B422AB292107230F0018CE9F /* ห้างสรรพสินค้า.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ห้างสรรพสินค้า.jpg"; sourceTree = "<group>"; };
+		B422AB2A210723100018CE9F /* ทุ่งนา.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ทุ่งนา.jpg"; sourceTree = "<group>"; };
+		B422AB2B210723100018CE9F /* ทะเล.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ทะเล.jpg"; sourceTree = "<group>"; };
+		B422AB2C210723100018CE9F /* ภูเขา.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ภูเขา.jpg"; sourceTree = "<group>"; };
+		B422AB2D210723110018CE9F /* สนามบิน.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "สนามบิน.jpg"; sourceTree = "<group>"; };
+		B422AB2E210723110018CE9F /* น้ำตก.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "น้ำตก.jpg"; sourceTree = "<group>"; };
+		B422AB2F210723110018CE9F /* สนามฟุตบอล.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "สนามฟุตบอล.jpg"; sourceTree = "<group>"; };
+		B422AB30210723110018CE9F /* สนามกอล์ฟ.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "สนามกอล์ฟ.jpg"; sourceTree = "<group>"; };
+		B422AB3B210723220018CE9F /* ร่ม.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ร่ม.jpg"; sourceTree = "<group>"; };
+		B422AB3C210723220018CE9F /* มีดครัว.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "มีดครัว.jpg"; sourceTree = "<group>"; };
+		B422AB3D210723240018CE9F /* เครื่องมือช่าง.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "เครื่องมือช่าง.jpg"; sourceTree = "<group>"; };
+		B422AB3E210723240018CE9F /* กรรไกร.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "กรรไกร.jpg"; sourceTree = "<group>"; };
+		B422AB3F210723240018CE9F /* กะทะ.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "กะทะ.jpg"; sourceTree = "<group>"; };
+		B422AB40210723250018CE9F /* แปรงสีฟัน.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "แปรงสีฟัน.jpg"; sourceTree = "<group>"; };
+		B422AB41210723260018CE9F /* ไม้กวาด.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ไม้กวาด.jpg"; sourceTree = "<group>"; };
+		B422AB42210723270018CE9F /* แว่นตา.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "แว่นตา.jpg"; sourceTree = "<group>"; };
+		B422AB43210723280018CE9F /* ดินสอ.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ดินสอ.jpg"; sourceTree = "<group>"; };
+		B422AB44210723290018CE9F /* มีดช้อนส้อม.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "มีดช้อนส้อม.jpg"; sourceTree = "<group>"; };
 		B82F8CCA21034462001A9338 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		B82F8CCC21034833001A9338 /* PreSoundQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreSoundQuestionViewController.swift; sourceTree = "<group>"; };
 		B82F8CCE21034864001A9338 /* SoundQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundQuestionViewController.swift; sourceTree = "<group>"; };
@@ -161,6 +241,75 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		B422AADD210721160018CE9F /* fruits */ = {
+			isa = PBXGroup;
+			children = (
+				B422AB00210722C40018CE9F /* กล้วย.jpg */,
+				B422AB01210722C40018CE9F /* ข้าวโพด.jpg */,
+				B422AB08210722C60018CE9F /* แตงโม.jpg */,
+				B422AAFF210722C40018CE9F /* ทุเรียน.jpg */,
+				B422AB04210722C50018CE9F /* มะพร้าว.jpg */,
+				B422AB06210722C60018CE9F /* มะละกอ.jpg */,
+				B422AB03210722C50018CE9F /* สตอเบอรี่.jpg */,
+				B422AB07210722C60018CE9F /* ส้ม.jpg */,
+				B422AB02210722C50018CE9F /* สับปะรด.jpg */,
+				B422AB05210722C50018CE9F /* แอปเปิ้ล.jpg */,
+			);
+			name = fruits;
+			path = RizzoApp/Resources/Images/ImageQuestion/fruits;
+			sourceTree = "<group>";
+		};
+		B422AAE8210721640018CE9F /* animals */ = {
+			isa = PBXGroup;
+			children = (
+				B422AB18210723010018CE9F /* กระต่าย.jpg */,
+				B422AB19210723020018CE9F /* ไก่.jpg */,
+				B422AB16210723000018CE9F /* ช้าง.jpg */,
+				B422AB1A210723020018CE9F /* เป็ด.jpg */,
+				B422AB14210723000018CE9F /* แมว.jpg */,
+				B422AB1B210723020018CE9F /* ลิง.jpg */,
+				B422AB17210723000018CE9F /* สิงโต.jpg */,
+				B422AB1C210723020018CE9F /* หมา.jpg */,
+				B422AB15210723000018CE9F /* หมี.jpg */,
+				B422AB13210722FF0018CE9F /* หมู.jpg */,
+			);
+			path = animals;
+			sourceTree = "<group>";
+		};
+		B422AAE9210721820018CE9F /* places */ = {
+			isa = PBXGroup;
+			children = (
+				B422AB272107230E0018CE9F /* ถ้ำ.JPG */,
+				B422AB2B210723100018CE9F /* ทะเล.jpg */,
+				B422AB2A210723100018CE9F /* ทุ่งนา.jpg */,
+				B422AB2E210723110018CE9F /* น้ำตก.jpg */,
+				B422AB2C210723100018CE9F /* ภูเขา.jpg */,
+				B422AB282107230E0018CE9F /* วัด.jpg */,
+				B422AB30210723110018CE9F /* สนามกอล์ฟ.jpg */,
+				B422AB2D210723110018CE9F /* สนามบิน.jpg */,
+				B422AB2F210723110018CE9F /* สนามฟุตบอล.jpg */,
+				B422AB292107230F0018CE9F /* ห้างสรรพสินค้า.jpg */,
+			);
+			path = places;
+			sourceTree = "<group>";
+		};
+		B422AAEA210721950018CE9F /* objects */ = {
+			isa = PBXGroup;
+			children = (
+				B422AB3E210723240018CE9F /* กรรไกร.jpg */,
+				B422AB3F210723240018CE9F /* กะทะ.jpg */,
+				B422AB3D210723240018CE9F /* เครื่องมือช่าง.jpg */,
+				B422AB43210723280018CE9F /* ดินสอ.jpg */,
+				B422AB40210723250018CE9F /* แปรงสีฟัน.jpg */,
+				B422AB3C210723220018CE9F /* มีดครัว.jpg */,
+				B422AB44210723290018CE9F /* มีดช้อนส้อม.jpg */,
+				B422AB41210723260018CE9F /* ไม้กวาด.jpg */,
+				B422AB3B210723220018CE9F /* ร่ม.jpg */,
+				B422AB42210723270018CE9F /* แว่นตา.jpg */,
+			);
+			path = objects;
+			sourceTree = "<group>";
+		};
 		B82F8CC921034451001A9338 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +331,10 @@
 		B83CF61F2105CF2B00A483A5 /* ImageQuestion */ = {
 			isa = PBXGroup;
 			children = (
+				B422AAEA210721950018CE9F /* objects */,
+				B422AAE9210721820018CE9F /* places */,
+				B422AAE8210721640018CE9F /* animals */,
+				B422AADD210721160018CE9F /* fruits */,
 			);
 			path = ImageQuestion;
 			sourceTree = "<group>";
@@ -532,40 +685,80 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B422AB1E210723030018CE9F /* แมว.jpg in Resources */,
+				B422AB472107232E0018CE9F /* เครื่องมือช่าง.jpg in Resources */,
 				B84F5CBA210324E10043DCEC /* PrepareImgQuestion.storyboard in Resources */,
+				B422AB452107232E0018CE9F /* ร่ม.jpg in Resources */,
+				B422AB25210723030018CE9F /* ลิง.jpg in Resources */,
+				B422AB39210723110018CE9F /* สนามฟุตบอล.jpg in Resources */,
 				B83CF61C2105CEFA00A483A5 /* fish.jpg in Resources */,
+				B422AB3A210723110018CE9F /* สนามกอล์ฟ.jpg in Resources */,
 				B87D93B9210470C100788F2D /* นกฮูก.mp3 in Resources */,
+				B422AB21210723030018CE9F /* สิงโต.jpg in Resources */,
+				B422AB31210723110018CE9F /* ถ้ำ.JPG in Resources */,
 				B84F5CDE210335DB0043DCEC /* bgSound.mp3 in Resources */,
+				B422AB12210722C60018CE9F /* แตงโม.jpg in Resources */,
 				B84F5CAA210322EE0043DCEC /* FinishedDraw.storyboard in Resources */,
+				B422AB0D210722C60018CE9F /* สตอเบอรี่.jpg in Resources */,
+				B422AB32210723110018CE9F /* วัด.jpg in Resources */,
+				B422AB4C2107232E0018CE9F /* แว่นตา.jpg in Resources */,
+				B422AB23210723030018CE9F /* ไก่.jpg in Resources */,
 				B8AEBD4521030FC700468680 /* LaunchScreen.storyboard in Resources */,
 				B8A1F612210723FA00D4FF0C /* PreviewImage.xib in Resources */,
 				B84F5CAD2103231C0043DCEC /* Draw.storyboard in Resources */,
 				B87D93C3210470C100788F2D /* แมว.mp3 in Resources */,
+				B422AB462107232E0018CE9F /* มีดครัว.jpg in Resources */,
 				B84F5CC32103258C0043DCEC /* SoundQuestion.storyboard in Resources */,
 				B83CF6152105B18100A483A5 /* BackgroundColor.xcassets in Resources */,
+				B422AB1F210723030018CE9F /* หมี.jpg in Resources */,
 				B83CF6172105B1A600A483A5 /* animationLunchScreen.xcassets in Resources */,
+				B422AB38210723110018CE9F /* น้ำตก.jpg in Resources */,
 				B87D93CC21047F9F00788F2D /* lightTheme.xcassets in Resources */,
+				B422AB09210722C60018CE9F /* ทุเรียน.jpg in Resources */,
 				B87D93B3210470C100788F2D /* วัว.mp3 in Resources */,
+				B422AB4A2107232E0018CE9F /* แปรงสีฟัน.jpg in Resources */,
 				B84F5CC12103256B0043DCEC /* FinishedSoundQuestion.storyboard in Resources */,
 				B84F5CB8210324C10043DCEC /* ImgQuestion.storyboard in Resources */,
 				B83CF6132105B14400A483A5 /* darkTheme.xcassets in Resources */,
+				B422AB1D210723030018CE9F /* หมู.jpg in Resources */,
 				B83CF61D2105CEFA00A483A5 /* rabbit.jpg in Resources */,
 				B84F5CE0210336270043DCEC /* btnSound.mp3 in Resources */,
+				B422AB492107232E0018CE9F /* กะทะ.jpg in Resources */,
 				B87D93C0210470C100788F2D /* ลิง.mp3 in Resources */,
 				B87D93B4210470C100788F2D /* ม้า.mp3 in Resources */,
 				B8AEBD4221030FC700468680 /* Assets.xcassets in Resources */,
 				B87D93BC210470C100788F2D /* ช้าง.mp3 in Resources */,
+				B422AB4E2107232E0018CE9F /* มีดช้อนส้อม.jpg in Resources */,
 				B87D93B7210470C100788F2D /* เป็ด.mp3 in Resources */,
+				B422AB4B2107232E0018CE9F /* ไม้กวาด.jpg in Resources */,
+				B422AB33210723110018CE9F /* ห้างสรรพสินค้า.jpg in Resources */,
+				B422AB37210723110018CE9F /* สนามบิน.jpg in Resources */,
+				B422AB0F210722C60018CE9F /* แอปเปิ้ล.jpg in Resources */,
+				B422AB0A210722C60018CE9F /* กล้วย.jpg in Resources */,
 				B87D93B6210470C100788F2D /* กบ.mp3 in Resources */,
+				B422AB0B210722C60018CE9F /* ข้าวโพด.jpg in Resources */,
 				B84F5CC8210325D40043DCEC /* MainMenu.storyboard in Resources */,
+				B422AB11210722C60018CE9F /* ส้ม.jpg in Resources */,
+				B422AB24210723030018CE9F /* เป็ด.jpg in Resources */,
 				B84F5CC5210325B00043DCEC /* PrepareSoundQuestion.storyboard in Resources */,
 				B84F5CB22103241E0043DCEC /* FinishedImgQuestion.storyboard in Resources */,
 				B87D93D421049E3000788F2D /* ModalView.xib in Resources */,
+				B422AB482107232E0018CE9F /* กรรไกร.jpg in Resources */,
+				B422AB34210723110018CE9F /* ทุ่งนา.jpg in Resources */,
+				B422AB22210723030018CE9F /* กระต่าย.jpg in Resources */,
+				B422AB35210723110018CE9F /* ทะเล.jpg in Resources */,
 				B83CF61B2105CEFA00A483A5 /* cat.jpg in Resources */,
+				B422AB10210722C60018CE9F /* มะละกอ.jpg in Resources */,
 				B87D93CA210470CE00788F2D /* หมู.mp3 in Resources */,
+				B422AB36210723110018CE9F /* ภูเขา.jpg in Resources */,
+				B422AB4D2107232E0018CE9F /* ดินสอ.jpg in Resources */,
 				B84F5CAF210323670043DCEC /* PrepareDraw.storyboard in Resources */,
+				B422AB0C210722C60018CE9F /* สับปะรด.jpg in Resources */,
 				B84F5CA4210322160043DCEC /* Setting.storyboard in Resources */,
 				B87D93C9210470CE00788F2D /* สุนัข.mp3 in Resources */,
+				B422AB0E210722C60018CE9F /* มะพร้าว.jpg in Resources */,
+				B422AB20210723030018CE9F /* ช้าง.jpg in Resources */,
+				B422AB26210723030018CE9F /* หมา.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

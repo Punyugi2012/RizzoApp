@@ -9,11 +9,17 @@
 import UIKit
 
 class PreImgQuestionViewController: UIViewController {
-
+    
+    @IBOutlet weak var myLoader: UIActivityIndicatorView!
+    var questions = [ImageQuestion]()
+    var questionType: TypeImageQuestion!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        setNavigationBar()
+        myLoader.transform = CGAffineTransform(scaleX: 2, y: 2)
+        myLoader.stopAnimating()
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,15 +27,49 @@ class PreImgQuestionViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func chooseQuestion(_ questions: [ImageQuestion]) -> [ImageQuestion] {
+        var questionsForChoose = questions
+        var tmpArray = [ImageQuestion]()
+        if questions.count >= 10 {
+            for _ in 1...10 {
+                let random = Int(arc4random_uniform(UInt32(questionsForChoose.count)))
+                tmpArray.append(questionsForChoose.remove(at: random))
+            }
+        }
+        return tmpArray
     }
-    */
+    
+    @IBAction func tappedCategory(_ sender: UIButton) {
+        sender.playButtonSound()
+        myLoader.startAnimating()
+        QuestionModel.getAllImageQuestion { (datas) in
+            self.myLoader.stopAnimating()
+            self.questions = self.chooseQuestion(datas[sender.tag])
+            self.questionType = self.getType(number: sender.tag)
+            self.performSegue(withIdentifier: "ToImgQuestion", sender: self)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? ImgQuestionViewController {
+            destination.getQuestions = self.questions
+            destination.questionType = self.questionType
+        }
+    }
+    
+    func getType(number: Int) -> TypeImageQuestion?{
+        switch number {
+        case 0:
+            return .fruit
+        case 1:
+            return .animal
+        case 2:
+            return .place
+        case 3:
+            return .object
+        default:
+            return nil
+        }
+    }
 
 }

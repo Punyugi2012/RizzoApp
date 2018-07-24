@@ -18,23 +18,74 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wx8-tH-FT3">
-                                <rect key="frame" x="184" y="672" width="400" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="เริ่มเล่นใหม่"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TQb-zz-yqP">
-                                <rect key="frame" x="184" y="823" width="400" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="กลับสู่หน้าหลัก"/>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="GD1-BL-0mh">
+                                <rect key="frame" x="20" y="382" width="728" height="244"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ทั้งหมด 10 ข้อ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SUp-bw-zZD">
+                                        <rect key="frame" x="251" y="0.0" width="226" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ถูก 5 ข้อ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RNE-jU-d35">
+                                        <rect key="frame" x="296.5" y="98" width="135" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ผิด 10 ข้อ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IO5-8e-eAW">
+                                        <rect key="frame" x="286.5" y="196" width="155" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="totalScore/totalScore" translatesAutoresizingMaskIntoConstraints="NO" id="JYv-p6-zEo">
+                                <rect key="frame" x="20" y="114" width="728" height="218"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="k54-mc-8X0">
+                                <rect key="frame" x="84" y="676" width="600" height="318"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vKU-Un-XRq">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="149"/>
+                                        <state key="normal" backgroundImage="totalScore/replay"/>
+                                        <connections>
+                                            <action selector="replayGame:" destination="QDq-gj-LgV" eventType="touchUpInside" id="Hex-Qi-hdS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nrF-eb-mQe">
+                                        <rect key="frame" x="0.0" y="169" width="600" height="149"/>
+                                        <state key="normal" backgroundImage="totalScore/homeBtn"/>
+                                        <connections>
+                                            <action selector="backToMainMenu:" destination="QDq-gj-LgV" eventType="touchUpInside" id="ELI-3s-YTy"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="600" id="VLP-pM-0Ci"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JYv-p6-zEo" firstAttribute="top" secondItem="rVe-wA-MFy" secondAttribute="top" constant="50" id="5rN-MQ-d4S"/>
+                            <constraint firstItem="rVe-wA-MFy" firstAttribute="trailing" secondItem="JYv-p6-zEo" secondAttribute="trailing" constant="20" id="8VD-FY-7ed"/>
+                            <constraint firstItem="k54-mc-8X0" firstAttribute="leading" secondItem="rVe-wA-MFy" secondAttribute="leading" constant="84" id="Hzq-h1-T9P"/>
+                            <constraint firstItem="k54-mc-8X0" firstAttribute="top" secondItem="GD1-BL-0mh" secondAttribute="bottom" constant="50" id="UYn-sS-N3e"/>
+                            <constraint firstItem="GD1-BL-0mh" firstAttribute="leading" secondItem="rVe-wA-MFy" secondAttribute="leading" constant="20" id="jU3-L3-EGQ"/>
+                            <constraint firstItem="GD1-BL-0mh" firstAttribute="top" secondItem="JYv-p6-zEo" secondAttribute="bottom" constant="50" id="mdm-O8-VnL"/>
+                            <constraint firstItem="JYv-p6-zEo" firstAttribute="leading" secondItem="rVe-wA-MFy" secondAttribute="leading" constant="20" id="rlb-oZ-WNJ"/>
+                            <constraint firstItem="rVe-wA-MFy" firstAttribute="trailing" secondItem="k54-mc-8X0" secondAttribute="trailing" constant="84" id="sRp-ce-BSl"/>
+                            <constraint firstItem="rVe-wA-MFy" firstAttribute="trailing" secondItem="GD1-BL-0mh" secondAttribute="trailing" constant="20" id="vwB-Ia-AmN"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="rVe-wA-MFy"/>
                     </view>
                     <navigationItem key="navigationItem" title="FinishedImgQuestion" id="t9u-Xj-Bci"/>
+                    <connections>
+                        <outlet property="correctLabel" destination="RNE-jU-d35" id="wRo-KF-pvO"/>
+                        <outlet property="incorrectLabel" destination="IO5-8e-eAW" id="rLy-LC-zlA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jvi-yF-9Eg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -60,4 +111,9 @@
             <point key="canvasLocation" x="2309" y="-706"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="totalScore/homeBtn" width="589" height="149"/>
+        <image name="totalScore/replay" width="589" height="149"/>
+        <image name="totalScore/totalScore" width="803" height="218"/>
+    </resources>
 </document>

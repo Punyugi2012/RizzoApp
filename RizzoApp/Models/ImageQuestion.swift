@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct ImageQustion {
+struct ImageQuestion {
     var answer: String
     var answers: [String]
 }
