@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class DrawViewController: UIViewController {
     
@@ -47,9 +48,14 @@ class DrawViewController: UIViewController {
         }
         navigationItem.hidesBackButton = true
         view.backgroundColor = UIColor(named: "DayColor")
+        setDrawViewDefault()
+        setQuestionDataToView()
+    }
+    
+    func setDrawViewDefault() {
         drawView.currentWidth = 6
         drawView.currentStrockColor = UIColor.black.cgColor
-        setQuestionDataToView()
+        drawView.isUserInteractionEnabled = false
     }
     
     func setQuestionDataToView() {
@@ -160,6 +166,7 @@ class DrawViewController: UIViewController {
         
     }
     @IBAction func tappedOpenTools(_ sender: UIButton) {
+        drawView.isUserInteractionEnabled = true
         UIView.animate(withDuration: 0.5) {
             self.penBtn.alpha = 1
             self.highLineBtn.alpha = 1
@@ -168,6 +175,31 @@ class DrawViewController: UIViewController {
     }
     @IBAction func tappedSentBtn(_ sender: UIButton) {
         print("SentButton")
+        var datas = [[CGFloat]]()
+        datas.append([])
+        datas.append([])
+        for stroke in self.drawView.strokes {
+            datas[0].append(stroke.lastPoint.x)
+            datas[1].append(stroke.lastPoint.y)
+        }
+        let parameters: Parameters = [
+            "input_type": 0,
+            "requests": [
+                [
+                    "language": "quickdraw",
+                    "writing_guide": [
+                        "width": self.drawView.frame.width,
+                        "height": self.drawView.frame.height
+                    ],
+                    "ink": [
+                        datas
+                    ]
+                ]
+            ]
+        ]
+        DrawAPI.checkDrawed(params: parameters) { (result) in
+            print(result)
+        }
         
     }
     @IBAction func tappedUndoBtn(_ sender: UIButton) {
