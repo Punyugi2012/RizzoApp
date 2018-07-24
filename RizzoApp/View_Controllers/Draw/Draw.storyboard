@@ -44,7 +44,7 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GGQ-uu-ryL" customClass="DrawView" customModule="RizzoApp" customModuleProvider="target">
                                 <rect key="frame" x="10" y="279" width="748" height="740"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VcX-AZ-WGQ">
                                 <rect key="frame" x="20" y="854" width="70" height="70"/>
@@ -190,6 +190,9 @@
                                     <constraint firstAttribute="width" constant="175" id="Exb-Wk-SNl"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="f1ChoiceDrawing/night_BtnHints"/>
+                                <connections>
+                                    <action selector="previewQuestionImage:" destination="bVk-lS-iyG" eventType="touchUpInside" id="yMV-0E-V4G"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D1x-H6-iqV">
                                 <rect key="frame" x="100" y="944" width="70" height="70"/>

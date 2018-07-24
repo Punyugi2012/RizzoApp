@@ -60,6 +60,8 @@ class DrawViewController: UIViewController {
         drawView.currentWidth = 6
         drawView.currentStrockColor = UIColor.black.cgColor
         drawView.isUserInteractionEnabled = false
+        drawView.layer.cornerRadius = 20
+        drawView.clipsToBounds = true
     }
     
     func setQuestionDataToView() {
@@ -232,6 +234,28 @@ class DrawViewController: UIViewController {
             destination.getQuestionName = self.getQuestion.questionName
             destination.getDrawedImage = UIImage.getImage(view: drawView)
             self.isCorrect = false
+        }
+    }
+    @IBAction func previewQuestionImage(_ sender: UIButton) {
+        sender.playButtonSound()
+        let previewImage = Bundle.main.loadNibNamed("PreviewImage", owner: self, options: nil)!.first as! PreviewImage
+        previewImage.bounds.size = CGSize(width: view.bounds.width - 20, height: view.bounds.height - 20)
+        previewImage.center = view.center
+        previewImage.imageView.image = UIImage(named: "\(getQuestion.answer).jpg")
+        view.addSubview(previewImage)
+        previewImage.alpha = 0
+        previewImage.transform = CGAffineTransform(scaleX: 0.8, y: 1.2)
+        UIView.animate(withDuration: 0.45, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0, options: [], animations: {
+            previewImage.alpha = 1
+            previewImage.transform = CGAffineTransform.identity
+        })
+        previewImage.callback = {
+            UIView.animate(withDuration: 0.45, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0, options: [], animations: {
+                previewImage.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
+                previewImage.alpha = 0
+            }, completion: { (true) in
+                previewImage.removeFromSuperview()
+            })
         }
     }
 }

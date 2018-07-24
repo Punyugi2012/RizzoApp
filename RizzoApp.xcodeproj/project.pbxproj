@@ -64,6 +64,8 @@
 		B87D93D621049E3D00788F2D /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87D93D521049E3D00788F2D /* ModalView.swift */; };
 		B8A1F60D210709D500D4FF0C /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A1F60C210709D500D4FF0C /* DrawView.swift */; };
 		B8A1F60F21070F3D00D4FF0C /* DrawAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A1F60E21070F3D00D4FF0C /* DrawAPI.swift */; };
+		B8A1F612210723FA00D4FF0C /* PreviewImage.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8A1F611210723FA00D4FF0C /* PreviewImage.xib */; };
+		B8A1F6142107240800D4FF0C /* PreviewImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A1F6132107240800D4FF0C /* PreviewImage.swift */; };
 		B8AEBD3B21030FC500468680 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AEBD3A21030FC500468680 /* AppDelegate.swift */; };
 		B8AEBD4221030FC700468680 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8AEBD4121030FC700468680 /* Assets.xcassets */; };
 		B8AEBD4521030FC700468680 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8AEBD4321030FC700468680 /* LaunchScreen.storyboard */; };
@@ -127,6 +129,8 @@
 		B87D93D521049E3D00788F2D /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
 		B8A1F60C210709D500D4FF0C /* DrawView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
 		B8A1F60E21070F3D00D4FF0C /* DrawAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawAPI.swift; sourceTree = "<group>"; };
+		B8A1F611210723FA00D4FF0C /* PreviewImage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreviewImage.xib; sourceTree = "<group>"; };
+		B8A1F6132107240800D4FF0C /* PreviewImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewImage.swift; sourceTree = "<group>"; };
 		B8AEBD3721030FC400468680 /* RizzoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RizzoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8AEBD3A21030FC500468680 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8AEBD4121030FC700468680 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -403,6 +407,7 @@
 		B87D93D121049D6400788F2D /* Reusables */ = {
 			isa = PBXGroup;
 			children = (
+				B8A1F610210723C100D4FF0C /* PreViewImage */,
 				B87D93D221049DFD00788F2D /* ModalView */,
 			);
 			path = Reusables;
@@ -415,6 +420,15 @@
 				B87D93D521049E3D00788F2D /* ModalView.swift */,
 			);
 			path = ModalView;
+			sourceTree = "<group>";
+		};
+		B8A1F610210723C100D4FF0C /* PreViewImage */ = {
+			isa = PBXGroup;
+			children = (
+				B8A1F611210723FA00D4FF0C /* PreviewImage.xib */,
+				B8A1F6132107240800D4FF0C /* PreviewImage.swift */,
+			);
+			path = PreViewImage;
 			sourceTree = "<group>";
 		};
 		B8AEBD2E21030FC400468680 = {
@@ -524,6 +538,7 @@
 				B84F5CDE210335DB0043DCEC /* bgSound.mp3 in Resources */,
 				B84F5CAA210322EE0043DCEC /* FinishedDraw.storyboard in Resources */,
 				B8AEBD4521030FC700468680 /* LaunchScreen.storyboard in Resources */,
+				B8A1F612210723FA00D4FF0C /* PreviewImage.xib in Resources */,
 				B84F5CAD2103231C0043DCEC /* Draw.storyboard in Resources */,
 				B87D93C3210470C100788F2D /* แมว.mp3 in Resources */,
 				B84F5CC32103258C0043DCEC /* SoundQuestion.storyboard in Resources */,
@@ -600,6 +615,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8A1F6142107240800D4FF0C /* PreviewImage.swift in Sources */,
 				B8A1F60F21070F3D00D4FF0C /* DrawAPI.swift in Sources */,
 				B82F8CDD21034A10001A9338 /* PrepareDrawViewController.swift in Sources */,
 				B8A1F60D210709D500D4FF0C /* DrawView.swift in Sources */,
