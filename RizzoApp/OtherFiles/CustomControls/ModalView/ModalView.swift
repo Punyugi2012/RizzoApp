@@ -18,5 +18,8 @@ class ModalView: UIView {
         sender.playButtonSound()
         callBack?()
     }
-    
+    func setup(center: CGPoint, size: CGSize) {
+        self.center = center
+        bounds.size = size
+    }
 }
