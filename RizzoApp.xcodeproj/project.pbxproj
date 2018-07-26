@@ -546,7 +546,7 @@
 		B87D93D021049D3A00788F2D /* OtherFiles */ = {
 			isa = PBXGroup;
 			children = (
-				B87D93D121049D6400788F2D /* Customs */,
+				B87D93D121049D6400788F2D /* CustomControls */,
 				B87D93CD2104970400788F2D /* Enum */,
 				B87D939221045BD800788F2D /* Theme */,
 				B82F8CC921034451001A9338 /* Extension */,
@@ -554,13 +554,13 @@
 			path = OtherFiles;
 			sourceTree = "<group>";
 		};
-		B87D93D121049D6400788F2D /* Customs */ = {
+		B87D93D121049D6400788F2D /* CustomControls */ = {
 			isa = PBXGroup;
 			children = (
 				B8A1F610210723C100D4FF0C /* PreViewImage */,
 				B87D93D221049DFD00788F2D /* ModalView */,
 			);
-			path = Customs;
+			path = CustomControls;
 			sourceTree = "<group>";
 		};
 		B87D93D221049DFD00788F2D /* ModalView */ = {
