@@ -87,7 +87,6 @@
 		B87D939421045D6A00788F2D /* ThemePotocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87D939321045D6A00788F2D /* ThemePotocol.swift */; };
 		B87D939621045D9100788F2D /* LightTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87D939521045D9100788F2D /* LightTheme.swift */; };
 		B87D939821045D9C00788F2D /* DarkTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87D939721045D9C00788F2D /* DarkTheme.swift */; };
-		B87D939A21045DD700788F2D /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87D939921045DD700788F2D /* Theme.swift */; };
 		B87D93B3210470C100788F2D /* วัว.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B87D939F210470BE00788F2D /* วัว.mp3 */; };
 		B87D93B4210470C100788F2D /* ม้า.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B87D93A0210470BE00788F2D /* ม้า.mp3 */; };
 		B87D93B6210470C100788F2D /* กบ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B87D93A2210470BF00788F2D /* กบ.mp3 */; };
@@ -192,7 +191,6 @@
 		B87D939321045D6A00788F2D /* ThemePotocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePotocol.swift; sourceTree = "<group>"; };
 		B87D939521045D9100788F2D /* LightTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightTheme.swift; sourceTree = "<group>"; };
 		B87D939721045D9C00788F2D /* DarkTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkTheme.swift; sourceTree = "<group>"; };
-		B87D939921045DD700788F2D /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		B87D939F210470BE00788F2D /* วัว.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "วัว.mp3"; sourceTree = "<group>"; };
 		B87D93A0210470BE00788F2D /* ม้า.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ม้า.mp3"; sourceTree = "<group>"; };
 		B87D93A2210470BF00788F2D /* กบ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "กบ.mp3"; sourceTree = "<group>"; };
@@ -507,7 +505,6 @@
 				B87D939321045D6A00788F2D /* ThemePotocol.swift */,
 				B87D939521045D9100788F2D /* LightTheme.swift */,
 				B87D939721045D9C00788F2D /* DarkTheme.swift */,
-				B87D939921045DD700788F2D /* Theme.swift */,
 			);
 			path = Theme;
 			sourceTree = "<group>";
@@ -549,7 +546,7 @@
 		B87D93D021049D3A00788F2D /* OtherFiles */ = {
 			isa = PBXGroup;
 			children = (
-				B87D93D121049D6400788F2D /* Reusables */,
+				B87D93D121049D6400788F2D /* Customs */,
 				B87D93CD2104970400788F2D /* Enum */,
 				B87D939221045BD800788F2D /* Theme */,
 				B82F8CC921034451001A9338 /* Extension */,
@@ -557,13 +554,13 @@
 			path = OtherFiles;
 			sourceTree = "<group>";
 		};
-		B87D93D121049D6400788F2D /* Reusables */ = {
+		B87D93D121049D6400788F2D /* Customs */ = {
 			isa = PBXGroup;
 			children = (
 				B8A1F610210723C100D4FF0C /* PreViewImage */,
 				B87D93D221049DFD00788F2D /* ModalView */,
 			);
-			path = Reusables;
+			path = Customs;
 			sourceTree = "<group>";
 		};
 		B87D93D221049DFD00788F2D /* ModalView */ = {
@@ -814,7 +811,6 @@
 				B8A1F60D210709D500D4FF0C /* DrawView.swift in Sources */,
 				B82F8CD92103499C001A9338 /* DrawViewController.swift in Sources */,
 				B84F5CD4210331310043DCEC /* QuestionModel.swift in Sources */,
-				B87D939A21045DD700788F2D /* Theme.swift in Sources */,
 				B82F8CCB21034462001A9338 /* Extensions.swift in Sources */,
 				B87D939421045D6A00788F2D /* ThemePotocol.swift in Sources */,
 				B82F8CCD21034833001A9338 /* PreSoundQuestionViewController.swift in Sources */,
