@@ -84,10 +84,7 @@ class ImgQuestionViewController: UIViewController {
         sender.playButtonSound()
         let modalView = Bundle.main.loadNibNamed("ModalView", owner: self, options: nil)!.first as! ModalView
         containerView.addSubview(modalView)
-        modalView.center.x = containerView.center.x
-        modalView.center.y = containerView.center.y - 50
-        modalView.bounds.size.width = containerView.bounds.width - 20
-        modalView.bounds.size.height = containerView.bounds.height / 1.5
+        modalView.setup(center: containerView.center, size: CGSize(width: containerView.frame.width - 20, height: containerView.frame.height / 1.5))
         modalView.alpha = 0
         
         let title = sender.currentTitle!
