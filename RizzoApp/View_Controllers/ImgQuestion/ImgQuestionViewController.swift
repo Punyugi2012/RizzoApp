@@ -26,8 +26,8 @@ class ImgQuestionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setNavigationBar()
-        containerView.backgroundColor = #colorLiteral(red: 0.898, green: 0.7098, blue: 0.8314, alpha: 1)
-        view.backgroundColor = #colorLiteral(red: 0.898, green: 0.7098, blue: 0.8314, alpha: 1)
+        containerView.backgroundColor = AppManager.shared.currentTheme?.backgroundColor
+        view.backgroundColor = AppManager.shared.currentTheme?.backgroundColor
         switch questionType {
             case .fruit:
                 titleQuestionImageView.image = #imageLiteral(resourceName: "f2ChoiceImgsQues/night_headerImgFruitsQues")
@@ -89,12 +89,12 @@ class ImgQuestionViewController: UIViewController {
         
         let title = sender.currentTitle!
         if title == imageQuestion.answer {
-            modalView.backgroundImage.image = #imageLiteral(resourceName: "modal/modalCorrect")
+            modalView.backgroundImage.image = AppManager.shared.currentTheme?.modalCorrectBgImage
             score += 1
             print("ถูก")
         }
         else {
-            modalView.backgroundImage.image = #imageLiteral(resourceName: "modal/modalIncorrct")
+            modalView.backgroundImage.image = AppManager.shared.currentTheme?.modalIncorrectBgImage
             print("ผิด")
         }
         for button in answersButton {

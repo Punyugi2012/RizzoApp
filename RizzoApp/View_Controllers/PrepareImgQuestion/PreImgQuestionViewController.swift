@@ -20,6 +20,9 @@ class PreImgQuestionViewController: UIViewController {
         setNavigationBar()
         myLoader.transform = CGAffineTransform(scaleX: 2, y: 2)
         myLoader.stopAnimating()
+        if !AppManager.shared.get(key: isLightThemeKey) {
+            view.backgroundColor = AppManager.shared.currentTheme?.backgroundColor
+        }
     }
 
     override func didReceiveMemoryWarning() {

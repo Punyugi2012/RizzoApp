@@ -82,8 +82,10 @@
                     </view>
                     <navigationItem key="navigationItem" title="FinishedImgQuestion" id="t9u-Xj-Bci"/>
                     <connections>
+                        <outlet property="backToMainMenuBtn" destination="nrF-eb-mQe" id="WXC-P7-XU8"/>
                         <outlet property="correctLabel" destination="RNE-jU-d35" id="wRo-KF-pvO"/>
                         <outlet property="incorrectLabel" destination="IO5-8e-eAW" id="rLy-LC-zlA"/>
+                        <outlet property="replayBtn" destination="vKU-Un-XRq" id="0Bo-Pw-iTf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jvi-yF-9Eg" userLabel="First Responder" sceneMemberID="firstResponder"/>
