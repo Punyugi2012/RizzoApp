@@ -49,7 +49,7 @@ class DrawViewController: UIViewController {
             lineBtn?.alpha = 0
         }
         navigationItem.hidesBackButton = true
-        view.backgroundColor = UIColor(named: "DayColor")
+        view.backgroundColor = AppManager.shared.currentTheme?.backgroundColor
         myLoader.transform = CGAffineTransform(scaleX: 2, y: 2)
         myLoader.stopAnimating()
         setDrawViewDefault()

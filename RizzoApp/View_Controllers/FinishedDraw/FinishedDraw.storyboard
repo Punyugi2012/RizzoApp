@@ -81,7 +81,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="FinishedDraw" id="4fU-0w-zln"/>
                     <connections>
+                        <outlet property="backToMainMenuBtn" destination="CAq-6z-k6Q" id="rGk-na-cPL"/>
                         <outlet property="drawedImageView" destination="9th-FR-87y" id="ge1-b3-h9b"/>
+                        <outlet property="replayBtn" destination="yXW-uP-IBM" id="5dA-wX-mDy"/>
                         <outlet property="resultLabel" destination="nbm-bb-8xX" id="tw6-QX-9t8"/>
                     </connections>
                 </viewController>
