@@ -10,6 +10,8 @@ import Foundation
 import UIKit
 
 class LightTheme: ThemePotocol {
+    var replayBtn: UIImage = #imageLiteral(resourceName: "totalScore/replay")
+    var backToMainMenuBtn: UIImage = #imageLiteral(resourceName: "totalScore/homeBtn")
     var modalCorrectBgImage: UIImage = #imageLiteral(resourceName: "modal/modalCorrect")
     var modalIncorrectBgImage: UIImage = #imageLiteral(resourceName: "modal/modalIncorrct")
     var backgroundColor: UIColor = UIColor(named: "DayColor")!
