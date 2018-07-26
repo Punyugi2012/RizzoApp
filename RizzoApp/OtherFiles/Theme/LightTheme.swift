@@ -7,7 +7,11 @@
 //
 
 import Foundation
+import UIKit
 
 class LightTheme: ThemePotocol {
-    
+    var modalCorrectBgImage: UIImage = #imageLiteral(resourceName: "modal/modalCorrect")
+    var modalIncorrectBgImage: UIImage = #imageLiteral(resourceName: "modal/modalIncorrct")
+    var backgroundColor: UIColor = UIColor(named: "DayColor")!
+    var modalNextBtn: UIImage = #imageLiteral(resourceName: "modal/nextBtn")
 }

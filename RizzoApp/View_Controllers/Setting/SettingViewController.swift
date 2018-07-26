@@ -32,6 +32,13 @@ class SettingViewController: UIViewController {
         else {
             buttonSoundSwitch.isOn = false
         }
+        if AppManager.shared.get(key: isLightThemeKey) {
+            themeSwitch.isOn = true
+        }
+        else {
+            themeSwitch.isOn = false
+        }
+        setView()
     }
 
     @IBAction func changedBgSoundSwitch(_ sender: UISwitch) {
@@ -55,6 +62,24 @@ class SettingViewController: UIViewController {
     }
     
     @IBAction func changedThemeSwitch(_ sender: UISwitch) {
+        if sender.isOn {
+            AppManager.shared.set(key: isLightThemeKey, value: true)
+            AppManager.shared.currentTheme = LightTheme()
+        }
+        else {
+            AppManager.shared.set(key: isLightThemeKey, value: false)
+            AppManager.shared.currentTheme = DarkTheme()
+        }
+        setView()
+    }
+    
+    func setView() {
+        if !AppManager.shared.get(key: isLightThemeKey) {
+            view.backgroundColor = AppManager.shared.currentTheme?.backgroundColor
+        }
+        else {
+            view.backgroundColor = UIColor.white
+        }
     }
     
 }

@@ -16,7 +16,7 @@ let isLightThemeKey = "IsLightThemeKey"
 
 class AppManager {
     static let shared = AppManager()
-    
+    var currentTheme: ThemePotocol?
     private let backgroundPlayer: AVAudioPlayer? = {
         guard let url = Bundle.main.url(forResource: "bgSound", withExtension: "mp3") else {
             return nil
@@ -84,10 +84,10 @@ class AppManager {
                 AppManager.shared.stopBackgroundSound()
             }
             if lightTheme {
-                // LightTheme
+                AppManager.shared.currentTheme = LightTheme()
             }
             else {
-                // DarkTheme
+                AppManager.shared.currentTheme = DarkTheme()
             }
         }
         else {
@@ -96,6 +96,7 @@ class AppManager {
             AppManager.shared.set(key: buttonSoundKey, value: true)
             AppManager.shared.set(key: isLightThemeKey, value: true)
             AppManager.shared.playBackgroundSound()
+            AppManager.shared.currentTheme = LightTheme()
         }
     }
     

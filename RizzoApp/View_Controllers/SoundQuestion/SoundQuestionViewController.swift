@@ -28,8 +28,8 @@ class SoundQuestionViewController: UIViewController {
         AppManager.shared.stopBackgroundSound()
         navigationItem.hidesBackButton = true
         setNavigationBar()
-        containerView.backgroundColor = #colorLiteral(red: 0.898, green: 0.7098, blue: 0.8314, alpha: 1)
-        view.backgroundColor = #colorLiteral(red: 0.898, green: 0.7098, blue: 0.8314, alpha: 1)
+        containerView.backgroundColor = AppManager.shared.currentTheme?.backgroundColor
+        view.backgroundColor = AppManager.shared.currentTheme?.backgroundColor
         switch questionType {
         case .animal:
             titleQuestionImageView.image = #imageLiteral(resourceName: "f3soundQ/headerSndAnimal")
@@ -93,12 +93,12 @@ class SoundQuestionViewController: UIViewController {
         
         let title = sender.currentTitle!
         if title == soundQuestion.answer {
-            modalView.backgroundImage.image = #imageLiteral(resourceName: "modal/modalCorrect")
+            modalView.backgroundImage.image = AppManager.shared.currentTheme?.modalCorrectBgImage
             score += 1
             print("ถูก")
         }
         else {
-             modalView.backgroundImage.image = #imageLiteral(resourceName: "modal/modalIncorrct")
+             modalView.backgroundImage.image = AppManager.shared.currentTheme?.modalIncorrectBgImage
             print("ผิด")
         }
         for button in answersButton {

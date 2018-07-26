@@ -10,5 +10,8 @@ import Foundation
 import UIKit
 
 protocol ThemePotocol {
-    
+    var modalCorrectBgImage: UIImage {get}
+    var modalIncorrectBgImage: UIImage {get}
+    var backgroundColor: UIColor {get}
+    var modalNextBtn: UIImage {get}
 }
