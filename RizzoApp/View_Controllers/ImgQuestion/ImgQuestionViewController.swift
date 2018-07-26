@@ -135,8 +135,7 @@ class ImgQuestionViewController: UIViewController {
     @IBAction func previewQuestionImage(_ sender: UIButton) {
         sender.playButtonSound()
         let previewImage = Bundle.main.loadNibNamed("PreviewImage", owner: self, options: nil)!.first as! PreviewImage
-        previewImage.bounds.size = CGSize(width: view.bounds.width - 20, height: view.bounds.height - 20)
-        previewImage.center = view.center
+        previewImage.setup(center: view.center, size: CGSize(width: view.bounds.width - 20, height: view.bounds.height - 20))
         previewImage.imageView.image = UIImage(named: "\(imageQuestion.answer).jpg")
         view.addSubview(previewImage)
         previewImage.alpha = 0

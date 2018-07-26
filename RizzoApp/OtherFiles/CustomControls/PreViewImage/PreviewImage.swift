@@ -21,4 +21,8 @@ class PreviewImage: UIView {
         sender.playButtonSound()
         callback?()
     }
+    func setup(center: CGPoint, size: CGSize) {
+        self.center = center
+        bounds.size = size
+    }
 }
