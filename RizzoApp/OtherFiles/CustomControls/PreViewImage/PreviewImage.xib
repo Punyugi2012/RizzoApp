@@ -21,7 +21,7 @@
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sip-v0-cq4">
                     <rect key="frame" x="448.5" y="1229" width="127" height="117"/>
-                    <state key="normal" backgroundImage="close"/>
+                    <state key="normal" backgroundImage="Draw/close"/>
                     <connections>
                         <action selector="tappedCloseBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="Si4-o3-lw0"/>
                     </connections>
@@ -45,7 +45,7 @@
         </view>
     </objects>
     <resources>
+        <image name="Draw/close" width="127" height="117"/>
         <image name="cat.jpg" width="700" height="700"/>
-        <image name="close" width="127" height="117"/>
     </resources>
 </document>
