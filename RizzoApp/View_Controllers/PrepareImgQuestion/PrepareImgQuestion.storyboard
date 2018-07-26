@@ -21,7 +21,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rYm-6g-Zbo">
                                 <rect key="frame" x="134" y="314" width="500" height="125"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="f2imageQ/imgsQuesFruits"/>
+                                <state key="normal" backgroundImage="ImageQuestion/fruit"/>
                                 <connections>
                                     <action selector="tappedCategory:" destination="k6H-ui-tNQ" eventType="touchUpInside" id="eIr-YO-V5E"/>
                                 </connections>
@@ -29,7 +29,7 @@
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xNv-HZ-iwB">
                                 <rect key="frame" x="134" y="488" width="500" height="125"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="f2imageQ/imgsQuesAnaimals"/>
+                                <state key="normal" backgroundImage="ImageQuestion/animal"/>
                                 <connections>
                                     <action selector="tappedCategory:" destination="k6H-ui-tNQ" eventType="touchUpInside" id="4QB-MP-Aaz"/>
                                 </connections>
@@ -37,7 +37,7 @@
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aWc-gl-KjQ">
                                 <rect key="frame" x="134" y="834" width="500" height="125"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="f2imageQ/imgsQuesObjects"/>
+                                <state key="normal" backgroundImage="ImageQuestion/object"/>
                                 <connections>
                                     <action selector="tappedCategory:" destination="k6H-ui-tNQ" eventType="touchUpInside" id="96I-WQ-6zT"/>
                                 </connections>
@@ -45,7 +45,7 @@
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FiF-N5-sUg">
                                 <rect key="frame" x="134" y="655" width="500" height="125"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="f2imageQ/imgsQuesLocations"/>
+                                <state key="normal" backgroundImage="ImageQuestion/place"/>
                                 <connections>
                                     <action selector="tappedCategory:" destination="k6H-ui-tNQ" eventType="touchUpInside" id="kYf-bf-qNH"/>
                                 </connections>
@@ -54,7 +54,7 @@
                                 <rect key="frame" x="365" y="493" width="37" height="37"/>
                                 <color key="color" cocoaTouchSystemColor="darkTextColor"/>
                             </activityIndicatorView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="f2imageQ/headerImagsQuestion" translatesAutoresizingMaskIntoConstraints="NO" id="43t-eC-D6M">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ImageQuestion/header_category" translatesAutoresizingMaskIntoConstraints="NO" id="43t-eC-D6M">
                                 <rect key="frame" x="84" y="115" width="600" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -87,10 +87,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="f2imageQ/headerImagsQuestion" width="801" height="153"/>
-        <image name="f2imageQ/imgsQuesAnaimals" width="829" height="189"/>
-        <image name="f2imageQ/imgsQuesFruits" width="829" height="189"/>
-        <image name="f2imageQ/imgsQuesLocations" width="829" height="189"/>
-        <image name="f2imageQ/imgsQuesObjects" width="829" height="189"/>
+        <image name="ImageQuestion/animal" width="829" height="189"/>
+        <image name="ImageQuestion/fruit" width="829" height="189"/>
+        <image name="ImageQuestion/header_category" width="801" height="153"/>
+        <image name="ImageQuestion/object" width="829" height="189"/>
+        <image name="ImageQuestion/place" width="829" height="189"/>
     </resources>
 </document>

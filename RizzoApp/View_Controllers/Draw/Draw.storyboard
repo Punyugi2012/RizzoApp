@@ -21,7 +21,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JNa-6i-gds">
                                 <rect key="frame" x="20" y="84" width="728" height="130"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="f1ChoiceDrawing/title_drawing" translatesAutoresizingMaskIntoConstraints="NO" id="IRc-5z-jvt">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Draw/title" translatesAutoresizingMaskIntoConstraints="NO" id="IRc-5z-jvt">
                                         <rect key="frame" x="0.0" y="0.0" width="728" height="130"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="จงวาดกระต่าย" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z50-mI-s1Q">
@@ -52,7 +52,7 @@
                                     <constraint firstAttribute="height" constant="70" id="Kb1-eY-cRU"/>
                                     <constraint firstAttribute="width" constant="70" id="vXu-95-aZH"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="clearPicture"/>
+                                <state key="normal" backgroundImage="Draw/clear"/>
                                 <connections>
                                     <action selector="tappedClearBtn:" destination="bVk-lS-iyG" eventType="touchUpInside" id="QYd-iD-0XK"/>
                                 </connections>
@@ -63,7 +63,7 @@
                                     <constraint firstAttribute="width" constant="70" id="AEC-X7-0Qp"/>
                                     <constraint firstAttribute="height" constant="70" id="E1Z-qX-MaS"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="btnTools_cannotUndo_70*70"/>
+                                <state key="normal" backgroundImage="Draw/undo"/>
                                 <connections>
                                     <action selector="tappedUndoBtn:" destination="bVk-lS-iyG" eventType="touchUpInside" id="oyc-Zo-jDF"/>
                                 </connections>
@@ -74,7 +74,7 @@
                                     <constraint firstAttribute="width" constant="70" id="EDj-c2-gim"/>
                                     <constraint firstAttribute="height" constant="70" id="mD7-C9-Nxp"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="blue"/>
+                                <state key="normal" backgroundImage="Draw/blue"/>
                                 <connections>
                                     <action selector="tappedBlueColor:" destination="bVk-lS-iyG" eventType="touchUpInside" id="gMY-qb-To6"/>
                                 </connections>
@@ -85,7 +85,7 @@
                                     <constraint firstAttribute="height" constant="70" id="eiV-zQ-8my"/>
                                     <constraint firstAttribute="width" constant="70" id="z3E-kx-hng"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="green"/>
+                                <state key="normal" backgroundImage="Draw/green"/>
                                 <connections>
                                     <action selector="tappedGreenColor:" destination="bVk-lS-iyG" eventType="touchUpInside" id="30h-WD-ruB"/>
                                 </connections>
@@ -96,7 +96,7 @@
                                     <constraint firstAttribute="height" constant="70" id="n40-qo-CGD"/>
                                     <constraint firstAttribute="width" constant="70" id="v6f-Ey-Lft"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="yellow"/>
+                                <state key="normal" backgroundImage="Draw/yellow"/>
                                 <connections>
                                     <action selector="tappedYellowColor:" destination="bVk-lS-iyG" eventType="touchUpInside" id="t0s-Rw-jjH"/>
                                 </connections>
@@ -107,7 +107,7 @@
                                     <constraint firstAttribute="width" constant="4" id="dtu-fB-Lmq"/>
                                     <constraint firstAttribute="height" constant="140" id="pyr-J5-CrE"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="line"/>
+                                <state key="normal" backgroundImage="Draw/line"/>
                                 <connections>
                                     <action selector="tappedMediumLineBtn:" destination="bVk-lS-iyG" eventType="touchUpInside" id="GZX-gP-YVP"/>
                                 </connections>
@@ -118,7 +118,7 @@
                                     <constraint firstAttribute="height" constant="140" id="MlV-BC-EOf"/>
                                     <constraint firstAttribute="width" constant="6" id="nEe-sH-ccN"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="line"/>
+                                <state key="normal" backgroundImage="Draw/line"/>
                                 <connections>
                                     <action selector="tappedHighLineBtn:" destination="bVk-lS-iyG" eventType="touchUpInside" id="uoM-ex-uwQ"/>
                                 </connections>
@@ -129,7 +129,7 @@
                                     <constraint firstAttribute="height" constant="170" id="cdg-Dt-OlT"/>
                                     <constraint firstAttribute="width" constant="46" id="rsg-eo-hVT"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="blackpen"/>
+                                <state key="normal" backgroundImage="Draw/blackpen"/>
                                 <connections>
                                     <action selector="tappedPenBtn:" destination="bVk-lS-iyG" eventType="touchUpInside" id="yfw-e6-5Jq"/>
                                 </connections>
@@ -140,7 +140,7 @@
                                     <constraint firstAttribute="width" constant="70" id="N13-pS-k0X"/>
                                     <constraint firstAttribute="height" constant="70" id="XrQ-jm-LWn"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="black"/>
+                                <state key="normal" backgroundImage="Draw/black"/>
                                 <connections>
                                     <action selector="tappedBlackColor:" destination="bVk-lS-iyG" eventType="touchUpInside" id="LSZ-tw-3d8"/>
                                 </connections>
@@ -151,7 +151,7 @@
                                     <constraint firstAttribute="height" constant="140" id="I5z-DG-Xd5"/>
                                     <constraint firstAttribute="width" constant="2" id="vjE-bP-XJB"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="line"/>
+                                <state key="normal" backgroundImage="Draw/line"/>
                                 <connections>
                                     <action selector="tappedSmallLineBtn:" destination="bVk-lS-iyG" eventType="touchUpInside" id="rk5-Wl-pas"/>
                                 </connections>
@@ -165,7 +165,7 @@
                                             <constraint firstAttribute="height" constant="70" id="4T0-Jx-R2p"/>
                                             <constraint firstAttribute="width" constant="70" id="HEE-3a-BDX"/>
                                         </constraints>
-                                        <state key="normal" backgroundImage="btnTools_submitBtn_70*70"/>
+                                        <state key="normal" backgroundImage="Draw/sent"/>
                                         <connections>
                                             <action selector="tappedSentBtn:" destination="bVk-lS-iyG" eventType="touchUpInside" id="iE7-Tq-Fwp"/>
                                         </connections>
@@ -176,7 +176,7 @@
                                             <constraint firstAttribute="height" constant="70" id="5tr-Lh-5s9"/>
                                             <constraint firstAttribute="width" constant="70" id="mkn-H9-iwB"/>
                                         </constraints>
-                                        <state key="normal" backgroundImage="btnTools_toolsBtn_70*70"/>
+                                        <state key="normal" backgroundImage="Draw/pen"/>
                                         <connections>
                                             <action selector="tappedOpenTools:" destination="bVk-lS-iyG" eventType="touchUpInside" id="nj5-0n-4bE"/>
                                         </connections>
@@ -189,7 +189,7 @@
                                     <constraint firstAttribute="height" constant="52" id="9EE-8K-Mt1"/>
                                     <constraint firstAttribute="width" constant="175" id="Exb-Wk-SNl"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="f1ChoiceDrawing/night_BtnHints"/>
+                                <state key="normal" backgroundImage="Draw/example_button"/>
                                 <connections>
                                     <action selector="previewQuestionImage:" destination="bVk-lS-iyG" eventType="touchUpInside" id="yMV-0E-V4G"/>
                                 </connections>
@@ -200,7 +200,7 @@
                                     <constraint firstAttribute="height" constant="70" id="H0V-1g-V5M"/>
                                     <constraint firstAttribute="width" constant="70" id="v3M-jf-g3F"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="red"/>
+                                <state key="normal" backgroundImage="Draw/red"/>
                                 <connections>
                                     <action selector="tappedRedColor:" destination="bVk-lS-iyG" eventType="touchUpInside" id="NK8-5m-MAm"/>
                                 </connections>
@@ -298,18 +298,18 @@
         </scene>
     </scenes>
     <resources>
-        <image name="black" width="113" height="114"/>
-        <image name="blackpen" width="94" height="455"/>
-        <image name="blue" width="113" height="114"/>
-        <image name="btnTools_cannotUndo_70*70" width="124" height="115"/>
-        <image name="btnTools_submitBtn_70*70" width="127" height="116"/>
-        <image name="btnTools_toolsBtn_70*70" width="125" height="117"/>
-        <image name="clearPicture" width="125" height="113"/>
-        <image name="f1ChoiceDrawing/night_BtnHints" width="191" height="64"/>
-        <image name="f1ChoiceDrawing/title_drawing" width="648" height="153"/>
-        <image name="green" width="113" height="114"/>
-        <image name="line" width="21" height="269"/>
-        <image name="red" width="113" height="114"/>
-        <image name="yellow" width="114" height="114"/>
+        <image name="Draw/black" width="113" height="114"/>
+        <image name="Draw/blackpen" width="94" height="455"/>
+        <image name="Draw/blue" width="113" height="114"/>
+        <image name="Draw/clear" width="125" height="113"/>
+        <image name="Draw/example_button" width="191" height="64"/>
+        <image name="Draw/green" width="113" height="114"/>
+        <image name="Draw/line" width="21" height="269"/>
+        <image name="Draw/pen" width="125" height="117"/>
+        <image name="Draw/red" width="113" height="114"/>
+        <image name="Draw/sent" width="127" height="116"/>
+        <image name="Draw/title" width="648" height="153"/>
+        <image name="Draw/undo" width="124" height="113"/>
+        <image name="Draw/yellow" width="114" height="114"/>
     </resources>
 </document>

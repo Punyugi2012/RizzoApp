@@ -29,7 +29,7 @@
                                         <rect key="frame" x="74" y="635" width="300" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <state key="normal" title="answer 1" backgroundImage="f3soundQ/choicePanel">
+                                        <state key="normal" title="answer 1" backgroundImage="Question/choice">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
@@ -40,7 +40,7 @@
                                         <rect key="frame" x="404" y="764" width="300" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <state key="normal" title="answer 4" backgroundImage="f3soundQ/choicePanel">
+                                        <state key="normal" title="answer 4" backgroundImage="Question/choice">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
@@ -51,7 +51,7 @@
                                         <rect key="frame" x="74" y="765" width="300" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <state key="normal" title="answer 3" backgroundImage="f3soundQ/choicePanel">
+                                        <state key="normal" title="answer 3" backgroundImage="Question/choice">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
@@ -62,7 +62,7 @@
                                         <rect key="frame" x="404" y="635" width="300" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <state key="normal" title="answer 2" backgroundImage="f3soundQ/choicePanel">
+                                        <state key="normal" title="answer 2" backgroundImage="Question/choice">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
@@ -76,7 +76,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="f2ChoiceImgsQues/night_headerImgFruitsQues" translatesAutoresizingMaskIntoConstraints="NO" id="Qsm-pQ-EvR">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ImageQuestion/header_animal" translatesAutoresizingMaskIntoConstraints="NO" id="Qsm-pQ-EvR">
                                         <rect key="frame" x="108" y="47" width="526" height="125"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -141,8 +141,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="f2ChoiceImgsQues/night_headerImgFruitsQues" width="647" height="153"/>
-        <image name="f3soundQ/choicePanel" width="592" height="200"/>
+        <image name="ImageQuestion/header_animal" width="648" height="153"/>
+        <image name="Question/choice" width="592" height="200"/>
         <image name="กระต่าย.jpg" width="960" height="720"/>
     </resources>
 </document>

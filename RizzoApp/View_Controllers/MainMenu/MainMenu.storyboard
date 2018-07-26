@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuApp/headerMenuApp" translatesAutoresizingMaskIntoConstraints="NO" id="w4r-7i-wjI">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MenuApp/headerMenuApp" translatesAutoresizingMaskIntoConstraints="NO" id="w4r-7i-wjI">
                                 <rect key="frame" x="20" y="84" width="728" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="Fr2-g9-JLH"/>
@@ -32,14 +32,14 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yrp-E7-68D">
                                                 <rect key="frame" x="0.0" y="0.0" width="339" height="355"/>
-                                                <state key="normal" title="วาดภาพ" image="menuApp/drawing"/>
+                                                <state key="normal" backgroundImage="MenuApp/drawing"/>
                                                 <connections>
                                                     <action selector="playDraw:" destination="GrQ-vX-gpU" eventType="touchUpInside" id="mCP-WS-XI4"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gb-Kc-KLg">
                                                 <rect key="frame" x="389" y="0.0" width="339" height="355"/>
-                                                <state key="normal" title="ทายรูป" image="menuApp/imgQues"/>
+                                                <state key="normal" backgroundImage="MenuApp/imgQues"/>
                                                 <connections>
                                                     <action selector="playImgQuestion:" destination="GrQ-vX-gpU" eventType="touchUpInside" id="u6W-KQ-Ocf"/>
                                                 </connections>
@@ -51,14 +51,14 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYA-TM-sij">
                                                 <rect key="frame" x="0.0" y="0.0" width="339" height="355"/>
-                                                <state key="normal" title="ทายเสียง" image="menuApp/soundQues"/>
+                                                <state key="normal" backgroundImage="MenuApp/soundQues"/>
                                                 <connections>
                                                     <action selector="playSoundQuestion:" destination="GrQ-vX-gpU" eventType="touchUpInside" id="QLA-FW-ndo"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vIZ-2S-9KY">
                                                 <rect key="frame" x="389" y="0.0" width="339" height="355"/>
-                                                <state key="normal" title="ตั้งค่า" image="menuApp/setting"/>
+                                                <state key="normal" backgroundImage="MenuApp/setting"/>
                                                 <connections>
                                                     <action selector="setting:" destination="GrQ-vX-gpU" eventType="touchUpInside" id="vfk-KM-Scx"/>
                                                 </connections>
@@ -145,10 +145,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="menuApp/drawing" width="819" height="764"/>
-        <image name="menuApp/headerMenuApp" width="650" height="226"/>
-        <image name="menuApp/imgQues" width="819" height="761"/>
-        <image name="menuApp/setting" width="819" height="754"/>
-        <image name="menuApp/soundQues" width="819" height="752"/>
+        <image name="MenuApp/drawing" width="819" height="764"/>
+        <image name="MenuApp/headerMenuApp" width="650" height="226"/>
+        <image name="MenuApp/imgQues" width="819" height="761"/>
+        <image name="MenuApp/setting" width="819" height="754"/>
+        <image name="MenuApp/soundQues" width="819" height="752"/>
     </resources>
 </document>

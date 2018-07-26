@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="f4setting/headerSetting" translatesAutoresizingMaskIntoConstraints="NO" id="Mn0-1l-7hU">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Setting/header" translatesAutoresizingMaskIntoConstraints="NO" id="Mn0-1l-7hU">
                                 <rect key="frame" x="50" y="84" width="668" height="130"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="130" id="22f-lF-2kM"/>
@@ -140,6 +140,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="f4setting/headerSetting" width="801" height="153"/>
+        <image name="Setting/header" width="801" height="153"/>
     </resources>
 </document>

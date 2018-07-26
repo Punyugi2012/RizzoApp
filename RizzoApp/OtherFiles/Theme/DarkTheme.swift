@@ -10,10 +10,10 @@ import Foundation
 import UIKit
 
 class DarkTheme: ThemePotocol {
-    var replayBtn: UIImage = #imageLiteral(resourceName: "totalScore/nightReplayBtn")
-    var backToMainMenuBtn: UIImage = #imageLiteral(resourceName: "totalScore/nightHomeBtn")
-    var modalCorrectBgImage: UIImage = #imageLiteral(resourceName: "modal/nightModalCorrect")
-    var modalIncorrectBgImage: UIImage = #imageLiteral(resourceName: "modal/nightModalIncorrect")
-    var backgroundColor: UIColor = UIColor(named: "NightColor")!
-    var modalNextBtn: UIImage = #imageLiteral(resourceName: "modal/nightNextBtn")
+    var replayBtn: UIImage = #imageLiteral(resourceName: "FinishedDark/replayBtn")
+    var backToMainMenuBtn: UIImage = #imageLiteral(resourceName: "FinishedDark/homeBtn")
+    var modalCorrectBgImage: UIImage = #imageLiteral(resourceName: "ModalDark/modalCorrect")
+    var modalIncorrectBgImage: UIImage = #imageLiteral(resourceName: "ModalDark/modalInCorrect")
+    var backgroundColor: UIColor = UIColor(named: "DarkBackground")!
+    var modalNextBtn: UIImage = #imageLiteral(resourceName: "ModalDark/nextBtn")
 }

@@ -41,7 +41,7 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="totalScore/totalScore" translatesAutoresizingMaskIntoConstraints="NO" id="JYv-p6-zEo">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Finished/header" translatesAutoresizingMaskIntoConstraints="NO" id="JYv-p6-zEo">
                                 <rect key="frame" x="20" y="114" width="728" height="218"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="k54-mc-8X0">
@@ -49,7 +49,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vKU-Un-XRq">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="149"/>
-                                        <state key="normal" backgroundImage="totalScore/replay"/>
+                                        <state key="normal" backgroundImage="FinishedLight/replay"/>
                                         <connections>
                                             <action selector="replayGame:" destination="QDq-gj-LgV" eventType="touchUpInside" id="Hex-Qi-hdS"/>
                                             <segue destination="q2I-aR-0xH" kind="unwind" unwindAction="backToImageQuestionWithSegue:" id="a9i-a0-qCf"/>
@@ -57,7 +57,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nrF-eb-mQe">
                                         <rect key="frame" x="0.0" y="169" width="600" height="149"/>
-                                        <state key="normal" backgroundImage="totalScore/homeBtn"/>
+                                        <state key="normal" backgroundImage="FinishedLight/homeBtn"/>
                                         <connections>
                                             <action selector="backToMainMenu:" destination="QDq-gj-LgV" eventType="touchUpInside" id="ELI-3s-YTy"/>
                                             <segue destination="q2I-aR-0xH" kind="unwind" unwindAction="backToMainMenuWithSegue:" id="1E1-gN-mao"/>
@@ -114,8 +114,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="totalScore/homeBtn" width="589" height="149"/>
-        <image name="totalScore/replay" width="589" height="149"/>
-        <image name="totalScore/totalScore" width="803" height="218"/>
+        <image name="Finished/header" width="803" height="218"/>
+        <image name="FinishedLight/homeBtn" width="589" height="149"/>
+        <image name="FinishedLight/replay" width="589" height="149"/>
     </resources>
 </document>

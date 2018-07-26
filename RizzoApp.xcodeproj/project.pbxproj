@@ -59,8 +59,7 @@
 		B82F8CDB210349B6001A9338 /* FinishedDrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82F8CDA210349B6001A9338 /* FinishedDrawViewController.swift */; };
 		B82F8CDD21034A10001A9338 /* PrepareDrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82F8CDC21034A10001A9338 /* PrepareDrawViewController.swift */; };
 		B82F8CDF21034A45001A9338 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82F8CDE21034A45001A9338 /* SettingViewController.swift */; };
-		B83CF6132105B14400A483A5 /* darkTheme.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B83CF6122105B14400A483A5 /* darkTheme.xcassets */; };
-		B83CF6152105B18100A483A5 /* BackgroundColor.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B83CF6142105B18100A483A5 /* BackgroundColor.xcassets */; };
+		B83CF6132105B14400A483A5 /* DarkTheme.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B83CF6122105B14400A483A5 /* DarkTheme.xcassets */; };
 		B83CF6172105B1A600A483A5 /* animationLunchScreen.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B83CF6162105B1A600A483A5 /* animationLunchScreen.xcassets */; };
 		B83CF61B2105CEFA00A483A5 /* cat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B83CF6182105CEFA00A483A5 /* cat.jpg */; };
 		B83CF61C2105CEFA00A483A5 /* fish.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B83CF6192105CEFA00A483A5 /* fish.jpg */; };
@@ -97,7 +96,7 @@
 		B87D93C3210470C100788F2D /* แมว.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B87D93AF210470C000788F2D /* แมว.mp3 */; };
 		B87D93C9210470CE00788F2D /* สุนัข.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B87D93C6210470CD00788F2D /* สุนัข.mp3 */; };
 		B87D93CA210470CE00788F2D /* หมู.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B87D93C7210470CD00788F2D /* หมู.mp3 */; };
-		B87D93CC21047F9F00788F2D /* lightTheme.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B87D93CB21047F9F00788F2D /* lightTheme.xcassets */; };
+		B87D93CC21047F9F00788F2D /* LightTheme.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B87D93CB21047F9F00788F2D /* LightTheme.xcassets */; };
 		B87D93CF2104972B00788F2D /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87D93CE2104972B00788F2D /* Enums.swift */; };
 		B87D93D421049E3000788F2D /* ModalView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B87D93D321049E3000788F2D /* ModalView.xib */; };
 		B87D93D621049E3D00788F2D /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87D93D521049E3D00788F2D /* ModalView.swift */; };
@@ -106,7 +105,7 @@
 		B8A1F612210723FA00D4FF0C /* PreviewImage.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8A1F611210723FA00D4FF0C /* PreviewImage.xib */; };
 		B8A1F6142107240800D4FF0C /* PreviewImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A1F6132107240800D4FF0C /* PreviewImage.swift */; };
 		B8AEBD3B21030FC500468680 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AEBD3A21030FC500468680 /* AppDelegate.swift */; };
-		B8AEBD4221030FC700468680 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8AEBD4121030FC700468680 /* Assets.xcassets */; };
+		B8AEBD4221030FC700468680 /* SharedAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8AEBD4121030FC700468680 /* SharedAssets.xcassets */; };
 		B8AEBD4521030FC700468680 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8AEBD4321030FC700468680 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -163,8 +162,7 @@
 		B82F8CDA210349B6001A9338 /* FinishedDrawViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishedDrawViewController.swift; sourceTree = "<group>"; };
 		B82F8CDC21034A10001A9338 /* PrepareDrawViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrepareDrawViewController.swift; sourceTree = "<group>"; };
 		B82F8CDE21034A45001A9338 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
-		B83CF6122105B14400A483A5 /* darkTheme.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = darkTheme.xcassets; sourceTree = "<group>"; };
-		B83CF6142105B18100A483A5 /* BackgroundColor.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = BackgroundColor.xcassets; sourceTree = "<group>"; };
+		B83CF6122105B14400A483A5 /* DarkTheme.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = DarkTheme.xcassets; sourceTree = "<group>"; };
 		B83CF6162105B1A600A483A5 /* animationLunchScreen.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = animationLunchScreen.xcassets; sourceTree = "<group>"; };
 		B83CF6182105CEFA00A483A5 /* cat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat.jpg; sourceTree = "<group>"; };
 		B83CF6192105CEFA00A483A5 /* fish.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fish.jpg; sourceTree = "<group>"; };
@@ -201,7 +199,7 @@
 		B87D93AF210470C000788F2D /* แมว.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "แมว.mp3"; sourceTree = "<group>"; };
 		B87D93C6210470CD00788F2D /* สุนัข.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "สุนัข.mp3"; sourceTree = "<group>"; };
 		B87D93C7210470CD00788F2D /* หมู.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "หมู.mp3"; sourceTree = "<group>"; };
-		B87D93CB21047F9F00788F2D /* lightTheme.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = lightTheme.xcassets; sourceTree = "<group>"; };
+		B87D93CB21047F9F00788F2D /* LightTheme.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LightTheme.xcassets; sourceTree = "<group>"; };
 		B87D93CE2104972B00788F2D /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		B87D93D321049E3000788F2D /* ModalView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModalView.xib; sourceTree = "<group>"; };
 		B87D93D521049E3D00788F2D /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
@@ -211,7 +209,7 @@
 		B8A1F6132107240800D4FF0C /* PreviewImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewImage.swift; sourceTree = "<group>"; };
 		B8AEBD3721030FC400468680 /* RizzoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RizzoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8AEBD3A21030FC500468680 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B8AEBD4121030FC700468680 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B8AEBD4121030FC700468680 /* SharedAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = SharedAssets.xcassets; sourceTree = "<group>"; };
 		B8AEBD4421030FC700468680 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B8AEBD4621030FC700468680 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C009C07498A6C6EFCFA1722E /* Pods-RizzoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RizzoApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RizzoApp/Pods-RizzoApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -372,10 +370,9 @@
 			children = (
 				B84F5CD6210334170043DCEC /* Sounds */,
 				B84F5CD52103340D0043DCEC /* Images */,
-				B8AEBD4121030FC700468680 /* Assets.xcassets */,
-				B87D93CB21047F9F00788F2D /* lightTheme.xcassets */,
-				B83CF6122105B14400A483A5 /* darkTheme.xcassets */,
-				B83CF6142105B18100A483A5 /* BackgroundColor.xcassets */,
+				B8AEBD4121030FC700468680 /* SharedAssets.xcassets */,
+				B87D93CB21047F9F00788F2D /* LightTheme.xcassets */,
+				B83CF6122105B14400A483A5 /* DarkTheme.xcassets */,
 				B83CF6162105B1A600A483A5 /* animationLunchScreen.xcassets */,
 			);
 			path = Resources;
@@ -706,24 +703,23 @@
 				B87D93C3210470C100788F2D /* แมว.mp3 in Resources */,
 				B422AB462107232E0018CE9F /* มีดครัว.jpg in Resources */,
 				B84F5CC32103258C0043DCEC /* SoundQuestion.storyboard in Resources */,
-				B83CF6152105B18100A483A5 /* BackgroundColor.xcassets in Resources */,
 				B422AB1F210723030018CE9F /* หมี.jpg in Resources */,
 				B83CF6172105B1A600A483A5 /* animationLunchScreen.xcassets in Resources */,
 				B422AB38210723110018CE9F /* น้ำตก.jpg in Resources */,
-				B87D93CC21047F9F00788F2D /* lightTheme.xcassets in Resources */,
+				B87D93CC21047F9F00788F2D /* LightTheme.xcassets in Resources */,
 				B422AB09210722C60018CE9F /* ทุเรียน.jpg in Resources */,
 				B87D93B3210470C100788F2D /* วัว.mp3 in Resources */,
 				B422AB4A2107232E0018CE9F /* แปรงสีฟัน.jpg in Resources */,
 				B84F5CC12103256B0043DCEC /* FinishedSoundQuestion.storyboard in Resources */,
 				B84F5CB8210324C10043DCEC /* ImgQuestion.storyboard in Resources */,
-				B83CF6132105B14400A483A5 /* darkTheme.xcassets in Resources */,
+				B83CF6132105B14400A483A5 /* DarkTheme.xcassets in Resources */,
 				B422AB1D210723030018CE9F /* หมู.jpg in Resources */,
 				B83CF61D2105CEFA00A483A5 /* rabbit.jpg in Resources */,
 				B84F5CE0210336270043DCEC /* btnSound.mp3 in Resources */,
 				B422AB492107232E0018CE9F /* กะทะ.jpg in Resources */,
 				B87D93C0210470C100788F2D /* ลิง.mp3 in Resources */,
 				B87D93B4210470C100788F2D /* ม้า.mp3 in Resources */,
-				B8AEBD4221030FC700468680 /* Assets.xcassets in Resources */,
+				B8AEBD4221030FC700468680 /* SharedAssets.xcassets in Resources */,
 				B87D93BC210470C100788F2D /* ช้าง.mp3 in Resources */,
 				B422AB4E2107232E0018CE9F /* มีดช้อนส้อม.jpg in Resources */,
 				B87D93B7210470C100788F2D /* เป็ด.mp3 in Resources */,

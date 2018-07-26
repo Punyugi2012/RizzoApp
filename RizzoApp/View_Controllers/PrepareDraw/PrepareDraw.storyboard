@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="f1drawing/night_headerDrawing" translatesAutoresizingMaskIntoConstraints="NO" id="UES-9z-w61">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Draw/header_category" translatesAutoresizingMaskIntoConstraints="NO" id="UES-9z-w61">
                                 <rect key="frame" x="50" y="84" width="668" height="153"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="tUy-rK-wda">
@@ -29,7 +29,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="150" id="Sty-lL-83G"/>
                                         </constraints>
-                                        <state key="normal" backgroundImage="f1drawing/night_drawingAnimalsBtn"/>
+                                        <state key="normal" backgroundImage="Draw/animal"/>
                                         <connections>
                                             <action selector="tappedCategory:" destination="WkY-0A-bwD" eventType="touchUpInside" id="emh-0J-Mhe"/>
                                         </connections>
@@ -39,7 +39,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="150" id="d47-7Z-l2d"/>
                                         </constraints>
-                                        <state key="normal" backgroundImage="f1drawing/drawingObjectsBtn"/>
+                                        <state key="normal" backgroundImage="Draw/object"/>
                                         <connections>
                                             <action selector="tappedCategory:" destination="WkY-0A-bwD" eventType="touchUpInside" id="1j1-Kv-NYo"/>
                                         </connections>
@@ -49,7 +49,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="150" id="ZyW-5u-Ny7"/>
                                         </constraints>
-                                        <state key="normal" backgroundImage="f1drawing/night_drawingFriutsBtn"/>
+                                        <state key="normal" backgroundImage="Draw/friut"/>
                                         <connections>
                                             <action selector="tappedCategory:" destination="WkY-0A-bwD" eventType="touchUpInside" id="bUe-XM-Ur6"/>
                                         </connections>
@@ -95,9 +95,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="f1drawing/drawingObjectsBtn" width="829" height="186"/>
-        <image name="f1drawing/night_drawingAnimalsBtn" width="834" height="186"/>
-        <image name="f1drawing/night_drawingFriutsBtn" width="834" height="192"/>
-        <image name="f1drawing/night_headerDrawing" width="801" height="153"/>
+        <image name="Draw/animal" width="834" height="186"/>
+        <image name="Draw/friut" width="834" height="192"/>
+        <image name="Draw/header_category" width="801" height="153"/>
+        <image name="Draw/object" width="829" height="186"/>
     </resources>
 </document>

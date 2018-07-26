@@ -32,10 +32,10 @@ class SoundQuestionViewController: UIViewController {
         view.backgroundColor = AppManager.shared.currentTheme?.backgroundColor
         switch questionType {
         case .animal:
-            titleQuestionImageView.image = #imageLiteral(resourceName: "f3soundQ/headerSndAnimal")
+            titleQuestionImageView.image = #imageLiteral(resourceName: "SoundQuestion/header_animal")
             
         case .musical:
-            titleQuestionImageView.image = #imageLiteral(resourceName: "f3soundQ/headerSndMusicInstruments")
+            titleQuestionImageView.image = #imageLiteral(resourceName: "SoundQuestion/header_musical")
         default:
             break
         }

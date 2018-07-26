@@ -30,13 +30,13 @@ class ImgQuestionViewController: UIViewController {
         view.backgroundColor = AppManager.shared.currentTheme?.backgroundColor
         switch questionType {
             case .fruit:
-                titleQuestionImageView.image = #imageLiteral(resourceName: "f2ChoiceImgsQues/night_headerImgFruitsQues")
+                titleQuestionImageView.image = #imageLiteral(resourceName: "ImageQuestion/header_fruit")
             case .animal:
-                titleQuestionImageView.image = #imageLiteral(resourceName: "f2ChoiceImgsQues/night_headerImgAnimalsQues")
+                titleQuestionImageView.image = #imageLiteral(resourceName: "ImageQuestion/header_animal")
             case .place:
-                titleQuestionImageView.image = #imageLiteral(resourceName: "f2ChoiceImgsQues/night_headerImgLocationsQues")
+                titleQuestionImageView.image = #imageLiteral(resourceName: "ImageQuestion/header_place")
             case .object:
-                titleQuestionImageView.image = #imageLiteral(resourceName: "f2ChoiceImgsQues/night_headerImgObjectQues")
+                titleQuestionImageView.image = #imageLiteral(resourceName: "ImageQuestion/header_object")
             default:
                 break
         }

@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="totalScore/totalScore" translatesAutoresizingMaskIntoConstraints="NO" id="Roc-ky-BxH">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Finished/header" translatesAutoresizingMaskIntoConstraints="NO" id="Roc-ky-BxH">
                                 <rect key="frame" x="20" y="114" width="728" height="218"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="g0z-iZ-XLy">
@@ -49,7 +49,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kYc-Rd-2eE">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="149"/>
-                                        <state key="normal" backgroundImage="totalScore/replay"/>
+                                        <state key="normal" backgroundImage="FinishedLight/replay"/>
                                         <connections>
                                             <action selector="replayGame:" destination="tao-pp-9ir" eventType="touchUpInside" id="icb-2n-GM9"/>
                                             <segue destination="I3N-ad-mZk" kind="unwind" unwindAction="backtoSoundQuestionWithSegue:" id="Xaj-bL-yDU"/>
@@ -57,7 +57,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xDF-j2-zyq">
                                         <rect key="frame" x="0.0" y="169" width="600" height="149"/>
-                                        <state key="normal" backgroundImage="totalScore/homeBtn"/>
+                                        <state key="normal" backgroundImage="FinishedLight/homeBtn"/>
                                         <connections>
                                             <action selector="backToMainMenu:" destination="tao-pp-9ir" eventType="touchUpInside" id="WAA-mv-II7"/>
                                             <segue destination="I3N-ad-mZk" kind="unwind" unwindAction="backToMainMenuWithSegue:" id="e5R-hx-xFO"/>
@@ -116,8 +116,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="totalScore/homeBtn" width="589" height="149"/>
-        <image name="totalScore/replay" width="589" height="149"/>
-        <image name="totalScore/totalScore" width="803" height="218"/>
+        <image name="Finished/header" width="803" height="218"/>
+        <image name="FinishedLight/homeBtn" width="589" height="149"/>
+        <image name="FinishedLight/replay" width="589" height="149"/>
     </resources>
 </document>

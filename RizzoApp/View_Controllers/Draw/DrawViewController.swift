@@ -88,8 +88,8 @@ class DrawViewController: UIViewController {
         print("BackColor")
         sender.playButtonSound()
         resetColorButtons()
-        sender.setBackgroundImage(UIImage(named: "blacked"), for: .normal)
-        penBtn.setBackgroundImage(UIImage(named: "blackpen"), for: .normal)
+        sender.setBackgroundImage(UIImage(named: "Draw/blacked"), for: .normal)
+        penBtn.setBackgroundImage(UIImage(named: "Draw/blackpen"), for: .normal)
         var delay = 0.1
         [yellowColorBtn, greenColorBtn, blueColorBtn, redColorBtn].forEach { (colorBtn) in
             UIView.animate(withDuration: 0.5, delay: delay, options: [], animations: {
@@ -105,8 +105,8 @@ class DrawViewController: UIViewController {
         print("RedColor")
         sender.playButtonSound()
         resetColorButtons()
-        penBtn.setBackgroundImage(UIImage(named: "redpen"), for: .normal)
-        sender.setBackgroundImage(UIImage(named: "reded"), for: .normal)
+        penBtn.setBackgroundImage(UIImage(named: "Draw/redpen"), for: .normal)
+        sender.setBackgroundImage(UIImage(named: "Draw/reded"), for: .normal)
     }
     
     @IBAction func tappedYellowColor(_ sender: UIButton) {
@@ -114,8 +114,8 @@ class DrawViewController: UIViewController {
         print("YellowColor")
         sender.playButtonSound()
         resetColorButtons()
-        penBtn.setBackgroundImage(UIImage(named: "yellowpen"), for: .normal)
-        sender.setBackgroundImage(UIImage(named: "yellowed"), for: .normal)
+        penBtn.setBackgroundImage(UIImage(named: "Draw/yellowpen"), for: .normal)
+        sender.setBackgroundImage(UIImage(named: "Draw/yellowed"), for: .normal)
     }
     
     @IBAction func tappedGreenColor(_ sender: UIButton) {
@@ -123,8 +123,8 @@ class DrawViewController: UIViewController {
         print("GreenColor")
         sender.playButtonSound()
         resetColorButtons()
-        penBtn.setBackgroundImage(UIImage(named: "greenpen"), for: .normal)
-        sender.setBackgroundImage(UIImage(named: "greened"), for: .normal)
+        penBtn.setBackgroundImage(UIImage(named: "Draw/greenpen"), for: .normal)
+        sender.setBackgroundImage(UIImage(named: "Draw/greened"), for: .normal)
     }
     
     @IBAction func tappedBlueColor(_ sender: UIButton) {
@@ -132,8 +132,8 @@ class DrawViewController: UIViewController {
         print("BlueColor")
         sender.playButtonSound()
         resetColorButtons()
-        penBtn.setBackgroundImage(UIImage(named: "bluepen"), for: .normal)
-        sender.setBackgroundImage(UIImage(named: "blued"), for: .normal)
+        penBtn.setBackgroundImage(UIImage(named: "Draw/bluepen"), for: .normal)
+        sender.setBackgroundImage(UIImage(named: "Draw/blued"), for: .normal)
     }
 
     @IBAction func tappedHighLineBtn(_ sender: UIButton) {
