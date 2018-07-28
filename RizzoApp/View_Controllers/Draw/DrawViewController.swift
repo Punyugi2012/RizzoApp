@@ -72,7 +72,7 @@ class DrawViewController: UIViewController {
         let orderColors = ["black", "red", "yellow", "green", "blue"]
         var index = 0
         [blackColorBtn, redColorBtn, yellowColorBtn, greenColorBtn, blueColorBtn].forEach { (colorBtn) in
-           colorBtn?.setBackgroundImage(UIImage(named: "\(orderColors[index])"), for: .normal)
+           colorBtn?.setBackgroundImage(UIImage(named: "Draw/\(orderColors[index])"), for: .normal)
             index += 1
         }
     }
