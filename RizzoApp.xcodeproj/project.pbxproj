@@ -83,6 +83,7 @@
 		B84F5CDC210335000043DCEC /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84F5CDB210335000043DCEC /* AppManager.swift */; };
 		B84F5CDE210335DB0043DCEC /* bgSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B84F5CDD210335DB0043DCEC /* bgSound.mp3 */; };
 		B84F5CE0210336270043DCEC /* btnSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B84F5CDF210336270043DCEC /* btnSound.mp3 */; };
+		B8783518210C51D600B87B11 /* LoadingScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8783517210C51D600B87B11 /* LoadingScene.swift */; };
 		B87D939421045D6A00788F2D /* ThemePotocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87D939321045D6A00788F2D /* ThemePotocol.swift */; };
 		B87D939621045D9100788F2D /* LightTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87D939521045D9100788F2D /* LightTheme.swift */; };
 		B87D939821045D9C00788F2D /* DarkTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87D939721045D9C00788F2D /* DarkTheme.swift */; };
@@ -186,6 +187,7 @@
 		B84F5CDB210335000043DCEC /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
 		B84F5CDD210335DB0043DCEC /* bgSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgSound.mp3; sourceTree = "<group>"; };
 		B84F5CDF210336270043DCEC /* btnSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = btnSound.mp3; sourceTree = "<group>"; };
+		B8783517210C51D600B87B11 /* LoadingScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingScene.swift; sourceTree = "<group>"; };
 		B87D939321045D6A00788F2D /* ThemePotocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePotocol.swift; sourceTree = "<group>"; };
 		B87D939521045D9100788F2D /* LightTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightTheme.swift; sourceTree = "<group>"; };
 		B87D939721045D9C00788F2D /* DarkTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkTheme.swift; sourceTree = "<group>"; };
@@ -474,6 +476,7 @@
 			children = (
 				B84F5CC7210325D40043DCEC /* MainMenu.storyboard */,
 				B84F5CC9210327C10043DCEC /* MainMenuViewController.swift */,
+				B8783517210C51D600B87B11 /* LoadingScene.swift */,
 			);
 			path = MainMenu;
 			sourceTree = "<group>";
@@ -802,6 +805,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8A1F6142107240800D4FF0C /* PreviewImage.swift in Sources */,
+				B8783518210C51D600B87B11 /* LoadingScene.swift in Sources */,
 				B8A1F60F21070F3D00D4FF0C /* DrawAPI.swift in Sources */,
 				B82F8CDD21034A10001A9338 /* PrepareDrawViewController.swift in Sources */,
 				B8A1F60D210709D500D4FF0C /* DrawView.swift in Sources */,

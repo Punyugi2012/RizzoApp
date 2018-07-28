@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SpriteKit
 
 class MainMenuViewController: UIViewController {
 
@@ -17,8 +18,22 @@ class MainMenuViewController: UIViewController {
         navigationItem.backBarButtonItem = backItem
         setNavigationBar()
         setView()
+        setLoadingView()
     }
     
+    func setLoadingView() {
+        let loadingView = SKView()
+        loadingView.frame = self.view.frame
+        view.addSubview(loadingView)
+        loadingView.presentScene(LoadingScene(size: view.frame.size))
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
+            UIView.animate(withDuration: 0.5, animations: {
+                loadingView.alpha = 0
+            }, completion: { (true) in
+                loadingView.removeFromSuperview()
+            })
+        }
+    }
     
     @IBAction func backToMainMenu(segue: UIStoryboardSegue) {
         if segue.source is FinishedSoundQViewController {
