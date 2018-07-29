@@ -13,7 +13,7 @@ class QuestionModel {
     static func getAllImageQuestion(completeHandle: @escaping (_ datas: [[ImageQuestion]]) -> Void) {
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-        let imageQuestions = [
+            let imageQuestions = [
                 [//ผลไม้
                     ImageQuestion(answer: "แตงโม", answers: ["แตงโม", "ส้มโอ", "ลิ้นจี้", "แอปเปิ้ล"]),
                     ImageQuestion(answer: "แอปเปิ้ล", answers: ["แอปเปิ้ล", "ส้ม", "สตอรเบอรรี่", "มะม่วง"]),
@@ -37,7 +37,7 @@ class QuestionModel {
                     ImageQuestion(answer: "หมา", answers: ["หมา", "แมว", "หมี", "หมู"]),
                     ImageQuestion(answer: "หมี", answers: ["แมว", "หมู", "หมา", "หมี"]),
                     ImageQuestion(answer: "หมู", answers: ["แมว", "หมู", "หมี", "หมา"]),
-                ],
+                    ],
                 [//สถานที่
                     ImageQuestion(answer: "ถ้ำ", answers: ["ถ้ำ", "ป่า", "สนามเด็กเล่น", "น้ำตก"]),
                     ImageQuestion(answer: "ทะเล", answers: ["แม่น้ำ", "ทะเล", "ทะเลทราย", "ทะเลสาบ"]),
@@ -47,9 +47,9 @@ class QuestionModel {
                     ImageQuestion(answer: "วัด", answers: ["สวนสาธารณะ", "สนามเด็กเล่น", "ห้างสรรพสินค้า", "วัด"]),
                     ImageQuestion(answer: "สนามกอล์ฟ", answers: ["สนามกอล์ฟ", "สนามฟุตบอล", "ป่า", "สนามเด็กเล่น"]),
                     ImageQuestion(answer: "สนามบิน", answers: ["บริการขนส่งทางบก", "สนามเด็กเล่น", "สนามกอล์ฟ", "สนามบิน"]),
-                    ImageQuestion(answer: "สนามฟุตอล", answers: ["สนามฟุตซอล", "สนามฟุตบอล", "สนามเด็กเล่น", "สนามกอล์ฟ"]),
+                    ImageQuestion(answer: "สนามฟุตบอล", answers: ["สนามฟุตซอล", "สนามฟุตบอล", "สนามเด็กเล่น", "สนามกอล์ฟ"]),
                     ImageQuestion(answer: "ห้างสรรพสินค้า", answers: ["ห้างสรรพสินค้า", "ห้างทอง", "สวนสาธารณะ", "ตลาด"]),
-                ],
+                    ],
                 [//สิ่งของ
                     ImageQuestion(answer: "เครื่องมือช่าง", answers: ["อุปกรณ์อาบน้ำ", "เครื่องมือช่าง", "เครื่องมือซักผ้า", "เครื่องครัว"]),
                     ImageQuestion(answer: "แปรงสีฟัน", answers: ["แปรงสีฟัน", "แปรงขัดส้วม", "ฝอยขัดหม้อ", "แปรงขัดรองเท้า"]),
@@ -61,7 +61,7 @@ class QuestionModel {
                     ImageQuestion(answer: "มีดครัว", answers: ["มีดดาบ", "มีดพก", "มีดครัว", "มีดไฟฟ้า"]),
                     ImageQuestion(answer: "มีดช้อนส้อม", answers: ["มีดช้อนส้อม", "มีด", "ช้อน", "ส้อม"]),
                     ImageQuestion(answer: "ร่ม", answers: ["ผ้าใบ", "ร่ม", "ลูกโป่ง", "กิ่งไม้"]),
-                ]
+                    ]
             ]
             completeHandle(imageQuestions)
         }
@@ -96,16 +96,36 @@ class QuestionModel {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             let drawQuestions = [
                 [
-                    DrawQuestion(questionName: "แมว", answer: "cat"),
+                    DrawQuestion(questionName: "นก", answer: "bird"),
+                    DrawQuestion(questionName: "วัว", answer: "cow"),
+                    DrawQuestion(questionName: "สุนัข", answer: "dog"),
+                    DrawQuestion(questionName: "ช้าง", answer: "elephant"),
                     DrawQuestion(questionName: "ปลา", answer: "fish"),
-                    DrawQuestion(questionName: "กระต่าย", answer: "rabbit")
-                ],
+                    DrawQuestion(questionName: "ยีราฟ", answer: "giraffe"),
+                    DrawQuestion(questionName: "หมึก", answer: "octopus"),
+                    DrawQuestion(questionName: "หมีแพนด้า", answer: "panda"),
+                    DrawQuestion(questionName: "หมู", answer: "pig"),
+                    DrawQuestion(questionName: "แกะ", answer: "sheep"),
+                    ],
                 [
-                    // สิ่งของ
-                ],
+                    DrawQuestion(questionName: "เพรช", answer: "diamond"),
+                    DrawQuestion(questionName: "ส้อม", answer: "fork"),
+                    DrawQuestion(questionName: "แว่นตา", answer: "glasses"),
+                    DrawQuestion(questionName: "หมวก", answer: "hat"),
+                    DrawQuestion(questionName: "โน๊ตบุ๊ค", answer: "notebook"),
+                    DrawQuestion(questionName: "รองเท้าแตะ", answer: "sandals"),
+                    DrawQuestion(questionName: "รองเท้าแตะ", answer: "vase"),
+                    ],
                 [
-                    // ผลไม้
-                ]
+                    DrawQuestion(questionName: "แอปเปิ้ล", answer: "apple"),
+                    DrawQuestion(questionName: "กล้วย", answer: "banana"),
+                    DrawQuestion(questionName: "แบล็คเบอรี่", answer: "blackberry"),
+                    DrawQuestion(questionName: "บลูเบอรี่", answer: "blueberry"),
+                    DrawQuestion(questionName: "องุ่น", answer: "grape"),
+                    DrawQuestion(questionName: "สัปปะรด", answer: "pineapple"),
+                    DrawQuestion(questionName: "สตอเบอรี่", answer: "strawberry"),
+                    DrawQuestion(questionName: "แตงโม", answer: "watermelon"),
+                    ]
             ]
             completeHandle(drawQuestions)
         }

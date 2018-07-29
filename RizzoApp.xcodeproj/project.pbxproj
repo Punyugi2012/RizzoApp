@@ -28,7 +28,7 @@
 		B422AB24210723030018CE9F /* เป็ด.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B422AB1A210723020018CE9F /* เป็ด.jpg */; };
 		B422AB25210723030018CE9F /* ลิง.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B422AB1B210723020018CE9F /* ลิง.jpg */; };
 		B422AB26210723030018CE9F /* หมา.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B422AB1C210723020018CE9F /* หมา.jpg */; };
-		B422AB31210723110018CE9F /* ถ้ำ.JPG in Resources */ = {isa = PBXBuildFile; fileRef = B422AB272107230E0018CE9F /* ถ้ำ.JPG */; };
+		B422AB31210723110018CE9F /* ถ้ำ.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B422AB272107230E0018CE9F /* ถ้ำ.jpg */; };
 		B422AB32210723110018CE9F /* วัด.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B422AB282107230E0018CE9F /* วัด.jpg */; };
 		B422AB33210723110018CE9F /* ห้างสรรพสินค้า.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B422AB292107230F0018CE9F /* ห้างสรรพสินค้า.jpg */; };
 		B422AB34210723110018CE9F /* ทุ่งนา.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B422AB2A210723100018CE9F /* ทุ่งนา.jpg */; };
@@ -154,7 +154,7 @@
 		B422AB1A210723020018CE9F /* เป็ด.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "เป็ด.jpg"; sourceTree = "<group>"; };
 		B422AB1B210723020018CE9F /* ลิง.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ลิง.jpg"; sourceTree = "<group>"; };
 		B422AB1C210723020018CE9F /* หมา.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "หมา.jpg"; sourceTree = "<group>"; };
-		B422AB272107230E0018CE9F /* ถ้ำ.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ถ้ำ.JPG"; sourceTree = "<group>"; };
+		B422AB272107230E0018CE9F /* ถ้ำ.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ถ้ำ.jpg"; sourceTree = "<group>"; };
 		B422AB282107230E0018CE9F /* วัด.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "วัด.jpg"; sourceTree = "<group>"; };
 		B422AB292107230F0018CE9F /* ห้างสรรพสินค้า.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ห้างสรรพสินค้า.jpg"; sourceTree = "<group>"; };
 		B422AB2A210723100018CE9F /* ทุ่งนา.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ทุ่งนา.jpg"; sourceTree = "<group>"; };
@@ -321,7 +321,7 @@
 		B422AAE9210721820018CE9F /* places */ = {
 			isa = PBXGroup;
 			children = (
-				B422AB272107230E0018CE9F /* ถ้ำ.JPG */,
+				B422AB272107230E0018CE9F /* ถ้ำ.jpg */,
 				B422AB2B210723100018CE9F /* ทะเล.jpg */,
 				B422AB2A210723100018CE9F /* ทุ่งนา.jpg */,
 				B422AB2E210723110018CE9F /* น้ำตก.jpg */,
@@ -783,7 +783,7 @@
 				B422AB3A210723110018CE9F /* สนามกอล์ฟ.jpg in Resources */,
 				B87D93B9210470C100788F2D /* นกฮูก.mp3 in Resources */,
 				B422AB21210723030018CE9F /* สิงโต.jpg in Resources */,
-				B422AB31210723110018CE9F /* ถ้ำ.JPG in Resources */,
+				B422AB31210723110018CE9F /* ถ้ำ.jpg in Resources */,
 				B8F73669210D860B003D7F0C /* strawberry.png in Resources */,
 				B84F5CDE210335DB0043DCEC /* bgSound.mp3 in Resources */,
 				B8F73644210D85D6003D7F0C /* giraffe.png in Resources */,
