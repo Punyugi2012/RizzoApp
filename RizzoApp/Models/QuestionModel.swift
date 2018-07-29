@@ -84,7 +84,16 @@ class QuestionModel {
                     SoundQuestion(answer: "หมู", answers: ["สิงโตทะเล", "หมู", "เสือดาว", "หมีดำ"])
                 ],
                 [
-                    // เครื่องดนตรี
+                    SoundQuestion(answer: "เปียโน", answers: ["แอคคอร์เดียน", "เปียโน", "ไวโอลิน", "ไซโลโฟน"]),
+                    SoundQuestion(answer: "กีต้าร์", answers: ["มาราคา", "ระฆังราว", "ไซโลโฟน", "กีต้าร์"]),
+                    SoundQuestion(answer: "ไวโอลิน", answers: ["ไวโอลิน", "กีต้าร์", "ลูท", "แบนโจ"]),
+                    SoundQuestion(answer: "กลองชุด", answers: ["คอร์เนต", "กลองชุด", "แซกโซโฟน"]),
+                    SoundQuestion(answer: "แซกโซโฟน", answers: ["ทรอมโบน", "ทรัมเป็ต", "ทูบา", "แซกโซโฟน"]),
+                    SoundQuestion(answer: "ระนาดเอก", answers: ["ฆ้อง", "กลองยาว", "ระนาดเอก"]),
+                    SoundQuestion(answer: "ฉิ่ง", answers: ["ตะโพน", "กรับ", "ฉิ่ง", "ฉาบ"]),
+                    SoundQuestion(answer: "กรับ", answers: ["กรับ", "ฉิ่ง", "ฉาบ", "กลอง"]),
+                    SoundQuestion(answer: "ขลุ่ย", answers: ["ปี่", "กรับ", "พิณ", "ขลุ่ย"]),
+                    SoundQuestion(answer: "ซอ", answers: ["จะเข้", "ซอ", "พิณ", "กรับ"])
                 ]
             ]
             completeHandle(soundQuestions)
