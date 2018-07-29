@@ -61,9 +61,6 @@
 		B82F8CDF21034A45001A9338 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82F8CDE21034A45001A9338 /* SettingViewController.swift */; };
 		B83CF6132105B14400A483A5 /* DarkTheme.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B83CF6122105B14400A483A5 /* DarkTheme.xcassets */; };
 		B83CF6172105B1A600A483A5 /* animationLunchScreen.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B83CF6162105B1A600A483A5 /* animationLunchScreen.xcassets */; };
-		B83CF61B2105CEFA00A483A5 /* cat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B83CF6182105CEFA00A483A5 /* cat.jpg */; };
-		B83CF61C2105CEFA00A483A5 /* fish.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B83CF6192105CEFA00A483A5 /* fish.jpg */; };
-		B83CF61D2105CEFA00A483A5 /* rabbit.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B83CF61A2105CEFA00A483A5 /* rabbit.jpg */; };
 		B84F5CA4210322160043DCEC /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84F5CA3210322160043DCEC /* Setting.storyboard */; };
 		B84F5CAA210322EE0043DCEC /* FinishedDraw.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84F5CA9210322EE0043DCEC /* FinishedDraw.storyboard */; };
 		B84F5CAD2103231C0043DCEC /* Draw.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84F5CAC2103231C0043DCEC /* Draw.storyboard */; };
@@ -165,9 +162,6 @@
 		B82F8CDE21034A45001A9338 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		B83CF6122105B14400A483A5 /* DarkTheme.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = DarkTheme.xcassets; sourceTree = "<group>"; };
 		B83CF6162105B1A600A483A5 /* animationLunchScreen.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = animationLunchScreen.xcassets; sourceTree = "<group>"; };
-		B83CF6182105CEFA00A483A5 /* cat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat.jpg; sourceTree = "<group>"; };
-		B83CF6192105CEFA00A483A5 /* fish.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fish.jpg; sourceTree = "<group>"; };
-		B83CF61A2105CEFA00A483A5 /* rabbit.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rabbit.jpg; sourceTree = "<group>"; };
 		B84F5CA3210322160043DCEC /* Setting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
 		B84F5CA9210322EE0043DCEC /* FinishedDraw.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FinishedDraw.storyboard; sourceTree = "<group>"; };
 		B84F5CAC2103231C0043DCEC /* Draw.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Draw.storyboard; sourceTree = "<group>"; };
@@ -319,9 +313,6 @@
 		B83CF61E2105CF0900A483A5 /* DrawQuestion */ = {
 			isa = PBXGroup;
 			children = (
-				B83CF6182105CEFA00A483A5 /* cat.jpg */,
-				B83CF6192105CEFA00A483A5 /* fish.jpg */,
-				B83CF61A2105CEFA00A483A5 /* rabbit.jpg */,
 			);
 			path = DrawQuestion;
 			sourceTree = "<group>";
@@ -688,7 +679,6 @@
 				B422AB452107232E0018CE9F /* ร่ม.jpg in Resources */,
 				B422AB25210723030018CE9F /* ลิง.jpg in Resources */,
 				B422AB39210723110018CE9F /* สนามฟุตบอล.jpg in Resources */,
-				B83CF61C2105CEFA00A483A5 /* fish.jpg in Resources */,
 				B422AB3A210723110018CE9F /* สนามกอล์ฟ.jpg in Resources */,
 				B87D93B9210470C100788F2D /* นกฮูก.mp3 in Resources */,
 				B422AB21210723030018CE9F /* สิงโต.jpg in Resources */,
@@ -717,7 +707,6 @@
 				B84F5CB8210324C10043DCEC /* ImgQuestion.storyboard in Resources */,
 				B83CF6132105B14400A483A5 /* DarkTheme.xcassets in Resources */,
 				B422AB1D210723030018CE9F /* หมู.jpg in Resources */,
-				B83CF61D2105CEFA00A483A5 /* rabbit.jpg in Resources */,
 				B84F5CE0210336270043DCEC /* btnSound.mp3 in Resources */,
 				B422AB492107232E0018CE9F /* กะทะ.jpg in Resources */,
 				B87D93C0210470C100788F2D /* ลิง.mp3 in Resources */,
@@ -743,7 +732,6 @@
 				B422AB34210723110018CE9F /* ทุ่งนา.jpg in Resources */,
 				B422AB22210723030018CE9F /* กระต่าย.jpg in Resources */,
 				B422AB35210723110018CE9F /* ทะเล.jpg in Resources */,
-				B83CF61B2105CEFA00A483A5 /* cat.jpg in Resources */,
 				B422AB10210722C60018CE9F /* มะละกอ.jpg in Resources */,
 				B87D93CA210470CE00788F2D /* หมู.mp3 in Resources */,
 				B422AB36210723110018CE9F /* ภูเขา.jpg in Resources */,
