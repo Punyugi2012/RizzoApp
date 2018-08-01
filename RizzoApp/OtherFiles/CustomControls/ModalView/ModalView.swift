@@ -21,5 +21,6 @@ class ModalView: UIView {
     func setup(center: CGPoint, size: CGSize) {
         self.center = center
         bounds.size = size
+        isAnswerLabel.textColor = AppManager.shared.currentTheme?.fontColor
     }
 }

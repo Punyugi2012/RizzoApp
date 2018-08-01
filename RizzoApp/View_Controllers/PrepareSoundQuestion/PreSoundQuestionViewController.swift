@@ -23,6 +23,7 @@ class PreSoundQuestionViewController: UIViewController {
         setNavigationBar()
         myLoader.transform = CGAffineTransform(scaleX: 2, y: 2)
         myLoader.stopAnimating()
+        myLoader.color = AppManager.shared.currentTheme?.fontColor
         if !AppManager.shared.get(key: isLightThemeKey) {
             view.backgroundColor = AppManager.shared.currentTheme?.backgroundColor
         }

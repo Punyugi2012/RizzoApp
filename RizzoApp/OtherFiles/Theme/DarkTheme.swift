@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 class DarkTheme: ThemePotocol {
+    var fontColor: UIColor = UIColor.white
     var replayBtn: UIImage = #imageLiteral(resourceName: "FinishedDark/replayBtn")
     var backToMainMenuBtn: UIImage = #imageLiteral(resourceName: "FinishedDark/homeBtn")
     var modalCorrectBgImage: UIImage = #imageLiteral(resourceName: "ModalDark/modalCorrect")

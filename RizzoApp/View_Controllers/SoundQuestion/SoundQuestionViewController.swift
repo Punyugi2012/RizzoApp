@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 
 class SoundQuestionViewController: UIViewController {
-
+    
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var titleQuestionImageView: UIImageView!
     @IBOutlet weak var currentQuestionLbl: UILabel!
@@ -39,6 +39,7 @@ class SoundQuestionViewController: UIViewController {
         default:
             break
         }
+        currentQuestionLbl.textColor = AppManager.shared.currentTheme?.fontColor
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -47,6 +48,11 @@ class SoundQuestionViewController: UIViewController {
         score = 0
         currentQuestion = 1
         setView()
+        var delay = 0.045
+        for button in self.answersButton.reversed() {
+            button.popIn(delay: delay)
+            delay += 0.045
+        }
     }
     
     func setView() {
@@ -59,13 +65,18 @@ class SoundQuestionViewController: UIViewController {
     
     func setQuestionDataToView() {
         if !questions.isEmpty {
-             let random = Int(arc4random_uniform(UInt32(questions.count)))
+            let random = Int(arc4random_uniform(UInt32(questions.count)))
             soundQuestion = questions.remove(at: random)
             print("คำตอบของคำถามปัจจุบัน: \(soundQuestion.answer)")
             for (index, answer) in soundQuestion.answers.enumerated() {
                 answersButton[index].setTitle(answer, for: .normal)
             }
             setSoundForPlayer(nameSound: soundQuestion.answer)
+            var delay = 0.045
+            for button in self.answersButton.reversed() {
+                button.popIn(delay: delay)
+                delay += 0.045
+            }
         }
     }
     
@@ -98,7 +109,7 @@ class SoundQuestionViewController: UIViewController {
             print("ถูก")
         }
         else {
-             modalView.backgroundImage.image = AppManager.shared.currentTheme?.modalIncorrectBgImage
+            modalView.backgroundImage.image = AppManager.shared.currentTheme?.modalIncorrectBgImage
             print("ผิด")
         }
         for button in answersButton {
@@ -148,7 +159,7 @@ class SoundQuestionViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let navDestination = segue.destination as? UINavigationController,
             let destination = navDestination.viewControllers.first as? FinishedSoundQViewController {
-                destination.getScore = score
+            destination.getScore = score
             
         }
     }
