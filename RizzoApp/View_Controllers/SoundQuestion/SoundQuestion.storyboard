@@ -46,7 +46,7 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ceo-sf-gms">
                                                         <rect key="frame" x="0.0" y="0.0" width="487" height="175"/>
-                                                        <fontDescription key="fontDescription" name="THSarabunNew-Bold" family="TH Sarabun New" pointSize="90"/>
+                                                        <fontDescription key="fontDescription" name="THSarabunNew-Bold" family="TH Sarabun New" pointSize="75"/>
                                                         <state key="normal" title="Button" backgroundImage="Question/choice"/>
                                                         <connections>
                                                             <action selector="tappedAnswerButton:" destination="pgP-PF-l2u" eventType="touchUpInside" id="0nU-Lk-0lp"/>
@@ -54,7 +54,7 @@
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YjQ-CZ-9Ca">
                                                         <rect key="frame" x="497" y="0.0" width="487" height="175"/>
-                                                        <fontDescription key="fontDescription" name="THSarabunNew-Bold" family="TH Sarabun New" pointSize="90"/>
+                                                        <fontDescription key="fontDescription" name="THSarabunNew-Bold" family="TH Sarabun New" pointSize="75"/>
                                                         <state key="normal" title="Button" backgroundImage="Question/choice"/>
                                                         <connections>
                                                             <action selector="tappedAnswerButton:" destination="pgP-PF-l2u" eventType="touchUpInside" id="ohM-2J-vVi"/>
@@ -67,7 +67,7 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4b3-AR-S4e">
                                                         <rect key="frame" x="0.0" y="0.0" width="487" height="175"/>
-                                                        <fontDescription key="fontDescription" name="THSarabunNew-Bold" family="TH Sarabun New" pointSize="90"/>
+                                                        <fontDescription key="fontDescription" name="THSarabunNew-Bold" family="TH Sarabun New" pointSize="75"/>
                                                         <state key="normal" title="Button" backgroundImage="Question/choice"/>
                                                         <connections>
                                                             <action selector="tappedAnswerButton:" destination="pgP-PF-l2u" eventType="touchUpInside" id="Wx0-n6-dX6"/>
@@ -75,7 +75,7 @@
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ci-29-Zjv">
                                                         <rect key="frame" x="497" y="0.0" width="487" height="175"/>
-                                                        <fontDescription key="fontDescription" name="THSarabunNew-Bold" family="TH Sarabun New" pointSize="90"/>
+                                                        <fontDescription key="fontDescription" name="THSarabunNew-Bold" family="TH Sarabun New" pointSize="75"/>
                                                         <state key="normal" title="Button" backgroundImage="Question/choice"/>
                                                         <connections>
                                                             <action selector="tappedAnswerButton:" destination="pgP-PF-l2u" eventType="touchUpInside" id="jFY-i4-gM8"/>
