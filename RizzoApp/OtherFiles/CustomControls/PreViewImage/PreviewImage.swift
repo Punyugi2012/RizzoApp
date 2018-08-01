@@ -21,5 +21,6 @@ class PreviewImage: UIView {
         bounds.size = size
         self.layer.cornerRadius = 20
         self.clipsToBounds = true
+        self.backgroundColor = AppManager.shared.currentTheme?.viewBackgroundColor
     }
 }

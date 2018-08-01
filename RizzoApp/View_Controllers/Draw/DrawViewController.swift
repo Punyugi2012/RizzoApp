@@ -62,6 +62,7 @@ class DrawViewController: UIViewController {
         drawView.isUserInteractionEnabled = false
         drawView.layer.cornerRadius = 20
         drawView.clipsToBounds = true
+        drawView.backgroundColor = AppManager.shared.currentTheme?.viewBackgroundColor
     }
     
     func setQuestionDataToView() {

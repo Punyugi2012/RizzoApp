@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 class LightTheme: ThemePotocol {
+    var viewBackgroundColor: UIColor = UIColor.white
     var fontColor: UIColor = UIColor.black
     var replayBtn: UIImage = #imageLiteral(resourceName: "FinishedLight/replay")
     var backToMainMenuBtn: UIImage = #imageLiteral(resourceName: "FinishedLight/homeBtn")

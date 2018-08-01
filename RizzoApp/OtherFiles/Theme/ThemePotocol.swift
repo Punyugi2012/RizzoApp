@@ -17,4 +17,5 @@ protocol ThemePotocol {
     var replayBtn: UIImage {get}
     var backToMainMenuBtn: UIImage {get}
     var fontColor: UIColor {get}
+    var viewBackgroundColor: UIColor {get}
 }
