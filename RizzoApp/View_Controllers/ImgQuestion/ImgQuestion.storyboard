@@ -85,7 +85,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29446703767123289" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="53"/>
-                                        <state key="normal" image="SoundQuestion/zoom-in"/>
+                                        <state key="normal" image="ImageQuestion/zoom-in"/>
                                         <connections>
                                             <action selector="previewQuestionImage:" destination="jzG-ip-g9r" eventType="touchUpInside" id="RJr-Uk-snD"/>
                                         </connections>
@@ -144,8 +144,8 @@
     </scenes>
     <resources>
         <image name="ImageQuestion/header_animal" width="648" height="153"/>
+        <image name="ImageQuestion/zoom-in" width="32" height="32"/>
         <image name="Question/choice" width="592" height="200"/>
-        <image name="SoundQuestion/zoom-in" width="32" height="32"/>
         <image name="กระต่าย.jpg" width="960" height="720"/>
     </resources>
 </document>
