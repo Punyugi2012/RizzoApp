@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="THSarabunNewBold.ttf">
+            <string>THSarabunNew-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Setting-->
         <scene sceneID="oYH-j5-3jw">
@@ -28,16 +33,16 @@
                                 <rect key="frame" x="20" y="274" width="728" height="600"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="mCA-fg-lUb">
-                                        <rect key="frame" x="255" y="0.0" width="218" height="166.5"/>
+                                        <rect key="frame" x="277.5" y="0.0" width="173" height="166.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="เสียงดนตรี" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pSq-OF-iX5">
-                                                <rect key="frame" x="0.0" y="0.0" width="218" height="58.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="173" height="58.5"/>
+                                                <fontDescription key="fontDescription" name="THSarabunNew-Bold" family="TH Sarabun New" pointSize="60"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eAx-oy-FWI">
-                                                <rect key="frame" x="84.5" y="108.5" width="51" height="58"/>
+                                                <rect key="frame" x="62" y="108.5" width="51" height="58"/>
                                                 <connections>
                                                     <action selector="changedBgSoundSwitch:" destination="gwN-to-Xt7" eventType="valueChanged" id="u6x-Cm-jFs"/>
                                                 </connections>
@@ -45,16 +50,16 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="e6I-et-A2M">
-                                        <rect key="frame" x="282" y="216.5" width="164.5" height="167"/>
+                                        <rect key="frame" x="299" y="216.5" width="130.5" height="167"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="เสียงปุ่ม" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sn0-tZ-bjR">
-                                                <rect key="frame" x="0.0" y="0.0" width="164.5" height="58.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="130.5" height="58.5"/>
+                                                <fontDescription key="fontDescription" name="THSarabunNew-Bold" family="TH Sarabun New" pointSize="60"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iph-u4-uDa">
-                                                <rect key="frame" x="57.5" y="108.5" width="51" height="58.5"/>
+                                                <rect key="frame" x="40.5" y="108.5" width="51" height="58.5"/>
                                                 <connections>
                                                     <action selector="changedBtnSoundSwitch:" destination="gwN-to-Xt7" eventType="valueChanged" id="Yvi-kX-zDe"/>
                                                 </connections>
@@ -62,16 +67,16 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="zVH-4H-yai">
-                                        <rect key="frame" x="127.5" y="433.5" width="473" height="166.5"/>
+                                        <rect key="frame" x="174.5" y="433.5" width="379.5" height="166.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="โหมดกลางคืน/กลางวัน" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cDb-5o-yyd">
-                                                <rect key="frame" x="0.0" y="0.0" width="473" height="58"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="379.5" height="58"/>
+                                                <fontDescription key="fontDescription" name="THSarabunNew-Bold" family="TH Sarabun New" pointSize="60"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a90-53-EVf">
-                                                <rect key="frame" x="212" y="108" width="51" height="58.5"/>
+                                                <rect key="frame" x="165" y="108" width="51" height="58.5"/>
                                                 <connections>
                                                     <action selector="changedThemeSwitch:" destination="gwN-to-Xt7" eventType="valueChanged" id="VAm-hS-P1W"/>
                                                 </connections>
