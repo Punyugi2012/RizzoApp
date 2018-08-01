@@ -11,6 +11,8 @@ import SpriteKit
 
 class MainMenuViewController: UIViewController {
 
+    @IBOutlet var menuButtons: [UIButton]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let backItem = UIBarButtonItem()
@@ -70,6 +72,9 @@ class MainMenuViewController: UIViewController {
     
     func setView() {
         view.backgroundColor = AppManager.shared.currentTheme?.backgroundColor
+        for button in menuButtons {
+            button.animateBubbleAnimation()
+        }
     }
  
 }

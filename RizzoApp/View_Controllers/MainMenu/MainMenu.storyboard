@@ -24,21 +24,21 @@
                                     <constraint firstAttribute="height" constant="150" id="Fr2-g9-JLH"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="MLy-1s-u6E">
-                                <rect key="frame" x="20" y="244" width="728" height="760"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Pid-8D-bvM">
+                                <rect key="frame" x="20" y="294" width="728" height="710"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="hYR-36-E5U">
-                                        <rect key="frame" x="0.0" y="0.0" width="728" height="355"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="XtZ-zn-9il">
+                                        <rect key="frame" x="0.0" y="0.0" width="728" height="340"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yrp-E7-68D">
-                                                <rect key="frame" x="0.0" y="0.0" width="339" height="355"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="334" height="340"/>
                                                 <state key="normal" backgroundImage="MenuApp/drawing"/>
                                                 <connections>
                                                     <action selector="playDraw:" destination="GrQ-vX-gpU" eventType="touchUpInside" id="mCP-WS-XI4"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gb-Kc-KLg">
-                                                <rect key="frame" x="389" y="0.0" width="339" height="355"/>
+                                                <rect key="frame" x="394" y="0.0" width="334" height="340"/>
                                                 <state key="normal" backgroundImage="MenuApp/imgQues"/>
                                                 <connections>
                                                     <action selector="playImgQuestion:" destination="GrQ-vX-gpU" eventType="touchUpInside" id="u6W-KQ-Ocf"/>
@@ -46,18 +46,18 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="NB7-Io-hD1">
-                                        <rect key="frame" x="0.0" y="405" width="728" height="355"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="hAB-zQ-0oO">
+                                        <rect key="frame" x="0.0" y="370" width="728" height="340"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYA-TM-sij">
-                                                <rect key="frame" x="0.0" y="0.0" width="339" height="355"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="334" height="340"/>
                                                 <state key="normal" backgroundImage="MenuApp/soundQues"/>
                                                 <connections>
                                                     <action selector="playSoundQuestion:" destination="GrQ-vX-gpU" eventType="touchUpInside" id="QLA-FW-ndo"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vIZ-2S-9KY">
-                                                <rect key="frame" x="389" y="0.0" width="339" height="355"/>
+                                                <rect key="frame" x="394" y="0.0" width="334" height="340"/>
                                                 <state key="normal" backgroundImage="MenuApp/setting"/>
                                                 <connections>
                                                     <action selector="setting:" destination="GrQ-vX-gpU" eventType="touchUpInside" id="vfk-KM-Scx"/>
@@ -70,19 +70,24 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="MLy-1s-u6E" firstAttribute="top" secondItem="w4r-7i-wjI" secondAttribute="bottom" constant="10" id="8W6-mF-hpU"/>
                             <constraint firstItem="eVF-t6-4Xc" firstAttribute="trailing" secondItem="w4r-7i-wjI" secondAttribute="trailing" constant="20" id="AIc-VG-3lm"/>
+                            <constraint firstItem="Pid-8D-bvM" firstAttribute="leading" secondItem="eVF-t6-4Xc" secondAttribute="leading" constant="20" id="Bc1-bX-S9U"/>
                             <constraint firstItem="w4r-7i-wjI" firstAttribute="top" secondItem="eVF-t6-4Xc" secondAttribute="top" constant="20" id="DkS-uW-UKA"/>
-                            <constraint firstItem="MLy-1s-u6E" firstAttribute="leading" secondItem="eVF-t6-4Xc" secondAttribute="leading" constant="20" id="I0g-fV-7IF"/>
-                            <constraint firstItem="eVF-t6-4Xc" firstAttribute="trailing" secondItem="MLy-1s-u6E" secondAttribute="trailing" constant="20" id="NTF-9b-aLs"/>
+                            <constraint firstItem="eVF-t6-4Xc" firstAttribute="bottom" secondItem="Pid-8D-bvM" secondAttribute="bottom" constant="20" id="EGa-bt-XoT"/>
+                            <constraint firstItem="Pid-8D-bvM" firstAttribute="top" secondItem="w4r-7i-wjI" secondAttribute="bottom" constant="60" id="FNW-aw-cBg"/>
+                            <constraint firstItem="eVF-t6-4Xc" firstAttribute="trailing" secondItem="Pid-8D-bvM" secondAttribute="trailing" constant="20" id="YU0-wx-X7N"/>
+                            <constraint firstItem="Pid-8D-bvM" firstAttribute="centerX" secondItem="2j1-XY-RWX" secondAttribute="centerX" id="dJV-nP-tEV"/>
                             <constraint firstItem="w4r-7i-wjI" firstAttribute="centerX" secondItem="2j1-XY-RWX" secondAttribute="centerX" id="fyU-Td-kin"/>
                             <constraint firstItem="w4r-7i-wjI" firstAttribute="leading" secondItem="eVF-t6-4Xc" secondAttribute="leading" constant="20" id="tY1-yR-w9x"/>
-                            <constraint firstItem="eVF-t6-4Xc" firstAttribute="bottom" secondItem="MLy-1s-u6E" secondAttribute="bottom" constant="20" id="wcY-a0-zu8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="eVF-t6-4Xc"/>
                     </view>
                     <navigationItem key="navigationItem" title="Menu" id="ISc-ZP-sdU"/>
                     <connections>
+                        <outletCollection property="menuButtons" destination="Yrp-E7-68D" collectionClass="NSMutableArray" id="tQA-G6-UII"/>
+                        <outletCollection property="menuButtons" destination="8gb-Kc-KLg" collectionClass="NSMutableArray" id="dz0-k8-OZd"/>
+                        <outletCollection property="menuButtons" destination="YYA-TM-sij" collectionClass="NSMutableArray" id="lc1-BT-FIc"/>
+                        <outletCollection property="menuButtons" destination="vIZ-2S-9KY" collectionClass="NSMutableArray" id="UcM-Sv-xB4"/>
                         <segue destination="gPv-rv-Gtf" kind="presentation" identifier="ToSetting" id="iug-3K-hvA"/>
                         <segue destination="XKx-Wf-w3E" kind="show" identifier="ToPrepareDraw" id="hay-wn-VyM"/>
                         <segue destination="g6B-6P-KeG" kind="show" identifier="ToPrepareImgQuestion" id="9ft-sf-Hqp"/>
