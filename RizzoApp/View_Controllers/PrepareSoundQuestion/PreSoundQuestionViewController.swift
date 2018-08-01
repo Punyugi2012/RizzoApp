@@ -10,9 +10,12 @@ import UIKit
 
 class PreSoundQuestionViewController: UIViewController {
 
+    @IBOutlet var categoryButtons: [UIButton]!
+    
     @IBOutlet weak var myLoader: UIActivityIndicatorView!
     
     var questions = [SoundQuestion]()
+    
     var questionType: TypeSoundQuestion!
     
     override func viewDidLoad() {
@@ -22,6 +25,11 @@ class PreSoundQuestionViewController: UIViewController {
         myLoader.stopAnimating()
         if !AppManager.shared.get(key: isLightThemeKey) {
             view.backgroundColor = AppManager.shared.currentTheme?.backgroundColor
+        }
+        var delay = 0.2
+        for button in categoryButtons {
+            button.popIn(delay: delay)
+            delay += 0.2
         }
     }
     

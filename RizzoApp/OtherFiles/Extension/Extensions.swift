@@ -84,6 +84,13 @@ extension UIButton {
         scaleX.timingFunction = CAMediaTimingFunction(name:kCAMediaTimingFunctionEaseInEaseOut)
         self.layer.add(scaleY, forKey: "scaleYAnimation")
     }
+    
+    func popIn(delay: Double) {
+        transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
+        UIView.animate(withDuration: 0.8, delay: delay, usingSpringWithDamping: 0.5, initialSpringVelocity: 0, options: .allowUserInteraction, animations: {
+            self.transform = CGAffineTransform.identity
+        }, completion: nil)
+    }
 }
 
 extension UIViewController {
