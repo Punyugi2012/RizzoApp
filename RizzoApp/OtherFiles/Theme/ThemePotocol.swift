@@ -14,8 +14,6 @@ protocol ThemePotocol {
     var modalIncorrectBgImage: UIImage {get}
     var backgroundColor: UIColor {get}
     var modalNextBtn: UIImage {get}
-    var replayBtn: UIImage {get}
-    var backToMainMenuBtn: UIImage {get}
     var fontColor: UIColor {get}
     var viewBackgroundColor: UIColor {get}
 }

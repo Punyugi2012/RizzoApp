@@ -14,9 +14,7 @@ class FinishedDrawViewController: UIViewController {
     var getQuestionName = ""
     var getDrawedImage: UIImage!
     
-    @IBOutlet weak var replayBtn: UIButton!
-    @IBOutlet weak var backToMainMenuBtn: UIButton!
-    
+    @IBOutlet weak var resultImageView: UIImageView!
     @IBOutlet weak var drawedImageView: UIImageView!
     @IBOutlet weak var resultLabel: UILabel!
     
@@ -26,17 +24,18 @@ class FinishedDrawViewController: UIViewController {
         print(isCorrect)
         print(getQuestionName)
         if isCorrect {
-            resultLabel.text = "ถูกต้อง!! มันคือ\(getQuestionName)"
+            resultLabel.text = "มันคือ \(getQuestionName)"
+            resultImageView.image = #imageLiteral(resourceName: "Finished/correct")
         }
         else {
-            resultLabel.text = "ไม่ถูกต้อง!! มันยังไม่ใช่\(getQuestionName)"
+            resultLabel.text = "มันยังไม่ใช่ \(getQuestionName)"
+            resultImageView.image = #imageLiteral(resourceName: "Finished/incorrect")
         }
         drawedImageView.image = getDrawedImage
         if !AppManager.shared.get(key: isLightThemeKey) {
             view.backgroundColor = AppManager.shared.currentTheme?.backgroundColor
         }
-        replayBtn.setBackgroundImage(AppManager.shared.currentTheme?.replayBtn, for: .normal)
-        backToMainMenuBtn.setBackgroundImage(AppManager.shared.currentTheme?.backToMainMenuBtn, for: .normal)
+        resultLabel.textColor = AppManager.shared.currentTheme?.fontColor
     }
 
     @IBAction func replay(_ sender: UIButton) {

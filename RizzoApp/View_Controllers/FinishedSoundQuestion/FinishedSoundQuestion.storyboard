@@ -85,10 +85,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="FinishedSoundQuestion" id="UZ4-qc-Duf"/>
                     <connections>
-                        <outlet property="backToMainMenuBtn" destination="xDF-j2-zyq" id="Epz-zU-Eeh"/>
                         <outlet property="correctLabel" destination="APC-0b-bll" id="gTr-Xc-d6O"/>
                         <outlet property="incorrectLabel" destination="9wK-GV-Pgw" id="LLc-Pd-V3E"/>
-                        <outlet property="replayBtn" destination="kYc-Rd-2eE" id="9P5-Cx-hDE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XbP-sG-G81" userLabel="First Responder" sceneMemberID="firstResponder"/>
