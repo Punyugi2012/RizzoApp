@@ -13,6 +13,7 @@ class SettingViewController: UIViewController {
     @IBOutlet weak var themeSwitch: UISwitch!
     @IBOutlet weak var buttonSoundSwitch: UISwitch!
     @IBOutlet weak var backgroundSoundSwitch: UISwitch!
+    @IBOutlet var settingLabels: [UILabel]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -79,6 +80,9 @@ class SettingViewController: UIViewController {
         }
         else {
             view.backgroundColor = UIColor.white
+        }
+        for label in settingLabels {
+            label.textColor = AppManager.shared.currentTheme?.fontColor
         }
     }
     

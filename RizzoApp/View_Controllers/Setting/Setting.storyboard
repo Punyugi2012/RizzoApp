@@ -113,6 +113,9 @@
                         <outlet property="backgroundSoundSwitch" destination="eAx-oy-FWI" id="hJE-dV-2dM"/>
                         <outlet property="buttonSoundSwitch" destination="Iph-u4-uDa" id="sAC-jE-wKa"/>
                         <outlet property="themeSwitch" destination="a90-53-EVf" id="yZU-AL-BFT"/>
+                        <outletCollection property="settingLabels" destination="pSq-OF-iX5" collectionClass="NSMutableArray" id="pjD-OA-cAT"/>
+                        <outletCollection property="settingLabels" destination="Sn0-tZ-bjR" collectionClass="NSMutableArray" id="cVP-hD-sXj"/>
+                        <outletCollection property="settingLabels" destination="cDb-5o-yyd" collectionClass="NSMutableArray" id="G0E-TO-jkS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TJj-xq-lCC" userLabel="First Responder" sceneMemberID="firstResponder"/>
