@@ -123,7 +123,7 @@ class QuestionModel {
                     DrawQuestion(questionName: "หมวก", answer: "hat"),
                     DrawQuestion(questionName: "โน๊ตบุ๊ค", answer: "notebook"),
                     DrawQuestion(questionName: "รองเท้าแตะ", answer: "sandals"),
-                    DrawQuestion(questionName: "รองเท้าแตะ", answer: "vase"),
+                    DrawQuestion(questionName: "รถตู้", answer: "vase"),
                     ],
                 [
                     DrawQuestion(questionName: "แอปเปิ้ล", answer: "apple"),
