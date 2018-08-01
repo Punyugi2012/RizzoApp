@@ -9,12 +9,7 @@
 import UIKit
 
 class PreviewImage: UIView {
-    @IBOutlet weak var imageView: UIImageView! {
-        didSet {
-            imageView.layer.cornerRadius = 20
-            imageView.clipsToBounds = true
-        }
-    }
+    @IBOutlet weak var imageView: UIImageView! 
     @IBOutlet weak var closeButton: UIButton!
     var callback: (()->Void)? = nil
     @IBAction func tappedCloseBtn(_ sender: UIButton) {
@@ -24,5 +19,7 @@ class PreviewImage: UIView {
     func setup(center: CGPoint, size: CGSize) {
         self.center = center
         bounds.size = size
+        self.layer.cornerRadius = 20
+        self.clipsToBounds = true
     }
 }

@@ -9,6 +9,8 @@
 import UIKit
 
 class PrepareDrawViewController: UIViewController {
+    
+    @IBOutlet var categoryButtons: [UIButton]!
 
     @IBOutlet weak var myLoader: UIActivityIndicatorView!
     var question: DrawQuestion!
@@ -19,8 +21,14 @@ class PrepareDrawViewController: UIViewController {
         setNavigationBar()
         myLoader.transform = CGAffineTransform(scaleX: 2, y: 2)
         myLoader.stopAnimating()
+        myLoader.color = AppManager.shared.currentTheme?.fontColor
         if !AppManager.shared.get(key: isLightThemeKey) {
             view.backgroundColor = AppManager.shared.currentTheme?.backgroundColor
+        }
+        var delay = 0.2
+        for button in categoryButtons {
+            button.popIn(delay: delay)
+            delay += 0.2
         }
     }
     
@@ -58,5 +66,4 @@ class PrepareDrawViewController: UIViewController {
         }
     }
     
-  
 }

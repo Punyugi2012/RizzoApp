@@ -78,6 +78,9 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="myLoader" destination="CE6-ON-a1C" id="gt4-p2-dqK"/>
+                        <outletCollection property="categoryButtons" destination="BZe-gE-GjE" collectionClass="NSMutableArray" id="eOS-j2-DCV"/>
+                        <outletCollection property="categoryButtons" destination="nLz-a6-iWc" collectionClass="NSMutableArray" id="NCM-P0-Rha"/>
+                        <outletCollection property="categoryButtons" destination="8Sr-Q3-Qvk" collectionClass="NSMutableArray" id="iQf-2t-Q7r"/>
                         <segue destination="b2w-pj-jP1" kind="show" identifier="ToDraw" id="r5p-y0-ta6"/>
                     </connections>
                 </viewController>
