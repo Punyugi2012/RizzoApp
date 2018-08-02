@@ -10,6 +10,7 @@ import UIKit
 
 class PreImgQuestionViewController: UIViewController {
     
+    @IBOutlet var categoryButtons: [UIButton]!
     @IBOutlet weak var myLoader: UIActivityIndicatorView!
     var questions = [ImageQuestion]()
     var questionType: TypeImageQuestion!
@@ -20,8 +21,14 @@ class PreImgQuestionViewController: UIViewController {
         setNavigationBar()
         myLoader.transform = CGAffineTransform(scaleX: 2, y: 2)
         myLoader.stopAnimating()
+        myLoader.color = AppManager.shared.currentTheme?.fontColor
         if !AppManager.shared.get(key: isLightThemeKey) {
             view.backgroundColor = AppManager.shared.currentTheme?.backgroundColor
+        }
+        var delay = 0.15
+        for button in categoryButtons {
+            button.popIn(delay: delay)
+            delay += 0.15
         }
     }
 

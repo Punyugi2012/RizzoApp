@@ -47,6 +47,7 @@ class ImgQuestionViewController: UIViewController {
                 break
         }
         navigationItem.hidesBackButton = true
+        currentQuestionLbl.textColor = AppManager.shared.currentTheme?.fontColor
     }
 
     override func didReceiveMemoryWarning() {
@@ -108,6 +109,7 @@ class ImgQuestionViewController: UIViewController {
             modalView.backgroundImage.image = AppManager.shared.currentTheme?.modalIncorrectBgImage
             print("ผิด")
         }
+        modalView.nextButton.setBackgroundImage(AppManager.shared.currentTheme?.modalNextBtn, for: .normal)
         for button in answersButton {
             button.isUserInteractionEnabled = false
         }

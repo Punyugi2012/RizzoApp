@@ -91,6 +91,10 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="myLoader" destination="iMs-JF-8AQ" id="ZQd-aW-D0F"/>
+                        <outletCollection property="categoryButtons" destination="rYm-6g-Zbo" collectionClass="NSMutableArray" id="nF1-H3-jGg"/>
+                        <outletCollection property="categoryButtons" destination="xNv-HZ-iwB" collectionClass="NSMutableArray" id="SZi-xl-zpN"/>
+                        <outletCollection property="categoryButtons" destination="FiF-N5-sUg" collectionClass="NSMutableArray" id="9Y9-R2-np4"/>
+                        <outletCollection property="categoryButtons" destination="aWc-gl-KjQ" collectionClass="NSMutableArray" id="Xis-Au-lUE"/>
                         <segue destination="mlA-DT-Lnq" kind="show" identifier="ToImgQuestion" id="2ke-GZ-VGY"/>
                     </connections>
                 </viewController>
