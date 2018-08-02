@@ -24,7 +24,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sJj-K6-8DK">
-                                <rect key="frame" x="0.0" y="20" width="834" height="1092"/>
+                                <rect key="frame" x="0.0" y="64" width="834" height="1048"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ImageQuestion/header_animal" translatesAutoresizingMaskIntoConstraints="NO" id="Qsm-pQ-EvR">
                                         <rect key="frame" x="10" y="20" width="814" height="100"/>
@@ -159,9 +159,9 @@
                     <navigationItem key="navigationItem" title="ImgQuestion" id="itj-MT-Bti">
                         <barButtonItem key="rightBarButtonItem" id="bkb-b3-HZN">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WVm-rL-9En">
-                                <rect key="frame" x="578" y="4" width="170" height="36"/>
+                                <rect key="frame" x="644" y="0.0" width="170" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="ออก"/>
                                 <connections>
                                     <segue destination="HEO-6B-ErB" kind="unwind" unwindAction="backToMainMenuWithSegue:" id="EmM-e7-JGF"/>
@@ -169,6 +169,7 @@
                             </button>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="containerView" destination="sJj-K6-8DK" id="Rag-VQ-A4H"/>
                         <outlet property="currentQuestionLbl" destination="B0U-8Y-vyT" id="RRx-PS-H6l"/>

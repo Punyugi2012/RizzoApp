@@ -82,7 +82,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="eVF-t6-4Xc"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Menu" id="ISc-ZP-sdU"/>
+                    <navigationItem key="navigationItem" title="Menu" leftItemsSupplementBackButton="YES" id="ISc-ZP-sdU"/>
                     <connections>
                         <outletCollection property="menuButtons" destination="Yrp-E7-68D" collectionClass="NSMutableArray" id="tQA-G6-UII"/>
                         <outletCollection property="menuButtons" destination="8gb-Kc-KLg" collectionClass="NSMutableArray" id="dz0-k8-OZd"/>

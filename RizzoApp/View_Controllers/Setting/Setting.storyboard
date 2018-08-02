@@ -104,9 +104,9 @@
                     <navigationItem key="navigationItem" title="Setting" id="Grb-hE-OeG">
                         <barButtonItem key="rightBarButtonItem" id="rSx-kB-o9S">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0EK-6r-V5N">
-                                <rect key="frame" x="578" y="4" width="170" height="36"/>
+                                <rect key="frame" x="578" y="0.0" width="170" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="ออก"/>
                                 <connections>
                                     <segue destination="T7d-FT-axM" kind="unwind" unwindAction="backToMainMenuWithSegue:" id="b64-MU-qLp"/>

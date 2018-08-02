@@ -253,9 +253,9 @@
                     <navigationItem key="navigationItem" title="Draw" id="nSb-hP-ERV">
                         <barButtonItem key="rightBarButtonItem" id="SJu-Zr-k9T">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Zbe-oe-oM9">
-                                <rect key="frame" x="578" y="4" width="170" height="36"/>
+                                <rect key="frame" x="578" y="0.0" width="170" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="ออก"/>
                                 <connections>
                                     <segue destination="v6E-Zs-SeM" kind="unwind" unwindAction="backToMainMenuWithSegue:" id="a8F-yg-RzZ"/>
