@@ -118,9 +118,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="FinishedDraw" id="4fU-0w-zln"/>
                     <connections>
+                        <outlet property="borderView" destination="cY5-Xn-efA" id="hQL-kc-QPo"/>
                         <outlet property="drawedImageView" destination="9th-FR-87y" id="ge1-b3-h9b"/>
                         <outlet property="resultImageView" destination="Y4s-Pk-M69" id="HjJ-TH-PP4"/>
                         <outlet property="resultLabel" destination="nbm-bb-8xX" id="tw6-QX-9t8"/>
+                        <outlet property="titleLabel" destination="cbT-YH-D0o" id="bnm-sb-xg7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uNY-er-cCN" userLabel="First Responder" sceneMemberID="firstResponder"/>
