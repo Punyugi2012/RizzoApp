@@ -105,36 +105,26 @@ class QuestionModel {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             let drawQuestions = [
                 [
-                    DrawQuestion(questionName: "นก", answer: "bird"),
+                    DrawQuestion(questionName: "แกะ", answer: "sheep"),
+                    DrawQuestion(questionName: "เป็ด", answer: "duck"),
                     DrawQuestion(questionName: "วัว", answer: "cow"),
                     DrawQuestion(questionName: "สุนัข", answer: "dog"),
-                    DrawQuestion(questionName: "ช้าง", answer: "elephant"),
-                    DrawQuestion(questionName: "ปลา", answer: "fish"),
-                    DrawQuestion(questionName: "ยีราฟ", answer: "giraffe"),
-                    DrawQuestion(questionName: "หมึก", answer: "octopus"),
-                    DrawQuestion(questionName: "หมีแพนด้า", answer: "panda"),
                     DrawQuestion(questionName: "หมู", answer: "pig"),
-                    DrawQuestion(questionName: "แกะ", answer: "sheep"),
-                    ],
+                ],
                 [
-                    DrawQuestion(questionName: "เพรช", answer: "diamond"),
-                    DrawQuestion(questionName: "ส้อม", answer: "fork"),
+                    DrawQuestion(questionName: "ดินสอ", answer: "pencil"),
+                    DrawQuestion(questionName: "โทรทัศน์", answer: "television"),
+                    DrawQuestion(questionName: "รองเท้า", answer: "shoes"),
                     DrawQuestion(questionName: "แว่นตา", answer: "glasses"),
-                    DrawQuestion(questionName: "หมวก", answer: "hat"),
-                    DrawQuestion(questionName: "โน๊ตบุ๊ค", answer: "notebook"),
-                    DrawQuestion(questionName: "รองเท้าแตะ", answer: "sandals"),
-                    DrawQuestion(questionName: "แจกัน", answer: "vase"),
-                    ],
+                    DrawQuestion(questionName: "กล้องถ่ายรูป", answer: "camera"),
+                ],
                 [
-                    DrawQuestion(questionName: "แอปเปิ้ล", answer: "apple"),
                     DrawQuestion(questionName: "กล้วย", answer: "banana"),
-                    DrawQuestion(questionName: "แบล็คเบอรี่", answer: "blackberry"),
-                    DrawQuestion(questionName: "บลูเบอรี่", answer: "blueberry"),
-                    DrawQuestion(questionName: "องุ่น", answer: "grape"),
-                    DrawQuestion(questionName: "สัปปะรด", answer: "pineapple"),
-                    DrawQuestion(questionName: "สตอเบอรี่", answer: "strawberry"),
                     DrawQuestion(questionName: "แตงโม", answer: "watermelon"),
-                    ]
+                    DrawQuestion(questionName: "สตอว์เบอรี่", answer: "strawberry"),
+                    DrawQuestion(questionName: "องุ่น", answer: "grape"),
+                    DrawQuestion(questionName: "แอปเปิ้ล", answer: "apple"),
+                ]
             ]
             completeHandle(drawQuestions)
         }

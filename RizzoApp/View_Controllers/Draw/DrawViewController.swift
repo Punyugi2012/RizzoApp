@@ -247,7 +247,7 @@ class DrawViewController: UIViewController {
         sender.playButtonSound()
         let previewImage = Bundle.main.loadNibNamed("PreviewImage", owner: self, options: nil)!.first as! PreviewImage
         previewImage.setup(center: view.center, size: CGSize(width: view.bounds.width - 20, height: view.bounds.height - 30))
-        previewImage.imageView.image = UIImage(named: "\(getQuestion.answer).png")
+        previewImage.imageView.image = UIImage(named: "\(getQuestion.questionName).png")
         view.addSubview(previewImage)
         previewImage.alpha = 0
         previewImage.transform = CGAffineTransform(scaleX: 0.8, y: 1.2)

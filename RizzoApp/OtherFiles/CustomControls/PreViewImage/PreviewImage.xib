@@ -16,7 +16,7 @@
             <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cow.png" translatesAutoresizingMaskIntoConstraints="NO" id="mXy-xw-3gY">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="แกะ.png" translatesAutoresizingMaskIntoConstraints="NO" id="mXy-xw-3gY">
                     <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </imageView>
@@ -47,6 +47,6 @@
     </objects>
     <resources>
         <image name="Draw/close" width="127" height="117"/>
-        <image name="cow.png" width="214" height="201"/>
+        <image name="แกะ.png" width="1000" height="1000"/>
     </resources>
 </document>
