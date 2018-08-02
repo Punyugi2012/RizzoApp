@@ -16,7 +16,7 @@ class LoadingScene: SKScene {
     
     override init(size: CGSize) {
         super.init(size: size)
-        backgroundColor = UIColor.white
+        backgroundColor = (AppManager.shared.currentTheme?.viewBackgroundColor)!
         var frames = [SKTexture]()
         let rizzoAtlas = SKTextureAtlas(named: "Sprites")
         for index in 0...25 {
