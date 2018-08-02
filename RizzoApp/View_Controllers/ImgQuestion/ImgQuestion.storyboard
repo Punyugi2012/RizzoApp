@@ -39,7 +39,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="700" height="450"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XWX-Os-bab">
-                                                <rect key="frame" x="636" y="0.0" width="64" height="64"/>
+                                                <rect key="frame" x="616" y="20" width="64" height="64"/>
                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29446703767123289" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="64" id="gJb-jF-XUa"/>
@@ -60,8 +60,8 @@
                                             <constraint firstAttribute="bottom" secondItem="l8N-3y-ZtO" secondAttribute="bottom" id="Jh6-zM-dRb"/>
                                             <constraint firstAttribute="height" constant="450" id="VJK-gs-yaT"/>
                                             <constraint firstItem="l8N-3y-ZtO" firstAttribute="top" secondItem="ceW-El-PAA" secondAttribute="top" id="WOn-uC-bue"/>
-                                            <constraint firstAttribute="trailing" secondItem="XWX-Os-bab" secondAttribute="trailing" id="kZ1-Sp-iia"/>
-                                            <constraint firstItem="XWX-Os-bab" firstAttribute="top" secondItem="ceW-El-PAA" secondAttribute="top" id="vVv-Pg-z5c"/>
+                                            <constraint firstAttribute="trailing" secondItem="XWX-Os-bab" secondAttribute="trailing" constant="20" id="kZ1-Sp-iia"/>
+                                            <constraint firstItem="XWX-Os-bab" firstAttribute="top" secondItem="ceW-El-PAA" secondAttribute="top" constant="20" id="vVv-Pg-z5c"/>
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="K37-LH-vkl">
@@ -172,12 +172,14 @@
                     <connections>
                         <outlet property="containerView" destination="sJj-K6-8DK" id="Rag-VQ-A4H"/>
                         <outlet property="currentQuestionLbl" destination="B0U-8Y-vyT" id="RRx-PS-H6l"/>
+                        <outlet property="imageQuestionView" destination="ceW-El-PAA" id="jkL-8t-f55"/>
                         <outlet property="imgQuestionImageView" destination="l8N-3y-ZtO" id="owD-nG-QnW"/>
                         <outlet property="titleQuestionImageView" destination="Qsm-pQ-EvR" id="Xla-2G-8qf"/>
-                        <outletCollection property="answersButton" destination="Dbq-WC-2fn" collectionClass="NSMutableArray" id="X8v-5V-GSU"/>
-                        <outletCollection property="answersButton" destination="ZEd-xi-DEJ" collectionClass="NSMutableArray" id="FCx-6m-mvR"/>
-                        <outletCollection property="answersButton" destination="gcF-Fo-wSK" collectionClass="NSMutableArray" id="bkr-vJ-oCL"/>
-                        <outletCollection property="answersButton" destination="mRT-Rf-bdI" collectionClass="NSMutableArray" id="1zQ-bK-VNr"/>
+                        <outlet property="zoomBtn" destination="XWX-Os-bab" id="1vF-L3-aeo"/>
+                        <outletCollection property="answersButton" destination="Dbq-WC-2fn" collectionClass="NSMutableArray" id="UDf-bu-TIp"/>
+                        <outletCollection property="answersButton" destination="ZEd-xi-DEJ" collectionClass="NSMutableArray" id="Jim-2e-8Ps"/>
+                        <outletCollection property="answersButton" destination="mRT-Rf-bdI" collectionClass="NSMutableArray" id="Xwr-x8-QVl"/>
+                        <outletCollection property="answersButton" destination="gcF-Fo-wSK" collectionClass="NSMutableArray" id="YoS-Za-DNG"/>
                         <segue destination="oKm-hP-u5o" kind="presentation" identifier="ToFinishedImgQuestion" id="DmB-F6-ytq"/>
                     </connections>
                 </viewController>

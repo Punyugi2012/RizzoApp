@@ -11,6 +11,8 @@ import UIKit
 class ImgQuestionViewController: UIViewController {
     
     
+    @IBOutlet weak var zoomBtn: UIButton!
+    @IBOutlet weak var imageQuestionView: UIView!
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var titleQuestionImageView: UIImageView!
     @IBOutlet weak var imgQuestionImageView: UIImageView!
@@ -28,6 +30,10 @@ class ImgQuestionViewController: UIViewController {
         setNavigationBar()
         containerView.backgroundColor = AppManager.shared.currentTheme?.backgroundColor
         view.backgroundColor = AppManager.shared.currentTheme?.backgroundColor
+        imageQuestionView.layer.cornerRadius = 20
+        imageQuestionView.clipsToBounds = true
+        zoomBtn.layer.cornerRadius = zoomBtn.frame.height / 2
+        zoomBtn.clipsToBounds = true
         switch questionType {
             case .fruit:
                 titleQuestionImageView.image = #imageLiteral(resourceName: "ImageQuestion/header_fruit")
@@ -73,6 +79,11 @@ class ImgQuestionViewController: UIViewController {
                 answersButton[index].setTitle(answer, for: .normal)
             }
             setImageForPlayer(nameImg: imageQuestion.answer)
+            var delay = 0.045
+            for button in self.answersButton {
+                button.popIn(delay: delay)
+                delay += 0.045
+            }
         }
     }
     
