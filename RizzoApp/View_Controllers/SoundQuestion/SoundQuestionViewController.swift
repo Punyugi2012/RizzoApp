@@ -112,6 +112,7 @@ class SoundQuestionViewController: UIViewController {
             modalView.backgroundImage.image = AppManager.shared.currentTheme?.modalIncorrectBgImage
             print("ผิด")
         }
+        modalView.nextButton.setBackgroundImage(AppManager.shared.currentTheme?.modalNextBtn, for: .normal)
         for button in answersButton {
             button.isUserInteractionEnabled = false
         }

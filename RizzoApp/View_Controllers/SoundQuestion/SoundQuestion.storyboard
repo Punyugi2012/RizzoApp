@@ -47,7 +47,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ceo-sf-gms">
                                                         <rect key="frame" x="0.0" y="0.0" width="487" height="175"/>
                                                         <fontDescription key="fontDescription" name="THSarabunNew-Bold" family="TH Sarabun New" pointSize="75"/>
-                                                        <state key="normal" title="Button" backgroundImage="Question/choice"/>
+                                                        <state key="normal" title="Button" backgroundImage="Question/choice">
+                                                            <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
                                                         <connections>
                                                             <action selector="tappedAnswerButton:" destination="pgP-PF-l2u" eventType="touchUpInside" id="0nU-Lk-0lp"/>
                                                         </connections>
@@ -55,7 +57,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YjQ-CZ-9Ca">
                                                         <rect key="frame" x="497" y="0.0" width="487" height="175"/>
                                                         <fontDescription key="fontDescription" name="THSarabunNew-Bold" family="TH Sarabun New" pointSize="75"/>
-                                                        <state key="normal" title="Button" backgroundImage="Question/choice"/>
+                                                        <state key="normal" title="Button" backgroundImage="Question/choice">
+                                                            <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
                                                         <connections>
                                                             <action selector="tappedAnswerButton:" destination="pgP-PF-l2u" eventType="touchUpInside" id="ohM-2J-vVi"/>
                                                         </connections>
@@ -68,7 +72,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4b3-AR-S4e">
                                                         <rect key="frame" x="0.0" y="0.0" width="487" height="175"/>
                                                         <fontDescription key="fontDescription" name="THSarabunNew-Bold" family="TH Sarabun New" pointSize="75"/>
-                                                        <state key="normal" title="Button" backgroundImage="Question/choice"/>
+                                                        <state key="normal" title="Button" backgroundImage="Question/choice">
+                                                            <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
                                                         <connections>
                                                             <action selector="tappedAnswerButton:" destination="pgP-PF-l2u" eventType="touchUpInside" id="Wx0-n6-dX6"/>
                                                         </connections>
@@ -76,7 +82,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ci-29-Zjv">
                                                         <rect key="frame" x="497" y="0.0" width="487" height="175"/>
                                                         <fontDescription key="fontDescription" name="THSarabunNew-Bold" family="TH Sarabun New" pointSize="75"/>
-                                                        <state key="normal" title="Button" backgroundImage="Question/choice"/>
+                                                        <state key="normal" title="Button" backgroundImage="Question/choice">
+                                                            <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
                                                         <connections>
                                                             <action selector="tappedAnswerButton:" destination="pgP-PF-l2u" eventType="touchUpInside" id="jFY-i4-gM8"/>
                                                         </connections>
