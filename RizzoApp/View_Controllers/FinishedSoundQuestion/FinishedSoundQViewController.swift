@@ -48,6 +48,9 @@ class FinishedSoundQViewController: UIViewController {
         if !AppManager.shared.get(key: isLightThemeKey) {
             view.backgroundColor = AppManager.shared.currentTheme?.backgroundColor
         }
+        [correctLabel, incorrectLabel, allQuestionLabel].forEach { (label) in
+            label?.textColor = AppManager.shared.currentTheme?.fontColor
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
