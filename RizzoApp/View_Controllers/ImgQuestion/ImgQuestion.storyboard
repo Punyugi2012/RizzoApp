@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jzG-ip-g9r">
-    <device id="ipad9_7" orientation="portrait">
+    <device id="ipad10_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -9,88 +9,142 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="THSarabunNewBold.ttf">
+            <string>THSarabunNew-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--ImgQuestion-->
         <scene sceneID="b2e-UT-PNl">
             <objects>
                 <viewController id="jzG-ip-g9r" customClass="ImgQuestionViewController" customModule="RizzoApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kkw-y7-gwZ">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sJj-K6-8DK">
-                                <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                                <rect key="frame" x="0.0" y="20" width="834" height="1092"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="กระต่าย.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="l8N-3y-ZtO">
-                                        <rect key="frame" x="74" y="200" width="630" height="333"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ImageQuestion/header_animal" translatesAutoresizingMaskIntoConstraints="NO" id="Qsm-pQ-EvR">
+                                        <rect key="frame" x="10" y="20" width="814" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="edj-Wy-4X8"/>
+                                        </constraints>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dbq-WC-2fn">
-                                        <rect key="frame" x="74" y="635" width="300" height="100"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <state key="normal" title="answer 1" backgroundImage="Question/choice">
-                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="tappedAnswerButton:" destination="jzG-ip-g9r" eventType="touchUpInside" id="Mn2-ng-h9k"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcF-Fo-wSK">
-                                        <rect key="frame" x="404" y="764" width="300" height="100"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <state key="normal" title="answer 4" backgroundImage="Question/choice">
-                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="tappedAnswerButton:" destination="jzG-ip-g9r" eventType="touchUpInside" id="xsu-lf-w6H"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRT-Rf-bdI">
-                                        <rect key="frame" x="74" y="765" width="300" height="100"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <state key="normal" title="answer 3" backgroundImage="Question/choice">
-                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="tappedAnswerButton:" destination="jzG-ip-g9r" eventType="touchUpInside" id="2wy-oZ-eVZ"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZEd-xi-DEJ">
-                                        <rect key="frame" x="404" y="635" width="300" height="100"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <state key="normal" title="answer 2" backgroundImage="Question/choice">
-                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="tappedAnswerButton:" destination="jzG-ip-g9r" eventType="touchUpInside" id="nRd-dn-Sjz"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ข้อที่ 1 / 10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0U-8Y-vyT">
-                                        <rect key="frame" x="274" y="560" width="221" height="48"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ceW-El-PAA">
+                                        <rect key="frame" x="67" y="140" width="700" height="450"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="กระต่าย.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="l8N-3y-ZtO">
+                                                <rect key="frame" x="0.0" y="0.0" width="700" height="450"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XWX-Os-bab">
+                                                <rect key="frame" x="636" y="0.0" width="64" height="64"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29446703767123289" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="64" id="gJb-jF-XUa"/>
+                                                    <constraint firstAttribute="height" constant="64" id="xgv-rV-quF"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="53"/>
+                                                <state key="normal" image="ImageQuestion/zoom-in"/>
+                                                <connections>
+                                                    <action selector="previewQuestionImage:" destination="jzG-ip-g9r" eventType="touchUpInside" id="RJr-Uk-snD"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="l8N-3y-ZtO" secondAttribute="trailing" id="ALZ-Tv-BbY"/>
+                                            <constraint firstItem="l8N-3y-ZtO" firstAttribute="leading" secondItem="ceW-El-PAA" secondAttribute="leading" id="BQV-oa-soA"/>
+                                            <constraint firstAttribute="width" constant="700" id="GFX-y0-hCL"/>
+                                            <constraint firstAttribute="bottom" secondItem="l8N-3y-ZtO" secondAttribute="bottom" id="Jh6-zM-dRb"/>
+                                            <constraint firstAttribute="height" constant="450" id="VJK-gs-yaT"/>
+                                            <constraint firstItem="l8N-3y-ZtO" firstAttribute="top" secondItem="ceW-El-PAA" secondAttribute="top" id="WOn-uC-bue"/>
+                                            <constraint firstAttribute="trailing" secondItem="XWX-Os-bab" secondAttribute="trailing" id="kZ1-Sp-iia"/>
+                                            <constraint firstItem="XWX-Os-bab" firstAttribute="top" secondItem="ceW-El-PAA" secondAttribute="top" id="vVv-Pg-z5c"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="K37-LH-vkl">
+                                        <rect key="frame" x="20" y="710" width="794" height="270"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6fq-Nl-VmC">
+                                                <rect key="frame" x="0.0" y="0.0" width="794" height="130"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dbq-WC-2fn">
+                                                        <rect key="frame" x="0.0" y="0.0" width="392" height="130"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="130" id="a1k-NR-UDa"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="THSarabunNew-Bold" family="TH Sarabun New" pointSize="60"/>
+                                                        <state key="normal" title="answer 1" backgroundImage="Question/choice">
+                                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="tappedAnswerButton:" destination="jzG-ip-g9r" eventType="touchUpInside" id="Mn2-ng-h9k"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZEd-xi-DEJ">
+                                                        <rect key="frame" x="402" y="0.0" width="392" height="130"/>
+                                                        <fontDescription key="fontDescription" name="THSarabunNew-Bold" family="TH Sarabun New" pointSize="60"/>
+                                                        <state key="normal" title="answer 2" backgroundImage="Question/choice">
+                                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="tappedAnswerButton:" destination="jzG-ip-g9r" eventType="touchUpInside" id="nRd-dn-Sjz"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="md4-YO-Oyp">
+                                                <rect key="frame" x="0.0" y="140" width="794" height="130"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRT-Rf-bdI">
+                                                        <rect key="frame" x="0.0" y="0.0" width="392" height="130"/>
+                                                        <fontDescription key="fontDescription" name="THSarabunNew-Bold" family="TH Sarabun New" pointSize="60"/>
+                                                        <state key="normal" title="answer 3" backgroundImage="Question/choice">
+                                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="tappedAnswerButton:" destination="jzG-ip-g9r" eventType="touchUpInside" id="2wy-oZ-eVZ"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcF-Fo-wSK">
+                                                        <rect key="frame" x="402" y="0.0" width="392" height="130"/>
+                                                        <fontDescription key="fontDescription" name="THSarabunNew-Bold" family="TH Sarabun New" pointSize="60"/>
+                                                        <state key="normal" title="answer 4" backgroundImage="Question/choice">
+                                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="tappedAnswerButton:" destination="jzG-ip-g9r" eventType="touchUpInside" id="xsu-lf-w6H"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ข้อที่ 1 / 10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0U-8Y-vyT">
+                                        <rect key="frame" x="317.5" y="610" width="200.5" height="90"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="90" id="Dy6-F3-qlc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="THSarabunNew-Bold" family="TH Sarabun New" pointSize="60"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ImageQuestion/header_animal" translatesAutoresizingMaskIntoConstraints="NO" id="Qsm-pQ-EvR">
-                                        <rect key="frame" x="108" y="47" width="526" height="125"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XWX-Os-bab">
-                                        <rect key="frame" x="640" y="200" width="64" height="64"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29446703767123289" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="53"/>
-                                        <state key="normal" image="ImageQuestion/zoom-in"/>
-                                        <connections>
-                                            <action selector="previewQuestionImage:" destination="jzG-ip-g9r" eventType="touchUpInside" id="RJr-Uk-snD"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
+                                <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="B0U-8Y-vyT" firstAttribute="centerX" secondItem="sJj-K6-8DK" secondAttribute="centerX" id="2di-Pz-ZRb"/>
+                                    <constraint firstItem="K37-LH-vkl" firstAttribute="top" secondItem="B0U-8Y-vyT" secondAttribute="bottom" constant="10" id="F2g-SF-rnY"/>
+                                    <constraint firstItem="ceW-El-PAA" firstAttribute="centerX" secondItem="sJj-K6-8DK" secondAttribute="centerX" id="Lfu-M0-zsl"/>
+                                    <constraint firstItem="ceW-El-PAA" firstAttribute="top" secondItem="Qsm-pQ-EvR" secondAttribute="bottom" constant="20" id="Lw5-we-RFd"/>
+                                    <constraint firstAttribute="trailing" secondItem="K37-LH-vkl" secondAttribute="trailing" constant="20" id="aJW-Zf-cuD"/>
+                                    <constraint firstItem="Qsm-pQ-EvR" firstAttribute="top" secondItem="sJj-K6-8DK" secondAttribute="top" constant="20" id="bn1-LP-fSj"/>
+                                    <constraint firstItem="K37-LH-vkl" firstAttribute="leading" secondItem="sJj-K6-8DK" secondAttribute="leading" constant="20" id="hMm-no-BY0"/>
+                                    <constraint firstItem="Qsm-pQ-EvR" firstAttribute="leading" secondItem="sJj-K6-8DK" secondAttribute="leading" constant="10" id="koG-X9-2z3"/>
+                                    <constraint firstItem="B0U-8Y-vyT" firstAttribute="top" secondItem="ceW-El-PAA" secondAttribute="bottom" constant="20" id="mlk-hE-Sdn"/>
+                                    <constraint firstAttribute="trailing" secondItem="Qsm-pQ-EvR" secondAttribute="trailing" constant="10" id="qyh-9r-iB4"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -121,16 +175,16 @@
                         <outlet property="imgQuestionImageView" destination="l8N-3y-ZtO" id="owD-nG-QnW"/>
                         <outlet property="titleQuestionImageView" destination="Qsm-pQ-EvR" id="Xla-2G-8qf"/>
                         <outletCollection property="answersButton" destination="Dbq-WC-2fn" collectionClass="NSMutableArray" id="X8v-5V-GSU"/>
+                        <outletCollection property="answersButton" destination="ZEd-xi-DEJ" collectionClass="NSMutableArray" id="FCx-6m-mvR"/>
                         <outletCollection property="answersButton" destination="gcF-Fo-wSK" collectionClass="NSMutableArray" id="bkr-vJ-oCL"/>
                         <outletCollection property="answersButton" destination="mRT-Rf-bdI" collectionClass="NSMutableArray" id="1zQ-bK-VNr"/>
-                        <outletCollection property="answersButton" destination="ZEd-xi-DEJ" collectionClass="NSMutableArray" id="FCx-6m-mvR"/>
                         <segue destination="oKm-hP-u5o" kind="presentation" identifier="ToFinishedImgQuestion" id="DmB-F6-ytq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ic1-56-zB1" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="HEO-6B-ErB" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1780.46875" y="-705.46875"/>
+            <point key="canvasLocation" x="1780.0781249999998" y="-705.85651537335275"/>
         </scene>
         <!--FinishedImgQuestion-->
         <scene sceneID="gf7-bn-ZjD">

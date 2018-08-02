@@ -33,19 +33,22 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ข้อที่ 1 / 10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pGa-P0-dhi">
-                                        <rect key="frame" x="362.5" y="460" width="300.5" height="117.5"/>
+                                        <rect key="frame" x="362.5" y="500" width="300.5" height="117.5"/>
                                         <fontDescription key="fontDescription" name="THSarabunNew-Bold" family="TH Sarabun New" pointSize="90"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="N9d-Px-Ip5">
-                                        <rect key="frame" x="20" y="597.5" width="984" height="400"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="N9d-Px-Ip5">
+                                        <rect key="frame" x="20" y="647.5" width="984" height="300"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eN6-h8-RbG">
-                                                <rect key="frame" x="0.0" y="0.0" width="984" height="175"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="984" height="140"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ceo-sf-gms">
-                                                        <rect key="frame" x="0.0" y="0.0" width="487" height="175"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="487" height="140"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="140" id="oJM-G1-XCx"/>
+                                                        </constraints>
                                                         <fontDescription key="fontDescription" name="THSarabunNew-Bold" family="TH Sarabun New" pointSize="75"/>
                                                         <state key="normal" title="Button" backgroundImage="Question/choice">
                                                             <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -55,7 +58,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YjQ-CZ-9Ca">
-                                                        <rect key="frame" x="497" y="0.0" width="487" height="175"/>
+                                                        <rect key="frame" x="497" y="0.0" width="487" height="140"/>
                                                         <fontDescription key="fontDescription" name="THSarabunNew-Bold" family="TH Sarabun New" pointSize="75"/>
                                                         <state key="normal" title="Button" backgroundImage="Question/choice">
                                                             <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -67,10 +70,10 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="CqP-wo-W0c">
-                                                <rect key="frame" x="0.0" y="225" width="984" height="175"/>
+                                                <rect key="frame" x="0.0" y="160" width="984" height="140"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4b3-AR-S4e">
-                                                        <rect key="frame" x="0.0" y="0.0" width="487" height="175"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="487" height="140"/>
                                                         <fontDescription key="fontDescription" name="THSarabunNew-Bold" family="TH Sarabun New" pointSize="75"/>
                                                         <state key="normal" title="Button" backgroundImage="Question/choice">
                                                             <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -80,7 +83,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ci-29-Zjv">
-                                                        <rect key="frame" x="497" y="0.0" width="487" height="175"/>
+                                                        <rect key="frame" x="497" y="0.0" width="487" height="140"/>
                                                         <fontDescription key="fontDescription" name="THSarabunNew-Bold" family="TH Sarabun New" pointSize="75"/>
                                                         <state key="normal" title="Button" backgroundImage="Question/choice">
                                                             <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -92,15 +95,12 @@
                                                 </subviews>
                                             </stackView>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="400" id="29n-JV-iyM"/>
-                                        </constraints>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Jf-Lx-R1Y">
-                                        <rect key="frame" x="387" y="180" width="250" height="250"/>
+                                        <rect key="frame" x="362" y="180" width="300" height="300"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="250" id="92w-N8-sbU"/>
-                                            <constraint firstAttribute="width" constant="250" id="xwk-E4-vIN"/>
+                                            <constraint firstAttribute="height" constant="300" id="92w-N8-sbU"/>
+                                            <constraint firstAttribute="width" constant="300" id="xwk-E4-vIN"/>
                                         </constraints>
                                         <state key="normal" backgroundImage="SoundQuestion/playsound"/>
                                         <connections>
@@ -109,20 +109,20 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="pGa-P0-dhi" firstAttribute="top" secondItem="5Jf-Lx-R1Y" secondAttribute="bottom" constant="30" id="4Gn-cX-XS1"/>
+                                    <constraint firstItem="pGa-P0-dhi" firstAttribute="top" secondItem="5Jf-Lx-R1Y" secondAttribute="bottom" constant="20" id="4Gn-cX-XS1"/>
                                     <constraint firstItem="N9d-Px-Ip5" firstAttribute="leading" secondItem="MhH-27-KVH" secondAttribute="leading" constant="20" id="9kN-Pq-cWZ"/>
                                     <constraint firstAttribute="trailing" secondItem="N9d-Px-Ip5" secondAttribute="trailing" constant="20" id="I7b-1A-ZHB"/>
                                     <constraint firstItem="5Jf-Lx-R1Y" firstAttribute="top" secondItem="XQq-A4-o4d" secondAttribute="bottom" constant="20" id="IMc-di-p37"/>
                                     <constraint firstItem="XQq-A4-o4d" firstAttribute="top" secondItem="MhH-27-KVH" secondAttribute="top" constant="30" id="XHS-f6-xg3"/>
                                     <constraint firstAttribute="trailing" secondItem="XQq-A4-o4d" secondAttribute="trailing" constant="20" id="Ztx-cQ-MpH"/>
                                     <constraint firstItem="XQq-A4-o4d" firstAttribute="leading" secondItem="MhH-27-KVH" secondAttribute="leading" constant="20" id="aRO-CD-DZi"/>
-                                    <constraint firstItem="N9d-Px-Ip5" firstAttribute="top" secondItem="pGa-P0-dhi" secondAttribute="bottom" constant="20" id="b2F-Vh-m8c"/>
+                                    <constraint firstItem="N9d-Px-Ip5" firstAttribute="top" secondItem="pGa-P0-dhi" secondAttribute="bottom" constant="30" id="b2F-Vh-m8c"/>
                                     <constraint firstItem="pGa-P0-dhi" firstAttribute="centerX" secondItem="MhH-27-KVH" secondAttribute="centerX" id="tcW-Mn-d4n"/>
                                     <constraint firstItem="5Jf-Lx-R1Y" firstAttribute="centerX" secondItem="MhH-27-KVH" secondAttribute="centerX" id="yaT-XL-aNH"/>
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ikg-9e-w6l" firstAttribute="trailing" secondItem="MhH-27-KVH" secondAttribute="trailing" id="6LV-c6-lRV"/>
                             <constraint firstItem="ikg-9e-w6l" firstAttribute="bottom" secondItem="MhH-27-KVH" secondAttribute="bottom" id="eIM-eC-m53"/>

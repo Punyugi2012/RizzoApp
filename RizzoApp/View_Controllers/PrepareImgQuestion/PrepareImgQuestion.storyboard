@@ -18,51 +18,72 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rYm-6g-Zbo">
-                                <rect key="frame" x="134" y="314" width="500" height="125"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="ImageQuestion/fruit"/>
-                                <connections>
-                                    <action selector="tappedCategory:" destination="k6H-ui-tNQ" eventType="touchUpInside" id="eIr-YO-V5E"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xNv-HZ-iwB">
-                                <rect key="frame" x="134" y="488" width="500" height="125"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="ImageQuestion/animal"/>
-                                <connections>
-                                    <action selector="tappedCategory:" destination="k6H-ui-tNQ" eventType="touchUpInside" id="4QB-MP-Aaz"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aWc-gl-KjQ">
-                                <rect key="frame" x="134" y="834" width="500" height="125"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="ImageQuestion/object"/>
-                                <connections>
-                                    <action selector="tappedCategory:" destination="k6H-ui-tNQ" eventType="touchUpInside" id="96I-WQ-6zT"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FiF-N5-sUg">
-                                <rect key="frame" x="134" y="655" width="500" height="125"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="ImageQuestion/place"/>
-                                <connections>
-                                    <action selector="tappedCategory:" destination="k6H-ui-tNQ" eventType="touchUpInside" id="kYf-bf-qNH"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="TK2-Md-kiQ">
+                                <rect key="frame" x="10" y="295" width="748" height="720"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rYm-6g-Zbo">
+                                        <rect key="frame" x="0.0" y="0.0" width="748" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="xOd-tE-6zh"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="ImageQuestion/fruit"/>
+                                        <connections>
+                                            <action selector="tappedCategory:" destination="k6H-ui-tNQ" eventType="touchUpInside" id="eIr-YO-V5E"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xNv-HZ-iwB">
+                                        <rect key="frame" x="0.0" y="190" width="748" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="rth-kU-6ID"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="ImageQuestion/animal"/>
+                                        <connections>
+                                            <action selector="tappedCategory:" destination="k6H-ui-tNQ" eventType="touchUpInside" id="4QB-MP-Aaz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FiF-N5-sUg">
+                                        <rect key="frame" x="0.0" y="380" width="748" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="Y5F-zr-U8l"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="ImageQuestion/place"/>
+                                        <connections>
+                                            <action selector="tappedCategory:" destination="k6H-ui-tNQ" eventType="touchUpInside" id="kYf-bf-qNH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aWc-gl-KjQ">
+                                        <rect key="frame" x="0.0" y="570" width="748" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="0P2-Pl-D14"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="ImageQuestion/object"/>
+                                        <connections>
+                                            <action selector="tappedCategory:" destination="k6H-ui-tNQ" eventType="touchUpInside" id="96I-WQ-6zT"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="iMs-JF-8AQ">
-                                <rect key="frame" x="365" y="493" width="37" height="37"/>
+                                <rect key="frame" x="365.5" y="493.5" width="37" height="37"/>
                                 <color key="color" cocoaTouchSystemColor="darkTextColor"/>
                             </activityIndicatorView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ImageQuestion/header_category" translatesAutoresizingMaskIntoConstraints="NO" id="43t-eC-D6M">
-                                <rect key="frame" x="84" y="115" width="600" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ImageQuestion/header_category" translatesAutoresizingMaskIntoConstraints="NO" id="43t-eC-D6M">
+                                <rect key="frame" x="20" y="115" width="728" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="45V-Np-S9H"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="43t-eC-D6M" firstAttribute="top" secondItem="614-EP-iyD" secondAttribute="top" constant="51" id="2WL-sO-nPG"/>
+                            <constraint firstItem="TK2-Md-kiQ" firstAttribute="top" secondItem="43t-eC-D6M" secondAttribute="bottom" constant="50" id="DyW-rJ-i1k"/>
+                            <constraint firstItem="TK2-Md-kiQ" firstAttribute="leading" secondItem="614-EP-iyD" secondAttribute="leading" constant="10" id="GNJ-OU-uqF"/>
                             <constraint firstItem="iMs-JF-8AQ" firstAttribute="centerY" secondItem="uLf-b8-CCt" secondAttribute="centerY" id="K5k-r5-FQq"/>
+                            <constraint firstItem="614-EP-iyD" firstAttribute="trailing" secondItem="43t-eC-D6M" secondAttribute="trailing" constant="20" id="TOZ-WS-TkE"/>
                             <constraint firstItem="iMs-JF-8AQ" firstAttribute="centerX" secondItem="uLf-b8-CCt" secondAttribute="centerX" id="YPf-pl-jSq"/>
+                            <constraint firstItem="43t-eC-D6M" firstAttribute="leading" secondItem="614-EP-iyD" secondAttribute="leading" constant="20" id="dRX-X2-PnT"/>
+                            <constraint firstAttribute="trailing" secondItem="TK2-Md-kiQ" secondAttribute="trailing" constant="10" id="nhS-5A-NSr"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="614-EP-iyD"/>
                     </view>
