@@ -150,10 +150,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="MenuApp/drawing" width="819" height="764"/>
+        <image name="MenuApp/drawing" width="819" height="745"/>
         <image name="MenuApp/headerMenuApp" width="650" height="226"/>
-        <image name="MenuApp/imgQues" width="819" height="761"/>
-        <image name="MenuApp/setting" width="819" height="754"/>
+        <image name="MenuApp/imgQues" width="819" height="743"/>
+        <image name="MenuApp/setting" width="819" height="773"/>
         <image name="MenuApp/soundQues" width="819" height="752"/>
         <image name="NavBar/BackButton" width="32" height="32"/>
     </resources>
