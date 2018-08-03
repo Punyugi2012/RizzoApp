@@ -282,7 +282,7 @@
     <resources>
         <image name="Draw/blacked" width="113" height="114"/>
         <image name="Draw/blue" width="113" height="114"/>
-        <image name="Draw/clear" width="125" height="113"/>
+        <image name="Draw/clear" width="349" height="318"/>
         <image name="Draw/example_button" width="191" height="64"/>
         <image name="Draw/green" width="113" height="114"/>
         <image name="Draw/line" width="21" height="269"/>
