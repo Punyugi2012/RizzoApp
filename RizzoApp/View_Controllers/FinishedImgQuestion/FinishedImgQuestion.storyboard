@@ -81,6 +81,42 @@
                                     <constraint firstItem="MAx-eo-yem" firstAttribute="centerX" secondItem="R9i-7g-B5U" secondAttribute="centerX" id="zvA-z8-pks"/>
                                 </constraints>
                             </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="AqU-W7-9ik">
+                                <rect key="frame" x="195.5" y="487" width="443" height="104.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Finished/allIcon" translatesAutoresizingMaskIntoConstraints="NO" id="U41-wd-fF2">
+                                        <rect key="frame" x="0.0" y="2.5" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="amI-DS-HD5"/>
+                                            <constraint firstAttribute="height" constant="100" id="cjn-xI-ghp"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ทั้งหมด 10 ข้อ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQR-Zs-J5t">
+                                        <rect key="frame" x="120" y="0.0" width="323" height="104.5"/>
+                                        <fontDescription key="fontDescription" name="THSarabunNew-Bold" family="TH Sarabun New" pointSize="80"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="JJ9-Bp-Czc">
+                                <rect key="frame" x="195" y="599.5" width="314" height="104.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Finished/correct" translatesAutoresizingMaskIntoConstraints="NO" id="wGu-q2-p84">
+                                        <rect key="frame" x="0.0" y="2.5" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="r8x-7S-VYD"/>
+                                            <constraint firstAttribute="height" constant="100" id="xDW-08-FUp"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ถูก 5 ข้อ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6uD-Vi-nbQ">
+                                        <rect key="frame" x="120" y="0.0" width="194" height="104.5"/>
+                                        <fontDescription key="fontDescription" name="THSarabunNew-Bold" family="TH Sarabun New" pointSize="80"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="JYP-FG-l9J">
                                 <rect key="frame" x="0.0" y="962" width="834" height="150"/>
                                 <subviews>
@@ -105,72 +141,39 @@
                                     <constraint firstAttribute="height" constant="150" id="Kf3-Ph-zW6"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="PMf-Qd-rZd">
-                                <rect key="frame" x="10" y="467" width="814" height="340"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="xBk-in-tXl">
+                                <rect key="frame" x="195" y="711.5" width="347" height="104.5"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="eW8-5b-YjO">
-                                        <rect key="frame" x="0.0" y="0.0" width="407" height="340"/>
-                                        <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Finished/allIcon" translatesAutoresizingMaskIntoConstraints="NO" id="U41-wd-fF2">
-                                                <rect key="frame" x="153.5" y="0.0" width="100" height="100"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="100" id="amI-DS-HD5"/>
-                                                    <constraint firstAttribute="height" constant="100" id="cjn-xI-ghp"/>
-                                                </constraints>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Finished/correct" translatesAutoresizingMaskIntoConstraints="NO" id="wGu-q2-p84">
-                                                <rect key="frame" x="153.5" y="120" width="100" height="100"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="100" id="r8x-7S-VYD"/>
-                                                    <constraint firstAttribute="height" constant="100" id="xDW-08-FUp"/>
-                                                </constraints>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Finished/incorrect" translatesAutoresizingMaskIntoConstraints="NO" id="5JX-UQ-WsI">
-                                                <rect key="frame" x="153.5" y="240" width="100" height="100"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="100" id="a7w-IP-2xF"/>
-                                                    <constraint firstAttribute="width" constant="100" id="pEU-b6-yvM"/>
-                                                </constraints>
-                                            </imageView>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Nx4-7n-wiT">
-                                        <rect key="frame" x="407" y="0.0" width="407" height="340"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ทั้งหมด 10 ข้อ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQR-Zs-J5t">
-                                                <rect key="frame" x="0.0" y="0.0" width="323" height="104.5"/>
-                                                <fontDescription key="fontDescription" name="THSarabunNew-Bold" family="TH Sarabun New" pointSize="80"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ถูก 5 ข้อ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6uD-Vi-nbQ">
-                                                <rect key="frame" x="0.0" y="124.5" width="194" height="104.5"/>
-                                                <fontDescription key="fontDescription" name="THSarabunNew-Bold" family="TH Sarabun New" pointSize="80"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="ผิด 10 ข้อ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zn2-PT-1mg">
-                                                <rect key="frame" x="0.0" y="249" width="227" height="91"/>
-                                                <fontDescription key="fontDescription" name="THSarabunNew-Bold" family="TH Sarabun New" pointSize="80"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Finished/incorrect" translatesAutoresizingMaskIntoConstraints="NO" id="5JX-UQ-WsI">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="a7w-IP-2xF"/>
+                                            <constraint firstAttribute="width" constant="100" id="pEU-b6-yvM"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="ผิด 10 ข้อ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zn2-PT-1mg">
+                                        <rect key="frame" x="120" y="0.0" width="227" height="104.5"/>
+                                        <fontDescription key="fontDescription" name="THSarabunNew-Bold" family="TH Sarabun New" pointSize="80"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="JYP-FG-l9J" secondAttribute="trailing" id="68C-M5-NJc"/>
+                            <constraint firstItem="AqU-W7-9ik" firstAttribute="centerX" secondItem="E0X-gY-DPI" secondAttribute="centerX" id="Fah-P0-5O9"/>
                             <constraint firstItem="JYP-FG-l9J" firstAttribute="leading" secondItem="rVe-wA-MFy" secondAttribute="leading" id="GAD-hn-g58"/>
+                            <constraint firstItem="AqU-W7-9ik" firstAttribute="top" secondItem="R9i-7g-B5U" secondAttribute="bottom" constant="50" id="JxS-m0-Vb8"/>
                             <constraint firstAttribute="bottom" secondItem="JYP-FG-l9J" secondAttribute="bottom" id="KvJ-GK-kdE"/>
                             <constraint firstItem="R9i-7g-B5U" firstAttribute="leading" secondItem="rVe-wA-MFy" secondAttribute="leading" id="QQR-sx-Udi"/>
+                            <constraint firstItem="JJ9-Bp-Czc" firstAttribute="top" secondItem="AqU-W7-9ik" secondAttribute="bottom" constant="8" id="W3R-L5-DKx"/>
                             <constraint firstItem="R9i-7g-B5U" firstAttribute="top" secondItem="rVe-wA-MFy" secondAttribute="top" constant="23" id="bZG-Y4-Uhx"/>
-                            <constraint firstItem="PMf-Qd-rZd" firstAttribute="top" secondItem="R9i-7g-B5U" secondAttribute="bottom" constant="30" id="dSN-oK-GVv"/>
-                            <constraint firstItem="rVe-wA-MFy" firstAttribute="trailing" secondItem="PMf-Qd-rZd" secondAttribute="trailing" constant="10" id="g36-YM-G86"/>
+                            <constraint firstItem="JJ9-Bp-Czc" firstAttribute="leading" secondItem="AqU-W7-9ik" secondAttribute="leading" id="c5R-sI-wwo"/>
+                            <constraint firstItem="xBk-in-tXl" firstAttribute="top" secondItem="JJ9-Bp-Czc" secondAttribute="bottom" constant="8" id="sF3-Jl-ArE"/>
                             <constraint firstItem="R9i-7g-B5U" firstAttribute="trailing" secondItem="rVe-wA-MFy" secondAttribute="trailing" id="sv0-ec-Nda"/>
-                            <constraint firstItem="PMf-Qd-rZd" firstAttribute="leading" secondItem="rVe-wA-MFy" secondAttribute="leading" constant="10" id="vT9-d8-Grq"/>
+                            <constraint firstItem="xBk-in-tXl" firstAttribute="leading" secondItem="JJ9-Bp-Czc" secondAttribute="leading" id="xQI-k7-Oxw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rVe-wA-MFy"/>
                     </view>
@@ -188,7 +191,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jvi-yF-9Eg" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Aar-1O-oIT" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3173.4375" y="-705.46875"/>
+            <point key="canvasLocation" x="3173.3812949640292" y="-705.75539568345323"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ed0-KD-tcs">

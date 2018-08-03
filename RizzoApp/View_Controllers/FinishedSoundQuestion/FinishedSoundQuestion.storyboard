@@ -79,7 +79,7 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="4pa-fF-WG8">
-                                <rect key="frame" x="195.5" y="472" width="443" height="120"/>
+                                <rect key="frame" x="195.5" y="514" width="443" height="120"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Finished/allIcon" translatesAutoresizingMaskIntoConstraints="NO" id="ooF-b8-251">
                                         <rect key="frame" x="0.0" y="10" width="100" height="100"/>
@@ -100,7 +100,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Led-ez-OH3">
-                                <rect key="frame" x="196" y="600" width="314" height="104.5"/>
+                                <rect key="frame" x="196" y="642" width="314" height="104.5"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Finished/correct" translatesAutoresizingMaskIntoConstraints="NO" id="WQL-EB-YDD">
                                         <rect key="frame" x="0.0" y="2.5" width="100" height="100"/>
@@ -118,7 +118,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="tBx-Js-o02">
-                                <rect key="frame" x="196" y="712" width="347" height="104.5"/>
+                                <rect key="frame" x="196" y="754" width="347" height="104.5"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Finished/incorrect" translatesAutoresizingMaskIntoConstraints="NO" id="5l6-iw-w0S">
                                         <rect key="frame" x="0.0" y="2.5" width="100" height="100"/>
@@ -168,10 +168,10 @@
                             <constraint firstItem="tBx-Js-o02" firstAttribute="leading" secondItem="Led-ez-OH3" secondAttribute="leading" id="Tyu-BK-8p4"/>
                             <constraint firstAttribute="trailing" secondItem="iWs-Vx-5Vi" secondAttribute="trailing" id="V2J-NY-6vZ"/>
                             <constraint firstItem="jpu-o6-QsS" firstAttribute="trailing" secondItem="aqa-RN-prI" secondAttribute="trailing" id="Yud-cQ-SBB"/>
-                            <constraint firstItem="4pa-fF-WG8" firstAttribute="top" secondItem="aqa-RN-prI" secondAttribute="bottom" constant="8" id="bol-G6-IWZ"/>
+                            <constraint firstItem="4pa-fF-WG8" firstAttribute="top" secondItem="aqa-RN-prI" secondAttribute="bottom" constant="50" id="bol-G6-IWZ"/>
                             <constraint firstAttribute="bottom" secondItem="iWs-Vx-5Vi" secondAttribute="bottom" id="h2H-e0-4qB"/>
                             <constraint firstItem="4pa-fF-WG8" firstAttribute="centerX" secondItem="BpQ-ci-jOZ" secondAttribute="centerX" id="mah-O4-8No"/>
-                            <constraint firstItem="tBx-Js-o02" firstAttribute="top" secondItem="Led-ez-OH3" secondAttribute="bottom" constant="7.5" id="svX-8r-HBw"/>
+                            <constraint firstItem="tBx-Js-o02" firstAttribute="top" secondItem="Led-ez-OH3" secondAttribute="bottom" constant="8" id="svX-8r-HBw"/>
                             <constraint firstItem="Led-ez-OH3" firstAttribute="top" secondItem="4pa-fF-WG8" secondAttribute="bottom" constant="8" id="zBr-jG-SfH"/>
                             <constraint firstItem="iWs-Vx-5Vi" firstAttribute="leading" secondItem="jpu-o6-QsS" secondAttribute="leading" id="zVB-Ys-eEu"/>
                         </constraints>
