@@ -199,6 +199,7 @@ class DrawViewController: UIViewController {
     }
     @IBAction func previewQuestionImage(_ sender: UIButton) {
         sender.playButtonSound()
+        self.navigationController?.isNavigationBarHidden = true
         let previewImage = Bundle.main.loadNibNamed("PreviewImage", owner: self, options: nil)!.first as! PreviewImage
         previewImage.setup(center: view.center, size: CGSize(width: view.bounds.width - 20, height: view.bounds.height - 30))
         previewImage.imageView.image = UIImage(named: "\(getQuestion.questionName).png")
@@ -210,6 +211,7 @@ class DrawViewController: UIViewController {
             previewImage.transform = CGAffineTransform.identity
         })
         previewImage.callback = {
+            self.navigationController?.isNavigationBarHidden = false
             UIView.animate(withDuration: 0.45, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0, options: [], animations: {
                 previewImage.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
                 previewImage.alpha = 0

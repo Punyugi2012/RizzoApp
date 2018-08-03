@@ -21,7 +21,11 @@
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sip-v0-cq4">
-                    <rect key="frame" x="448.5" y="1229" width="127" height="117"/>
+                    <rect key="frame" x="904" y="40" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="RZ6-yX-fjz"/>
+                        <constraint firstAttribute="width" constant="100" id="ZCi-lo-TRL"/>
+                    </constraints>
                     <state key="normal" backgroundImage="Draw/close"/>
                     <connections>
                         <action selector="tappedCloseBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="Si4-o3-lw0"/>
@@ -30,12 +34,12 @@
             </subviews>
             <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="sip-v0-cq4" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="9j0-kc-azQ"/>
                 <constraint firstItem="mXy-xw-3gY" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="GBU-Mu-VQL"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="sip-v0-cq4" secondAttribute="bottom" constant="20" id="Iar-a8-275"/>
                 <constraint firstItem="mXy-xw-3gY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="MYs-3m-xYK"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="mXy-xw-3gY" secondAttribute="bottom" id="SId-Xr-wez"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="mXy-xw-3gY" secondAttribute="trailing" id="SZN-NV-Vxk"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="sip-v0-cq4" secondAttribute="trailing" constant="20" id="XTR-Su-u0g"/>
+                <constraint firstItem="sip-v0-cq4" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="fdc-LP-9PL"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
