@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="s5S-hC-IzT">
-    <device id="ipad9_7" orientation="portrait">
+    <device id="ipad12_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,30 +15,30 @@
             <objects>
                 <viewController id="GrQ-vX-gpU" customClass="MainMenuViewController" customModule="RizzoApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2j1-XY-RWX">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MenuApp/headerMenuApp" translatesAutoresizingMaskIntoConstraints="NO" id="w4r-7i-wjI">
-                                <rect key="frame" x="20" y="84" width="728" height="150"/>
+                                <rect key="frame" x="20" y="102" width="984" height="150"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="Fr2-g9-JLH"/>
+                                    <constraint firstAttribute="height" constant="150" id="6jf-fy-YMm"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Pid-8D-bvM">
-                                <rect key="frame" x="20" y="294" width="728" height="710"/>
+                                <rect key="frame" x="20" y="272" width="984" height="1074"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="XtZ-zn-9il">
-                                        <rect key="frame" x="0.0" y="0.0" width="728" height="340"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="984" height="522"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yrp-E7-68D">
-                                                <rect key="frame" x="0.0" y="0.0" width="334" height="340"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="462" height="522"/>
                                                 <state key="normal" backgroundImage="MenuApp/drawing"/>
                                                 <connections>
                                                     <action selector="playDraw:" destination="GrQ-vX-gpU" eventType="touchUpInside" id="mCP-WS-XI4"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gb-Kc-KLg">
-                                                <rect key="frame" x="394" y="0.0" width="334" height="340"/>
+                                                <rect key="frame" x="522" y="0.0" width="462" height="522"/>
                                                 <state key="normal" backgroundImage="MenuApp/imgQues"/>
                                                 <connections>
                                                     <action selector="playImgQuestion:" destination="GrQ-vX-gpU" eventType="touchUpInside" id="u6W-KQ-Ocf"/>
@@ -47,38 +47,47 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="hAB-zQ-0oO">
-                                        <rect key="frame" x="0.0" y="370" width="728" height="340"/>
+                                        <rect key="frame" x="0.0" y="552" width="984" height="522"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYA-TM-sij">
-                                                <rect key="frame" x="0.0" y="0.0" width="334" height="340"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="462" height="522"/>
                                                 <state key="normal" backgroundImage="MenuApp/soundQues"/>
                                                 <connections>
                                                     <action selector="playSoundQuestion:" destination="GrQ-vX-gpU" eventType="touchUpInside" id="QLA-FW-ndo"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vIZ-2S-9KY">
-                                                <rect key="frame" x="394" y="0.0" width="334" height="340"/>
-                                                <state key="normal" backgroundImage="MenuApp/setting"/>
-                                                <connections>
-                                                    <action selector="setting:" destination="GrQ-vX-gpU" eventType="touchUpInside" id="vfk-KM-Scx"/>
-                                                </connections>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="itf-Uv-00z">
+                                                <rect key="frame" x="522" y="0.0" width="462" height="522"/>
+                                                <state key="normal" title="Button" backgroundImage="MenuApp/userGuide"/>
                                             </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vIZ-2S-9KY">
+                                <rect key="frame" x="904" y="152" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="YyI-c8-Eej"/>
+                                    <constraint firstAttribute="height" constant="100" id="uBy-MS-41q"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="MenuApp/setting"/>
+                                <connections>
+                                    <action selector="setting:" destination="GrQ-vX-gpU" eventType="touchUpInside" id="vfk-KM-Scx"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="eVF-t6-4Xc" firstAttribute="trailing" secondItem="w4r-7i-wjI" secondAttribute="trailing" constant="20" id="AIc-VG-3lm"/>
-                            <constraint firstItem="Pid-8D-bvM" firstAttribute="leading" secondItem="eVF-t6-4Xc" secondAttribute="leading" constant="20" id="Bc1-bX-S9U"/>
-                            <constraint firstItem="w4r-7i-wjI" firstAttribute="top" secondItem="eVF-t6-4Xc" secondAttribute="top" constant="20" id="DkS-uW-UKA"/>
-                            <constraint firstItem="eVF-t6-4Xc" firstAttribute="bottom" secondItem="Pid-8D-bvM" secondAttribute="bottom" constant="20" id="EGa-bt-XoT"/>
-                            <constraint firstItem="Pid-8D-bvM" firstAttribute="top" secondItem="w4r-7i-wjI" secondAttribute="bottom" constant="60" id="FNW-aw-cBg"/>
-                            <constraint firstItem="eVF-t6-4Xc" firstAttribute="trailing" secondItem="Pid-8D-bvM" secondAttribute="trailing" constant="20" id="YU0-wx-X7N"/>
-                            <constraint firstItem="Pid-8D-bvM" firstAttribute="centerX" secondItem="2j1-XY-RWX" secondAttribute="centerX" id="dJV-nP-tEV"/>
-                            <constraint firstItem="w4r-7i-wjI" firstAttribute="centerX" secondItem="2j1-XY-RWX" secondAttribute="centerX" id="fyU-Td-kin"/>
-                            <constraint firstItem="w4r-7i-wjI" firstAttribute="leading" secondItem="eVF-t6-4Xc" secondAttribute="leading" constant="20" id="tY1-yR-w9x"/>
+                            <constraint firstItem="w4r-7i-wjI" firstAttribute="centerX" secondItem="2j1-XY-RWX" secondAttribute="centerX" id="33W-8k-dTg"/>
+                            <constraint firstItem="vIZ-2S-9KY" firstAttribute="top" secondItem="w4r-7i-wjI" secondAttribute="bottom" constant="-100" id="Ch7-z3-uTt"/>
+                            <constraint firstItem="eVF-t6-4Xc" firstAttribute="trailing" secondItem="Pid-8D-bvM" secondAttribute="trailing" constant="20" id="Mgo-7C-phc"/>
+                            <constraint firstItem="vIZ-2S-9KY" firstAttribute="trailing" secondItem="w4r-7i-wjI" secondAttribute="trailing" id="OAy-gS-dIh"/>
+                            <constraint firstItem="eVF-t6-4Xc" firstAttribute="bottom" secondItem="Pid-8D-bvM" secondAttribute="bottom" constant="20" id="Ofo-EW-nu1"/>
+                            <constraint firstItem="Pid-8D-bvM" firstAttribute="leading" secondItem="eVF-t6-4Xc" secondAttribute="leading" constant="20" id="TAy-0Q-e0h"/>
+                            <constraint firstItem="Pid-8D-bvM" firstAttribute="top" secondItem="w4r-7i-wjI" secondAttribute="bottom" constant="20" id="ZrG-nK-di4"/>
+                            <constraint firstItem="w4r-7i-wjI" firstAttribute="leading" secondItem="eVF-t6-4Xc" secondAttribute="leading" constant="20" id="hsO-4n-ly2"/>
+                            <constraint firstItem="w4r-7i-wjI" firstAttribute="top" secondItem="eVF-t6-4Xc" secondAttribute="top" constant="38" id="mdu-EW-SuI"/>
+                            <constraint firstItem="eVF-t6-4Xc" firstAttribute="trailing" secondItem="w4r-7i-wjI" secondAttribute="trailing" constant="20" id="vbo-h9-j01"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="eVF-t6-4Xc"/>
                     </view>
@@ -88,6 +97,7 @@
                         <outletCollection property="menuButtons" destination="8gb-Kc-KLg" collectionClass="NSMutableArray" id="dz0-k8-OZd"/>
                         <outletCollection property="menuButtons" destination="YYA-TM-sij" collectionClass="NSMutableArray" id="lc1-BT-FIc"/>
                         <outletCollection property="menuButtons" destination="vIZ-2S-9KY" collectionClass="NSMutableArray" id="UcM-Sv-xB4"/>
+                        <outletCollection property="menuButtons" destination="itf-Uv-00z" collectionClass="NSMutableArray" id="WQM-ix-3Hl"/>
                         <segue destination="gPv-rv-Gtf" kind="presentation" identifier="ToSetting" id="iug-3K-hvA"/>
                         <segue destination="XKx-Wf-w3E" kind="show" identifier="ToPrepareDraw" id="hay-wn-VyM"/>
                         <segue destination="g6B-6P-KeG" kind="show" identifier="ToPrepareImgQuestion" id="9ft-sf-Hqp"/>
@@ -104,7 +114,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="s5S-hC-IzT" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" backIndicatorImage="NavBar/BackButton" backIndicatorTransitionMaskImage="NavBar/BackButton" id="Wdx-mE-A1J">
-                        <rect key="frame" x="0.0" y="20" width="768" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="1024" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -155,6 +165,7 @@
         <image name="MenuApp/imgQues" width="819" height="743"/>
         <image name="MenuApp/setting" width="819" height="773"/>
         <image name="MenuApp/soundQues" width="819" height="752"/>
+        <image name="MenuApp/userGuide" width="843" height="747"/>
         <image name="NavBar/BackButton" width="32" height="32"/>
     </resources>
 </document>
