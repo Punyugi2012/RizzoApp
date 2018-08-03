@@ -159,10 +159,10 @@
                     <navigationItem key="navigationItem" title="ImgQuestion" id="itj-MT-Bti">
                         <barButtonItem key="rightBarButtonItem" id="bkb-b3-HZN">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WVm-rL-9En">
-                                <rect key="frame" x="644" y="0.0" width="170" height="44"/>
+                                <rect key="frame" x="580" y="0.0" width="234" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="ออก"/>
+                                <fontDescription key="fontDescription" name="THSarabunNew-Bold" family="TH Sarabun New" pointSize="40"/>
+                                <state key="normal" title="ออกเกมส์"/>
                                 <connections>
                                     <segue destination="HEO-6B-ErB" kind="unwind" unwindAction="backToMainMenuWithSegue:" id="EmM-e7-JGF"/>
                                 </connections>

@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="THSarabunNewBold.ttf">
+            <string>THSarabunNew-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Draw-->
         <scene sceneID="aog-JH-l3e">
@@ -251,12 +256,12 @@
                         <viewLayoutGuide key="safeArea" id="3y6-Je-2IP"/>
                     </view>
                     <navigationItem key="navigationItem" title="Draw" id="nSb-hP-ERV">
-                        <barButtonItem key="rightBarButtonItem" id="SJu-Zr-k9T">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="SJu-Zr-k9T">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Zbe-oe-oM9">
-                                <rect key="frame" x="578" y="0.0" width="170" height="44"/>
+                                <rect key="frame" x="514" y="0.0" width="234" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="ออก"/>
+                                <fontDescription key="fontDescription" name="THSarabunNew-Bold" family="TH Sarabun New" pointSize="40"/>
+                                <state key="normal" title="ออกเกมส์"/>
                                 <connections>
                                     <segue destination="v6E-Zs-SeM" kind="unwind" unwindAction="backToMainMenuWithSegue:" id="a8F-yg-RzZ"/>
                                 </connections>

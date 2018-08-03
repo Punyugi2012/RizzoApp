@@ -134,10 +134,10 @@
                     <navigationItem key="navigationItem" title="SoundQuestion" id="4Wn-aO-GDr">
                         <barButtonItem key="rightBarButtonItem" id="66m-35-Fag">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2QZ-Si-aOe">
-                                <rect key="frame" x="834" y="0.0" width="170" height="44"/>
+                                <rect key="frame" x="770" y="0.0" width="234" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="ออก"/>
+                                <fontDescription key="fontDescription" name="THSarabunNew-Bold" family="TH Sarabun New" pointSize="40"/>
+                                <state key="normal" title="ออกเกมส์"/>
                                 <connections>
                                     <segue destination="4lj-Uf-btU" kind="unwind" unwindAction="backToMainMenuWithSegue:" id="0u9-0f-Jh3"/>
                                 </connections>

@@ -17,6 +17,7 @@ class MainMenuViewController: UIViewController {
         super.viewDidLoad()
         let backItem = UIBarButtonItem()
         backItem.title = "ย้อนกลับ"
+        backItem.setTitleTextAttributes([kCTFontAttributeName as NSAttributedStringKey: UIFont(name: "THSarabunNew-Bold", size: 35)!], for: .normal)
         navigationItem.backBarButtonItem = backItem
         setNavigationBar()
         setView()
@@ -76,5 +77,5 @@ class MainMenuViewController: UIViewController {
             button.animateBubbleAnimation()
         }
     }
- 
+    
 }
