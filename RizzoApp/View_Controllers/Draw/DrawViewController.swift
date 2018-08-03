@@ -21,7 +21,6 @@ class DrawViewController: UIViewController {
     @IBOutlet weak var smallLineHeight: NSLayoutConstraint!
     @IBOutlet weak var mediumLineHight: NSLayoutConstraint!
     @IBOutlet weak var highLineHeight: NSLayoutConstraint!
-    @IBOutlet weak var penBtn: UIButton!
     @IBOutlet weak var blueColorBtn: UIButton!
     @IBOutlet weak var greenColorBtn: UIButton!
     @IBOutlet weak var yellowColorBtn: UIButton!
@@ -37,17 +36,7 @@ class DrawViewController: UIViewController {
         print(questionType)
         print(getQuestion)
         setNavigationBar()
-        blackColorBtn.alpha = 0
-        penBtn.alpha = 0
-        highLineBtn.alpha = 0
-        [redColorBtn, yellowColorBtn, greenColorBtn, blueColorBtn].forEach { (colorBtn) in
-            colorBtn?.transform.translatedBy(x: blackColorBtn.center.x - colorBtn!.center.x, y: 0)
-            colorBtn?.alpha = 0
-        }
-        [smallLineBtn, mediumLineBtn].forEach { (lineBtn) in
-            lineBtn?.transform.translatedBy(x: highLineBtn.center.x - lineBtn!.center.x, y: 0)
-            lineBtn?.alpha = 0
-        }
+        highLineHeight.constant = 170
         navigationItem.hidesBackButton = true
         view.backgroundColor = AppManager.shared.currentTheme?.backgroundColor
         myLoader.transform = CGAffineTransform(scaleX: 2, y: 2)
@@ -59,7 +48,6 @@ class DrawViewController: UIViewController {
     func setDrawViewDefault() {
         drawView.currentWidth = 6
         drawView.currentStrockColor = UIColor.black.cgColor
-        drawView.isUserInteractionEnabled = false
         drawView.layer.cornerRadius = 20
         drawView.clipsToBounds = true
         drawView.backgroundColor = AppManager.shared.currentTheme?.viewBackgroundColor
@@ -90,50 +78,37 @@ class DrawViewController: UIViewController {
         sender.playButtonSound()
         resetColorButtons()
         sender.setBackgroundImage(UIImage(named: "Draw/blacked"), for: .normal)
-        penBtn.setBackgroundImage(UIImage(named: "Draw/blackpen"), for: .normal)
-        var delay = 0.1
-        [yellowColorBtn, greenColorBtn, blueColorBtn, redColorBtn].forEach { (colorBtn) in
-            UIView.animate(withDuration: 0.5, delay: delay, options: [], animations: {
-                colorBtn?.transform = CGAffineTransform.identity
-                colorBtn?.alpha = 1
-            })
-            delay += 0.1
-        }
     }
     
     @IBAction func tappedRedColor(_ sender: UIButton) {
-        drawView.currentStrockColor = UIColor.red.cgColor
+        drawView.currentStrockColor = #colorLiteral(red: 0.8078, green: 0.0392, blue: 0.1412, alpha: 1)
         print("RedColor")
         sender.playButtonSound()
         resetColorButtons()
-        penBtn.setBackgroundImage(UIImage(named: "Draw/redpen"), for: .normal)
         sender.setBackgroundImage(UIImage(named: "Draw/reded"), for: .normal)
     }
     
     @IBAction func tappedYellowColor(_ sender: UIButton) {
-        drawView.currentStrockColor = UIColor.yellow.cgColor
+        drawView.currentStrockColor = #colorLiteral(red: 0.9686, green: 0.898, blue: 0.2314, alpha: 1)
         print("YellowColor")
         sender.playButtonSound()
         resetColorButtons()
-        penBtn.setBackgroundImage(UIImage(named: "Draw/yellowpen"), for: .normal)
         sender.setBackgroundImage(UIImage(named: "Draw/yellowed"), for: .normal)
     }
     
     @IBAction func tappedGreenColor(_ sender: UIButton) {
-        drawView.currentStrockColor = UIColor.green.cgColor
+        drawView.currentStrockColor = #colorLiteral(red: 0.5059, green: 0.8196, blue: 0.2078, alpha: 1)
         print("GreenColor")
         sender.playButtonSound()
         resetColorButtons()
-        penBtn.setBackgroundImage(UIImage(named: "Draw/greenpen"), for: .normal)
         sender.setBackgroundImage(UIImage(named: "Draw/greened"), for: .normal)
     }
     
     @IBAction func tappedBlueColor(_ sender: UIButton) {
-        drawView.currentStrockColor = UIColor.blue.cgColor
+        drawView.currentStrockColor = #colorLiteral(red: 0.3059, green: 0.5725, blue: 0.8745, alpha: 1)
         print("BlueColor")
         sender.playButtonSound()
         resetColorButtons()
-        penBtn.setBackgroundImage(UIImage(named: "Draw/bluepen"), for: .normal)
         sender.setBackgroundImage(UIImage(named: "Draw/blued"), for: .normal)
     }
 
@@ -143,14 +118,6 @@ class DrawViewController: UIViewController {
         sender.playButtonSound()
         resetLineButtons()
         highLineHeight.constant = 170
-        var delay = 0.1
-        [mediumLineBtn, smallLineBtn].forEach { (lineBtn) in
-            UIView.animate(withDuration: 0.5, delay: delay, options: [], animations: {
-                lineBtn?.transform = CGAffineTransform.identity
-                lineBtn?.alpha = 1
-            })
-            delay += 0.1
-        }
     }
     
     @IBAction func tappedMediumLineBtn(_ sender: UIButton) {
@@ -169,20 +136,7 @@ class DrawViewController: UIViewController {
         smallLineHeight.constant = 170
         
     }
-    @IBAction func tappedPenBtn(_ sender: UIButton) {
-        sender.playButtonSound()
-        print("PenButton")
-        
-    }
-    @IBAction func tappedOpenTools(_ sender: UIButton) {
-        sender.playButtonSound()
-        drawView.isUserInteractionEnabled = true
-        UIView.animate(withDuration: 0.5) {
-            self.penBtn.alpha = 1
-            self.highLineBtn.alpha = 1
-            self.blackColorBtn.alpha = 1
-        }
-    }
+  
     @IBAction func tappedSentBtn(_ sender: UIButton) {
         sender.playButtonSound()
         print("SentButton")
