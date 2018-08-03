@@ -107,6 +107,7 @@
                                 <rect key="frame" x="578" y="0.0" width="170" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="THSarabunNew-Bold" family="TH Sarabun New" pointSize="40"/>
+                                <inset key="contentEdgeInsets" minX="120" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="ออก"/>
                                 <connections>
                                     <segue destination="T7d-FT-axM" kind="unwind" unwindAction="backToMainMenuWithSegue:" id="b64-MU-qLp"/>
