@@ -30,11 +30,8 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ผลการวาด" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cbT-YH-D0o">
-                                <rect key="frame" x="305" y="129" width="224.5" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="qjD-zA-fR2"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="THSarabunNew-Bold" family="TH Sarabun New" pointSize="75"/>
+                                <rect key="frame" x="268" y="129" width="299" height="130.5"/>
+                                <fontDescription key="fontDescription" name="THSarabunNew-Bold" family="TH Sarabun New" pointSize="100"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -152,7 +149,7 @@
     <resources>
         <image name="Finished/correct" width="737" height="674"/>
         <image name="Finished/headerDraw" width="2450" height="649"/>
-        <image name="Finished/homeBtn" width="348" height="313"/>
-        <image name="Finished/replayBtn" width="346" height="314"/>
+        <image name="Finished/homeBtn" width="1000" height="241"/>
+        <image name="Finished/replayBtn" width="1000" height="241"/>
     </resources>
 </document>
