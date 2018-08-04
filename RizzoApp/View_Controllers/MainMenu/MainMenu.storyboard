@@ -59,6 +59,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="itf-Uv-00z">
                                                 <rect key="frame" x="522" y="0.0" width="462" height="472"/>
                                                 <state key="normal" title="Button" backgroundImage="MenuApp/userGuide"/>
+                                                <connections>
+                                                    <action selector="toHowToPlayGames:" destination="GrQ-vX-gpU" eventType="touchUpInside" id="XOd-bE-uxy"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -84,7 +87,7 @@
                                 </constraints>
                                 <state key="normal" image="MenuApp/Developer"/>
                                 <connections>
-                                    <segue destination="FcS-QN-BQV" kind="presentation" id="vSI-aS-Txr"/>
+                                    <action selector="toCredit:" destination="GrQ-vX-gpU" eventType="touchUpInside" id="iUm-Ib-hif"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -117,6 +120,8 @@
                         <segue destination="XKx-Wf-w3E" kind="show" identifier="ToPrepareDraw" id="hay-wn-VyM"/>
                         <segue destination="g6B-6P-KeG" kind="show" identifier="ToPrepareImgQuestion" id="9ft-sf-Hqp"/>
                         <segue destination="ZuR-l8-seS" kind="show" identifier="ToPrepareSoundQuestion" id="szT-U7-hcH"/>
+                        <segue destination="sir-vk-JwF" kind="show" identifier="ToHowToPlayGames" id="4ax-HU-pn9"/>
+                        <segue destination="FcS-QN-BQV" kind="presentation" identifier="ToCredit" id="tjW-N9-paS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aOs-8Q-qbq" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -156,6 +161,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sEJ-HB-XDf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1156" y="346"/>
+        </scene>
+        <!--HowToPlayGames-->
+        <scene sceneID="6Gx-Ot-Z4k">
+            <objects>
+                <viewControllerPlaceholder storyboardName="HowToPlayGames" id="sir-vk-JwF" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V3E-07-ozd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1146" y="403"/>
         </scene>
         <!--PrepareDraw-->
         <scene sceneID="BCd-IX-cwS">

@@ -80,6 +80,10 @@
 		B83CF6132105B14400A483A5 /* DarkTheme.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B83CF6122105B14400A483A5 /* DarkTheme.xcassets */; };
 		B83CF6172105B1A600A483A5 /* animationLunchScreen.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B83CF6162105B1A600A483A5 /* animationLunchScreen.xcassets */; };
 		B849085B2115AC750094E188 /* DeveloperTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B849085A2115AC750094E188 /* DeveloperTableViewCell.swift */; };
+		B849085F2115C21A0094E188 /* HowToPlayGames.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B849085E2115C21A0094E188 /* HowToPlayGames.storyboard */; };
+		B84908612115C22D0094E188 /* HowToPlayGamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84908602115C22D0094E188 /* HowToPlayGamesViewController.swift */; };
+		B84908632115C23C0094E188 /* HowToPlay.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84908622115C23C0094E188 /* HowToPlay.storyboard */; };
+		B84908652115C2540094E188 /* HowToPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84908642115C2540094E188 /* HowToPlayViewController.swift */; };
 		B84F5CA4210322160043DCEC /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84F5CA3210322160043DCEC /* Setting.storyboard */; };
 		B84F5CAA210322EE0043DCEC /* FinishedDraw.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84F5CA9210322EE0043DCEC /* FinishedDraw.storyboard */; };
 		B84F5CAD2103231C0043DCEC /* Draw.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84F5CAC2103231C0043DCEC /* Draw.storyboard */; };
@@ -210,6 +214,10 @@
 		B83CF6122105B14400A483A5 /* DarkTheme.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = DarkTheme.xcassets; sourceTree = "<group>"; };
 		B83CF6162105B1A600A483A5 /* animationLunchScreen.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = animationLunchScreen.xcassets; sourceTree = "<group>"; };
 		B849085A2115AC750094E188 /* DeveloperTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperTableViewCell.swift; sourceTree = "<group>"; };
+		B849085E2115C21A0094E188 /* HowToPlayGames.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HowToPlayGames.storyboard; sourceTree = "<group>"; };
+		B84908602115C22D0094E188 /* HowToPlayGamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToPlayGamesViewController.swift; sourceTree = "<group>"; };
+		B84908622115C23C0094E188 /* HowToPlay.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HowToPlay.storyboard; sourceTree = "<group>"; };
+		B84908642115C2540094E188 /* HowToPlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToPlayViewController.swift; sourceTree = "<group>"; };
 		B84F5CA3210322160043DCEC /* Setting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
 		B84F5CA9210322EE0043DCEC /* FinishedDraw.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FinishedDraw.storyboard; sourceTree = "<group>"; };
 		B84F5CAC2103231C0043DCEC /* Draw.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Draw.storyboard; sourceTree = "<group>"; };
@@ -407,9 +415,29 @@
 			path = ImageQuestion;
 			sourceTree = "<group>";
 		};
+		B849085C2115C1830094E188 /* HowToPlayGames */ = {
+			isa = PBXGroup;
+			children = (
+				B849085E2115C21A0094E188 /* HowToPlayGames.storyboard */,
+				B84908602115C22D0094E188 /* HowToPlayGamesViewController.swift */,
+			);
+			path = HowToPlayGames;
+			sourceTree = "<group>";
+		};
+		B849085D2115C1A00094E188 /* HowToPlay */ = {
+			isa = PBXGroup;
+			children = (
+				B84908622115C23C0094E188 /* HowToPlay.storyboard */,
+				B84908642115C2540094E188 /* HowToPlayViewController.swift */,
+			);
+			path = HowToPlay;
+			sourceTree = "<group>";
+		};
 		B84F5C9F210321800043DCEC /* View_Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B849085D2115C1A00094E188 /* HowToPlay */,
+				B849085C2115C1830094E188 /* HowToPlayGames */,
 				B836657A2115A5CA006294C1 /* Credits */,
 				B84F5CC6210325C30043DCEC /* MainMenu */,
 				B84F5CBD210325170043DCEC /* PrepareSoundQuestion */,
@@ -821,6 +849,7 @@
 				B84F5CBA210324E10043DCEC /* PrepareImgQuestion.storyboard in Resources */,
 				B422AB452107232E0018CE9F /* ร่ม.jpg in Resources */,
 				B422AB25210723030018CE9F /* ลิง.jpg in Resources */,
+				B84908632115C23C0094E188 /* HowToPlay.storyboard in Resources */,
 				B422AB39210723110018CE9F /* สนามฟุตบอล.jpg in Resources */,
 				B422AB3A210723110018CE9F /* สนามกอล์ฟ.jpg in Resources */,
 				B87D93B9210470C100788F2D /* นกฮูก.mp3 in Resources */,
@@ -892,6 +921,7 @@
 				B81BB73821133A6200668D0A /* ดินสอ.png in Resources */,
 				B84F5CB22103241E0043DCEC /* FinishedImgQuestion.storyboard in Resources */,
 				B87D93D421049E3000788F2D /* ModalView.xib in Resources */,
+				B849085F2115C21A0094E188 /* HowToPlayGames.storyboard in Resources */,
 				B81BB74A21133A8C00668D0A /* แตงโม.png in Resources */,
 				B422AB482107232E0018CE9F /* กรรไกร.jpg in Resources */,
 				B422AB34210723110018CE9F /* ทุ่งนา.jpg in Resources */,
@@ -970,10 +1000,12 @@
 				B82F8CD92103499C001A9338 /* DrawViewController.swift in Sources */,
 				B84F5CD4210331310043DCEC /* QuestionModel.swift in Sources */,
 				B836657E2115A5F5006294C1 /* CreditViewController.swift in Sources */,
+				B84908652115C2540094E188 /* HowToPlayViewController.swift in Sources */,
 				B82F8CCB21034462001A9338 /* Extensions.swift in Sources */,
 				B87D939421045D6A00788F2D /* ThemePotocol.swift in Sources */,
 				B82F8CCD21034833001A9338 /* PreSoundQuestionViewController.swift in Sources */,
 				B849085B2115AC750094E188 /* DeveloperTableViewCell.swift in Sources */,
+				B84908612115C22D0094E188 /* HowToPlayGamesViewController.swift in Sources */,
 				B82F8CCF21034864001A9338 /* SoundQuestionViewController.swift in Sources */,
 				B82F8CD52103491D001A9338 /* ImgQuestionViewController.swift in Sources */,
 				B87D93CF2104972B00788F2D /* Enums.swift in Sources */,

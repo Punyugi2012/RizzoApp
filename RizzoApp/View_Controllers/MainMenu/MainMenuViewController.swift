@@ -69,6 +69,15 @@ class MainMenuViewController: UIViewController {
         performSegue(withIdentifier: "ToSetting", sender: self)
     }
     
+    @IBAction func toHowToPlayGames(_ sender: UIButton) {
+        sender.playButtonSound()
+        performSegue(withIdentifier: "ToHowToPlayGames", sender: self)
+    }
+    
+    @IBAction func toCredit(_ sender: UIButton) {
+        sender.playButtonSound()
+        performSegue(withIdentifier: "ToCredit", sender: self)
+    }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setView()
