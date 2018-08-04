@@ -25,20 +25,20 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Pid-8D-bvM">
-                                <rect key="frame" x="20" y="272" width="984" height="1074"/>
+                                <rect key="frame" x="20" y="272" width="984" height="974"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="XtZ-zn-9il">
-                                        <rect key="frame" x="0.0" y="0.0" width="984" height="522"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="984" height="472"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yrp-E7-68D">
-                                                <rect key="frame" x="0.0" y="0.0" width="462" height="522"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="462" height="472"/>
                                                 <state key="normal" backgroundImage="MenuApp/drawing"/>
                                                 <connections>
                                                     <action selector="playDraw:" destination="GrQ-vX-gpU" eventType="touchUpInside" id="mCP-WS-XI4"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gb-Kc-KLg">
-                                                <rect key="frame" x="522" y="0.0" width="462" height="522"/>
+                                                <rect key="frame" x="522" y="0.0" width="462" height="472"/>
                                                 <state key="normal" backgroundImage="MenuApp/imgQues"/>
                                                 <connections>
                                                     <action selector="playImgQuestion:" destination="GrQ-vX-gpU" eventType="touchUpInside" id="u6W-KQ-Ocf"/>
@@ -47,17 +47,17 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="hAB-zQ-0oO">
-                                        <rect key="frame" x="0.0" y="552" width="984" height="522"/>
+                                        <rect key="frame" x="0.0" y="502" width="984" height="472"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYA-TM-sij">
-                                                <rect key="frame" x="0.0" y="0.0" width="462" height="522"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="462" height="472"/>
                                                 <state key="normal" backgroundImage="MenuApp/soundQues"/>
                                                 <connections>
                                                     <action selector="playSoundQuestion:" destination="GrQ-vX-gpU" eventType="touchUpInside" id="QLA-FW-ndo"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="itf-Uv-00z">
-                                                <rect key="frame" x="522" y="0.0" width="462" height="522"/>
+                                                <rect key="frame" x="522" y="0.0" width="462" height="472"/>
                                                 <state key="normal" title="Button" backgroundImage="MenuApp/userGuide"/>
                                             </button>
                                         </subviews>
@@ -75,15 +75,26 @@
                                     <action selector="setting:" destination="GrQ-vX-gpU" eventType="touchUpInside" id="vfk-KM-Scx"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wlX-iO-fmX">
+                                <rect key="frame" x="914" y="1256" width="90" height="90"/>
+                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="OQT-hj-gqY"/>
+                                    <constraint firstAttribute="height" constant="90" id="sRW-Ne-liU"/>
+                                </constraints>
+                                <state key="normal" image="MenuApp/Developer"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="w4r-7i-wjI" firstAttribute="centerX" secondItem="2j1-XY-RWX" secondAttribute="centerX" id="33W-8k-dTg"/>
+                            <constraint firstItem="eVF-t6-4Xc" firstAttribute="trailing" secondItem="wlX-iO-fmX" secondAttribute="trailing" constant="20" id="74e-5d-4DL"/>
                             <constraint firstItem="vIZ-2S-9KY" firstAttribute="top" secondItem="w4r-7i-wjI" secondAttribute="bottom" constant="-100" id="Ch7-z3-uTt"/>
+                            <constraint firstItem="eVF-t6-4Xc" firstAttribute="bottom" secondItem="wlX-iO-fmX" secondAttribute="bottom" constant="20" id="KSF-jc-u3N"/>
                             <constraint firstItem="eVF-t6-4Xc" firstAttribute="trailing" secondItem="Pid-8D-bvM" secondAttribute="trailing" constant="20" id="Mgo-7C-phc"/>
                             <constraint firstItem="vIZ-2S-9KY" firstAttribute="trailing" secondItem="w4r-7i-wjI" secondAttribute="trailing" id="OAy-gS-dIh"/>
-                            <constraint firstItem="eVF-t6-4Xc" firstAttribute="bottom" secondItem="Pid-8D-bvM" secondAttribute="bottom" constant="20" id="Ofo-EW-nu1"/>
                             <constraint firstItem="Pid-8D-bvM" firstAttribute="leading" secondItem="eVF-t6-4Xc" secondAttribute="leading" constant="20" id="TAy-0Q-e0h"/>
+                            <constraint firstItem="wlX-iO-fmX" firstAttribute="top" secondItem="Pid-8D-bvM" secondAttribute="bottom" constant="10" id="WCn-bf-ezZ"/>
                             <constraint firstItem="Pid-8D-bvM" firstAttribute="top" secondItem="w4r-7i-wjI" secondAttribute="bottom" constant="20" id="ZrG-nK-di4"/>
                             <constraint firstItem="w4r-7i-wjI" firstAttribute="leading" secondItem="eVF-t6-4Xc" secondAttribute="leading" constant="20" id="hsO-4n-ly2"/>
                             <constraint firstItem="w4r-7i-wjI" firstAttribute="top" secondItem="eVF-t6-4Xc" secondAttribute="top" constant="38" id="mdu-EW-SuI"/>
@@ -93,6 +104,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Menu" id="ISc-ZP-sdU"/>
                     <connections>
+                        <outlet property="creditButton" destination="wlX-iO-fmX" id="2k2-i5-KvY"/>
                         <outletCollection property="menuButtons" destination="Yrp-E7-68D" collectionClass="NSMutableArray" id="tQA-G6-UII"/>
                         <outletCollection property="menuButtons" destination="8gb-Kc-KLg" collectionClass="NSMutableArray" id="dz0-k8-OZd"/>
                         <outletCollection property="menuButtons" destination="YYA-TM-sij" collectionClass="NSMutableArray" id="lc1-BT-FIc"/>
@@ -160,6 +172,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="MenuApp/Developer" width="64" height="64"/>
         <image name="MenuApp/drawing" width="819" height="745"/>
         <image name="MenuApp/headerMenuApp" width="650" height="226"/>
         <image name="MenuApp/imgQues" width="819" height="743"/>

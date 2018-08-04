@@ -12,6 +12,7 @@ import SpriteKit
 class MainMenuViewController: UIViewController {
 
     @IBOutlet var menuButtons: [UIButton]!
+    @IBOutlet weak var creditButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +20,8 @@ class MainMenuViewController: UIViewController {
         backItem.title = "ย้อนกลับ"
         backItem.setTitleTextAttributes([kCTFontAttributeName as NSAttributedStringKey: UIFont(name: "THSarabunNew-Bold", size: 35)!], for: .normal)
         navigationItem.backBarButtonItem = backItem
+        creditButton.layer.cornerRadius = creditButton.frame.height / 2
+        creditButton.clipsToBounds = true
         setNavigationBar()
         setView()
         setLoadingView()
