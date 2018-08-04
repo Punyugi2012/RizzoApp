@@ -74,9 +74,12 @@
 		B82F8CDB210349B6001A9338 /* FinishedDrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82F8CDA210349B6001A9338 /* FinishedDrawViewController.swift */; };
 		B82F8CDD21034A10001A9338 /* PrepareDrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82F8CDC21034A10001A9338 /* PrepareDrawViewController.swift */; };
 		B82F8CDF21034A45001A9338 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82F8CDE21034A45001A9338 /* SettingViewController.swift */; };
+		B836657C2115A5E4006294C1 /* Credit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B836657B2115A5E4006294C1 /* Credit.storyboard */; };
+		B836657E2115A5F5006294C1 /* CreditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B836657D2115A5F5006294C1 /* CreditViewController.swift */; };
 		B83B7D112111BBE5005737FF /* THSarabunNewBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B83B7D102111BBE4005737FF /* THSarabunNewBold.ttf */; };
 		B83CF6132105B14400A483A5 /* DarkTheme.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B83CF6122105B14400A483A5 /* DarkTheme.xcassets */; };
 		B83CF6172105B1A600A483A5 /* animationLunchScreen.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B83CF6162105B1A600A483A5 /* animationLunchScreen.xcassets */; };
+		B849085B2115AC750094E188 /* DeveloperTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B849085A2115AC750094E188 /* DeveloperTableViewCell.swift */; };
 		B84F5CA4210322160043DCEC /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84F5CA3210322160043DCEC /* Setting.storyboard */; };
 		B84F5CAA210322EE0043DCEC /* FinishedDraw.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84F5CA9210322EE0043DCEC /* FinishedDraw.storyboard */; };
 		B84F5CAD2103231C0043DCEC /* Draw.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84F5CAC2103231C0043DCEC /* Draw.storyboard */; };
@@ -201,9 +204,12 @@
 		B82F8CDA210349B6001A9338 /* FinishedDrawViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishedDrawViewController.swift; sourceTree = "<group>"; };
 		B82F8CDC21034A10001A9338 /* PrepareDrawViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrepareDrawViewController.swift; sourceTree = "<group>"; };
 		B82F8CDE21034A45001A9338 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		B836657B2115A5E4006294C1 /* Credit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Credit.storyboard; sourceTree = "<group>"; };
+		B836657D2115A5F5006294C1 /* CreditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditViewController.swift; sourceTree = "<group>"; };
 		B83B7D102111BBE4005737FF /* THSarabunNewBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = THSarabunNewBold.ttf; sourceTree = "<group>"; };
 		B83CF6122105B14400A483A5 /* DarkTheme.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = DarkTheme.xcassets; sourceTree = "<group>"; };
 		B83CF6162105B1A600A483A5 /* animationLunchScreen.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = animationLunchScreen.xcassets; sourceTree = "<group>"; };
+		B849085A2115AC750094E188 /* DeveloperTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperTableViewCell.swift; sourceTree = "<group>"; };
 		B84F5CA3210322160043DCEC /* Setting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
 		B84F5CA9210322EE0043DCEC /* FinishedDraw.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FinishedDraw.storyboard; sourceTree = "<group>"; };
 		B84F5CAC2103231C0043DCEC /* Draw.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Draw.storyboard; sourceTree = "<group>"; };
@@ -362,6 +368,16 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		B836657A2115A5CA006294C1 /* Credits */ = {
+			isa = PBXGroup;
+			children = (
+				B836657B2115A5E4006294C1 /* Credit.storyboard */,
+				B836657D2115A5F5006294C1 /* CreditViewController.swift */,
+				B849085A2115AC750094E188 /* DeveloperTableViewCell.swift */,
+			);
+			path = Credits;
+			sourceTree = "<group>";
+		};
 		B83B7D0E2111BB39005737FF /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -394,6 +410,7 @@
 		B84F5C9F210321800043DCEC /* View_Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B836657A2115A5CA006294C1 /* Credits */,
 				B84F5CC6210325C30043DCEC /* MainMenu */,
 				B84F5CBD210325170043DCEC /* PrepareSoundQuestion */,
 				B84F5CBC210325100043DCEC /* SoundQuestion */,
@@ -832,6 +849,7 @@
 				B83B7D112111BBE5005737FF /* THSarabunNewBold.ttf in Resources */,
 				B83CF6172105B1A600A483A5 /* animationLunchScreen.xcassets in Resources */,
 				B422AB38210723110018CE9F /* น้ำตก.jpg in Resources */,
+				B836657C2115A5E4006294C1 /* Credit.storyboard in Resources */,
 				B8F73678210D8E71003D7F0C /* กลองชุด.mp3 in Resources */,
 				B87D93CC21047F9F00788F2D /* LightTheme.xcassets in Resources */,
 				B81BB74D21133A8C00668D0A /* กล้วย.png in Resources */,
@@ -951,9 +969,11 @@
 				B8A1F60D210709D500D4FF0C /* DrawView.swift in Sources */,
 				B82F8CD92103499C001A9338 /* DrawViewController.swift in Sources */,
 				B84F5CD4210331310043DCEC /* QuestionModel.swift in Sources */,
+				B836657E2115A5F5006294C1 /* CreditViewController.swift in Sources */,
 				B82F8CCB21034462001A9338 /* Extensions.swift in Sources */,
 				B87D939421045D6A00788F2D /* ThemePotocol.swift in Sources */,
 				B82F8CCD21034833001A9338 /* PreSoundQuestionViewController.swift in Sources */,
+				B849085B2115AC750094E188 /* DeveloperTableViewCell.swift in Sources */,
 				B82F8CCF21034864001A9338 /* SoundQuestionViewController.swift in Sources */,
 				B82F8CD52103491D001A9338 /* ImgQuestionViewController.swift in Sources */,
 				B87D93CF2104972B00788F2D /* Enums.swift in Sources */,

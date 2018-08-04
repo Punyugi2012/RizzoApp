@@ -104,7 +104,7 @@
                     <navigationItem key="navigationItem" title="Setting" id="Grb-hE-OeG">
                         <barButtonItem key="rightBarButtonItem" id="rSx-kB-o9S">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0EK-6r-V5N">
-                                <rect key="frame" x="578" y="0.0" width="170" height="44"/>
+                                <rect key="frame" x="557" y="0.0" width="191" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="THSarabunNew-Bold" family="TH Sarabun New" pointSize="40"/>
                                 <inset key="contentEdgeInsets" minX="120" minY="0.0" maxX="0.0" maxY="0.0"/>
