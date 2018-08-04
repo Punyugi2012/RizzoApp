@@ -46,6 +46,7 @@ class AppManager {
     func playBackgroundSound() {
         AppManager.shared.backgroundPlayer?.stop()
         AppManager.shared.backgroundPlayer?.currentTime = 0
+        AppManager.shared.backgroundPlayer?.numberOfLoops = -1
         AppManager.shared.backgroundPlayer?.play()
     }
     
