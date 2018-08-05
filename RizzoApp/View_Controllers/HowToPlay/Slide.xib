@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="THSarabunNewBold.ttf">
+            <string>THSarabunNew-Bold</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -16,61 +21,48 @@
             <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="61s-MP-Ckl">
-                    <rect key="frame" x="0.0" y="257" width="1024" height="1109"/>
-                </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ตัวอย่าง" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bzV-Fg-vu8">
-                    <rect key="frame" x="461" y="190" width="103" height="37"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fTx-RP-dit">
-                    <rect key="frame" x="40" y="20" width="944" height="140"/>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fTx-RP-dit">
+                    <rect key="frame" x="50" y="70" width="924" height="239"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MIL-2a-DVG">
-                            <rect key="frame" x="435.5" y="0.0" width="73" height="70"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MIL-2a-DVG">
+                            <rect key="frame" x="0.0" y="0.0" width="924" height="173.5"/>
+                            <fontDescription key="fontDescription" name="THSarabunNew-Bold" family="TH Sarabun New" pointSize="80"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="sPk-j3-ffY">
-                            <rect key="frame" x="0.0" y="70" width="944" height="70"/>
-                            <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="อธิบาย" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xxb-jl-TNn">
-                                    <rect key="frame" x="0.0" y="0.0" width="944" height="30"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Lt-2s-hVC">
-                                    <rect key="frame" x="0.0" y="40" width="944" height="30"/>
-                                    <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                            </subviews>
-                        </stackView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Lt-2s-hVC">
+                            <rect key="frame" x="0.0" y="173.5" width="924" height="65.5"/>
+                            <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                            <fontDescription key="fontDescription" name="THSarabunNew-Bold" family="TH Sarabun New" pointSize="50"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                     <constraints>
-                        <constraint firstItem="sPk-j3-ffY" firstAttribute="leading" secondItem="fTx-RP-dit" secondAttribute="leading" id="c2w-Ie-sTv"/>
-                        <constraint firstAttribute="trailing" secondItem="sPk-j3-ffY" secondAttribute="trailing" id="pUR-Q6-6jD"/>
+                        <constraint firstAttribute="trailing" secondItem="3Lt-2s-hVC" secondAttribute="trailing" id="IKn-Hc-uKB"/>
+                        <constraint firstItem="MIL-2a-DVG" firstAttribute="leading" secondItem="fTx-RP-dit" secondAttribute="leading" id="Ng6-9w-O7W"/>
+                        <constraint firstAttribute="trailing" secondItem="MIL-2a-DVG" secondAttribute="trailing" id="bJW-Z6-uWY"/>
+                        <constraint firstItem="3Lt-2s-hVC" firstAttribute="leading" secondItem="fTx-RP-dit" secondAttribute="leading" id="egj-gM-mTF"/>
                     </constraints>
                 </stackView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="61s-MP-Ckl">
+                    <rect key="frame" x="150" y="359" width="724" height="957"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="957" id="5Qt-r1-D2s"/>
+                        <constraint firstAttribute="width" constant="724" id="NWP-yj-uFW"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="61s-MP-Ckl" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="7bm-vK-D7S"/>
-                <constraint firstItem="bzV-Fg-vu8" firstAttribute="top" secondItem="fTx-RP-dit" secondAttribute="bottom" constant="30" id="9Bl-Hb-ASr"/>
-                <constraint firstItem="61s-MP-Ckl" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="HB6-xU-cn2"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="bzV-Fg-vu8" secondAttribute="trailing" constant="460" id="IrH-rq-e3Y"/>
-                <constraint firstItem="fTx-RP-dit" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="MPC-Vk-Hm6"/>
-                <constraint firstItem="fTx-RP-dit" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="40" id="cvU-3e-rtd"/>
-                <constraint firstItem="61s-MP-Ckl" firstAttribute="top" secondItem="bzV-Fg-vu8" secondAttribute="bottom" constant="30" id="d4M-SX-k9g"/>
-                <constraint firstItem="bzV-Fg-vu8" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="461" id="gNh-29-iC0"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="61s-MP-Ckl" secondAttribute="trailing" id="kpu-bv-5mm"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="fTx-RP-dit" secondAttribute="trailing" constant="40" id="tmY-wg-DRG"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="fTx-RP-dit" secondAttribute="trailing" constant="50" id="3KO-ka-fdF"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="61s-MP-Ckl" secondAttribute="bottom" constant="50" id="3bu-55-afs"/>
+                <constraint firstItem="fTx-RP-dit" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="7sj-fi-406"/>
+                <constraint firstItem="61s-MP-Ckl" firstAttribute="top" secondItem="fTx-RP-dit" secondAttribute="bottom" constant="50" id="8Mx-EF-yR5"/>
+                <constraint firstItem="fTx-RP-dit" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="50" id="C4I-t4-qeX"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="61s-MP-Ckl" secondAttribute="trailing" constant="150" id="KOh-pX-bRK"/>
+                <constraint firstItem="61s-MP-Ckl" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="150" id="q7B-J2-fhb"/>
+                <constraint firstItem="fTx-RP-dit" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="50" id="xrR-ar-ruE"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
