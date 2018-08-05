@@ -16,11 +16,11 @@ struct Developer {
 class CreditViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     var developers = [
-        Developer(name: "ธุรกิจ เชยเล็ก", roles: ["Tester"]),
-        Developer(name: "วรวุฒิ สง่างาม", roles: ["Provider"]),
+        Developer(name: "ธุรกิจ เชยเล็ก", roles: ["Tester", "Designer"]),
+        Developer(name: "วรวุฒิ สง่างาม", roles: ["Provider", "Designer"]),
         Developer(name: "อนันต์ชัย มั่นคง", roles: ["Designer"]),
         Developer(name: "ศีระ แก่นแก้ว ", roles: ["Designer", "Programmer"]),
-        Developer(name: "ทศพร สุขอนันต์", roles: ["Tester"]),
+        Developer(name: "ทศพร สุขอนันต์", roles: ["Tester", "Designer"]),
         Developer(name: "ปุณยวีร์ เจริญท้าว", roles: ["Programmer"]),
         Developer(name: "ปภาวรินท์ มากเจริญ", roles: ["Provider"]),
         Developer(name: "อรนุช ตาดำ", roles: ["Provider"]),
