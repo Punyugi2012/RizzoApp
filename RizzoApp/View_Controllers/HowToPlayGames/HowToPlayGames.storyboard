@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vd1-1V-ZMv">
-    <device id="ipad10_5" orientation="portrait">
+    <device id="ipad12_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,24 +15,73 @@
             <objects>
                 <viewController id="vd1-1V-ZMv" customClass="HowToPlayGamesViewController" customModule="RizzoApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Od0-Ke-QeP">
-                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EZ2-n2-pmr">
-                                <rect key="frame" x="671" y="1062" width="143" height="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="bni-83-KqM">
+                                <rect key="frame" x="20" y="210" width="984" height="1076"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="ffb-oz-0F4">
+                                        <rect key="frame" x="0.0" y="0.0" width="984" height="523"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DpB-3A-r95">
+                                                <rect key="frame" x="0.0" y="25.5" width="462" height="472"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="472" id="HiX-3e-7nP"/>
+                                                    <constraint firstAttribute="width" constant="462" id="xDf-xr-Hav"/>
+                                                </constraints>
+                                                <state key="normal" backgroundImage="MenuApp/drawing"/>
+                                                <connections>
+                                                    <action selector="next:" destination="vd1-1V-ZMv" eventType="touchUpInside" id="8yS-ck-RNf"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kFq-rM-Y99">
+                                                <rect key="frame" x="522" y="25.5" width="462" height="472"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="462" id="YOa-8Z-nnw"/>
+                                                    <constraint firstAttribute="height" constant="472" id="mVJ-av-N1a"/>
+                                                </constraints>
+                                                <state key="normal" backgroundImage="MenuApp/imgQues"/>
+                                                <connections>
+                                                    <action selector="next:" destination="vd1-1V-ZMv" eventType="touchUpInside" id="zzf-IB-JRY"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="Sm1-Si-Nh9">
+                                        <rect key="frame" x="261" y="553" width="462" height="523"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oph-Xx-dxg">
+                                                <rect key="frame" x="0.0" y="25.5" width="462" height="472"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="472" id="3Mh-he-1OK"/>
+                                                    <constraint firstAttribute="width" constant="462" id="wIH-bz-cvt"/>
+                                                </constraints>
+                                                <state key="normal" backgroundImage="MenuApp/soundQues"/>
+                                                <connections>
+                                                    <action selector="next:" destination="vd1-1V-ZMv" eventType="touchUpInside" id="oYb-tR-cdP"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MenuApp/headerMenuApp" translatesAutoresizingMaskIntoConstraints="NO" id="I1m-2E-2Ul">
+                                <rect key="frame" x="20" y="20" width="984" height="150"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="aKh-qR-kKx"/>
+                                    <constraint firstAttribute="height" constant="150" id="WFv-dj-f3T"/>
                                 </constraints>
-                                <state key="normal" title="ปุ่มทดสอบไปหน้าต่อไป"/>
-                                <connections>
-                                    <action selector="next:" destination="vd1-1V-ZMv" eventType="touchUpInside" id="om5-zj-Pg8"/>
-                                </connections>
-                            </button>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="VRO-6q-MEd" firstAttribute="bottom" secondItem="EZ2-n2-pmr" secondAttribute="bottom" constant="20" id="69N-8s-rWS"/>
-                            <constraint firstItem="VRO-6q-MEd" firstAttribute="trailing" secondItem="EZ2-n2-pmr" secondAttribute="trailing" constant="20" id="nkc-cG-Uhn"/>
+                            <constraint firstItem="VRO-6q-MEd" firstAttribute="trailing" secondItem="bni-83-KqM" secondAttribute="trailing" constant="20" id="5W9-5L-bwb"/>
+                            <constraint firstItem="I1m-2E-2Ul" firstAttribute="top" secondItem="Od0-Ke-QeP" secondAttribute="top" constant="20" id="60i-Bn-WkP"/>
+                            <constraint firstItem="VRO-6q-MEd" firstAttribute="trailing" secondItem="I1m-2E-2Ul" secondAttribute="trailing" constant="20" id="L1I-oz-tLe"/>
+                            <constraint firstItem="I1m-2E-2Ul" firstAttribute="leading" secondItem="Od0-Ke-QeP" secondAttribute="leading" constant="20" id="Oh4-Of-Rqc"/>
+                            <constraint firstItem="bni-83-KqM" firstAttribute="leading" secondItem="Od0-Ke-QeP" secondAttribute="leading" constant="20" id="QS4-ge-h0R"/>
+                            <constraint firstItem="bni-83-KqM" firstAttribute="top" secondItem="I1m-2E-2Ul" secondAttribute="bottom" constant="40" id="rhQ-gk-DX7"/>
+                            <constraint firstAttribute="bottom" secondItem="bni-83-KqM" secondAttribute="bottom" constant="80" id="zYg-mX-Xlc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VRO-6q-MEd"/>
                     </view>
@@ -53,4 +102,10 @@
             <point key="canvasLocation" x="562" y="64"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="MenuApp/drawing" width="845" height="764"/>
+        <image name="MenuApp/headerMenuApp" width="650" height="226"/>
+        <image name="MenuApp/imgQues" width="846" height="765"/>
+        <image name="MenuApp/soundQues" width="848" height="763"/>
+    </resources>
 </document>

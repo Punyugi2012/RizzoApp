@@ -48,6 +48,18 @@
 		B422AB4C2107232E0018CE9F /* แว่นตา.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B422AB42210723270018CE9F /* แว่นตา.jpg */; };
 		B422AB4D2107232E0018CE9F /* ดินสอ.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B422AB43210723280018CE9F /* ดินสอ.jpg */; };
 		B422AB4E2107232E0018CE9F /* มีดช้อนส้อม.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B422AB44210723290018CE9F /* มีดช้อนส้อม.jpg */; };
+		B424D2FF2116FB26006F4138 /* เข้าเล่นเกมทายเสียง.gif in Resources */ = {isa = PBXBuildFile; fileRef = B424D2F52116FB1B006F4138 /* เข้าเล่นเกมทายเสียง.gif */; };
+		B424D3002116FB26006F4138 /* เล่นเกมทายเสียงใหม่.gif in Resources */ = {isa = PBXBuildFile; fileRef = B424D2F62116FB1B006F4138 /* เล่นเกมทายเสียงใหม่.gif */; };
+		B424D3012116FB26006F4138 /* เข้าเกมทายภาพ.gif in Resources */ = {isa = PBXBuildFile; fileRef = B424D2F72116FB1C006F4138 /* เข้าเกมทายภาพ.gif */; };
+		B424D3022116FB26006F4138 /* กลับเมนูเกมทายภาพ.gif in Resources */ = {isa = PBXBuildFile; fileRef = B424D2F82116FB1D006F4138 /* กลับเมนูเกมทายภาพ.gif */; };
+		B424D3032116FB26006F4138 /* 2เทสเส้นสี.gif in Resources */ = {isa = PBXBuildFile; fileRef = B424D2F92116FB1E006F4138 /* 2เทสเส้นสี.gif */; };
+		B424D3042116FB26006F4138 /* คะแนนเกมทายเสียง.gif in Resources */ = {isa = PBXBuildFile; fileRef = B424D2FA2116FB1F006F4138 /* คะแนนเกมทายเสียง.gif */; };
+		B424D3052116FB26006F4138 /* เล่มเกมทายภาพใหม่.gif in Resources */ = {isa = PBXBuildFile; fileRef = B424D2FB2116FB20006F4138 /* เล่มเกมทายภาพใหม่.gif */; };
+		B424D3062116FB26006F4138 /* กลับสู่เมนูเกมทายภาพ.gif in Resources */ = {isa = PBXBuildFile; fileRef = B424D2FC2116FB21006F4138 /* กลับสู่เมนูเกมทายภาพ.gif */; };
+		B424D3072116FB26006F4138 /* คะแนนเกมทายภาพ.gif in Resources */ = {isa = PBXBuildFile; fileRef = B424D2FD2116FB22006F4138 /* คะแนนเกมทายภาพ.gif */; };
+		B424D3082116FB26006F4138 /* 1เข้าวาด.gif in Resources */ = {isa = PBXBuildFile; fileRef = B424D2FE2116FB24006F4138 /* 1เข้าวาด.gif */; };
+		B42A0BF72116CA9600B136F4 /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = B42A0BF62116CA9600B136F4 /* Slide.xib */; };
+		B42A0BF92116CB6A00B136F4 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42A0BF82116CB6A00B136F4 /* Slide.swift */; };
 		B81BB73221133A5500668D0A /* กล้องถ่ายรูป.png in Resources */ = {isa = PBXBuildFile; fileRef = B81BB73121133A5500668D0A /* กล้องถ่ายรูป.png */; };
 		B81BB73721133A6200668D0A /* แว่นตา.png in Resources */ = {isa = PBXBuildFile; fileRef = B81BB73321133A6100668D0A /* แว่นตา.png */; };
 		B81BB73821133A6200668D0A /* ดินสอ.png in Resources */ = {isa = PBXBuildFile; fileRef = B81BB73421133A6100668D0A /* ดินสอ.png */; };
@@ -182,6 +194,18 @@
 		B422AB42210723270018CE9F /* แว่นตา.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "แว่นตา.jpg"; sourceTree = "<group>"; };
 		B422AB43210723280018CE9F /* ดินสอ.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ดินสอ.jpg"; sourceTree = "<group>"; };
 		B422AB44210723290018CE9F /* มีดช้อนส้อม.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "มีดช้อนส้อม.jpg"; sourceTree = "<group>"; };
+		B424D2F52116FB1B006F4138 /* เข้าเล่นเกมทายเสียง.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "เข้าเล่นเกมทายเสียง.gif"; sourceTree = "<group>"; };
+		B424D2F62116FB1B006F4138 /* เล่นเกมทายเสียงใหม่.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "เล่นเกมทายเสียงใหม่.gif"; sourceTree = "<group>"; };
+		B424D2F72116FB1C006F4138 /* เข้าเกมทายภาพ.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "เข้าเกมทายภาพ.gif"; sourceTree = "<group>"; };
+		B424D2F82116FB1D006F4138 /* กลับเมนูเกมทายภาพ.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "กลับเมนูเกมทายภาพ.gif"; sourceTree = "<group>"; };
+		B424D2F92116FB1E006F4138 /* 2เทสเส้นสี.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "2เทสเส้นสี.gif"; sourceTree = "<group>"; };
+		B424D2FA2116FB1F006F4138 /* คะแนนเกมทายเสียง.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "คะแนนเกมทายเสียง.gif"; sourceTree = "<group>"; };
+		B424D2FB2116FB20006F4138 /* เล่มเกมทายภาพใหม่.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "เล่มเกมทายภาพใหม่.gif"; sourceTree = "<group>"; };
+		B424D2FC2116FB21006F4138 /* กลับสู่เมนูเกมทายภาพ.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "กลับสู่เมนูเกมทายภาพ.gif"; sourceTree = "<group>"; };
+		B424D2FD2116FB22006F4138 /* คะแนนเกมทายภาพ.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "คะแนนเกมทายภาพ.gif"; sourceTree = "<group>"; };
+		B424D2FE2116FB24006F4138 /* 1เข้าวาด.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "1เข้าวาด.gif"; sourceTree = "<group>"; };
+		B42A0BF62116CA9600B136F4 /* Slide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
+		B42A0BF82116CB6A00B136F4 /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
 		B81BB73121133A5500668D0A /* กล้องถ่ายรูป.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "กล้องถ่ายรูป.png"; sourceTree = "<group>"; };
 		B81BB73321133A6100668D0A /* แว่นตา.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "แว่นตา.png"; sourceTree = "<group>"; };
 		B81BB73421133A6100668D0A /* ดินสอ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ดินสอ.png"; sourceTree = "<group>"; };
@@ -368,6 +392,31 @@
 			path = objects;
 			sourceTree = "<group>";
 		};
+		B424D2F32116FAD2006F4138 /* Gif */ = {
+			isa = PBXGroup;
+			children = (
+				B424D2F42116FADE006F4138 /* HowToPlay */,
+			);
+			path = Gif;
+			sourceTree = "<group>";
+		};
+		B424D2F42116FADE006F4138 /* HowToPlay */ = {
+			isa = PBXGroup;
+			children = (
+				B424D2FE2116FB24006F4138 /* 1เข้าวาด.gif */,
+				B424D2F92116FB1E006F4138 /* 2เทสเส้นสี.gif */,
+				B424D2F82116FB1D006F4138 /* กลับเมนูเกมทายภาพ.gif */,
+				B424D2FC2116FB21006F4138 /* กลับสู่เมนูเกมทายภาพ.gif */,
+				B424D2F72116FB1C006F4138 /* เข้าเกมทายภาพ.gif */,
+				B424D2F52116FB1B006F4138 /* เข้าเล่นเกมทายเสียง.gif */,
+				B424D2FD2116FB22006F4138 /* คะแนนเกมทายภาพ.gif */,
+				B424D2FA2116FB1F006F4138 /* คะแนนเกมทายเสียง.gif */,
+				B424D2F62116FB1B006F4138 /* เล่นเกมทายเสียงใหม่.gif */,
+				B424D2FB2116FB20006F4138 /* เล่มเกมทายภาพใหม่.gif */,
+			);
+			path = HowToPlay;
+			sourceTree = "<group>";
+		};
 		B82F8CC921034451001A9338 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -429,6 +478,8 @@
 			children = (
 				B84908622115C23C0094E188 /* HowToPlay.storyboard */,
 				B84908642115C2540094E188 /* HowToPlayViewController.swift */,
+				B42A0BF62116CA9600B136F4 /* Slide.xib */,
+				B42A0BF82116CB6A00B136F4 /* Slide.swift */,
 			);
 			path = HowToPlay;
 			sourceTree = "<group>";
@@ -469,6 +520,7 @@
 		B84F5CA1210321910043DCEC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B424D2F32116FAD2006F4138 /* Gif */,
 				B83B7D0E2111BB39005737FF /* Fonts */,
 				B84F5CD6210334170043DCEC /* Sounds */,
 				B84F5CD52103340D0043DCEC /* Images */,
@@ -850,7 +902,9 @@
 				B422AB452107232E0018CE9F /* ร่ม.jpg in Resources */,
 				B422AB25210723030018CE9F /* ลิง.jpg in Resources */,
 				B84908632115C23C0094E188 /* HowToPlay.storyboard in Resources */,
+				B424D3032116FB26006F4138 /* 2เทสเส้นสี.gif in Resources */,
 				B422AB39210723110018CE9F /* สนามฟุตบอล.jpg in Resources */,
+				B424D3002116FB26006F4138 /* เล่นเกมทายเสียงใหม่.gif in Resources */,
 				B422AB3A210723110018CE9F /* สนามกอล์ฟ.jpg in Resources */,
 				B87D93B9210470C100788F2D /* นกฮูก.mp3 in Resources */,
 				B422AB21210723030018CE9F /* สิงโต.jpg in Resources */,
@@ -861,7 +915,9 @@
 				B84F5CDE210335DB0043DCEC /* bgSound.mp3 in Resources */,
 				B422AB12210722C60018CE9F /* แตงโม.jpg in Resources */,
 				B84F5CAA210322EE0043DCEC /* FinishedDraw.storyboard in Resources */,
+				B424D3022116FB26006F4138 /* กลับเมนูเกมทายภาพ.gif in Resources */,
 				B422AB0D210722C60018CE9F /* สตอเบอรี่.jpg in Resources */,
+				B424D3052116FB26006F4138 /* เล่มเกมทายภาพใหม่.gif in Resources */,
 				B422AB32210723110018CE9F /* วัด.jpg in Resources */,
 				B422AB4C2107232E0018CE9F /* แว่นตา.jpg in Resources */,
 				B8F7367A210D8E71003D7F0C /* ไวโอลิน.mp3 in Resources */,
@@ -872,13 +928,16 @@
 				B84F5CAD2103231C0043DCEC /* Draw.storyboard in Resources */,
 				B87D93C3210470C100788F2D /* แมว.mp3 in Resources */,
 				B422AB462107232E0018CE9F /* มีดครัว.jpg in Resources */,
+				B424D3062116FB26006F4138 /* กลับสู่เมนูเกมทายภาพ.gif in Resources */,
 				B81BB74E21133A8C00668D0A /* แอปเปิ้ล.png in Resources */,
+				B424D3012116FB26006F4138 /* เข้าเกมทายภาพ.gif in Resources */,
 				B84F5CC32103258C0043DCEC /* SoundQuestion.storyboard in Resources */,
 				B422AB1F210723030018CE9F /* หมี.jpg in Resources */,
 				B83B7D112111BBE5005737FF /* THSarabunNewBold.ttf in Resources */,
 				B83CF6172105B1A600A483A5 /* animationLunchScreen.xcassets in Resources */,
 				B422AB38210723110018CE9F /* น้ำตก.jpg in Resources */,
 				B836657C2115A5E4006294C1 /* Credit.storyboard in Resources */,
+				B42A0BF72116CA9600B136F4 /* Slide.xib in Resources */,
 				B8F73678210D8E71003D7F0C /* กลองชุด.mp3 in Resources */,
 				B87D93CC21047F9F00788F2D /* LightTheme.xcassets in Resources */,
 				B81BB74D21133A8C00668D0A /* กล้วย.png in Resources */,
@@ -902,11 +961,13 @@
 				B8F7367D210D8E71003D7F0C /* เปียโน.mp3 in Resources */,
 				B81BB74421133A7400668D0A /* วัว.png in Resources */,
 				B87D93BC210470C100788F2D /* ช้าง.mp3 in Resources */,
+				B424D2FF2116FB26006F4138 /* เข้าเล่นเกมทายเสียง.gif in Resources */,
 				B422AB4E2107232E0018CE9F /* มีดช้อนส้อม.jpg in Resources */,
 				B87D93B7210470C100788F2D /* เป็ด.mp3 in Resources */,
 				B422AB4B2107232E0018CE9F /* ไม้กวาด.jpg in Resources */,
 				B422AB33210723110018CE9F /* ห้างสรรพสินค้า.jpg in Resources */,
 				B422AB37210723110018CE9F /* สนามบิน.jpg in Resources */,
+				B424D3082116FB26006F4138 /* 1เข้าวาด.gif in Resources */,
 				B422AB0F210722C60018CE9F /* แอปเปิ้ล.jpg in Resources */,
 				B422AB0A210722C60018CE9F /* กล้วย.jpg in Resources */,
 				B87D93B6210470C100788F2D /* กบ.mp3 in Resources */,
@@ -914,6 +975,8 @@
 				B8F7367C210D8E71003D7F0C /* ฉิ่ง.mp3 in Resources */,
 				B84F5CC8210325D40043DCEC /* MainMenu.storyboard in Resources */,
 				B8F73679210D8E71003D7F0C /* ซอ.mp3 in Resources */,
+				B424D3072116FB26006F4138 /* คะแนนเกมทายภาพ.gif in Resources */,
+				B424D3042116FB26006F4138 /* คะแนนเกมทายเสียง.gif in Resources */,
 				B422AB11210722C60018CE9F /* ส้ม.jpg in Resources */,
 				B81BB74121133A7400668D0A /* หมู.png in Resources */,
 				B422AB24210723030018CE9F /* เป็ด.jpg in Resources */,
@@ -1015,6 +1078,7 @@
 				B84F5CD021032F310043DCEC /* SoundQuestion.swift in Sources */,
 				B84F5CCA210327C10043DCEC /* MainMenuViewController.swift in Sources */,
 				B84F5CCE21032EFD0043DCEC /* ImageQuestion.swift in Sources */,
+				B42A0BF92116CB6A00B136F4 /* Slide.swift in Sources */,
 				B82F8CD72103493C001A9338 /* FinishedImgQViewController.swift in Sources */,
 				B84F5CD221032F670043DCEC /* DrawQuestion.swift in Sources */,
 				B87D93D621049E3D00788F2D /* ModalView.swift in Sources */,
