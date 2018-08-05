@@ -18,24 +18,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="RGG-ta-Ulx">
-                                <rect key="frame" x="429" y="1273" width="167" height="37"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.65044413523287681" colorSpace="calibratedRGB"/>
-                            </pageControl>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" translatesAutoresizingMaskIntoConstraints="NO" id="CnK-hS-UP0">
-                                <rect key="frame" x="137" y="114" width="750" height="1139"/>
+                                <rect key="frame" x="0.0" y="64" width="1024" height="1302"/>
                             </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="RGG-ta-Ulx">
+                                <rect key="frame" x="429" y="1249" width="167" height="37"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.30128959760273971" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="pageIndicatorTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="currentPageIndicatorTintColor" red="0.0" green="0.0" blue="0.0" alpha="0.30128959760000001" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="5Vx-zR-6fR" firstAttribute="trailing" secondItem="CnK-hS-UP0" secondAttribute="trailing" constant="137" id="5nc-nq-Jry"/>
-                            <constraint firstItem="RGG-ta-Ulx" firstAttribute="top" secondItem="CnK-hS-UP0" secondAttribute="bottom" constant="20" id="9T2-wE-8PG"/>
-                            <constraint firstItem="CnK-hS-UP0" firstAttribute="top" secondItem="5Vx-zR-6fR" secondAttribute="top" constant="50" id="MQo-EH-Pw8"/>
-                            <constraint firstItem="RGG-ta-Ulx" firstAttribute="leading" secondItem="5Vx-zR-6fR" secondAttribute="leading" constant="428.5" id="RRK-wU-08i"/>
-                            <constraint firstItem="CnK-hS-UP0" firstAttribute="leading" secondItem="5Vx-zR-6fR" secondAttribute="leading" constant="137" id="hG9-mj-fh4"/>
-                            <constraint firstItem="CnK-hS-UP0" firstAttribute="centerY" secondItem="GM4-LW-K5u" secondAttribute="centerY" id="ki6-AQ-cOp"/>
-                            <constraint firstItem="CnK-hS-UP0" firstAttribute="centerY" secondItem="GM4-LW-K5u" secondAttribute="centerY" id="l5l-LB-ojg"/>
-                            <constraint firstItem="5Vx-zR-6fR" firstAttribute="trailing" secondItem="RGG-ta-Ulx" secondAttribute="trailing" constant="428.5" id="wlb-MK-b34"/>
+                            <constraint firstItem="5Vx-zR-6fR" firstAttribute="bottom" secondItem="RGG-ta-Ulx" secondAttribute="bottom" constant="80" id="4Bs-ga-wdp"/>
+                            <constraint firstItem="5Vx-zR-6fR" firstAttribute="trailing" secondItem="CnK-hS-UP0" secondAttribute="trailing" id="Gwc-78-SkT"/>
+                            <constraint firstItem="5Vx-zR-6fR" firstAttribute="bottom" secondItem="CnK-hS-UP0" secondAttribute="bottom" id="PD3-KP-7WF"/>
+                            <constraint firstItem="5Vx-zR-6fR" firstAttribute="trailing" secondItem="RGG-ta-Ulx" secondAttribute="trailing" constant="428" id="PiJ-og-6Fc"/>
+                            <constraint firstItem="CnK-hS-UP0" firstAttribute="leading" secondItem="5Vx-zR-6fR" secondAttribute="leading" id="UDr-lH-y7c"/>
+                            <constraint firstItem="RGG-ta-Ulx" firstAttribute="leading" secondItem="5Vx-zR-6fR" secondAttribute="leading" constant="429" id="hZf-6f-9jV"/>
+                            <constraint firstItem="CnK-hS-UP0" firstAttribute="top" secondItem="5Vx-zR-6fR" secondAttribute="top" id="iMb-Sw-Ssd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5Vx-zR-6fR"/>
                     </view>

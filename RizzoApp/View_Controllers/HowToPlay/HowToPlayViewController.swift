@@ -17,28 +17,33 @@ class HowToPlayViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var pageControl: UIPageControl!
     
+    var offSet: CGFloat = 0
     var gameType: Int!
     var slides:[Slide] = [];
     var games = [
         [
-            Games(title: "เลือกหัวข้อ", description: "เลือกหัวข้อวาดภาพเพื่อเริ่มเล่นเกม", gif: "1เข้าวาด.gif"),
-            Games(title: "เริ่มเล่นเกม", description: "วาดภาพตามโจทย์ที่กำหนด เมื่อวาดเสร็จให้เลือกไปที่ปุ่มส่งคำตอบ", gif: "เป็ด.jpg"),
-            Games(title: "สรุปผลคะแนน", description: "เมื่อต้องการเริ่มเล่นใหม่ให้เลือกปุ่มเริ่มเล่นใหม่อีกครั้ง และเมื่อต้องการกลับไปหน้าหลักให้เลือกปุ่มกลับไปหน้าหลัก", gif: "ไก่.jpg")
+            Games(title: "เลือกหัวข้อ", description: "เลือกหัวข้อวาดภาพเพื่อเริ่มเล่นเกม", gif: "เลือกหัวข้อวาดภาพ"),
+            Games(title: "เริ่มเล่นเกม", description: "วาดภาพตามโจทย์ที่กำหนด เมื่อวาดเสร็จให้เลือกไปที่ปุ่มส่งคำตอบ", gif: "วาดภาพ"),
+            Games(title: "สรุปผลคะแนน", description: "เมื่อต้องการเริ่มเล่นเกมใหม่ให้เลือกปุ่มเริ่มเล่นใหม่อีกครั้ง และเมื่อต้องการกลับไปยังหน้าหลักให้เลือกปุ่มกลับไปหน้าหลัก", gif: "สรุปผลการวาดภาพ")
         ],
         [
-            Games(title: "เลือกหัวข้อ", description: "เลือกหัวข้อทายภาพเพื่อเริ่มเล่นเกม", gif: "เข้าเกมทายภาพ"),
-            Games(title: "เริ่มเล่นเกม", description: "เลือกคำตอบเพียงข้อเดียวจากตัวเลือกที่กำหนดให้", gif: "เข้าเกมทายภาพ"),
-            Games(title: "สรุปผลคะแนน", description: "เมื่อต้องการเริ่มเล่นใหม่ให้เลือกปุ่มเริ่มเล่นใหม่อีกครั้ง และเมื่อต้องการกลับไปหน้าหลักให้เลือกปุ่มกลับไปหน้าหลัก", gif: "คะแนนเกมทายภาพ")
+            Games(title: "เลือกหัวข้อ", description: "เลือกหัวข้อทายภาพเพื่อเริ่มเล่นเกม", gif: "เลือกหัวข้อทายภาพ"),
+            Games(title: "เริ่มเล่นเกม", description: "เลือกปุ่มคำตอบเพียงข้อเดียวจากตัวเลือกที่กำหนดให้", gif: "ทายภาพ"),
+            Games(title: "สรุปผลคะแนน", description: "เมื่อต้องการเริ่มเล่นเกมใหม่ให้เลือกปุ่มเริ่มเล่นใหม่อีกครั้ง และเมื่อต้องการกลับไปยังหน้าหลักให้เลือกปุ่มกลับไปหน้าหลัก", gif: "สรุปผลการทายภาพ")
         ],
         [
-            Games(title: "เลือกหัวข้อ", description: "เลือกหัวข้อทายเสียงเพื่อเริ่มเล่นเกม", gif: ""),
-            Games(title: "เริ่มเล่นเกม", description: "เลือกคำตอบเพียงข้อเดียวจากตัวเลือกที่กำหนดให้", gif: ""),
-            Games(title: "สรุปผลคะแนน", description: "เมื่อต้องการเริ่มเล่นใหม่ให้เลือกปุ่มเริ่มเล่นใหม่อีกครั้ง และเมื่อต้องการกลับไปหน้าหลักให้เลือกปุ่มกลับไปหน้าหลัก", gif: "")
+            Games(title: "เลือกหัวข้อ", description: "เลือกหัวข้อทายเสียงเพื่อเริ่มเล่นเกม", gif: "เลือกหัวข้อทายเสียง"),
+            Games(title: "เริ่มเล่นเกม", description: "เลือกปุ่มคำตอบเพียงข้อเดียวจากตัวเลือกที่กำหนดให้", gif: "ทายเสียง"),
+            Games(title: "สรุปผลคะแนน", description: "เมื่อต้องการเริ่มเล่นเกมใหม่ให้เลือกปุ่มเริ่มเล่นใหม่อีกครั้ง และเมื่อต้องการกลับไปยังหน้าหลักให้เลือกปุ่มกลับไปหน้าหลัก", gif: "สรุปผลการทายเสียง")
         ]
     ]
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.offSet = 0
+        let timer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(autoScroll), userInfo: nil, repeats: true)
+        
         scrollView.delegate = self
+        pageControl.layer.cornerRadius = 20
         
         slides = createSlides(game: games[gameType])
         setupSlideScrollView(slides: slides)
@@ -51,8 +56,7 @@ class HowToPlayViewController: UIViewController, UIScrollViewDelegate {
         var tempSlide:[Slide] = [];
         for item in game {
             let slide:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
-            let imageGif = UIImage.gifImageWithName(item.gif)
-            slide.imageView.image = UIImageView(image: imageGif).image
+            slide.imageView.loadGif(name: item.gif)
             slide.labelTitle.text = item.title
             slide.labelDescription.text = item.description
             tempSlide.append(slide)
@@ -72,6 +76,19 @@ class HowToPlayViewController: UIViewController, UIScrollViewDelegate {
             scrollView.addSubview(slides[i])
         }
     }
-    
+    @objc func autoScroll() {
+        let totalPossibleOffset = CGFloat(slides.count - 1) * self.view.bounds.size.width
+        if offSet == totalPossibleOffset {
+            offSet = 0 // come back to the first image after the last image
+        }
+        else {
+            offSet += self.view.bounds.size.width
+        }
+        DispatchQueue.main.async() {
+            UIView.animate(withDuration: 0.3, delay: 0, options: UIViewAnimationOptions.curveLinear, animations: {
+                self.scrollView.contentOffset.x = CGFloat(self.offSet)
+            }, completion: nil)
+        }
+    }
 
 }

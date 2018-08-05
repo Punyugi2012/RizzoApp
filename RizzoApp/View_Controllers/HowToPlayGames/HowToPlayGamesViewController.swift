@@ -9,18 +9,17 @@
 import UIKit
 
 class HowToPlayGamesViewController: UIViewController {
+    @IBOutlet var menuButtons: [UIButton]!
     var gameType: Int!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setView()
         // Do any additional setup after loading the view.
     }
-
     @IBAction func next(_ sender: UIButton) {
         gameType = sender.tag
         performSegue(withIdentifier: "ToHowToPlay", sender: self)
     }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? HowToPlayViewController {
             let backItem = UIBarButtonItem()
@@ -29,6 +28,16 @@ class HowToPlayGamesViewController: UIViewController {
             navigationItem.backBarButtonItem = backItem
             destination.navigationItem.backBarButtonItem = backItem
             destination.gameType = self.gameType
+        }
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setView()
+    }
+    func setView() {
+//        view.backgroundColor = AppManager.shared.currentTheme?.backgroundColor
+        for button in menuButtons {
+            button.animateBubbleAnimation()
         }
     }
 
