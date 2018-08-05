@@ -9,7 +9,7 @@
 import UIKit
 
 class HowToPlayGamesViewController: UIViewController {
-
+    var gameType: Int!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,6 +17,7 @@ class HowToPlayGamesViewController: UIViewController {
     }
 
     @IBAction func next(_ sender: UIButton) {
+        gameType = sender.tag
         performSegue(withIdentifier: "ToHowToPlay", sender: self)
     }
     
@@ -27,6 +28,7 @@ class HowToPlayGamesViewController: UIViewController {
             backItem.setTitleTextAttributes([kCTFontAttributeName as NSAttributedStringKey: UIFont(name: "THSarabunNew-Bold", size: 35)!], for: .normal)
             navigationItem.backBarButtonItem = backItem
             destination.navigationItem.backBarButtonItem = backItem
+            destination.gameType = self.gameType
         }
     }
 
