@@ -172,6 +172,7 @@ class DrawViewController: UIViewController {
                 }
             }
             self.performSegue(withIdentifier: "ToFinishedDraw", sender: self)
+            self.drawView.clearDraw()
             print(results)
         }
         
