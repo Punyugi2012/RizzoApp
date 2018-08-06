@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="ipad12_9" orientation="portrait">
+    <device id="ipad10_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,20 +18,20 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="Slide" customModule="RizzoApp" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+            <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fTx-RP-dit">
-                    <rect key="frame" x="50" y="70" width="924" height="239"/>
+                    <rect key="frame" x="20" y="70" width="794" height="170"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MIL-2a-DVG">
-                            <rect key="frame" x="0.0" y="0.0" width="924" height="173.5"/>
+                            <rect key="frame" x="0.0" y="0.0" width="794" height="104.5"/>
                             <fontDescription key="fontDescription" name="THSarabunNew-Bold" family="TH Sarabun New" pointSize="80"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Lt-2s-hVC">
-                            <rect key="frame" x="0.0" y="173.5" width="924" height="65.5"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Lt-2s-hVC">
+                            <rect key="frame" x="0.0" y="104.5" width="794" height="65.5"/>
                             <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                             <fontDescription key="fontDescription" name="THSarabunNew-Bold" family="TH Sarabun New" pointSize="50"/>
                             <nil key="textColor"/>
@@ -39,30 +39,22 @@
                         </label>
                     </subviews>
                     <constraints>
-                        <constraint firstAttribute="trailing" secondItem="3Lt-2s-hVC" secondAttribute="trailing" id="IKn-Hc-uKB"/>
-                        <constraint firstItem="MIL-2a-DVG" firstAttribute="leading" secondItem="fTx-RP-dit" secondAttribute="leading" id="Ng6-9w-O7W"/>
-                        <constraint firstAttribute="trailing" secondItem="MIL-2a-DVG" secondAttribute="trailing" id="bJW-Z6-uWY"/>
-                        <constraint firstItem="3Lt-2s-hVC" firstAttribute="leading" secondItem="fTx-RP-dit" secondAttribute="leading" id="egj-gM-mTF"/>
+                        <constraint firstAttribute="height" constant="170" id="wAz-Lw-olJ"/>
                     </constraints>
                 </stackView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="61s-MP-Ckl">
-                    <rect key="frame" x="150" y="359" width="724" height="957"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="957" id="5Qt-r1-D2s"/>
-                        <constraint firstAttribute="width" constant="724" id="NWP-yj-uFW"/>
-                    </constraints>
+                    <rect key="frame" x="20" y="260" width="794" height="832"/>
                 </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="fTx-RP-dit" secondAttribute="trailing" constant="50" id="3KO-ka-fdF"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="61s-MP-Ckl" secondAttribute="bottom" constant="50" id="3bu-55-afs"/>
-                <constraint firstItem="fTx-RP-dit" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="7sj-fi-406"/>
-                <constraint firstItem="61s-MP-Ckl" firstAttribute="top" secondItem="fTx-RP-dit" secondAttribute="bottom" constant="50" id="8Mx-EF-yR5"/>
-                <constraint firstItem="fTx-RP-dit" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="50" id="C4I-t4-qeX"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="61s-MP-Ckl" secondAttribute="trailing" constant="150" id="KOh-pX-bRK"/>
-                <constraint firstItem="61s-MP-Ckl" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="150" id="q7B-J2-fhb"/>
-                <constraint firstItem="fTx-RP-dit" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="50" id="xrR-ar-ruE"/>
+                <constraint firstItem="61s-MP-Ckl" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="CB0-dq-zAd"/>
+                <constraint firstItem="fTx-RP-dit" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="FcC-Rb-7RY"/>
+                <constraint firstItem="fTx-RP-dit" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="50" id="Kts-Pl-WG7"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="61s-MP-Ckl" secondAttribute="bottom" constant="20" id="dM9-2S-8O3"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="fTx-RP-dit" secondAttribute="trailing" constant="20" id="dZW-FB-XOS"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="61s-MP-Ckl" secondAttribute="trailing" constant="20" id="t8o-qC-RaU"/>
+                <constraint firstItem="61s-MP-Ckl" firstAttribute="top" secondItem="fTx-RP-dit" secondAttribute="bottom" constant="20" id="wtY-21-X6H"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>

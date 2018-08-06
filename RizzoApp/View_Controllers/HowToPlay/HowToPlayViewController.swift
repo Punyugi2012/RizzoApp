@@ -13,7 +13,7 @@ struct Games {
     var gif: String
 }
 class HowToPlayViewController: UIViewController, UIScrollViewDelegate {
-
+    
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var pageControl: UIPageControl!
     
@@ -40,8 +40,8 @@ class HowToPlayViewController: UIViewController, UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.offSet = 0
-        let timer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(autoScroll), userInfo: nil, repeats: true)
-        
+        //        Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(autoScroll), userInfo: nil, repeats: true)
+        //
         scrollView.delegate = self
         pageControl.layer.cornerRadius = 20
         
@@ -50,6 +50,7 @@ class HowToPlayViewController: UIViewController, UIScrollViewDelegate {
         
         pageControl.numberOfPages = slides.count
         pageControl.currentPage = 0
+        view.backgroundColor = AppManager.shared.currentTheme?.backgroundColor
         view.bringSubview(toFront: pageControl)
     }
     func createSlides(game: [Games]) -> [Slide] {
@@ -65,17 +66,18 @@ class HowToPlayViewController: UIViewController, UIScrollViewDelegate {
     }
     
     func setupSlideScrollView(slides : [Slide]) {
-//        scrollView.frame = CGRect(x: 0, y: 0, width: scrollView.frame.width, height: scrollView.frame.height)
+        //        scrollView.frame = CGRect(x: 0, y: 0, width: scrollView.frame.width, height: scrollView.frame.height)
         scrollView.contentSize = CGSize(width: scrollView.frame.width * CGFloat(slides.count), height: 1.0)
         scrollView.isPagingEnabled = true
         scrollView.showsHorizontalScrollIndicator = false
         scrollView.showsVerticalScrollIndicator = false
         
         for i in 0 ..< slides.count {
-            slides[i].frame = CGRect(x: scrollView.frame.width * CGFloat(i), y: 0, width: scrollView.frame.width - 20, height: scrollView.frame.height)
+            slides[i].frame = CGRect(x: view.frame.width * CGFloat(i), y: 0, width: scrollView.bounds.width, height: scrollView.bounds.height)
             scrollView.addSubview(slides[i])
         }
     }
+    
     @objc func autoScroll() {
         let totalPossibleOffset = CGFloat(slides.count - 1) * self.view.bounds.size.width
         if offSet == totalPossibleOffset {
@@ -90,5 +92,5 @@ class HowToPlayViewController: UIViewController, UIScrollViewDelegate {
             }, completion: nil)
         }
     }
-
+    
 }
