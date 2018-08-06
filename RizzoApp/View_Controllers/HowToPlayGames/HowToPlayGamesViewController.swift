@@ -13,8 +13,10 @@ class HowToPlayGamesViewController: UIViewController {
     var gameType: Int!
     override func viewDidLoad() {
         super.viewDidLoad()
-        setView()
-        // Do any additional setup after loading the view.
+        view.backgroundColor = AppManager.shared.currentTheme?.backgroundColor
+        for button in menuButtons {
+            button.animateBubbleAnimation()
+        }
     }
     @IBAction func next(_ sender: UIButton) {
         gameType = sender.tag
@@ -30,15 +32,4 @@ class HowToPlayGamesViewController: UIViewController {
             destination.gameType = self.gameType
         }
     }
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        setView()
-    }
-    func setView() {
-//        view.backgroundColor = AppManager.shared.currentTheme?.backgroundColor
-        for button in menuButtons {
-            button.animateBubbleAnimation()
-        }
-    }
-
 }
