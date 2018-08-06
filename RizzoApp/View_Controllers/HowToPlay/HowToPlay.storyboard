@@ -30,6 +30,9 @@
                                 <color key="pageIndicatorTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="currentPageIndicatorTintColor" red="0.0" green="0.0" blue="0.0" alpha="0.30128959760000001" colorSpace="custom" customColorSpace="sRGB"/>
                             </pageControl>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="NrR-lQ-QZs">
+                                <rect key="frame" x="494" y="665" width="37" height="37"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -37,12 +40,15 @@
                             <constraint firstItem="5Vx-zR-6fR" firstAttribute="bottom" secondItem="CnK-hS-UP0" secondAttribute="bottom" id="PD3-KP-7WF"/>
                             <constraint firstItem="CnK-hS-UP0" firstAttribute="leading" secondItem="5Vx-zR-6fR" secondAttribute="leading" id="UDr-lH-y7c"/>
                             <constraint firstItem="5Vx-zR-6fR" firstAttribute="bottom" secondItem="RGG-ta-Ulx" secondAttribute="bottom" constant="80" id="Ue6-xJ-E7B"/>
+                            <constraint firstItem="NrR-lQ-QZs" firstAttribute="centerY" secondItem="GM4-LW-K5u" secondAttribute="centerY" id="arj-oj-4VC"/>
                             <constraint firstItem="RGG-ta-Ulx" firstAttribute="centerX" secondItem="GM4-LW-K5u" secondAttribute="centerX" id="gKp-4n-aPd"/>
                             <constraint firstItem="CnK-hS-UP0" firstAttribute="top" secondItem="5Vx-zR-6fR" secondAttribute="top" id="iMb-Sw-Ssd"/>
+                            <constraint firstItem="NrR-lQ-QZs" firstAttribute="centerX" secondItem="GM4-LW-K5u" secondAttribute="centerX" id="oqf-fl-jQq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5Vx-zR-6fR"/>
                     </view>
                     <connections>
+                        <outlet property="myLoader" destination="NrR-lQ-QZs" id="f6g-0S-dsW"/>
                         <outlet property="pageControl" destination="RGG-ta-Ulx" id="L9d-mP-GYt"/>
                         <outlet property="scrollView" destination="CnK-hS-UP0" id="uAB-IR-0Wg"/>
                     </connections>

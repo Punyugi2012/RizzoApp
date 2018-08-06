@@ -98,11 +98,12 @@ extension UIViewController {
 
 extension UIImageView {
     
-    func loadGif(name: String) {
+    func loadGif(name: String, completion: @escaping () -> Void) {
         DispatchQueue.global().async {
             let image = UIImage.gif(name: name)
             DispatchQueue.main.async {
                 self.image = image
+                completion()
             }
         }
     }

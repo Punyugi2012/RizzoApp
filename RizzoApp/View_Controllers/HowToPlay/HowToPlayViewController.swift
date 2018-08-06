@@ -16,6 +16,7 @@ class HowToPlayViewController: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var pageControl: UIPageControl!
+    @IBOutlet weak var myLoader: UIActivityIndicatorView!
     
     var offSet: CGFloat = 0
     var gameType: Int!
@@ -39,6 +40,9 @@ class HowToPlayViewController: UIViewController, UIScrollViewDelegate {
     ]
     override func viewDidLoad() {
         super.viewDidLoad()
+        myLoader.startAnimating()
+        myLoader.transform = CGAffineTransform(scaleX: 2, y: 2)
+        myLoader.color = AppManager.shared.currentTheme?.fontColor
         self.offSet = 0
         //        Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(autoScroll), userInfo: nil, repeats: true)
         //
@@ -55,12 +59,20 @@ class HowToPlayViewController: UIViewController, UIScrollViewDelegate {
     }
     func createSlides(game: [Games]) -> [Slide] {
         var tempSlide:[Slide] = [];
+        let dispathGroup = DispatchGroup()
         for item in game {
             let slide:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
-            slide.imageView.loadGif(name: item.gif)
+            dispathGroup.enter()
+            slide.imageView.loadGif(name: item.gif) {
+                dispathGroup.leave()
+            }
             slide.labelTitle.text = item.title
             slide.labelDescription.text = item.description
             tempSlide.append(slide)
+        }
+        dispathGroup.notify(queue: .main) {
+            print("Loaded All Gif")
+            self.myLoader.stopAnimating()
         }
         return tempSlide
     }
