@@ -114,6 +114,8 @@
 		B84F5CDC210335000043DCEC /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84F5CDB210335000043DCEC /* AppManager.swift */; };
 		B84F5CDE210335DB0043DCEC /* bgSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B84F5CDD210335DB0043DCEC /* bgSound.mp3 */; };
 		B84F5CE0210336270043DCEC /* btnSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B84F5CDF210336270043DCEC /* btnSound.mp3 */; };
+		B856708E2119BD020060BEC4 /* LightThemeReadme.png in Resources */ = {isa = PBXBuildFile; fileRef = B856708C2119BD010060BEC4 /* LightThemeReadme.png */; };
+		B856708F2119BD020060BEC4 /* DarkThemeReadme.png in Resources */ = {isa = PBXBuildFile; fileRef = B856708D2119BD020060BEC4 /* DarkThemeReadme.png */; };
 		B8783518210C51D600B87B11 /* LoadingScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8783517210C51D600B87B11 /* LoadingScene.swift */; };
 		B87D939421045D6A00788F2D /* ThemePotocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87D939321045D6A00788F2D /* ThemePotocol.swift */; };
 		B87D939621045D9100788F2D /* LightTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87D939521045D9100788F2D /* LightTheme.swift */; };
@@ -259,6 +261,8 @@
 		B84F5CDB210335000043DCEC /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
 		B84F5CDD210335DB0043DCEC /* bgSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgSound.mp3; sourceTree = "<group>"; };
 		B84F5CDF210336270043DCEC /* btnSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = btnSound.mp3; sourceTree = "<group>"; };
+		B856708C2119BD010060BEC4 /* LightThemeReadme.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LightThemeReadme.png; sourceTree = "<group>"; };
+		B856708D2119BD020060BEC4 /* DarkThemeReadme.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DarkThemeReadme.png; sourceTree = "<group>"; };
 		B8783517210C51D600B87B11 /* LoadingScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingScene.swift; sourceTree = "<group>"; };
 		B87D939321045D6A00788F2D /* ThemePotocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePotocol.swift; sourceTree = "<group>"; };
 		B87D939521045D9100788F2D /* LightTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightTheme.swift; sourceTree = "<group>"; };
@@ -767,6 +771,8 @@
 		B8AEBD3921030FC400468680 /* RizzoApp */ = {
 			isa = PBXGroup;
 			children = (
+				B856708D2119BD020060BEC4 /* DarkThemeReadme.png */,
+				B856708C2119BD010060BEC4 /* LightThemeReadme.png */,
 				B84F5CA1210321910043DCEC /* Resources */,
 				B87D93D021049D3A00788F2D /* OtherFiles */,
 				B84F5CA02103218B0043DCEC /* Models */,
@@ -941,6 +947,7 @@
 				B422AB4C2107232E0018CE9F /* แว่นตา.jpg in Resources */,
 				B8F7367A210D8E71003D7F0C /* ไวโอลิน.mp3 in Resources */,
 				B421794B21174D5100A71AFF /* ทายเสียง.gif in Resources */,
+				B856708E2119BD020060BEC4 /* LightThemeReadme.png in Resources */,
 				B422AB23210723030018CE9F /* ไก่.jpg in Resources */,
 				B8AEBD4521030FC700468680 /* LaunchScreen.storyboard in Resources */,
 				B8A1F612210723FA00D4FF0C /* PreviewImage.xib in Resources */,
@@ -1021,6 +1028,7 @@
 				B84F5CAF210323670043DCEC /* PrepareDraw.storyboard in Resources */,
 				B81BB74B21133A8C00668D0A /* สตอว์เบอรี่.png in Resources */,
 				B422AB0C210722C60018CE9F /* สับปะรด.jpg in Resources */,
+				B856708F2119BD020060BEC4 /* DarkThemeReadme.png in Resources */,
 				B84F5CA4210322160043DCEC /* Setting.storyboard in Resources */,
 				B87D93C9210470CE00788F2D /* สุนัข.mp3 in Resources */,
 				B422AB0E210722C60018CE9F /* มะพร้าว.jpg in Resources */,
